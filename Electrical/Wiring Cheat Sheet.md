@@ -2,12 +2,14 @@
 
 Based on the [2023 Game Manual](https://firstfrc.blob.core.windows.net/frc2023/Manual/Sections/2023FRCGameManual-09.pdf)
 
+## Gauge to Breaker Standard
 | Wire Gauge | Breaker Size |
 | ---------- | ------------ |
 | 12 AWG | [40A](https://www.revrobotics.com/rev-11-1863/) Breaker |
 | 18 AWG | [20A](https://www.revrobotics.com/rev-11-1861/) Breaker |
 | 22 AWG | 5A Breaker or 10A Fuse |
 
+## Device Connection Details
 | Device | Voltage/Amps | Wire Gauge | PDH Port |
 | ------ | ------------ | ---------- | -------- |
 | [Battery](https://www.andymark.com/products/mk-es17-12-12v-sla-battery-set-of-2?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMkJhdHRlcnklMjIlMkMlMjJ1dGY4JTIyJTNBJTIyJUUyJTlDJTkzJTIyJTdE) | 12V | 6 AWG | Main Power Port |
@@ -21,6 +23,7 @@ Based on the [2023 Game Manual](https://firstfrc.blob.core.windows.net/frc2023/M
 | [Pigeon 2](https://store.ctr-electronics.com/pigeon-2/) | 6V–28V / 0.05A | ??? | ??? |
 | CAN Wire |  | 22 AWG |
 
+## PDP Details
 | PDH Port | Quantity |
 | -------- | -------- |
 | Fuse Ports | 3 |
