@@ -20,7 +20,7 @@ Based on the [2023 Game Manual](https://firstfrc.blob.core.windows.net/frc2023/M
 | [RPM](https://www.revrobotics.com/rev-11-1856/) | 5V-18V / 1A | 18 AWG\* (22 min) | Fuse Port (10A) |
 | [CANCoder (Power)](https://store.ctr-electronics.com/cancoder/) | 6V-16V / 0.06A | 22 AWG | Fuse Port (10A) |
 | [Buckboost](https://www.amazon.com/dp/B07YZBLCY5?ref_=cm_sw_r_mwn_dp_RTA53JTPWSH5JCAQQY3N&language=en-US&th=1) | 8V-40V / 3A | ??? | Fuse Port (10A) (Switchable) |
-| [Pigeon 2](https://store.ctr-electronics.com/pigeon-2/) | 6V–28V / 0.05A | ??? | ??? |
+| [Pigeon 2](https://store.ctr-electronics.com/pigeon-2/) | 6V–28V / 0.05A | 22 AWG | ??? |
 | CAN Wire |  | 22 AWG |
 
 ## PDP Details
