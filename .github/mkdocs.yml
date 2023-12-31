@@ -3,6 +3,7 @@ docs_dir: ..
 site_dir: ../../site
 theme:
   name: 'readthedocs'
+  custom_dir: 'theme'
 repo_url: https://github.com/TaylerUva/Wiki_RTD_TEST/
 edit_uri: https://github.com/TaylerUva/Wiki_RTD_TEST/edit/main/
 site_author: Tayler Uva
