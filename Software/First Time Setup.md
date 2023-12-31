@@ -10,5 +10,6 @@
 5. Follow the Installation Guide steps to extract the installer ![Alt text](.images/../../.images/GitHub/Installing%20Tools/extract_installer.png)
 6. Follow the Installation Guide steps to run the installer ![Alt text](.images/../../.images/GitHub/Installing%20Tools/run_installer.png)
 
-# GitHub Installation
+# Next Steps
 
+Follow [this guide](../GitHub/Downloading%20Projects.md) to install GitHub Desktop and clone a project
