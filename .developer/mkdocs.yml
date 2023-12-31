@@ -1,5 +1,0 @@
-site_name: SN Wiki
-docs_dir: ..
-site_dir: ../../site
-theme:
-  name: 'readthedocs'

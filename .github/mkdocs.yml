@@ -1,0 +1,8 @@
+site_name: SN Wiki
+docs_dir: ..
+site_dir: ../../site
+theme:
+  name: 'readthedocs'
+repo_url: https://github.com/TaylerUva/Wiki_RTD_TEST/
+edit_uri: https://github.com/TaylerUva/Wiki_RTD_TEST/edit/main/
+site_author: Tayler Uva
