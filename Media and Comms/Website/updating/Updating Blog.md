@@ -1,6 +1,6 @@
 # Updating the Blog
 
-1. [Login](logging_in.md)
+1. [Login](../Logging%20In.md)
 2. Select **Blog** from the sidebar:  
    ![](../../../.images/Media_and_Comms/Website/updating_blog/blog.png)
 
