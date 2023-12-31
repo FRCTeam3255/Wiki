@@ -6,8 +6,8 @@ theme:
   custom_dir: 'theme'
   navigation_depth: 2
   logo: '.images/SN White Text Logo.png'
-repo_url: https://github.com/TaylerUva/Wiki_RTD_TEST/
-edit_uri: https://github.com/TaylerUva/Wiki_RTD_TEST/edit/main/
+repo_url: https://github.com/FRCTeam3255/Wiki
+edit_uri: https://github.com/FRCTeam3255/Wiki/edit/main/
 site_author: Tayler Uva
 exclude_docs: |
   !.images
