@@ -1,8 +1,8 @@
 # Updating Dynamic Pages
 
-1. [Login](../Logging%20In.md)
+1. [Login](./Logging%20In.md)
 2. Select **Content Manager** from the sidebar:  
-   ![](../../../.images/Media_and_Comms/Website/updating_page_content/content_manager.png)
+   ![](../../.images/Media_and_Comms/Website/updating_page_content/content_manager.png)
 
 ## Yearly updates
 
@@ -21,14 +21,14 @@
 ## Editing a Collection
 
 1. Select a collection:  
-   ![](../../../.images/Media_and_Comms/Website/updating_page_content/collection_select.png)
+   ![](../../.images/Media_and_Comms/Website/updating_page_content/collection_select.png)
 
 ### Adding a new item
 
 1. Click **+ New Item** (form mode) or scroll to the bottom and click **+** (spreadsheet mode):  
-   ![](../../../.images/Media_and_Comms/Website/updating_page_content/new_item.png)  
+   ![](../../.images/Media_and_Comms/Website/updating_page_content/new_item.png)  
    or  
-   ![](../../../.images/Media_and_Comms/Website/updating_page_content/add_item_list.png)
+   ![](../../.images/Media_and_Comms/Website/updating_page_content/add_item_list.png)
 2. Fill in the the fields for the new item.
 
 ### Editing an item
@@ -43,5 +43,5 @@ You can either edit the item in [spreadsheet mode](#spreadsheet-mode) or [form m
 #### Form Mode
 
 1. Click the expand icon (hover over the first column in a row to make it appear)
-![](../../../.images/Media_and_Comms/Website/updating_page_content/form_edit.png)
+![](../../.images/Media_and_Comms/Website/updating_page_content/form_edit.png)
 2. Change the desired fields in the form
