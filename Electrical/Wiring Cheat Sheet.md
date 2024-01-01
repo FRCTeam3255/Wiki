@@ -27,7 +27,7 @@
 | [Pigeon 2](https://store.ctr-electronics.com/pigeon-2/) | 6V–28V / 0.05A | 22 AWG | Fuse Port (10A) |
 | CAN Wire |  | 22 AWG |
 
-## PDP Details
+## PDH Details
 | PDH Port | Quantity |
 | -------- | -------- |
 | Fuse Ports | 3 |
