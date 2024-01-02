@@ -1,7 +1,7 @@
 # WPILib Installation
 
-> [!Important]
-> You will need to install a new version of WPILib every build season*
+!!! important
+    You will need to install a new version of WPILib every build season*
 
 1. [Click here to view WPILib Installation Guide and get to the latest stable release of WPILib](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html)
 2. Scroll to the section titled Downloading and click the blue `Downloads` button. You will be taken to a GitHub page ![Alt text](.images/../../.images/GitHub/Installing%20Tools/downloads_button.png)
