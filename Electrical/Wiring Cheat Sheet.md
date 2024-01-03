@@ -1,10 +1,12 @@
 # Wiring Cheat Sheet
 
-> [!Note]
-> This document serves as SuperNURDs wiring standards to match or exceed FRC stanards.
- 
-> [!Important]
-> Based on the [2023 Game Manual](https://firstfrc.blob.core.windows.net/frc2023/Manual/Sections/2023FRCGameManual-09.pdf)
+!!! note
+
+    This document serves as SuperNURDs wiring standards to match or exceed FRC stanards.
+
+!!! important
+
+    Based on the [2023 Game Manual](https://firstfrc.blob.core.windows.net/frc2023/Manual/Sections/2023FRCGameManual-09.pdf)
 
 ## Gauge to Breaker Standard
 | Wire Gauge | Breaker Size |

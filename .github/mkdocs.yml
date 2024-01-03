@@ -9,5 +9,9 @@ theme:
 repo_url: https://github.com/FRCTeam3255/Wiki
 edit_uri: https://github.com/FRCTeam3255/Wiki/edit/main/
 site_author: Tayler Uva
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 exclude_docs: |
   !.images

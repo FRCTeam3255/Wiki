@@ -1,7 +1,8 @@
 # Vendor Libraries
 
-> [!IMPORTANT]
-> It is recommended to install Vendor Libraries before coding
+!!! important
+
+    It is recommended to install Vendor Libraries before coding
 
 | Vendor | Library |
 | --- | -------- |
