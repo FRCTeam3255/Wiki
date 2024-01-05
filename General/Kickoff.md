@@ -7,7 +7,7 @@ Period of time from Kickoff to Champs
 ### Build Season Schedule
 
 - Kickoff Starts 8 am to 7:30 pm
-- Mock kick off 9 am to 1:15 pm (meeting ends at 5 pm)
+- Mock kick off 9 am to 2:45 pm (meeting ends at 5 pm)
 - **Saturdays** 9 am to 9 pm (lunch and dinner provided - parent volunteers welcome)
 - **Fridays** 3:45 pm to 9 pm (dinner provided - parent volunteers welcome)
 - **Tuesdays**, **Thursday** 3:45 pm - 7:30 pm
