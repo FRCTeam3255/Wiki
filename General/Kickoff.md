@@ -33,6 +33,15 @@ Period of time from Kickoff to Champs
 
 A teaching run of kickoff using a past FRC Game.
 
+### Mock Prep
+
+1. Create Mock Kickoff Google Drive Folder
+   1. Share folder via team website
+2. Assign people to past FRC Game Manual Sections
+3. Link Game Manual to [www.SuperNURDs.com/mockmanual](https://www.SuperNURDs.com/mockmanual) for easy sharing
+4. Layout team laptops in group locations
+   1. Pre-download Game Manual
+
 ### Mock Schedule
 
 |   Time   | Duration |                                                                                                                                                                                   |
@@ -40,18 +49,29 @@ A teaching run of kickoff using a past FRC Game.
 | 9:00 am  |  15 min  | Students arrive <br>discuss how holiday break was                                                                                                                                 |
 | 9:15 am  |  45 min  | Discuss build season expectations and schedule                                                                                                                                    |
 | 10:00 am |  30 min  | Watch Game Animation & Field Videos<br>Take notes                                                                                                                                 |
-| 10:30 am |  45 min  | Regroup/Game Manual Breakdown <br>Break into groups read aloud <br>document important items into group’s folder                                                                   |
-| 11:15 am |  45 min  | Present group findings creating a master list <br>(have group that presents match play and game rules go last)                                                                    |
-| 12:00 pm |  45 min  | Lunch Break                                                                                                                                                                       |
-| 12:45 pm |  30 min  | Scoring method Analysis <br>(**ranking points vs match points**)<br>(point calculations/combinations, look at density, looking at auto vs teleop)<br>(Do RP become match points?) |
-| 1:15 pm  |  30 min  | Feature importance List creation <br>(features are ability that our robot has that drive the design) <br>(ex. score high, mid, low, all autonomous)                               |
-| 1:45 pm  |  30 min  | Feature importance list rankings                                                                                                                                                  |
-| 2:15 pm  |  30 min  | Show Real Robot Examples                                                                                                                                                          |
-| 2:45 pm  |    -     | End Mock Kick off                                                                                                                                                                 |
+| 10:30 am |  15 min  | Unbox KoP (Put old game pieces in tote and pass around)                                                                                                                           |
+| 10:40 am |   1 hr   | Regroup/Game Manual Breakdown <br>Break into groups read aloud <br>document important items into group’s folder                                                                   |
+| 11:40 am |   1 hr   | Present group findings creating a master list <br>(have group that presents match play and game rules go last)                                                                    |
+| 12:40 pm |  50 min  | Lunch Break                                                                                                                                                                       |
+| 1:30 pm  |  1.5 hr  | Scoring method Analysis <br>(**ranking points vs match points**)<br>(point calculations/combinations, look at density, looking at auto vs teleop)<br>(Do RP become match points?) |
+| 3:00 pm  |  30 min  | Feature importance List creation <br>(features are ability that our robot has that drive the design) <br>(ex. score high, mid, low, all autonomous)                               |
+| 3:30 pm  |  30 min  | Feature importance list rankings                                                                                                                                                  |
+| 4:00 pm  |  30 min  | Show Real Robot Examples                                                                                                                                                          |
+| 4:30 pm  |    -     | End Mock Kick off                                                                                                                                                                 |
 
 ## Kickoff
 
 [Broadcast Link](https://www.firstinspires.org/robotics/frc/kickoff?utm_source=first-inspires&utm_medium=game-season&utm_campaign=frc-ko-021)
+
+### Prep
+
+1. Create Kickoff Google Drive Folder
+   1. Share folder via team website
+2. Link Game Manual to [www.SuperNURDs.com/gamemanual](https://www.SuperNURDs.com/gamemanual) for easy sharing
+3. Tell students bring laptops/tablets to kickoff
+   1. Tell students to pre-download Game Manual
+4. Layout team laptops in group locations
+   1. Pre-download Game Manual
 
 ### Schedule
 
