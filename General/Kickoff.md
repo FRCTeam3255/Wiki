@@ -33,6 +33,15 @@ Period of time from Kickoff to Champs
 
 A teaching run of kickoff using a past FRC Game.
 
+### Mock Prep
+
+1. Create Mock Kickoff Google Drive Folder
+   1. Share folder via team website
+2. Assign people to past FRC Game Manual Sections
+3. Link Game Manual to [www.SuperNURDs.com/mockmanual](https://www.SuperNURDs.com/mockmanual) for easy sharing
+4. Layout team laptops in group locations
+   1. Pre-download Game Manual
+
 ### Mock Schedule
 
 |   Time   | Duration |                                                                                                                                                                                   |
@@ -53,6 +62,16 @@ A teaching run of kickoff using a past FRC Game.
 ## Kickoff
 
 [Broadcast Link](https://www.firstinspires.org/robotics/frc/kickoff?utm_source=first-inspires&utm_medium=game-season&utm_campaign=frc-ko-021)
+
+### Prep
+
+1. Create Kickoff Google Drive Folder
+   1. Share folder via team website
+2. Link Game Manual to [www.SuperNURDs.com/gamemanual](https://www.SuperNURDs.com/gamemanual) for easy sharing
+3. Tell students bring laptops/tablets to kickoff
+   1. Tell students to pre-download Game Manual
+4. Layout team laptops in group locations
+   1. Pre-download Game Manual
 
 ### Schedule
 
