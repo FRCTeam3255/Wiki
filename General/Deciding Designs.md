@@ -29,8 +29,8 @@
 
 1. Collector (repeat per game piece)
 2. Releaser (repeat per scoring location)
-3. Transfer 
-    1. (things the move game piece location)
+3. Transfer
+    1. (things that move game piece location)
     2. e.g. elevator, arm, wrist, belts, wheels
     3. Anything that move game piece from original collected position
 4. Climber
