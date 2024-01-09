@@ -75,22 +75,24 @@ A teaching run of kickoff using a past FRC Game.
 
 ### Schedule
 
-|   Time   | Duration |                                                                                                                                                                                   |
-| :------: | :------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 8:00 am  |   1 hr   | Students arrive                                                                                                                                                                   |
-| 9:00 am  |  1.5 hr  | Watch Kickoff broadcast                                                                                                                                                           |
-| 10:30 am |  30 min  | Watch Game Animation & Field Videos<br>Take notes                                                                                                                                 |
-| 11:00 am |  10 min  | Unboxing KoP                                                                                                                                                                      |
-| 11:10 am |  45 min  | Lunch (Mentors split up manual)                                                                                                                                                   |
-| 12:00 pm |  1.5 hr  | Regroup/Game Manual Breakdown <br>Break into groups read aloud <br>document important items into group’s folder                                                                   |
-| 1:30 pm  |  1.5 hr  | Present group findings creating a master list <br>(have group that presents match play and game rules go last)                                                                    |
-| 3:00 pm  |  15 min  | Break                                                                                                                                                                             |
-| 3:15 pm  |   1 hr   | Scoring method Analysis <br>(**ranking points vs match points**)<br>(point calculations/combinations, look at density, looking at auto vs teleop)<br>(Do RP become match points?) |
-| 4:15 pm  |   1 hr   | Feature importance List creation <br>(features are ability that our robot has that drive the design) <br>(ex. score high, mid, low, all autonomous)                               |
-| 5:15 pm  |   1 hr   | Feature importance list rankings                                                                                                                                                  |
-| 6:15 pm  |  15 min  | Tell everyone to look up similar games and mechanism research,<br> to come with ideas for Monday                                                                                  |
-| 6:30 pm  |   1 hr   | Game piece interaction prototyping and Video/part research                                                                                                                        |
-| 7:30 pm  |    -     | End Meeting                                                                                                                                                                       |
+|   Time   | Duration |                                                                                                                                                                                                                        |
+| :------: | :------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 8:00 am  |   1 hr   | Students arrive                                                                                                                                                                                                        |
+| 9:00 am  |   1 hr   | Watch Kickoff broadcast                                                                                                                                                                                                |
+| 10:00 am |  30 min  | Watch Game Animation & Field Videos<br>Take notes                                                                                                                                                                      |
+| 10:30 am |  15 min  | **Break** (Mentors split up manual)                                                                                                                                                                                    |
+| 10:45 am |  30 min  | Read Game Overview in Groups<br>(make sure technology is working)                                                                                                                                                      |
+| 11:15 am |  15 min  | Unboxing KoP                                                                                                                                                                                                           |
+| 11:30 am |  30 min  | **Lunch**                                                                                                                                                                                                              |
+| 12:00 pm |  1.5 hr  | Regroup/Game Manual Breakdown <br>Break into groups read aloud <br>document important items into group’s folder                                                                                                        |
+| 1:30 pm  |  1.5 hr  | Present group findings creating a master list <br>(have group that presents match play and game rules go last)<br>Each group gets 30 min                                                                               |
+| 3:00 pm  |  15 min  | **Break**                                                                                                                                                                                                              |
+| 3:15 pm  |   2 hr   | Scoring method Analysis <br>(**ranking points vs match points**)<br>(point calculations/combinations, look at density, looking at auto vs teleop)<br>(Do RP become match points?)<br>Consider our robot the only robot<br>one person read one person write<br>include processing time in durations/max scores |
+| 5:15 pm  |  30 min  | **Dinner**                                                                                                                                                                                                             |
+| 5:45 pm  |   2 hr   | Feature importance List creation <br>(features are ability that our robot has that drive the design) <br>(ex. score high, mid, low, all autonomous)                                                                    |
+| 7:45 pm  |  15 min  | Tell everyone to look up similar games and mechanism research,<br> to come with ideas for Monday                                                                                                                       |
+| 8:00 pm  |   1 hr   | Game piece interaction prototyping and Video/part research                                                                                                                                                             |
+|   9 pm   |    -     | End Meeting                                                                                                                                                                                                            |
 
 ## Breaking down the game manual
 
