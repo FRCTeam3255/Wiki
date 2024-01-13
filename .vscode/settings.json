@@ -2,6 +2,7 @@
 	"cSpell.words": [
 		"Brainbox",
 		"Buckboost",
+		"Clecos",
 		"robo"
 	],
 	"MarkdownPaste.path": "${workspaceRoot}/.images/${relativeFileDirname}/${fileBasenameNoExtension}/",
