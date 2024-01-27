@@ -7,3 +7,5 @@ Brainbox Network Switch - 4-40 Screws
 RPM - 8-32 Screws
 
 roboRIO - 4-40 Screws
+
+CANivore -6-32 screws
