@@ -3,7 +3,10 @@
 		"Brainbox",
 		"Buckboost",
 		"Clecos",
-		"robo"
+		"robo",
+		"WAGO"
 	],
 	"MarkdownPaste.path": "${workspaceRoot}/.images/${relativeFileDirname}/${fileBasenameNoExtension}/",
+	"editor.wordWrap": "off",
+	"diffEditor.wordWrap": "off",
 }
