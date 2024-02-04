@@ -6,7 +6,7 @@
 
 !!! important
 
-    Based on the [2023 Game Manual](https://firstfrc.blob.core.windows.net/frc2023/Manual/Sections/2023FRCGameManual-09.pdf)
+    Based on the [2024 Game Manual](https://firstfrc.blob.core.windows.net/frc2024/Manual/Sections/2024GameManual-08ROBOTConstructionRules.pdf)
 
 ## Gauge to Breaker Standard
 
