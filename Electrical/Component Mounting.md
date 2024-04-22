@@ -4,7 +4,7 @@
 | -------------------------------- | ------------------------------------------------------------------------- | ------------ |
 | Battery Lugs                     | [Grasshopper Nut](https://www.thethriftybot.com/products/grasshopper-nut) | N/A          |
 | Kraken **Motors**                |                                                                           |              |
-| Kraken **Cover**                 |                                                                           |              |
+| Kraken **Cover**                 | 4-40 Screws                                                               | 3/4" length  |
 | Kraken ***Power* Ring Terminal** |                                                                           |              |
 | Kraken ***CAN* Ring Terminal**   |                                                                           |              |
 | Falcon Motors                    |                                                                           |              |
@@ -17,4 +17,4 @@
 | Buckboost                        |                                                                           |              |
 | Brainbox                         |                                                                           |              |
 | Pigeon 2                         | 4-40 screws                                                               | 3/4" length  |
-| Breaker Lugs                     | 7/16th nut                                                                |              |
+| Breaker Lugs                     | 7/16th Nut (**WITH STAR WASHER**)                                         |              |
