@@ -25,3 +25,4 @@
 | Buckboost                        |                                                                           |              |
 | Brainbox Network Switch          | 4-40 Screws                                                               |              |
 | RPM                              | 8-32 Screws                                                               |              |
+| Neo550 | M3 Screw | 8mm |
