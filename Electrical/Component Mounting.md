@@ -15,7 +15,7 @@
 | roboRIO                          | 4-40 Screws                                                                                    |              |
 | CANivore                         | 6-32 Screws                                                                                    |              |
 | Pigeon 2                         | 4-40 Screws                                                                                    | 3/4" length  |
-| Breaker Lugs                     | 10-32 (7/16th) Nut (**WITH STAR WASHER**)                                                              |              |
+| Breaker Lugs                     | 7/16th Nut (**WITH STAR WASHER**)                                                              |              |
 | Limelight                        | [Mounting Guide](https://docs.limelightvision.io/docs/docs-limelight/getting-started/mounting) |              |
 | PDH | 10-32 Screws | |
 
