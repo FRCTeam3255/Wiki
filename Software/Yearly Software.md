@@ -1,4 +1,11 @@
-- WPILib VSCode
-- Driverstation (NI Game Tools)
-- Radio Cofiguration
-- Pheonix
+# Software to Install on SN Laptops
+- [WPILib VSCode](https://github.com/wpilibsuite/allwpilib/releases)
+    - Smart dashboard
+    - Shuffleboard
+- [Driverstation (NI Game Tools)](https://www.ni.com/en/support/downloads/drivers/download.frc-game-tools.html#500107)
+- [Radio Cofiguration](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/radio-programming.html)
+- Phoenix Tuner X (From Windows App store)
+- [Rev Hardware Client](https://docs.revrobotics.com/rev-hardware-client/gs/install)
+- [Github desktop](https://desktop.github.com)
+- [Limelight Hardware Manager](https://docs.limelightvision.io/docs/resources/downloads)
+- [RoboRIO (Balena Etcher)](https://www.balena.io/etcher/)
