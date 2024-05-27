@@ -6,15 +6,15 @@
 
     Everyone in every department should have this software installed
 
-| Program                                      | OS            | Description/Use              | Year Updates |
-| -------------------------------------------- | ------------- | ---------------------------- | ------------ |
-| [GitHub Desktop](https://desktop.github.com) | Windows/macOS | Syncing Projects with GitHub | No           |
+| Program                                               | OS            | Description/Use              | Year Updates |
+| ----------------------------------------------------- | ------------- | ---------------------------- | ------------ |
+| [GitHub Desktop](../GitHub/Downloading%20Projects.md) | Windows/macOS | Syncing Projects with GitHub | No           |
 
 ## Software Department
 
 | Program                                                                                                  | OS            | Description/Use                  | Year Updates       |
 | -------------------------------------------------------------------------------------------------------- | ------------- | -------------------------------- | ------------------ |
-| [WPILib Suite](https://github.com/wpilibsuite/allwpilib/releases)                                        | Windows/macOS | Writing code [^vsc]              | Yes                |
+| [WPILib Suite](../Software/WPILib%20Install.md)                                                          | Windows/macOS | Writing code [^vsc]              | Yes                |
 | [NI Game Tools](https://www.ni.com/en/support/downloads/drivers/download.frc-game-tools.html#500107)     | Windows       | Driverstation [^ri]              | Yes                |
 | [Phoenix Tuner X](https://apps.microsoft.com/detail/9nvv4pwdw27z?hl=en-us&gl=US)                         | Windows       | Configuring CTRE CAN Devices     | Yes (for firmware) |
 | [Radio Cofiguration](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/radio-programming.html) | Windows       | Configuring OpenMesh Radios      | Yes                |
