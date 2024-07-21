@@ -1,0 +1,25 @@
+{
+  "id": 1216861,
+  "name": "Protect Main",
+  "target": "branch",
+  "source_type": "Repository",
+  "source": "FRCTeam3255/Standard_Swerve_Code",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "~DEFAULT_BRANCH"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    }
+  ],
+  "bypass_actors": []
+}
