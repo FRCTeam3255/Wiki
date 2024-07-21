@@ -10,6 +10,12 @@
 6. Set the following settings to be checked off
    - ![alt text](../.images/Software/Creating_new_Robot_Project/image-2.png)
 
+7. Go to Rules/Rulesets
+   1. Select New Rulesets -> Import a ruleset
+   2. ![alt text](../.images/Software/Creating_new_Robot_Project/image3.png)
+   3. Download [all_branches.json](../.downloads/rulesets/all_branches.json){:download}
+   3. Download [protect_main.json](../.downloads/rulesets/protect_main.json){:download}
+
 TODO WIP INSTRUCTIONS:
 
 - add branch rules

@@ -14,5 +14,6 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - footnotes
+  - attr_list
 exclude_docs: |
   !.images
