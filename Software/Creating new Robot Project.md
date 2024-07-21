@@ -13,8 +13,8 @@
 7. Go to Rules/Rulesets
    1. Select New Rulesets -> Import a ruleset
    2. ![alt text](../.images/Software/Creating_new_Robot_Project/image3.png)
-   3. Download [all_branches.json](../.downloads/rulesets/all_branches.json){:download}
-   3. Download [protect_main.json](../.downloads/rulesets/protect_main.json){:download}
+   3. Download [all_branches.json](https://raw.githubusercontent.com/FRCTeam3255/Wiki/main/.downloads/rulesets/all_branches.json){:download}
+   4. Download [protect_main.json](https://raw.githubusercontent.com/FRCTeam3255/Wiki/main/.downloads/rulesets/protect_main.json){:download}
 
 TODO WIP INSTRUCTIONS:
 
