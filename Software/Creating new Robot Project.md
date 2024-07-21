@@ -1,4 +1,16 @@
-Adding .github with code reviewers
-add branch rules
-add build restriction
-set merge type restriction
+1. Go to [New Repository - Standard Swerve Template](https://github.com/organizations/FRCTeam3255/repositories/new?template_name=Standard_Swerve_Code&template_owner=FRCTeam3255)
+2. Make sure **Owner** is set to FRCTeam3255
+   ![alt text](../.images/Software/Creating_new_Robot_Project/image.png)
+3. Set **Repository name** to the format: `YYYY_Robot_Code` or `YYYY_Offbot_Code` for example `2024_Robot_Code` or `2024_Offbot_Code`
+4. Clone the Repo
+5. set merge type restriction
+   - Uncheck all but **Allow squash merging**
+   - ![alt text](../.images/Software/Creating_new_Robot_Project/image-1.png)
+
+6. Set the following settings to be checked off
+   - ![alt text](../.images/Software/Creating_new_Robot_Project/image-2.png)
+
+TODO WIP INSTRUCTIONS:
+
+- add branch rules
+- add build restriction
