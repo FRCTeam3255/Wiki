@@ -4,7 +4,7 @@
     - **Solid Green:** Fully charged
     - **Blinking:** In the process of charging
 
-2. ![image](https://wcproducts.com/cdn/shop/files/WCP-1524_1200x1200.png?v=1705694013)
+2. ![image](https://wcproducts.com/cdn/shop/files/WCP-1524_1200x1200.png?v=1705694013)  
 Use our battery beaks to measure our battery values. Plug the beak into the battery lead and press the button. Ideally, we are looking for the following values:
     - **Battery Charge:** 110% or more
     - **Internal Resistance (Rint):** 0.016 or less
