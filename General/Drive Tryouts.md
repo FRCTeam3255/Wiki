@@ -1,0 +1,11 @@
+- Choose partners
+  - Put 3 pairs in a Drive team (Driver 1/2, Human 1/2, Pit Crew 1/2)
+- Rotate drivers, in partners
+  - Each drive team gets 6 rounds in order to fully cycle through
+  - Even round shift pairs
+  - Odd round partners swap roles
+- Vets Run Autos every match
+- No auto for rookies
+- Run matches in practice mode
+- When your group is not up, you help with field reset
+- FUTURE: take score with stats app
