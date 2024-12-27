@@ -2,25 +2,25 @@
 
 ## Driveteam
 
-Drive Coach
-Driver
-Operator
-Human Player
-Technician
+- Drive Coach
+- Driver
+- Operator
+- Human Player
+- Technician
 
 ## Pit
 
-Pit Crew
-Pit Lead
+- Pit Crew
+- Pit Lead
 
 ## Media
 
-Match Recorder
-Match Playback
-B-roll Recorder
-Pit Rep
+- Match Recorder
+- Match Playback
+- B-roll Recorder
+- Pit Rep
 
 ## Stats
 
-Stats
-Stats Lead
+- Stats
+- Stats Lead
