@@ -10,8 +10,7 @@
 
 !!! important
 
-    **ALL** connection points must have labeled zipties indicating:
-    $\frac{FROM}{TO}$
+    **ALL** connection points (wire on both sides of a connector) must have labeled zipties indicating `FROM DEVICE` and `TO DEVICE` marked with a dividing line. `FROM` is on top `TO` on bottom.
 
 ## Gauge to Breaker Standard
 
