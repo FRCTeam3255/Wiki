@@ -12,15 +12,6 @@
 
     **ALL** connection points (wire on both sides of a connector) must have labeled zipties indicating `FROM DEVICE` and `TO DEVICE` marked with a dividing line. `FROM` is on top `TO` on bottom.
 
-## Gauge to Breaker Standard
-
-| Wire Gauge | Breaker Size                                                                                                                                                                                                                                                                      |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 10 AWG     | [40A 🟠 Breaker](https://www.revrobotics.com/rev-11-1863/)                                                                                                                                                                                                                       |
-| 12 AWG     | [40A 🟠 Breaker](https://www.revrobotics.com/rev-11-1863/)                                                                                                                                                                                                                       |
-| 18 AWG     | [20A 🟡 Breaker](https://www.revrobotics.com/rev-11-1861/)                                                                                                                                                                                                                       |
-| 22 AWG     | 5A Breaker or [10A 🔴 Fuse](https://www.andymark.com/products/10-amp-mini-red-fuse?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMmZ1c2UlMjIlMkMlMjJ1dGY4JTIyJTNBJTIyJUUyJTlDJTkzJTIyJTdE) |
-
 ## Device Connection Details
 
 ### Standard Components
@@ -72,6 +63,15 @@
 | Fuse Ports              | 3        | Control System         |
 | Fuse Ports (Switchable) | 1        | Code controlled On/Off |
 | Breaker Ports           | 20       | Motors                 |
+
+### Gauge to Breaker Standard
+
+| Wire Gauge | Breaker Size                                                                                                                                                                                                                                                                      |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 10 AWG     | [40A 🟠 Breaker](https://www.revrobotics.com/rev-11-1863/)                                                                                                                                                                                                                       |
+| 12 AWG     | [40A 🟠 Breaker](https://www.revrobotics.com/rev-11-1863/)                                                                                                                                                                                                                       |
+| 18 AWG     | [20A 🟡 Breaker](https://www.revrobotics.com/rev-11-1861/)                                                                                                                                                                                                                       |
+| 22 AWG     | 5A Breaker or [10A 🔴 Fuse](https://www.andymark.com/products/10-amp-mini-red-fuse?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMmZ1c2UlMjIlMkMlMjJ1dGY4JTIyJTNBJTIyJUUyJTlDJTkzJTIyJTdE) |
 
 ## Footnotes
 
