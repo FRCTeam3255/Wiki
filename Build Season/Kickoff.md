@@ -36,6 +36,15 @@ A teaching run of kickoff using a past FRC Game.
 
 ### Mock Prep
 
+[Archived Game Manuals](https://www.firstinspires.org/resource-library/frc/archived-game-documentation)
+
+| Real Year | FRC Season to run Mock Kickoff | Type                    |
+| :-------: | :----------------------------: | -----------------------: |
+|   2022    |     2013 - ULTIMATE ASCENT     | Shooting                |
+|   2023    |        2018 - POWER UP         | Pick and Place          |
+|   2024    |       2017 - STEAMWORKS        | Shooting/Pick and Place |
+|   2025    | 2019 - Destination: Deep Space | Pick and Place          |
+
 1. Create Mock Kickoff Google Drive Folder
    1. Share folder via team website
 2. Assign people to past FRC Game Manual Sections
