@@ -127,15 +127,15 @@ A teaching run of kickoff using a past FRC Game.
 - Just read title of evergreen rules
 - Each person reads a paragraph aloud and then group decides what is important for the whole team to know
 
-| #   | Section Name                                                                                                                                 |        Group         |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------- | :------------------: |
-| 1   | Introduction                                                                                                                                 | *Read after meeting* |
-| 2   | FIRST Season Overview                                                                                                                        | *Read after meeting* |
-| 3   | Game Sponsor Recognition                                                                                                                     | *Read after meeting* |
-| 4   | Game Overview (~1pg)                                                                                                                         |       Everyone       |
-| 5   | Arena (~30pgs)<br>Skip FMS section<br>Focus on Field Zones<br>Element Names<br>Focus on Game Zone Locations<br>Focus on Important Dimensions |          1           |
-| 6   | Match Play (~10 pgs)                                                                                                                         |          2           |
-| 7   | Game rules Robots (~10pgs)                                                                                                                   |          2           |
-| 8   | Game Rules Humans (10pgs)<br>                                                                                                                |          3           |
-| 9   | Robot construction (~30pgs)<br>focus on starting config (9.1)                                                                                |          3           |
+| #   | Section Name                                                                                                                                 |        Group         | Mentor |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------- | :------------------: | ------ |
+| 1   | Introduction                                                                                                                                 | *Read after meeting* |        |
+| 2   | FIRST Season Overview                                                                                                                        | *Read after meeting* |        |
+| 3   | Game Sponsor Recognition                                                                                                                     | *Read after meeting* |        |
+| 4   | Game Overview (~1pg)                                                                                                                         |       Everyone       |        |
+| 5   | Arena (~30pgs)<br>Skip FMS section<br>Focus on Field Zones<br>Element Names<br>Focus on Game Zone Locations<br>Focus on Important Dimensions |          1           | Blake  |
+| 7   | Game rules Robots (~10pgs)                                                                                                                   |          1           | Blake  |
+| 8   | Game Rules Humans (10pgs)<br>                                                                                                                |          2           | Eli    |
+| 9   | Robot construction (~30pgs)<br>focus on starting config (9.1)                                                                                |          2           | Eli    |
+| 6   | Match Play (~10 pgs)                                                                                                                         |          3           | Tayler |
 
