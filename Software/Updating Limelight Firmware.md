@@ -29,14 +29,14 @@
     - Connect to robot WiFi
     - Access `limelight.local:5801` in browser
     - Verify firmware version (top-right corner)
-    - ![Network Configuration](../.images/Software\Updating_limelight_firmwhere\limelight.png)
+    - ![Network Configuration](../.images/Software/Updating_limelight_firmwhere/limelight.png)
 
 5. Network Configuration
     - Navigate to Settings tab
     - Update team number to 3255
-    - ![Network Configuration](../.images/Software\Updating_limelight_firmwhere\team_number.png)
+    - ![Network Configuration](../.images/Software/Updating_limelight_firmwhere/team_number.png)
     - Configure IP address settings
-    ![IP Address Settings](../.images/Software\Updating_limelight_firmwhere\ip_adress_settings.png)
+    ![IP Address Settings](../.images/Software/Updating_limelight_firmwhere/ip_adress_settings.png)
 
 6. Final Steps
     - Power cycle robot
@@ -48,9 +48,9 @@
 1. Pipeline Setup
     - Switch to Pipelines tab
     - Set pipeline type to AprilTags:
-    - ![Pipeline Settings](../.images/Software\Updating_limelight_firmwhere\image.png)
+    - ![Pipeline Settings](../.images/Software/Updating_limelight_firmwhere/image.png)
     - Enable full 3D targeting
-    ![Network Configuration](../.images/Software\Updating_limelight_firmwhere\firefox_yjlFjB9nba.gif)
+    ![Network Configuration](../.images/Software/Updating_limelight_firmwhere/firefox_yjlFjB9nba.gif)
 
 2. Field Configuration
     - Configure MegaTag Field-Space Localization
