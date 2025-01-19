@@ -1,102 +1,29 @@
 # Naming Conventions
-
-## General
-
 - Classes should be UpperCamelCase
 - Methods should be lowerCamelCase
 - Local & Instance Variables should be lowerCamelCase
 
----
+## RobotContainer Naming Conventions
 
-## Units
-
-| Unit Type | Preferred Unit to Use |
-| ---------- | ------------ |
-| Distance | Meters |
-| Distance per Time  | Meters per Second |
-| Angle | Degrees |
-| Angle per Time | Degrees per Second |
-| Time | Seconds |
-
-- If the unit does not fall under any of these types and is not readily apparent from the variable type/name, add a JavaDoc for that variable specifying it's unit. Avoid unnecessarily specifying units in the variable name.
-
-Example: ❌
-
+Controllers should be named `con` followed by the controller type.
 ```java
-public static final double CURRENT_LIMIT_FLOOR_AMPS = 1; // Floor: What we limit it to
+private final SN_XboxController conDriver = new SN_XboxController(mapControllers.DRIVER_USB);
+```
+Subsystems should be named `sub` followed by the subsystem name.
+```java
+private static final Drivetrain subDrivetrain = new Drivetrain();
+```
+A test controller should always be added, using the same controller bindings as the regular operator controller, but bypassing the State Machine. 
+
+Driver and operator bindings should be declared using separate methods. 
+```java
+configureDriverBindings(conDriver);
+configureOperatorBindings(conOperator);
 ```
 
-Example: ✔
+## RobotMap Naming Conventions
 
-```java
-/**
-* Floor: What we limit it to
-* Unit: Amps
-*/
-public static final double CURRENT_LIMIT_FLOOR = 1; 
-```
-
-- If you need to do any unit conversions to follow these conventions, do them in code using the Units class whenever possible. Avoid converting values outside of the code project.
-
----
-
-## Logging Values
-
-- In a subsystem, values should be logged with the string beginning with **"SubsystemName/"**. This creates groups in SmartDashboard. </p>
-Example:
-
-```java
-SmartDashboard.putNumber("Drivetrain/Roll", getRoll());
-```
-
----
-
-## Constants
-
-- The Constants class should contain subclasses for each subsystem. The subclasses should be in alphabetical order.
-
-Example:
-
-```java
-public final class Constants {
-    public static final class constControllers {
-        public static final double DRIVER_LEFT_STICK_X_DEADBAND = 0.05;
-  }
-}
-```
-
-- All Constants should be **SCREAMING_SNAKE_CASE**
-- Variable names should avoid specifying which subsystem they belong to.
-
-Example: ❌
-
-```java
-public static final class constWrist {
-    /**
-    * Floor: What we limit it to
-    * Unit: Amps
-    */
-    public static final double WRIST_CURRENT_LIMIT_FLOOR = 1; 
-}
-```
-
-Example: ✔
-
-```java
-public static final class constWrist {
-    /**
-    * Floor: What we limit it to
-    * Unit: Amps
-    */
-    public static final double CURRENT_LIMIT_FLOOR = 1; 
-}
-```
-
----
-
-## RobotMap
-
-- The RobotMap class should contain subclasses for each subsystem. The subclasses should be in alphabetical order.
+- The RobotMap class should contain subclasses for **every** subsystem. 
 
 Example:
 
@@ -108,8 +35,8 @@ public class RobotMap {
 ```
 
 - All ports should be **SCREAMING_SNAKE_CASE**.
-- Each port should specify which type of port it is in its variable name. Example types: CAN, DIO, USB
-- Variable names should avoid specifying which subsystem they belong to.
+- Each port name should follow this naming scheme: `DEVICETYPE_LOCATION_CONNECTIONTYPE`. Common connection types include: `CAN, DIO, USB`
+- Variable names should avoid specifying which subsystem they belong to, as that information is redundant when they're referenced.
 
 Example: ❌
 
@@ -127,59 +54,89 @@ public static final class mapWrist {
 }
 ```
 
----
+## Constants Naming Conventions
 
-## RobotPreferences
-
-- The RobotPreferences class should contain subclasses for each subsystem. The subclasses should be in alphabetical order.
+- The Constants class should contain subclasses for each subsystem.
 
 Example:
 
 ```java
-public class RobotPreferences {
-    public static final class prefWrist {
-    }
+public final class Constants {
+    public static final class constControllers {
+        public static final double DRIVER_LEFT_STICK_X_DEADBAND = 0.05;
+  }
 }
 ```
 
-- All preferences should be **lowerCamelCase**.
-- Variable names **must** specify which subsystem they belong to, as they need to be unique.
-- Variable names **must** match their SmartDashboard name.
+- All Constants should be **SCREAMING_SNAKE_CASE**
+- Each constant name should follow this naming scheme: `PURPOSE_DESCRIPTION`, where the purpose is what the variable is used for (ex. `OUTTAKE`, `DETECT`, `CONIFG`) while the description includes the minimum amount of details to remove ambiguity (ex. `SPEED`, `DISTANCE`, `TOLERANCE`)
+- **Every** motor **must** have a new TalonFX configuration that is set to the motor. The actual configuration should be done in Constants.
+```java
+ public static TalonFXConfiguration ELEVATOR_CONFIG = new TalonFXConfiguration();
+    static {
+      ELEVATOR_CONFIG.MotorOutput.NeutralMode = NeutralModeValue.Brake;
+      ELEVATOR_CONFIG.MotorOutput.Inverted = InvertedValue.Clockwise_Positive;
+      ... more configurations
+    }
+```
+- Variable names should avoid specifying which subsystem they belong to, as that information is redundant when they're referenced.
 
 Example: ❌
 
 ```java
-public static final class mapWrist {
-    public static final SN_DoublePreference ANGLE_TOLERANCE = new SN_DoublePreference("AngleTolerance", 2);
+public static final class constWrist {
+    public static final double WRIST_CURRENT_LIMIT_FLOOR = 1; 
 }
 ```
 
 Example: ✔
 
 ```java
-public static final class mapWrist {
-    public static final SN_DoublePreference wristAngleTolerance = new SN_DoublePreference("wristAngleTolerance", 2);
+public static final class constWrist {
+    public static final double CURRENT_LIMIT_FLOOR = 1; 
 }
+```
+---
+# Units
+
+- Use WPILib's `Units` class to avoid ambiguity whenever possible
+- If you need to do any unit conversions, do them in code using the Units class. Avoid converting values outside of the code project.
+
+Example: ❌
+
+```java
+public static final Distance WHEEL_DIAMETER = Units.Inches.of(3.98);
+public static final double WHEEL_CIRCUMFERENCE = 0.31742888;
+```
+
+Example: ✔
+
+```java
+public static final Distance WHEEL_DIAMETER = Units.Inches.of(3.98);
+public static final double WHEEL_CIRCUMFERENCE = WHEEL_DIAMETER.in(Units.Meters) * Math.PI;
 ```
 
 ---
+# Logging
+All subsystems should include a `@Logged` declaration on top of the class header.
+```java
+@Logged
+public class RobotContainer {
+```
 
-## RobotContainer
+# Importing
+- When possible, modify imports to include  `.*` from large files rather than importing the individual classes within that file.
 
-Controller bindings in configureBindings() should be separated by Controller. If possible, reference a diagram of the controls in the separator.
-
-Example:
+Example: ❌
 
 ```java
-private void configureBindings() {
-    // Driver Controller
-    // Diagram: assets\driverControls23.png
+import frc.robot.subsystems.AlgaeIntake;
+import frc.robot.subsystems.CoralOuttake;
+import frc.robot.subsystems.Drivetrain;
+```
 
-    conDriver.btn_Back... (more controls here)
+Example: ✔
 
-    // Operator Controller
-    // Diagram: assets\operatorControls23.png
-
-    conOperator.btn_Back... (more controls here)
-}
+```java
+import frc.robot.subsystems.*;
 ```
