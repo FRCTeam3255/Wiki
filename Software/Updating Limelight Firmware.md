@@ -54,7 +54,7 @@
 
 2. Field Configuration
     - Configure MegaTag Field-Space Localization
-    - Set robot constants (based on [WPILib Robot coordinate system](https://docs.limelightvision.io/docs/docs-limelight/getting-started/FRC/networking#set-ip-address))
+    - Set robot constants (based on [WPILib Robot coordinate system](https://docs.wpilib.org/en/stable/docs/software/basic-programming/coordinate-system.html#wpilib-coordinate-system))
     - Upload field map file
 
 3. Finalization
