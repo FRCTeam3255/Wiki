@@ -35,7 +35,7 @@
     - I = 0.0
     - D = 0.0
 3. Tune rotation P value until turn is consistent
-4. If slight overshooting occurs, add B (feed-forward) value
+4. If slight overshooting occurs, add D value
 
 ## Completion
 - Once satisfied with performance, commit the changes to your GitHub branch
