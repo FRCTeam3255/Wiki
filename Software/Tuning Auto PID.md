@@ -26,7 +26,7 @@
 3. Extend the test distance to 2 meters
 4. Verify performance at longer distance
 5. Further tune if needed
-6. If slight overshooting occurs, add B (feed-forward) value
+6. If slight overshooting occurs, add D value
 
 ### Rotation Tuning
 1. Modify autonomous path to include 180-degree in place rotation
