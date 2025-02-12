@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Tayler Uva" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Updating Limelight Firmware - SN Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Updating Limelight Firmware";
+        var mkdocs_page_input_path = "Software/Updating Limelight Firmware.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../.images/SN White Text Logo.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../.." >SuperNURDs Internal Wiki</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Build Season</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Deciding%20Designs%20%28Monday%29/" >Robot Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Kickoff/" >Kickoff Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Team%20Photo/" >Team Photo</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Competition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Drive%20Tryouts/" >Drive Tryouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Pit%20Packing/" >Pit Packing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Role%20Definitions/" >Competition Roles</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Electrical</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Component%20Mounting/" >Component Mounting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Selecting%20a%20Battery/" >Selecting a Battery</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Wiring%20Cheat%20Sheet/" >Wiring Cheat Sheet</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Fabrication</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/Assembly%20Standard/" >Assembly Standard</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/Bumpers/" >Bumper Construction</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Computer%20Programs/" >Computer Programs Used</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Standard%20Purchases/" >Standard Purchases</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/Downloading%20Projects/" >Downloading GitHub Projects</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Mechanical</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Mechanical/Bolt%20to%20Tool%20Lookup/" >Bolt to Tool Lookup</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Media and Comms</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Graphic Design [Expand Me]</a> <ul>
+  <li class="toctree-l2"><a class="reference internal" href="../../Media%20and%20Comms/Graphic%20Design%20%5BExpand%20Me%5D/Basics/" >Basics</a>
+  </li>
+  <li class="toctree-l2"><a class="reference internal" href="../../Media%20and%20Comms/Graphic%20Design%20%5BExpand%20Me%5D/Branding/" >Branding Guide</a>
+  </li>
+  <li class="toctree-l2"><a class="reference internal" href="../../Media%20and%20Comms/Graphic%20Design%20%5BExpand%20Me%5D/Completed%20Graphics/" >Completed Graphics</a>
+  </li>
+  </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Website [Expand Me]</a> <ul>
+  <li class="toctree-l2"><a class="reference internal" href="../../Media%20and%20Comms/Website%20%5BExpand%20Me%5D/Logging%20In/" >Logging In</a>
+  </li>
+  <li class="toctree-l2"><a class="reference internal" href="../../Media%20and%20Comms/Website%20%5BExpand%20Me%5D/Updating%20Blog/" >Updating the Blog</a>
+  </li>
+  <li class="toctree-l2"><a class="reference internal" href="../../Media%20and%20Comms/Website%20%5BExpand%20Me%5D/Updating%20Page%20Content/" >Updating Dynamic Pages</a>
+  </li>
+  </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Configuring%20the%20Radio/" >Configuring the Radio</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Conventions/" >Naming Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Creating%20new%20Robot%20Project/" >Creating new Robot Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub%20Standards/" >GitHub Standards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Swoffsets/" >Swoffsets (Swerve Offsets)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tuning%20Auto%20PID/" >Tuning Auto PID</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#" >Updating Limelight Firmware</a> <ul class="current" >
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#initial-setup">Initial Setup</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#apriltag-configuration">AprilTag Configuration</a>
+    </li>
+  </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Vendor%20Libraries/" >Vendor Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../WPILib%20Install/" >WPILib Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Stats</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/App%20Setup/" >App Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/Training/" >Training</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/War%20Room/" >War Room</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">SN Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Software</li>
+      <li class="breadcrumb-item active">Updating Limelight Firmware</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/FRCTeam3255/Wiki/edit/main/Software/Updating Limelight Firmware.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="updating-limelight-firmware">Updating Limelight Firmware</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Laptop with Balena Etcher installed</li>
+<li>USB Type C Cable</li>
+</ul>
+<h2 id="initial-setup">Initial Setup</h2>
+<ol>
+<li>
+<p>Download Required Files</p>
+<ul>
+<li>Visit the <a href="https://limelightvision.io/pages/downloads">Limelight Downloads Page</a></li>
+<li>Download Limelight OS</li>
+<li>Download AprilTag Map</li>
+</ul>
+</li>
+<li>
+<p>Prepare Limelight Connection</p>
+<ul>
+<li>Power off the robot</li>
+<li>Hold down the red button on Limelight</li>
+<li>Connect USB Type C cable to laptop (while holding down red button)</li>
+</ul>
+</li>
+<li>
+<p>Flash Firmware</p>
+<ul>
+<li>Launch <a href="https://etcher.balena.io/">Balena Etcher</a> as administrator</li>
+<li><strong>Important:</strong> Do NOT format when prompted</li>
+<li>Select "Flash from file" and choose Limelight OS</li>
+<li>Choose Limelight as target device</li>
+<li>Click "Flash" and wait for completion</li>
+</ul>
+</li>
+<li>
+<p>Initial Configuration</p>
+<ul>
+<li>Disconnect Limelight from your laptop</li>
+<li>Power on robot</li>
+<li>Connect to robot WiFi</li>
+<li>Access <code>limelight.local:5801</code> in browser</li>
+<li>Verify firmware version (top-right corner)</li>
+<li><img alt="Network Configuration" src="../../.images/Software/Updating_limelight_firmwhere/limelight.png" /></li>
+</ul>
+</li>
+<li>
+<p>Network Configuration</p>
+<ul>
+<li>Navigate to Settings tab</li>
+<li>Update team number to 3255</li>
+<li><img alt="Network Configuration" src="../../.images/Software/Updating_limelight_firmwhere/team_number.png" /></li>
+<li>Configure IP address settings
+<img alt="IP Address Settings" src="../../.images/Software/Updating_limelight_firmwhere/ip_adress_settings.png" /></li>
+</ul>
+</li>
+<li>
+<p>Final Steps</p>
+<ul>
+<li>Power cycle robot</li>
+<li>Reconnect to robot</li>
+<li>Access the limelight in browser at <code>10.32.55.11:5801</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="apriltag-configuration">AprilTag Configuration</h2>
+<ol>
+<li>
+<p>Pipeline Setup</p>
+<ul>
+<li>Switch to Pipelines tab</li>
+<li>Set pipeline type to AprilTags:</li>
+<li><img alt="Pipeline Settings" src="../../.images/Software/Updating_limelight_firmwhere/image.png" /></li>
+<li>Enable full 3D targeting
+<img alt="Network Configuration" src="../../.images/Software/Updating_limelight_firmwhere/firefox_yjlFjB9nba.gif" /></li>
+</ul>
+</li>
+<li>
+<p>Field Configuration</p>
+<ul>
+<li>Configure MegaTag Field-Space Localization</li>
+<li>Set robot constants (based on <a href="https://docs.wpilib.org/en/stable/docs/software/basic-programming/coordinate-system.html#wpilib-coordinate-system">WPILib Robot coordinate system</a>)</li>
+<li>Upload field map file</li>
+</ul>
+</li>
+<li>
+<p>Finalization</p>
+<ul>
+<li>Your limelight is now ready to tune at competition!</li>
+<li>Adjust input settings as needed, depending on light settings, lens focus, ect. </li>
+</ul>
+</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Tuning%20Auto%20PID/" class="btn btn-neutral float-left" title="Tuning Auto PID"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Vendor%20Libraries/" class="btn btn-neutral float-right" title="Vendor Libraries">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/FRCTeam3255/Wiki" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Tuning%20Auto%20PID/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Vendor%20Libraries/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
