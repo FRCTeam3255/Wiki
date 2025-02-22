@@ -1,4 +1,4 @@
-# Breaker Wiring.md
+# Breaker Wiring
 ## Supply list needed 
 1. 7/16 socket 
 2. socket wrench  
