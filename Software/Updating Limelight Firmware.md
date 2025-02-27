@@ -6,6 +6,11 @@
 
 ## Initial Setup
 
+!!! important
+
+    **Capture existing limelight postions via export settings (also screenshot and writen in code)**
+    - they will be deleted after flashing so it is crucial to capture them
+
 1. Download Required Files
     - Visit the [Limelight Downloads Page](https://limelightvision.io/pages/downloads)
     - Download Limelight OS
