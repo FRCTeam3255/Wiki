@@ -6,7 +6,9 @@
 
 ## Initial Setup
 
-0. **Capture existing limelight postions (screen shot and writen in code)**
+!!! important
+
+    **Capture existing limelight postions (screen shot and writen in code)**
     - they will be deleted after flashing so it is crucial to capture them
 
 1. Download Required Files
