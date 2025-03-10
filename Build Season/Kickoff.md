@@ -70,18 +70,20 @@ A teaching run of kickoff using a past FRC Game.
 |   Time   | Duration |                                                                                                                                                                                   |
 | :------: | :------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 9:00 am  |  15 min  | Students arrive <br>discuss how holiday break was                                                                                                                                 |
-| 9:15 am  |  45 min  | Discuss build season expectations and schedule                                                                                                                                    |
-| 10:00 am |  30 min  | Watch Game Animation & Field Videos<br>Take notes                                                                                                                                 |
-| 10:30 am |  10 min  | Unbox KoP (Put old game pieces in tote and pass around)                                                                                                                           |
-| 10:40 am |  45 min  | Regroup/Game Manual Breakdown <br>Break into groups read aloud <br>document important items into group’s folder                                                                   |
-| 11:25 am |  45 min  | Present group findings creating a master list <br>(have group that presents match play and game rules go last)                                                                    |
-| 12:10 pm |  50 min  | Lunch Break                                                                                                                                                                       |
-| 1:00 pm  |  1.5 hr  | Scoring method Analysis <br>(**ranking points vs match points**)<br>(point calculations/combinations, look at density, looking at auto vs teleop)<br>(Do RP become match points?) |
-| 2:30 pm  |  30 min  | Feature importance List creation <br>(features are ability that our robot has that drive the design) <br>(ex. score high, mid, low, all autonomous)                               |
-| 3:00 pm  |  30 min  | Feature importance list rankings                                                                                                                                                  |
-| 3:30 pm  |   1 hr   | General Robot Architecture                                                                                                                                                        |
-| 4:30 pm  |  30 min  | Q&A and debrief                                                                                                                                                                   |
-| 5:00 pm  |    -     | End Mock Kick off                                                                                                                                                                 |
+| 9:15 am  |  10 min  | Show Videos:<br>[SuperNURDs 10 Year Anniversary](https://www.youtube.com/watch?v=W35IwdE_Zh0)<br>[Robowranglers: Fail Again](https://www.youtube.com/watch?v=8yn2CbQUlTI)         |
+| 9:15 am  |  1.5 hr  | Discuss build season expectations and schedule                                                                                                                                    |
+| 10:45 am |  30 min  | Watch Game Animation & Field Videos<br>Take notes                                                                                                                                 |
+| 11:15 am |  10 min  | Unbox KoP (Put old game pieces in tote and pass around)                                                                                                                           |
+| 11:25 am |  45 min  | Regroup/Game Manual Breakdown <br>Break into groups read aloud <br>document important items into group’s folder                                                                   |
+| 12:10 pm |  50 min  | Lunch Break (spill over)                                                                                                                                                          |
+| 1:00 pm  |  50 min  | Present group findings creating a master list <br>(have group that presents match play and game rules go last)                                                                    |
+| 2:00 pm  |   1 hr   | Scoring method Analysis <br>(**ranking points vs match points**)<br>(point calculations/combinations, look at density, looking at auto vs teleop)<br>(Do RP become match points?) |
+| 3:00 pm  |  1.5 hr  | Feature importance List creation <br>(features are ability that our robot has that drive the design) <br>(ex. score high, mid, low, all autonomous)                               |
+| 4:30 pm  |  15 min  | Q&A and debrief                                                                                                                                                                   |
+| 4:45 pm  |  45 min  | Feature importance list rankings (Monday Practice)                                                                                                                                |
+| 5:30 pm  |  15 min  | Game piece interaction prototyping and Video/part research                                                                                                                        |
+| 5:45 pm  |   1 hr   | General Robot Architecture (Monday Practice)                                                                                                                                      |
+| 6:45 pm  |    -     | End Mock Kick off                                                                                                                                                                 |
 
 ## Kickoff
 

@@ -4,27 +4,42 @@ This occurs the Monday following kickoff
 
 ## Agenda
 
-|   Time   | Duration |                                                |
-| :------: | :------: | ---------------------------------------------- |
-| 9:00 am  |  30 min  | Review weekend insights                        |
-| 9:30 am  |  30 min  | Re-watch game animation/field tours            |
-| 10:00 am |  30 min  | Run a “robot” doing cycles on field            |
-| 10:30 am |  30 min  | Finish feature importance list if not complete |
-| 11:00 am |   2 hr   | Rank feature importance list                   |
-| 1:00 pm  |   1 hr   | Lunch                                          |
-| 2:00 pm  |   1 hr   | Continue Rank feature importance list          |
-| 3:00 pm  |   2 hr   | General Robot Architecture Creation            |
-| 5:00 pm  |   2 hr   | General Robot Architecture Rankings/Decision   |
-| 6:00 pm  |   3 hr   | Variable prototyping                           |
-| 9:00 pm  |    -     | Meeting end                                    |
+### Monday
 
-<!-- | 4:00 pm  |          | **Mechanical:** Design discussion [see below](#design-discussion) |
-| 4:00 pm  |          | **Software:** Skeleton Robot                                      | -->
+|   Time   | Duration |                                                                                              |
+| :------: | :------: | -------------------------------------------------------------------------------------------- |
+| 9:00 am  |  30 min  | Review weekend insights                                                                      |
+| 9:30 am  |  30 min  | Re-watch game animation/field tours                                                          |
+| 10:00 am |  1.5 hr  | Run a “robot” doing cycles on field                                                          |
+| 11:30 am |  30 min  | Robot cycle analysis                                                                         |
+| 12:00 am |  30 min  | Add to feature importance                                                                    |
+| 12:30 am |  30 min  | Rank feature importance list                                                                 |
+| 1:00 pm  |  30 min  | Lunch                                                                                        |
+| 1:30 pm  |  2.5 hr  | Finish Rank feature importance list                                                          |
+| 4:00 pm  |  15 min  | Break (Mentors create Architecture Groups)                                                   |
+| 4:15 pm  | 1.75 hr  | General Robot Architecture Creation - Round 1                                                |
+| 6:00 pm  |  30 min  | Dinner                                                                                       |
+| 6:30 pm  |   2 hr   | General Round 1 Robot Architecture Presentation<br>Consolidation/Feature Importance Checkoff |
+| 8:30 pm  |  30 min  | Clean up                                                                                     |
+| 9:00 pm  |    -     | Meeting ends                                                                                  |
 
-- General Robot Architecture Creation (Details next slide)
-- General Robot Architecture Rankings/Decision (Details next slide)
-- Break Architecture into Mechanisms
-- Begin prototyping(Details next slide)
+### Tuesday
+
+|  Time   | Duration |                                                                                                                                                         |
+| :-----: | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2:30 pm |  15 min  | Review Team Updates (Manual Updates)<br>Re-watch game animation                                                                                         |
+| 2:45 pm |  15 min  | Review feature importance list                                                                                                                          |
+| 3:00 pm |  50 min  | Re-present concept ideas                                                                                                                                |
+| 3:50 pm |   1 hr   | Break into two groups                                                                                                                                   |
+| 4:50 pm |  40 min  | Present ideas<br>15 min per group<br>Last 5 min,cover feature importance list                                                                           |
+| 5:30 pm |  15 min  | Break                                                                                                                                                   |
+| 5:45 pm |  15 min  | Find similarities and differences<br>Similarities are locked in                                                                                         |
+| 6:00 pm |  30 min  | Comparative analysis spreadsheet of differences (features vs complexity)<br>Define ACTIONS of contention<br>Break down by mutually exclusive mechanisms |
+| 6:30 pm |  15 min  | Design Decided, Split Architecture into Mechanisms                                                                                                      |
+| 6:45 pm |  15 min  | Break<br>Mentors Make Mechanism groups                                                                                                                  |
+| 7:00 pm |  30 min  | Work on base structures/variable prototypes in groups<br>Software creates base robot/structures code                                                    |
+| 7:30 pm |  15 min  | Clean up                                                                                                                                                |
+| 7:45 pm |    -     | Meeting ends                                                                                                                                            |
 
 <!-- - 45 min per section research, 10 min per group presentation
 - 3 groups Generate robot architecture based on ideas presented
@@ -33,10 +48,6 @@ This occurs the Monday following kickoff
 - Create prototypes
   - If prototype doesn't work for category, pick from previous ideas (I.e. collector A didn't work, try collector B)
 - Decide final design -->
-
-<!-- ?????? HOW CAN WE SPEED UP RANKING? took too long and people got tired
-
-********************* -->
 
 <!-- ## Design Discussion
 
@@ -65,6 +76,18 @@ This occurs the Monday following kickoff
 5. Think optimizations/extras for each component (major competitive advantage/cycle time reduction)
     1. Turrets, hoods, ability to do two motions at once, game piece orientation changing (flip cone), etc.
 6. What things can be combined/simplified -->
+
+## Feature ranking
+
+- assume solo robot
+- no difficulty
+- all features in isolation (one does not affect another) (most of the time)
+- rank 5 = Minimum Viable Robot (regional 1)
+- rank 4 = Competitive Robot (regional 1)
+- rank 3 = Optimizations (target regional 1)
+- rank 2 = try to do it but not too hard (optional)
+- rank 1 = if its free do it (optional)
+- rank 0 = not doing - wont even test
 
 ## Philosophy
 
@@ -142,3 +165,11 @@ How to research robot designs (suggested order)
 4. Watch robot reveals
 5. Behind the bumpers
 6. Look at Ri3D
+
+## Variable prototypes designs
+
+- Compression values, rough geometry
+- On slots, 8020, hole patterns etc.
+- Mounts to frame, for electronics
+- Made out of HDPE
+
