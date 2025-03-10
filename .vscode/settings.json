@@ -3,12 +3,19 @@
 		"Brainbox",
 		"Buckboost",
 		"Clecos",
-		"Nivore",
 		"Driverstation",
+		"HDPE",
+		"Nivore",
 		"robo",
 		"WAGO"
 	],
 	"MarkdownPaste.path": "${workspaceRoot}/.images/${relativeFileDirname}/${fileBasenameNoExtension}/",
 	"editor.wordWrap": "off",
 	"diffEditor.wordWrap": "off",
+	"files.exclude": {
+		"**/*.rpyc": true,
+		"**/*.rpa": true,
+		"**/*.rpymc": true,
+		"**/cache/": true
+	},
 }
