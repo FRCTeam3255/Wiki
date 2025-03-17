@@ -15,7 +15,7 @@ See [Bolt to Tool Lookup](../Mechanical/Bolt%20to%20Tool%20Lookup.md) for tools 
 | CANdle                           |                                                                                                    |              |
 | Ethernet service ports           | 4-40 Bolts                                                                                        |              |
 | roboRIO                          | 4-40 Bolts                                                                                        |              |
-| CANivore                         | 6-32 Bolts                                                                                        |              |
+| CANivore                         | 4-40 Bolts                                                                                        |              |
 | Pigeon 2                         | 4-40 Bolts                                                                                        | 3/4" length  |
 | Breaker Lugs                     | 1/4-28 Starnut (7/16th socket)                                                                     |              |
 | Limelight                        | 10-32 Bolts                                                                                       |              |
