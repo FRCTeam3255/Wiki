@@ -23,7 +23,7 @@ Whichever side you choose, you need to keep it consistent across *both robots (c
 1. Pick a side to be the front!
 2. Take Gaff tape and *physically label* the front of the robot so that it's visible from the underside
 3. Also label the **robot's** left & right. This saves lots of headaches later. 
-> If you're looking at the underside, this will be the OPPOSITE of *your* left and right, since they're relative to where the robot's left is when it's on the ground. Reference the [WPILib Robot coordinate system](https://docs.limelightvision.io/docs/docs-limelight/getting-started/FRC/networking#set-ip-address); The robot's left is positive on the y axis. 
+> If you're looking at the underside, this may not match *your* left and right, since they're relative to where the robot's left is when it's on the ground. This depends on how the robot is tipped over. Reference the [WPILib Robot coordinate system](https://docs.limelightvision.io/docs/docs-limelight/getting-started/FRC/networking#set-ip-address); The robot's left is positive on the y axis. 
 4. Put small labels near each module to indicate if they're `Front Left (0), Front Right (1), Back Left (2), or Back Right (3)`. 
 5. Using Phoenix Tuner, set the CAN id's & names of all Motors & CANCoders to match their physical location. Make sure their ids match the ones in your codebase's `RobotMap.java`.
 
