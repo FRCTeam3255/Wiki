@@ -63,3 +63,6 @@ Whichever side you choose, you need to keep it consistent across *both robots (c
 - **Robot doesn't drive in the correct direction, but all of the wheels face the same way.**
 *Example: Moving up on the stick makes the robot go backwards*
     - You've likely done swoffsets incorrectly or mapped the modules incorrectly. Check that your *front left* module in code is mapped to the module on the robot's front left. Repeat for all of your modules. Then, redo your swoffsets and make sure you orient the wheels in the correct direction!
+-**Robot starts driving correctly on boot, but wheel(s) excessively drift over time.**
+    - Reboot the robot. If the robot begins driving correctly again on boot, this eliminates the CANCoder as the issue. If not, ensure that the magnet was glued when installing the module.
+    - Otherwise, there is likely something mechanically wrong with the module. This is typically an issue with the bearing or the belt. 
