@@ -34,6 +34,7 @@ Whichever side you choose, you need to keep it consistent across *both robots (c
 3. Identify the *front right and back right* swerve modules
 4. Rotate *both* Bevels to face the robot's **right**
     - Bevels are the spiky lookin gear things on the side of the wheel. They're on the opposite side of where you're going to put the swoffset block
+    - ![Diagram](../.images/Software/Swoffsets/swoffset_diagram.png)
 5. Insert the Swoffset blocks into those modules, pressing it in until it matches the image below. Then, press your straightedge into the flat part of the blocks to ensure that the modules are straight.
     - ![Swoffset Blocks](../.images/Software/Swoffsets/IMG_8986.jpg)
     - ![Straightedge](../.images/Software/Swoffsets/IMG_8987.jpg)
