@@ -51,7 +51,15 @@ Whichever side you choose, you need to keep it consistent across *both robots (c
 1. Redeploy code to the robot, now with the correct offsets
 2. Open AdvantageScope and navigate to the `Swerve` tab
 3. Drag over the `Desired States` and `Actual States` to `Sources` on the bottom of the window 
-4. Open Driverstation, connect a controller, and begin driving
+4. Open Driverstation, connect a controller, reset your pose to be relative to you, then begin driving
 5. If pressing up on the joystick makes the robot drive forwards, you've done swoffsets correctly! 🎉
 6. Verify that the `Desired States` mostly match the `Actual States` using the AdvantageScope UI. Revel in how cool they look. Then go get some fruit snacks because you've earned it 😎
 ![AdvantageScope](../.images/Software/Swoffsets/AdvantageScope_(WPILib)_HAoyjhRLd6.png)
+
+## Common Failures:
+- **Wheel(s) go in "random" directions.**
+    - You may have mapped the wrong offsets to the wrong modules. Check that your *front left* module in code is mapped to the module on the robot's front left. Check that the offset you got from that module in glass was set to the same module in code. Repeat for all the modules.
+    - Another possible issue is a hardware issue with the CANCoder. Ensure that the magnet was glued when installing the module. An un-glued magnet will cause your module to slowly drift.
+- **Robot doesn't drive in the correct direction, but all of the wheels face the same way.**
+*Example: Moving up on the stick makes the robot go backwards*
+    - You've likely done swoffsets incorrectly or mapped the modules incorrectly. Check that your *front left* module in code is mapped to the module on the robot's front left. Repeat for all of your modules. Then, redo your swoffsets and make sure you orient the wheels in the correct direction!
