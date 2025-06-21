@@ -6,7 +6,9 @@
 		"Driverstation",
 		"HDPE",
 		"Nivore",
+		"playhead",
 		"robo",
+		"SPACEBAR",
 		"WAGO"
 	],
 	"MarkdownPaste.path": "${workspaceRoot}/.images/${relativeFileDirname}/${fileBasenameNoExtension}/",
