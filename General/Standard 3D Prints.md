@@ -1,4 +1,4 @@
-# Standard Prints
+# Standard 3D Prints
 
 ## Mechanical
 
