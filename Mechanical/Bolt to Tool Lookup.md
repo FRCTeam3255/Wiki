@@ -17,6 +17,7 @@
 | 10-32    | [Button](#button-head) |                       | 3/8             | 3/16           |
 | 3/8-16   | [Socket](#socket-head) |                       | 9/16            | 3/8            |
 | M3 x 0.5 | [Socket](#socket-head) |                       |                 |                |
+| MRV 6-32 |                        | 7/64                  | 5/16            | 9/64           |
 
 ## Bolt Head Type
 
