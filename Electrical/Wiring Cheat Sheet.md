@@ -43,10 +43,10 @@
 | Device                                                                                             | Wire                         | Connects to                |
 | -------------------------------------------------------------------------------------------------- | ---------------------------- | -------------------------- |
 | [CANivore](https://store.ctr-electronics.com/canivore/)                                            | USB C to A                   | RIO USB                    |
-| [Pigeon 2.0](https://store.ctr-electronics.com/pigeon-2/)                                              | Built in 22 AWG 🟢🟡       | CANivore 🟢🟡            |
+| [Pigeon 2.0](https://store.ctr-electronics.com/pigeon-2/)                                          | Built in 22 AWG 🟢🟡       | CANivore 🟢🟡            |
 | [CANcoder](https://store.ctr-electronics.com/cancoder/)                                            | 18 AWG - 4 Conductor[^4cond] | Pigeon Builtin Wire 🟢🟡 |
-| [roboRIO](https://www.ni.com/docs/en-US/bundle/roborio-frc-specs/page/specs.html)                  | Ethernet                     | Radio RIO Port             |
-| [Limelight (POE via Radio)](https://limelightvision.io/collections/products/products/limelight-3g) | Ethernet                     | Radio AUX1/2 Port      |
+| [roboRIO](https://www.ni.com/docs/en-US/bundle/roborio-frc-specs/page/specs.html)                  | Ethernet (CAT 5e or better)  | Radio RIO Port             |
+| [Limelight (POE via Radio)](https://limelightvision.io/collections/products/products/limelight-3g) | Ethernet (CAT 5e or better)  | Radio AUX1/2 Port          |
 
 ### Nonstandard Components (No Longer Used)
 
