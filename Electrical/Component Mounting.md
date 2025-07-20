@@ -29,3 +29,4 @@ See [Bolt to Tool Lookup](../Mechanical/Bolt%20to%20Tool%20Lookup.md) for tools 
 | Brainbox Network Switch | 4-40 Bolts     |              |
 | RPM                     | 8-32 Bolts     |              |
 | Neo550                  | M3 x 0.5 Bolts | 8mm          |
+| VRM                     | 6-32           |              |
