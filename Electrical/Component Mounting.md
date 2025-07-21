@@ -5,21 +5,21 @@ See [Bolt to Tool Lookup](../Mechanical/Bolt%20to%20Tool%20Lookup.md) for tools 
 ## Standard Components
 
 | Device                           | Bolt/Nut Size                                                                                     | Bolt Length |
-| -------------------------------- | -------------------------------------------------------------------------------------------------- | ------------ |
-| Battery Lugs                     | [Grasshopper Nut](https://www.thethriftybot.com/products/grasshopper-nut) (Integrated 10-32 Bolt) | N/A          |
-| Kraken **Motors**                |                                                                                                    |              |
-| Kraken **Cover**                 | 4-40 Bolts                                                                                        | 3/4" length  |
-| Kraken ***Power* Ring Terminal** |                                                                                                    |              |
-| Kraken ***CAN* Ring Terminal**   |                                                                                                    |              |
-| Falcon Motors                    |                                                                                                    |              |
-| CANdle                           |                                                                                                    |              |
-| Ethernet service ports           | 4-40 Bolts                                                                                        |              |
-| roboRIO                          | 4-40 Bolts                                                                                        |              |
-| CANivore                         | 4-40 Bolts                                                                                        |              |
-| Pigeon 2                         | 4-40 Bolts                                                                                        | 3/4" length  |
-| Breaker Lugs                     | 1/4-28 Starnut (7/16th socket)                                                                     |              |
-| Limelight                        | 10-32 Bolts                                                                                       |              |
-| PDH                              | 10-32 Bolts                                                                                       |              |
+| -------------------------------- | ------------------------------------------------------------------------------------------------- | ----------- |
+| Battery Lugs                     | [Grasshopper Nut](https://www.thethriftybot.com/products/grasshopper-nut) (Integrated 10-32 Bolt) | N/A         |
+| Kraken **Motors**                |                                                                                                   |             |
+| Kraken **Cover**                 | 4-40 Bolts                                                                                        | 3/4" length |
+| Kraken ***Power* Ring Terminal** |                                                                                                   |             |
+| Kraken ***CAN* Ring Terminal**   |                                                                                                   |             |
+| Falcon Motors                    |                                                                                                   |             |
+| CANdle                           |                                                                                                   |             |
+| Ethernet service ports           | 4-40 Bolts                                                                                        |             |
+| roboRIO                          | 4-40 Bolts                                                                                        |             |
+| CANivore                         | 4-40 Bolts                                                                                        |             |
+| Pigeon 2                         | 4-40 Bolts                                                                                        | 3/4" length |
+| Breaker Lugs                     | See [Breaker Wiring](Breaker%20Wiring.md)                                                         |             |
+| Limelight                        | 10-32 Bolts                                                                                       |             |
+| PDH                              | 10-32 Bolts                                                                                       |             |
 
 ## Nonstandard Components
 
