@@ -1,18 +1,30 @@
-1.Export any component that can move
-ex:drivetrain, elevator base stage, elevator 2nd stage, elevator carriage 
--think about what big parts move
--right click on whatever part you want to hide then press suppress until you only have desired component
--save file as "step AP214" in downloads
--if it says "one or more components are hidden or suppressed", click no
--Repeat steps for all parts
+# Step-by-Step Guide to Update CAD for Simulation
 
-2.Open up CAD assistant
--open your exported file
--color the model
--export and click save as a glb file then save
--when saving the file, save in your repo the Robot_ foder in the assets folder. Name as "model" for the base (drivetrain), model_0 for the second stage (ex: elevator base), model_1 for third stage (ex: elevator 2nd stage), etc.
--Repeat steps for all parts
+## 1. Export Moving Components
+- Identify all components that can move (e.g., drivetrain, elevator base stage, elevator 2nd stage, elevator carriage).
+- Think about which big parts move.
+- Right-click on the part you want to hide, then select **Suppress** until only the desired component is visible.
+- Save the file as **STEP AP214** in your Downloads folder.
+- If prompted with "One or more components are hidden or suppressed," click **No**.
+- Repeat these steps for all moving parts.
 
-3.start sim, open up Advantage Scope
+## 2. Use CAD Assistant
+- Open the exported file in **CAD Assistant**.
+- Apply colors to the model as needed.
+- Export the file and save it as a **GLB file**.
+- Save the GLB file in your repository under the `Robot_` folder inside the `assets` folder:
+    - Name the base (e.g., drivetrain) as `model`.
+    - Name the second stage (e.g., elevator base) as `model_0`.
+    - Name the third stage (e.g., elevator 2nd stage) as `model_1`, and so on.
+- Repeat these steps for all parts.
 
-4.Go to config.json file in your code, copy down following code, make sure every components has its own set of code. And then, change the configs until all robot parts are facing forwand and have the right rotationmnhjb ,
+## 3. Start Simulation
+- Open **Advantage Scope** and start the sim.
+
+## 4. Update `config.json`
+- Open the `config.json` file in your code.
+- Copy the following code for each component:
+- Adjust the values until all robot parts are correctly oriented and facing forward.
+- Ensure each component has its own unique set of code.
+
+Follow these steps carefully to ensure your CAD model is correctly updated for simulation.
