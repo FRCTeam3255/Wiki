@@ -1,25 +1,37 @@
-1.Export any component that can move
-ex:drivetrain, elevator base stage, elevator 2nd stage, elevator carriage 
+# Step-by-Step Guide to Update CAD for Simulation
+
+## 1. Export Moving Components
+- Identify all components that can move (e.g., drivetrain, elevator base stage, elevator 2nd stage, elevator carriage).
 ![image](.images/Software/Updating CAD models/Screenshot 2025-08-26 195451.png)
--think about what big parts move
--right click on whatever part you want to hide then press suppress until you only have desired component
+- Think about which big parts move.
+- Right-click on the part you want to hide, then select **Suppress** until only the desired component is visible.
 ![image](.images/Software/Updating CAD models/Screenshot 2025-08-28 181418.png)
--save file as "step AP214" in downloads
+- Save the file as **STEP AP214** in your Downloads folder.
 ![image](.images/Software/Updating CAD models/Screenshot 2025-08-28 181622.png)
--if it says "one or more components are hidden or suppressed", click no
+- If prompted with "One or more components are hidden or suppressed," click **No**.
 ![image](.images/Software/Updating CAD models/Screenshot 2025-08-26 200419.png)
--Repeat steps for all parts
+- Repeat these steps for all moving parts.
 
-2.Open up CAD assistant
+## 2. Use CAD Assistant
 ![image](.images/Software/Updating CAD models/Screenshot 2025-08-26 201739.png)
--open your exported file
--color the model
+- Open the exported file in **CAD Assistant**.
+- Apply colors to the model as needed.
 ![image](.images/Software/Updating CAD models/Screenshot 2025-08-26 202024.png)
--export and click save as a glb file then save
-![image](.images/Software/Updating CAD models/Screenshot 2025-08-26 202613.png)
--when saving the file, save in your repo the Robot_ foder in the assets folder. Name as "model" for the base (drivetrain), model_0 for the second stage (ex: elevator base), model_1 for third stage (ex: elevator 2nd stage), etc.
--Repeat steps for all parts
+- Export the file and save it as a **GLB file**.
+- Save the GLB file in your repository under the `Robot_` folder inside the `assets` folder:
+    - Name the base (e.g., drivetrain) as `model`.
+    - Name the second stage (e.g., elevator base) as `model_0`.
+    - Name the third stage (e.g., elevator 2nd stage) as `model_1`, and so on.
+    ![image](.images/Software/Updating CAD models/Screenshot 2025-08-26 202613.png)
+- Repeat these steps for all parts.
 
-3.start sim, open up Advantage Scope
+## 3. Start Simulation
+- Open **Advantage Scope** and start the sim.
 
-4.Go to config.json file in your code, copy down following code, make sure every components has its own set of code. And then, change the configs until all robot parts are facing forwand and have the right rotationmnhjb ,
+## 4. Update `config.json`
+- Open the `config.json` file in your code.
+- Copy the following code for each component:
+- Adjust the values until all robot parts are correctly oriented and facing forward.
+- Ensure each component has its own unique set of code.
+
+Follow these steps carefully to ensure your CAD model is correctly updated for simulation.
