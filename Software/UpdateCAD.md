@@ -11,6 +11,7 @@
 - If prompted with "One or more components are hidden or suppressed," click **No**.  
 ![image](../.images/Software/Updating%20CAD%20models/Screenshot%202025-08-26%20200419.png)
 - Repeat these steps for all moving parts.
+- ***REMEMBER: make sure all components are collapsed (at zeroed position)... or you will need to spend another hour on this crap***... don't ask how I know this
 
 ## 2. Use CAD Assistant
 ![image](../.images/Software/Updating%20CAD%20models/Screenshot%202025-08-26%20201739.png)
