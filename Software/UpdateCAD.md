@@ -30,7 +30,59 @@
 
 ## 4. Update `config.json`
 - Open the `config.json` file in your code.
-- Copy the following code for each component:
+- Copy the following code for the Drivetrain:
+```json
+{
+  "name": "Offbot 2025",
+  "disableSimplification": false,
+  "rotations": [
+    {
+      "axis": "x",
+      "degrees": 180
+    },
+    {
+      "axis": "y",
+      "degrees": 0
+    },
+    {
+      "axis": "z",
+      "degrees": 90
+    }
+  ],
+  "position": [
+    0,
+    0,
+    0
+  ],
+  "cameras": [],
+
+  "components": []
+}
+```
+- For each components, copy the following code
+```json
+{
+      "zeroedRotations": [
+        {
+          "axis": "x",
+          "degrees": 0
+        },
+        {
+          "axis": "y",
+          "degrees": 0
+        },
+        {
+          "axis": "z",
+          "degrees": 0
+        }
+      ],
+      "zeroedPosition": [
+        0,
+        0,
+        0
+      ]
+    }
+```
 - Adjust the values until all robot parts are correctly oriented and facing forward.
 - Ensure each component has its own unique set of code.
 
