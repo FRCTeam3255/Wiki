@@ -14,7 +14,7 @@ See [Bolt to Tool Lookup](../Mechanical/Bolt%20to%20Tool%20Lookup.md) for tools 
 | Falcon Motors                    |                                                                                                   |             |
 | CANdle                           |                                                                                                   |             |
 | Ethernet service ports           | 4-40 Bolts                                                                                        |             |
-| roboRIO                          | 4-40 Bolts                                                                                        |             |
+| roboRIO                          | 4-40 Bolts                                                                                        | 1/4" length            |
 | CANivore                         | 4-40 Bolts                                                                                        |             |
 | Pigeon 2                         | 4-40 Bolts                                                                                        | 3/4" length |
 | Breaker Lugs                     | See [Breaker Wiring](Breaker%20Wiring.md)                                                         |             |
