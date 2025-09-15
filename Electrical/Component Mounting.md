@@ -14,19 +14,22 @@ See [Bolt to Tool Lookup](../Mechanical/Bolt%20to%20Tool%20Lookup.md) for tools 
 | Falcon Motors                    |                                                                                                   |             |
 | CANdle                           |                                                                                                   |             |
 | Ethernet service ports           | 4-40 Bolts                                                                                        |             |
-| roboRIO                          | 4-40 Bolts                                                                                        | 1/4" length            |
+| roboRIO                          | 4-40 Bolts                                                                                        | 1/4" length |
 | CANivore                         | 4-40 Bolts                                                                                        |             |
 | Pigeon 2                         | 4-40 Bolts                                                                                        | 3/4" length |
-| Breaker Lugs                     | See [Breaker Wiring](Breaker%20Wiring.md)                                                         |             |
+| Breaker Switch                   | 1/4 20 Bolts                                                                                      | 3/4" length |
+| Breaker Lugs/Studs               | See [Breaker Wiring](Breaker%20Wiring.md)                                                         |             |
 | Limelight                        | 10-32 Bolts                                                                                       |             |
 | PDH                              | 10-32 Bolts                                                                                       |             |
 
 ## Nonstandard Components
 
 | Device                  | Bolt/Nut Size  | Bolt Length |
-| ----------------------- | --------------- | ------------ |
-| Buckboost               |                 |              |
-| Brainbox Network Switch | 4-40 Bolts     |              |
-| RPM                     | 8-32 Bolts     |              |
-| Neo550                  | M3 x 0.5 Bolts | 8mm          |
-| VRM                     | 6-32           |              |
+| ----------------------- | -------------- | ----------- |
+| Buckboost               |                |             |
+| Brainbox Network Switch | 4-40 Bolts     |             |
+| RPM                     | 8-32 Bolts     |             |
+| Neo550                  | M3 x 0.5 Bolts | 8mm         |
+| VRM                     | 6-32           |             |
+| TalonSRX                | 8-32           | 1.25"       |
+| PDP                     | 10-32          | 3/4"        |
