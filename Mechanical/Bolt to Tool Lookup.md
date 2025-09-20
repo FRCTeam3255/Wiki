@@ -11,7 +11,7 @@
 
 | Bolt     | Head Type              | Allen Wrench Hex Size | Nut wrench size | Clearance Hole Size |
 | -------- | ---------------------- | --------------------- | --------------- | ------------------- |
-| 4-40     | [Socket](#socket-head) |                       |                 |                     |
+| 4-40     | [Socket](#socket-head) | 3/32                      |                 |                     |
 | 6-32     | [Socket](#socket-head) |                       |                 |                     |
 | 8-32     | [Socket](#socket-head) |                       | 11/32           | 5/32                |
 | 10-32    | [Button](#button-head) |                       | 3/8             | 3/16                |
