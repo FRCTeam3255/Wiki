@@ -4,7 +4,7 @@
 - Bring a second radio for easier swapping.
 - **Remember to obtain the robot WIFI password while configuring radio.**
 
-### 3. Field Calibration
+### 2. Field Calibration
 **Supplies Needed:**
 - Ethernet spool
 - Hot glue gun
