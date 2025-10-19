@@ -2,7 +2,7 @@
 
 ### 1. Radio Configuration
 - Bring a second radio for easier swapping.
-- **Remember to obtain the robot WIFI password while configuring radio.**
+- **Remember to obtain the robot Wi-Fi password while configuring radio.**
 
 ### 2. Field Calibration
 **Supplies Needed:**
