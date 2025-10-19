@@ -1,4 +1,4 @@
-# Wiring LED
+# Wiring LEDs
 
 ## Wire Color Mapping
 
