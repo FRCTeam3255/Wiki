@@ -6,6 +6,7 @@
 
 ### 2. Field Calibration
 **Supplies Needed:**
+
 - Ethernet spool
 - Hot glue gun
 - Tape measure
@@ -14,6 +15,7 @@
 - Battery-powered Ethernet switch
 
 **Steps:**
+
 1. Follow the Calibration Guide for the Robot (This is in the robot's `README.md`)
 2. Limelights can use USB: [http://172.28.0.1:5801](http://172.28.0.1:5801)
 
