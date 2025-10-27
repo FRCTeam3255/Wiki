@@ -4,9 +4,11 @@
 
 ### Configuring
 
-IMPORTANT: DO IN THIS ORDER **WITHOUT** CYCLING POWER
+!!! important
 
-IMPORTANT: DO THIS BEFORE CONFIGURING RADIO FOR COMP
+    DO IN THIS ORDER **WITHOUT** CYCLING POWER
+
+    DO THIS BEFORE CONFIGURING RADIO FOR COMP
 
 1. Set limelights to new team number via web page
     - static IP to new team 
