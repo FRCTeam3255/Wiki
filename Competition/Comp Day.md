@@ -27,13 +27,13 @@
 - [ ] Unloading means quickly bringing into pit and coming back to grab more
 - [ ] Bring out structure first start setting up asap
 - [ ] Once structure is up with shelves, bring in electrical and mechanical toolboxes
-- [ ] Start bringing totes/other items in on Dollie's and carts
+- [ ] Start bringing totes/other items in on dollies and carts
 - [ ] Unpack carts and bring back to trailer for another load
 - [ ] Make sure truck, trailer, and truck bed are fully unpacked
 - [ ] When unpacking totes, set in middle, one or two people take stuff out, saying what shelf they go on, and then another person standing stationary places in the shelf
 - [ ] Make stack of empty totes outside of pit
-- [ ] Stack items that need to be brought back trailer on gray dolley
-- [ ] Bring gray dolley/other items back to trailer
+- [ ] Stack items that need to be brought back to trailer on gray dolly
+- [ ] Bring gray dolly/other items back to trailer
 - [ ] Park trailer and truck
 
 ### 4. End of Competition
