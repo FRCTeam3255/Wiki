@@ -1,4 +1,5 @@
-# Get done 1 month before comp
+# Comp Logistics
+## Get done 1 month before comp
 - [ ] Driver paperwork
 - [ ] SN Registration
 - [ ] Order T-Shirts
@@ -10,7 +11,7 @@
 - [ ] Attendance form
 - [ ] Coordinate with drivers
 
-# Get done 2 weeks before comp
+## Get done 2 weeks before comp
 - [ ] Print Permission slips
 - [ ] Parent email
 - [ ] Lunch logistics
