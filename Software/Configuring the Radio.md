@@ -1,5 +1,9 @@
 # Configuring the Radio
 
+If you are using an OpenMesh radio (White Radio) please follow the <a href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/openmesh.html#using-the-openmesh-om5p-radio">FRC Guide</a>
+
+<img src="https://docs.wpilib.org/en/stable/_images/openmesh-radio.png">
+
 1. Connect to directly the robot's radio via ethernet.
 
 2. Navigate to the robot's IP address: **10.TE.AM.1**, where **TE.AM** is its team number. Usually, our IP would be **10.32.55.1** if our team number hasn't been changed for an offseason event. If that doesn't work, the default radio IP address is **192.168.69.1** but after a firmware update, it can also default the team number to 1, so also try **10.0.1.1** if the previous IP didn't work.
