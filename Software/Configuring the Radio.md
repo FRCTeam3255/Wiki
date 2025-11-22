@@ -1,6 +1,6 @@
 # Configuring the Radio
 
-If you are using an OpenMesh radio (White Radio) please follow the <a href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/openmesh.html#using-the-openmesh-om5p-radio">FRC Guide</a>
+If you are using an OpenMesh radio (White Radio) please follow the <a href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/openmesh.html#using-the-openmesh-om5p-radio">FRC Guide</a>.
 
 <img src="https://docs.wpilib.org/en/stable/_images/openmesh-radio.png">
 
