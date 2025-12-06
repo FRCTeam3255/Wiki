@@ -1,5 +1,9 @@
 # MotionMagic Lesson Guide
 
+!!! important
+
+    `motorName` and its capitalization variations (e.g., `MOTOR_NAME_CONFIG`, `MotorName`) are placeholders. Replace them with your actual motor name throughout the code examples.
+
 ## How Do You Normally Run a Motor? (`.set` Percent Output)
 
 Most robot programmers start by running motors with a simple command:
