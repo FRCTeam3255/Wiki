@@ -6,7 +6,7 @@ Most robot programmers start by running motors with a simple command:
 
 ```java
 // Run motor at 50% forward power
-motor.set(0.5);
+motorName.set(0.5);
 ```
 
 - This sets the motor output as a percentage of full power (from -1.0 to 1.0).
@@ -52,15 +52,15 @@ This is the most basic way to run a motor. You give it a value between -1.0 and 
 
 ```java
 // Define the function in the Motion subsystem 
-public void setMotorSpeed(double speed) {
-  motor.set(speed);
+public void setMotorNameSpeed(double speed) {
+  motorName.set(speed);
 }
 ```
 
 ```java
 // Usage example of Percent Output
 double speed = 0.5;  // This would be stored in constants
-motionInstance.setMotorSpeed(speed);  // This would be called in the state
+motionInstance.setMotorNameSpeed(speed);  // This would be called in the state
 ```
 
 - **Pros:** Simple, direct, good for testing.
@@ -72,17 +72,17 @@ This method lets you use features like MotionMagic, PID, or velocity control. Yo
 
 ```java
 // Define the function in Motion Subsystem
-MotionMagicExpoVoltage positionRequest = new MotionMagicExpoVoltage(0); // Create object at top of file and reuse
+MotionMagicExpoVoltage motorNamePositionRequest = new MotionMagicExpoVoltage(0); // Create object at top of file and reuse
 
-public void setAngle(Angle targetAngle) {
-  motor.setControl(positionRequest.withPosition(targetAngle));
+public void setMotorNameAngle(Angle targetAngle) {
+  motorName.setControl(motorNamePositionRequest.withPosition(targetAngle));
 }
 ```
 
 ```java
 // Usage example of angles as Degrees units
 Angle targetAngle = Degrees.of(65.15);  // This would be stored in constants
-motionInstance.setAngle(targetAngle);  // This would be called in the state
+motionInstance.seMotorNameAngle(targetAngle);  // This would be called in the state
 ```
 
 - **Pros:** Precise, smooth, uses feedback sensors, supports profiles.
@@ -98,17 +98,17 @@ Before using MotionMagic, you must configure your mechanism's TalonFX controller
 // --- PID and Feedforward Constants ---
 // NOTE: We start by setting all to 0, we will tune these later
 // Feedforward
-MOTOR_CONFIG.Slot0.kS = 0;    // Static gain (overcomes friction)
-MOTOR_CONFIG.Slot0.kG = 0;   // Gravity feedforward (helps hold up against gravity)
+MOTOR_NAME_CONFIG.Slot0.kS = 0;    // Static gain (overcomes friction)
+MOTOR_NAME_CONFIG.Slot0.kG = 0;   // Gravity feedforward (helps hold up against gravity)
 // PID
-MOTOR_CONFIG.Slot0.kP = 0;    // Proportional gain (how hard to correct position error)
+MOTOR_NAME_CONFIG.Slot0.kP = 0;    // Proportional gain (how hard to correct position error)
 ```
 
 - **GravityType** tells the controller how to compensate for gravity (use `Elevator_Static` for vertical lifts, `Arm_Cosine` for rotating arms). **DO DEMO**
 
 ```java
 // --- Gravity Compensation Type ---
-MOTOR_CONFIG.Slot0.GravityType = GravityTypeValue.Elevator_Static;
+MOTOR_NAME_CONFIG.Slot0.GravityType = GravityTypeValue.Elevator_Static;
 // Use Elevator_Static for vertical lifts, Arm_Cosine for rotating arms
 ```
 
@@ -116,14 +116,14 @@ MOTOR_CONFIG.Slot0.GravityType = GravityTypeValue.Elevator_Static;
 
 ```java
 // --- Sensor Conversion ---
-MOTOR_CONFIG.Feedback.SensorToMechanismRatio = ((12.0 / 60.0) * (26.0 / 52.0));
-// MOTOR_CONFIG.Feedback.SensorToMechanismRatio = ((GEAR_1 / GEAR_2) * (GEAR_3 / GEAR_4));
+MOTOR_NAME_CONFIG.Feedback.SensorToMechanismRatio = ((12.0 / 60.0) * (26.0 / 52.0));
+// MOTOR_NAME_CONFIG.Feedback.SensorToMechanismRatio = ((GEAR_1 / GEAR_2) * (GEAR_3 / GEAR_4));
 // Converts motor rotations to mechanism units (e.g., inches of elevator travel)
 ```
 
 ```java
 // --- Apply the config to motor like we already do ---
-motor.getConfigurator().apply(constMotion.MOTOR_CONFIG);
+motorName.getConfigurator().apply(constMotion.MOTOR_NAME_CONFIG);
 ```
 
 ## More Resources
