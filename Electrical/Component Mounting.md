@@ -12,7 +12,7 @@ See [Bolt to Tool Lookup](../Mechanical/Bolt%20to%20Tool%20Lookup.md) for tools 
 | Kraken ***Power* Ring Terminal** |                                                                                                   |             |
 | Kraken ***CAN* Ring Terminal**   |                                                                                                   |             |
 | Falcon Motors                    |                                                                                                   |             |
-| CANdle                           |                                                                                                   |             |
+| CANdle                           | 10-32 Bolts                                                                                       |             |
 | Ethernet service ports           | 4-40 Bolts                                                                                        |             |
 | roboRIO                          | 4-40 Bolts                                                                                        | 1/4" length |
 | CANivore                         | 4-40 Bolts                                                                                        |             |
