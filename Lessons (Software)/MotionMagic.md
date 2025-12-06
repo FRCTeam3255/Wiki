@@ -1,4 +1,4 @@
-# MotionMagic Lesson Guide
+# MotionMagic Lesson
 
 ## How Do You Normally Run a Motor? (`.set` Percent Output)
 
@@ -93,6 +93,7 @@ rightLiftMotorLeader.setControl(positionRequest);
 MotionMagic needs to know where you want to go, how fast, and how smoothly. This is only possible with `.setControl` and a MotionMagic control request. Percent output (`.set`) cannot achieve this—it just runs the motor at a fixed speed.
 
 **Summary:**  
+
 - Use `.set` for simple, direct power control.
 - Use `.setControl` for any closed-loop or profile-based movement, including MotionMagic.
 

@@ -1,4 +1,4 @@
-# State Machines
+# State Machine Lesson
 
 ---
 
