@@ -74,15 +74,15 @@ This method lets you use features like MotionMagic, PID, or velocity control. Yo
 // Define the function in Motion Subsystem
 MotionMagicExpoVoltage positionRequest = new MotionMagicExpoVoltage(0); // Create object at top of file and reuse
 
-public void setAngle(Angle angle) {
-  motor.setControl(positionRequest.withPosition(angle));
+public void setAngle(Angle targetAngle) {
+  motor.setControl(positionRequest.withPosition(targetAngle));
 }
 ```
 
 ```java
 // Usage example of angles as Degrees units
-Angle angle = Degrees.of(65.15);  // This would be stored in constants
-motionInstance.setAngle(angle);  // This would be called in the state
+Angle targetAngle = Degrees.of(65.15);  // This would be stored in constants
+motionInstance.setAngle(targetAngle);  // This would be called in the state
 ```
 
 - **Pros:** Precise, smooth, uses feedback sensors, supports profiles.
@@ -102,11 +102,9 @@ MOTOR_CONFIG.Slot0.kS = 0;    // Static gain (overcomes friction)
 MOTOR_CONFIG.Slot0.kG = 0;   // Gravity feedforward (helps hold up against gravity)
 // PID
 MOTOR_CONFIG.Slot0.kP = 0;    // Proportional gain (how hard to correct position error)
-MOTOR_CONFIG.Slot0.kI = 0.0;    // Always keep 0
-MOTOR_CONFIG.Slot0.kD = 0.0;    // Always keep 0
 ```
 
-- **GravityType** tells the controller how to compensate for gravity (use `Elevator_Static` for vertical lifts, `Arm_Cosine` for rotating arms).
+- **GravityType** tells the controller how to compensate for gravity (use `Elevator_Static` for vertical lifts, `Arm_Cosine` for rotating arms). **DO DEMO**
 
 ```java
 // --- Gravity Compensation Type ---
