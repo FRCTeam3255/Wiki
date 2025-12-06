@@ -10,7 +10,7 @@ motorName.set(0.5);
 ```
 
 - This sets the motor output as a percentage of full power (from -1.0 to 1.0).
-- It's open-loop: the motor just runs at the speed you ask, with no feedback or position control.
+- It's open-loop: the motor just runs at the power you ask, with no feedback or position control.
 - Good for simple tasks, but not precise—motors can overshoot, stall, or drift.
 
 ---
@@ -43,7 +43,7 @@ Understanding how you command a motor is essential for using MotionMagic effecti
 
 | Method                | What It Does                                      | Typical Use Case                |
 |-----------------------|---------------------------------------------------|---------------------------------|
-| `.set(value)`         | Sets percent output (-1.0 to 1.0, or -100% to 100%) | Simple open-loop speed control  |
+| `.set(value)`         | Sets percent output (-1.0 to 1.0, or -100% to 100%) | Simple open-loop power control  |
 | `.setControl(request)`| Uses advanced control modes (MotionMagic, PID, etc.) | Precise position or velocity    |
 
 #### `.set(value)` — Percent Output
@@ -52,19 +52,19 @@ This is the most basic way to run a motor. You give it a value between -1.0 and 
 
 ```java
 // Define the function in the Motion subsystem 
-public void setMotorNameSpeed(double speed) {
-  motorName.set(speed);
+public void setMotorNamePower(double power) {
+  motorName.set(power);
 }
 ```
 
 ```java
 // Usage example of Percent Output
-double speed = 0.5;  // This would be stored in constants
-motionInstance.setMotorNameSpeed(speed);  // This would be called in the state
+double power = 0.5;  // This would be stored in constants
+motionInstance.setMotorNamePower(power);  // This would be called in the state
 ```
 
 - **Pros:** Simple, direct, good for testing.
-- **Cons:** No position or speed control, can overshoot or stall.
+- **Cons:** No position or power control, can overshoot or stall.
 
 #### `.setControl(request)` — Advanced Control
 
