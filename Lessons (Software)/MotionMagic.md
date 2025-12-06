@@ -4,7 +4,7 @@
 
     `motorName` and its capitalization variations (e.g., `MOTOR_NAME_CONFIG`, `MotorName`) are placeholders. Replace them with your actual motor name throughout the code examples.
 
-## How Do You Normally Run a Motor? (`.set` Percent Output)
+## How Do You Normally Run a Motor? (`.set` Percent Output (Power))
 
 Most robot programmers start by running motors with a simple command:
 
