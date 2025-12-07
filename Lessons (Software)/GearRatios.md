@@ -17,7 +17,7 @@ When programming a robot, you need to tell the motor controller how many times t
 ### Understanding the Concept
 
 When two gears are connected:
-- The **motor gear** (or **pinion**) is attached to the motor shaft
+- The **driving gear** (or **pinion**) is attached to the motor shaft
 - The **driven gear** is attached to the mechanism (wheel, arm, etc.)
 
 The gear ratio tells us: *"For every rotation of the motor, how many rotations does the mechanism make?"*
@@ -26,14 +26,14 @@ The gear ratio tells us: *"For every rotation of the motor, how many rotations d
 
 ```java
 // Simple gear ratio
-double gearRatio = motorGear / drivenGear;
+double gearRatio = driving / driven;
 ```
 
 ### Example: Single Stage Gearbox
 
 Imagine you have:
-- **Motor gear:** 12 teeth
-- **Wheel gear:** 60 teeth
+- **Driving gear:** 12 teeth
+- **Driven gear:** 60 teeth
 
 ```java
 // The motor must spin 5 times for the wheel to spin once
@@ -63,22 +63,22 @@ Many robot mechanisms use **multiple stages of gears** to achieve the desired ra
 
 ```java
 // Compound gear ratio (multiple stages)
-double gearRatio = ((gear1 / gear2) * (gear3 / gear4));
+double gearRatio = ((stage1Driving / stage1Driven) * (stage2Driving / stage2Driven));
 ```
 
 ### Understanding the Pattern
 
 In a compound gear train:
-- **gear1** and **gear3** are on the motor/input side
-- **gear2** and **gear4** are on the mechanism/output side
+- **stage1Driving** and **stage2Driving** are on the motor/input side
+- **stage1Driven** and **stage2Driven** are on the mechanism/output side
 
 The formula multiplies each stage's ratio together.
 
 ### Example: Two-Stage Gearbox
 
 Imagine your mechanism has:
-- **First stage:** 12-tooth motor gear driving a 60-tooth intermediate gear
-- **Second stage:** 26-tooth gear (on same shaft as the 60-tooth) driving a 52-tooth wheel gear
+- **First stage:** 12-tooth driving gear driving a 60-tooth driven gear
+- **Second stage:** 26-tooth driving gear (on same shaft as the 60-tooth) driving a 52-tooth driven gear
 
 ```java
 // Calculate the compound gear ratio
@@ -105,9 +105,9 @@ double gearRatio = ((10.0 / 50.0) * (15.0 / 45.0) * (20.0 / 60.0));
 When configuring a motor controller (like TalonFX):
 
 ```java
-// Compound gear ratio: (motor gear / intermediate gear) * (intermediate gear / driven gear)
-// Stage 1: 12 tooth motor gear driving 60 tooth intermediate
-// Stage 2: 26 tooth intermediate driving 52 tooth driven gear
+// Compound gear ratio: (stage 1 driving / stage 1 driven) * (stage 2 driving / stage 2 driven)
+// Stage 1: 12 tooth driving gear driving 60 tooth driven gear
+// Stage 2: 26 tooth driving gear driving 52 tooth driven gear
 MOTOR_CONFIG.Feedback.SensorToMechanismRatio = ((12.0 / 60.0) * (26.0 / 52.0));
 ```
 
@@ -150,12 +150,12 @@ double distancePerRotation = wheelDiameter * Math.PI;
 Let's combine gear ratios with linear conversion:
 
 **Setup:**
-- Motor gear: 12 teeth
-- Wheel gear: 60 teeth
+- Driving gear: 12 teeth
+- Driven gear: 60 teeth
 - Wheel diameter: 4 inches
 
 ```java
-// Gear ratio: 12 tooth motor gear driving 60 tooth wheel gear = 0.2
+// Gear ratio: 12 tooth driving gear driving 60 tooth driven gear = 0.2
 // Wheel circumference: 4 inch diameter * PI = 12.566 inches
 // Distance per motor rotation: 0.2 * 12.566 = 2.513 inches per motor rotation
 MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (12.0 / 60.0);  // Gear ratio
@@ -166,7 +166,7 @@ MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (12.0 / 60.0);  // Gear ratio
 In CTRE Phoenix 6 (modern FRC programming):
 
 ```java
-// Gear ratio: 12 tooth motor gear driving 60 tooth wheel gear
+// Gear ratio: 12 tooth driving gear driving 60 tooth driven gear
 // Wheel diameter: 4 inches
 MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (12.0 / 60.0);
 ```
@@ -211,12 +211,12 @@ Distance currentHeight = Units.Inches.of(motor.getPosition().getValueAsDouble())
 ### Example 1: Elevator with Sprocket
 
 **Setup:**
-- Motor gear: 10 teeth
-- Sprocket gear: 50 teeth  
+- Driving gear: 10 teeth
+- Driven gear: 50 teeth  
 - Sprocket diameter: 2 inches
 
 ```java
-// Gear ratio: 10 tooth motor gear driving 50 tooth sprocket gear = 0.2
+// Gear ratio: 10 tooth driving gear driving 50 tooth driven gear = 0.2
 // Sprocket circumference: 2 inch diameter * PI = 6.283 inches
 // Elevator height per motor rotation: 0.2 * 6.283 = 1.257 inches
 MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (10.0 / 50.0);  // Gear ratio
@@ -225,12 +225,12 @@ MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (10.0 / 50.0);  // Gear ratio
 ### Example 2: Arm Pivot
 
 **Setup:**
-- Motor gear: 15 teeth
-- Arm gear: 75 teeth
+- Driving gear: 15 teeth
+- Driven gear: 75 teeth
 - No linear conversion needed (we want degrees)
 
 ```java
-// Gear ratio: 15 tooth motor gear driving 75 tooth arm gear = 0.2
+// Gear ratio: 15 tooth driving gear driving 75 tooth driven gear = 0.2
 // The motor must rotate 5 times (1 / 0.2) for the arm to rotate 1 full rotation (360 degrees)
 MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (15.0 / 75.0);
 ```
@@ -238,8 +238,8 @@ MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (15.0 / 75.0);
 ### Example 3: Shooter with Two-Stage Reduction
 
 **Setup:**
-- Stage 1: 18-tooth motor gear → 54-tooth intermediate
-- Stage 2: 24-tooth intermediate → 48-tooth wheel
+- Stage 1: 18-tooth driving gear → 54-tooth driven gear
+- Stage 2: 24-tooth driving gear → 48-tooth driven gear
 - Wheel diameter: 4 inches
 
 ```java
@@ -268,7 +268,7 @@ double ratio = 12.0 / 60.0;
 Make sure you have the correct numerator and denominator:
 
 ```java
-// If motor gear has 12 teeth and wheel gear has 60 teeth:
+// If driving gear has 12 teeth and driven gear has 60 teeth:
 
 // ❌ WRONG - This would mean the motor spins slower than the wheel!
 double ratio = 60.0 / 12.0;  // = 5.0 (incorrect)
@@ -293,9 +293,9 @@ public static final double GEAR_RATIO = 12.0 / 60.0;  // motor rotations per whe
 
 | Mechanism Type | Gear Ratio Formula | Linear Conversion |
 |----------------|-------------------|-------------------|
-| **Simple Gearbox** | `motorGear / drivenGear` | `diameter * PI` |
-| **Two-Stage Gearbox** | `(gear1/gear2) * (gear3/gear4)` | `diameter * PI` |
-| **Three-Stage Gearbox** | `(gear1/gear2) * (gear3/gear4) * (gear5/gear6)` | `diameter * PI` |
+| **Simple Gearbox** | `driving / driven` | `diameter * PI` |
+| **Two-Stage Gearbox** | `(stage1Driving/stage1Driven) * (stage2Driving/stage2Driven)` | `diameter * PI` |
+| **Three-Stage Gearbox** | `(stage1Driving/stage1Driven) * (stage2Driving/stage2Driven) * (stage3Driving/stage3Driven)` | `diameter * PI` |
 
 ---
 
