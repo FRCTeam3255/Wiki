@@ -105,19 +105,9 @@ double gearRatio = ((10.0 / 50.0) * (15.0 / 45.0) * (20.0 / 60.0));
 When configuring a motor controller (like TalonFX):
 
 ```java
-// Define gear ratios as constants
-public static final double STAGE_1_RATIO = 12.0 / 60.0;
-public static final double STAGE_2_RATIO = 26.0 / 52.0;
-public static final double GEAR_RATIO = STAGE_1_RATIO * STAGE_2_RATIO;
-
-// Apply to motor configuration
-MOTOR_CONFIG.Feedback.SensorToMechanismRatio = GEAR_RATIO;
-```
-
-Or write it directly:
-
-```java
-// Direct compound gear ratio
+// Compound gear ratio: (motor gear / intermediate gear) * (intermediate gear / driven gear)
+// Stage 1: 12 tooth motor gear driving 60 tooth intermediate
+// Stage 2: 26 tooth intermediate driving 52 tooth driven gear
 MOTOR_CONFIG.Feedback.SensorToMechanismRatio = ((12.0 / 60.0) * (26.0 / 52.0));
 ```
 
@@ -165,17 +155,10 @@ Let's combine gear ratios with linear conversion:
 - Wheel diameter: 4 inches
 
 ```java
-// Step 1: Calculate gear ratio
-double gearRatio = 12.0 / 60.0;  // 0.2
-
-// Step 2: Calculate wheel circumference
-double wheelDiameter = 4.0;  // inches
-double wheelCircumference = wheelDiameter * Math.PI;  // 12.566 inches
-
-// Step 3: Calculate distance per motor rotation
-double distancePerMotorRotation = gearRatio * wheelCircumference;
-// = 0.2 * 12.566
-// = 2.513 inches per motor rotation
+// Gear ratio: 12 tooth motor gear driving 60 tooth wheel gear = 0.2
+// Wheel circumference: 4 inch diameter * PI = 12.566 inches
+// Distance per motor rotation: 0.2 * 12.566 = 2.513 inches per motor rotation
+MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (12.0 / 60.0);  // Gear ratio
 ```
 
 ### Applying to Motor Configuration
@@ -183,23 +166,43 @@ double distancePerMotorRotation = gearRatio * wheelCircumference;
 In CTRE Phoenix 6 (modern FRC programming):
 
 ```java
-// Define constants
-public static final double WHEEL_DIAMETER_INCHES = 4.0;
-public static final double GEAR_RATIO = (12.0 / 60.0);
-
-// Calculate the sensor-to-mechanism ratio
-// This tells the motor: "For every rotation I measure, the wheel moves this far"
-public static final double DISTANCE_PER_ROTATION = WHEEL_DIAMETER_INCHES * Math.PI;
-public static final double ROTATIONS_TO_INCHES = GEAR_RATIO * DISTANCE_PER_ROTATION;
-
-// Apply to motor configuration
-MOTOR_CONFIG.Feedback.SensorToMechanismRatio = GEAR_RATIO;
+// Gear ratio: 12 tooth motor gear driving 60 tooth wheel gear
+// Wheel diameter: 4 inches
+MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (12.0 / 60.0);
 ```
 
 !!! tip "Different Units for Different Mechanisms"
     - **Drivetrains:** Use inches or meters for linear distance
     - **Arms/Pivots:** Use degrees or radians for angular position  
     - **Elevators:** Use inches or centimeters for height
+
+### Using the Units Library
+
+WPILib provides a Units library to work with typed measurements, which helps prevent unit confusion and makes code more readable.
+
+**Creating measurements with units:**
+
+```java
+import edu.wpi.first.units.Units;
+import edu.wpi.first.units.measure.Distance;
+
+// Create a distance measurement
+Distance wheelDiameter = Units.Inches.of(4);
+
+// Get the value in a specific unit
+double diameterInInches = wheelDiameter.in(Units.Inches);  // 4.0
+```
+
+**Using units in motor control:**
+
+```java
+// Set a target position using units
+Distance targetHeight = Units.Inches.of(24);
+motor.setControl(positionRequest.withPosition(targetHeight));
+
+// Get current position with units
+Distance currentHeight = Units.Inches.of(motor.getPosition().getValueAsDouble());
+```
 
 ---
 
@@ -213,19 +216,10 @@ MOTOR_CONFIG.Feedback.SensorToMechanismRatio = GEAR_RATIO;
 - Sprocket diameter: 2 inches
 
 ```java
-// Gear ratio
-double gearRatio = 10.0 / 50.0;  // 0.2
-
-// Sprocket circumference
-double sprocketDiameter = 2.0;
-double sprocketCircumference = sprocketDiameter * Math.PI;  // 6.283 inches
-
-// Elevator height per motor rotation
-double heightPerMotorRotation = gearRatio * sprocketCircumference;
-// = 0.2 * 6.283 = 1.257 inches
-
-// Apply to motor config
-MOTOR_CONFIG.Feedback.SensorToMechanismRatio = gearRatio;
+// Gear ratio: 10 tooth motor gear driving 50 tooth sprocket gear = 0.2
+// Sprocket circumference: 2 inch diameter * PI = 6.283 inches
+// Elevator height per motor rotation: 0.2 * 6.283 = 1.257 inches
+MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (10.0 / 50.0);  // Gear ratio
 ```
 
 ### Example 2: Arm Pivot
@@ -236,13 +230,9 @@ MOTOR_CONFIG.Feedback.SensorToMechanismRatio = gearRatio;
 - No linear conversion needed (we want degrees)
 
 ```java
-// Gear ratio (degrees to degrees - motor rotations to arm rotations)
-double gearRatio = 15.0 / 75.0;  // 0.2
-
+// Gear ratio: 15 tooth motor gear driving 75 tooth arm gear = 0.2
 // The motor must rotate 5 times (1 / 0.2) for the arm to rotate 1 full rotation (360 degrees)
-
-// Apply to motor config
-MOTOR_CONFIG.Feedback.SensorToMechanismRatio = gearRatio;
+MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (15.0 / 75.0);
 ```
 
 ### Example 3: Shooter with Two-Stage Reduction
@@ -253,20 +243,10 @@ MOTOR_CONFIG.Feedback.SensorToMechanismRatio = gearRatio;
 - Wheel diameter: 4 inches
 
 ```java
-// Compound gear ratio
-double gearRatio = ((18.0 / 54.0) * (24.0 / 48.0));
-// = (0.333) * (0.5) = 0.167
-
-// Wheel circumference
-double wheelDiameter = 4.0;
-double wheelCircumference = wheelDiameter * Math.PI;  // 12.566 inches
-
-// Distance per motor rotation
-double distancePerMotorRotation = gearRatio * wheelCircumference;
-// = 0.167 * 12.566 = 2.098 inches
-
-// Apply to motor config
-MOTOR_CONFIG.Feedback.SensorToMechanismRatio = gearRatio;
+// Compound gear ratio: (18/54) * (24/48) = 0.333 * 0.5 = 0.167
+// Wheel circumference: 4 inch diameter * PI = 12.566 inches
+// Distance per motor rotation: 0.167 * 12.566 = 2.098 inches
+MOTOR_CONFIG.Feedback.SensorToMechanismRatio = ((18.0 / 54.0) * (24.0 / 48.0));
 ```
 
 ---
