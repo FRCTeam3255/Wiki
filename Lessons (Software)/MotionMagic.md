@@ -39,18 +39,20 @@ MotionMagic creates a plan for your motor to follow, called a "motion profile." 
 
 ![](https://v6.docs.ctr-electronics.com/en/latest/_images/trapezoidal-profile.png)
 
-## Step-by-Step: Using MotionMagic
-
-### Output Control: `.set` vs `.setControl`
+## Output Control: `.set` vs `.setControl`
 
 Understanding how you command a motor is essential for using MotionMagic effectively. TalonFX motor controllers support two main ways to control output:
 
 | Method                | What It Does                                      | Typical Use Case                |
 |-----------------------|---------------------------------------------------|---------------------------------|
 | `.set(value)`         | Sets percent output (-1.0 to 1.0, or -100% to 100%) | Simple open-loop power control  |
-| `.setControl(request)`| Uses advanced control modes (MotionMagic, PID, etc.) | Precise position or velocity    |
+| `.setControl(request)`| Uses advanced control modes (MotionMagic) | Precise position or velocity    |
 
-#### `.set(value)` — Percent Output
+---
+
+### Power Control (Not PID)
+
+#### `.set(value)` — Percent Output (Power)
 
 This is the most basic way to run a motor. You give it a value between -1.0 and 1.0, and the motor runs at that percentage of full power. This does **not** use any feedback or closed-loop control.
 
@@ -70,9 +72,13 @@ motionInstance.setMotorNamePower(power);  // This would be called in the state
 - **Pros:** Simple, direct, good for testing.
 - **Cons:** No position or power control, can overshoot or stall.
 
+---
+
+### Position PID
+
 #### `.setControl(request)` — Advanced Control
 
-This method lets you use features like MotionMagic, PID, or velocity control. You create a control request object (such as `MotionMagicExpoVoltage`) that tells the motor controller exactly how to move, including target position, speed, acceleration, and which PID slot to use.
+This method lets you use features like MotionMagic, PID, or velocity control. You create a control request object (such as `MotionMagicExpoVoltage` or `MotionMagicVelocityVoltage`) that tells the motor controller exactly how to move, including target position or velocity, acceleration, and which PID slot to use.
 
 ```java
 // Define the function in Motion Subsystem
@@ -92,9 +98,9 @@ motionInstance.seMotorNameAngle(targetAngle);  // This would be called in the st
 - **Pros:** Precise, smooth, uses feedback sensors, supports profiles.
 - **Cons:** Requires configuration and understanding of control modes.
 
-### 1. Configure Your Mechanism Settings
+#### Configure Your Mechanism Settings for Position PID
 
-Before using MotionMagic, you must configure your mechanism's TalonFX controller with the correct settings. This includes PID values, sensor-to-mechanism ratio, and gravity compensation type.
+Before using MotionMagicExpo, configure your mechanism's TalonFX with the correct position-control settings. This includes PID values, sensor-to-mechanism ratio, and gravity compensation type.
 
 - **PID values** (`kP`, `kI`, `kD`, `kS`, `kG`) control how the motor responds to errors and gravity.
 
@@ -123,6 +129,64 @@ MOTOR_NAME_CONFIG.Slot0.GravityType = GravityTypeValue.Elevator_Static;
 MOTOR_NAME_CONFIG.Feedback.SensorToMechanismRatio = ((12.0 / 60.0) * (26.0 / 52.0));
 // MOTOR_NAME_CONFIG.Feedback.SensorToMechanismRatio = ((GEAR_1 / GEAR_2) * (GEAR_3 / GEAR_4));
 // Converts motor rotations to mechanism units (e.g., inches of elevator travel)
+```
+
+```java
+// --- Apply the config to motor like we already do ---
+motorName.getConfigurator().apply(constMotion.MOTOR_NAME_CONFIG);
+```
+
+---
+
+### Velocity PID
+
+#### `.setControl(request)` — Velocity Control (MotionMagicVelocity)
+
+Use this when you want to hit and maintain a target velocity. Set your targets and limits in WPILib RPM, then convert to the Talon's expected units under the hood. Keep everything in Slot0—no extra slot juggling needed.
+
+```java
+// Define the function in Rotors Subsystem
+MotionMagicVelocityVoltage motorNameVelocityRequest = new MotionMagicVelocityVoltage(0); // Create once and reuse
+
+public void setMotorNameVelocity(AngularVelocity targetVelocity) {
+  motorName.setControl(motorNameVelocityRequest.withVelocity(targetVelocity));
+}
+```
+
+```java
+// Usage example
+AngularVelocity shooterTargetRMP = RPM.of(4500); // This would be stored in constants
+rotorsInstance.setMotorNaVelocity(shooterTargetRpm);  // This would be called in the state
+```
+
+- **Pros:** Precise, smooth, uses feedback sensors, supports profiles.
+- **Cons:** Requires configuration and understanding of control modes.
+
+#### Configure Your Mechanism Settings for Velocity PID
+
+Before using MotionMagicVelocity, configure your mechanism's TalonFX with the correct velocity-control settings. This includes PID values, sensor-to-mechanism ratio, and any gravity compensation your mechanism needs. Keep everything in Slot0—no slot switching—and express targets/limits in WPILib `Units.RPM`, converting to the Talon's units.
+
+- **Slot0 gains** — Velocity feedback (`kP`, `kI`, `kD`) plus feedforward (`kS`, `kV`, `kA`).
+- **Profile limits** — MotionMagic acceleration and jerk, entered in RPM and converted to rotations/sec units.
+- **Gravity compensation** — Optional; set if your velocity mechanism benefits from offsetting gravity.
+- **SensorToMechanismRatio** — Converts motor rotations to mechanism units; keep consistent with your position setup if shared hardware.
+
+```java
+// --- Velocity PID and Feedforward Constants ---
+// NOTE: We start by setting all to 0, we will tune these later
+// Feedforward
+MOTOR_NAME_CONFIG.Slot0.kS = 0;    // Static gain (overcomes friction)
+MOTOR_NAME_CONFIG.Slot0.kV = 0;    // Velocity feedforward
+MOTOR_NAME_CONFIG.Slot0.kA = 0;    // Acceleration feedforward
+// PID (velocity loop)
+MOTOR_NAME_CONFIG.Slot0.kP = 0;    // Proportional gain (velocity error)
+```
+
+```java
+// --- MotionMagic Velocity Limits ---
+MOTOR_NAME_CONFIG.MotionMagic.MotionMagicCruiseVelocity = 60;
+MOTOR_NAME_CONFIG.MotionMagic.MotionMagicAcceleration = 600;
+MOTOR_NAME_CONFIG.MotionMagic.MotionMagicJerk = 6000;
 ```
 
 ```java
