@@ -148,14 +148,14 @@ Use this when you want to hit and maintain a target velocity. Set your targets a
 // Define the function in Rotors Subsystem
 MotionMagicVelocityVoltage motorNameVelocityRequest = new MotionMagicVelocityVoltage(0); // Create once and reuse
 
-public void setMotorNameVelocity(Velocity targetVelocity) {
+public void setMotorNameVelocity(AngularVelocity targetVelocity) {
   motorName.setControl(motorNameVelocityRequest.withVelocity(targetVelocity));
 }
 ```
 
 ```java
 // Usage example
-Velocity shooterTargetRMP = RPM.of(4500); // This would be stored in constants
+AngularVelocity shooterTargetRMP = RPM.of(4500); // This would be stored in constants
 rotorsInstance.setMotorNaVelocity(shooterTargetRpm);  // This would be called in the state
 ```
 
