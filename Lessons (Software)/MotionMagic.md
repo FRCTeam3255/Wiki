@@ -158,6 +158,9 @@ private final TalonFX motorNameFollower2;
 private final Follower motorNameFollower1Request;
 private final Follower motorNameFollower2Request;
 
+// Create position control request once (for the leader motor)
+private final MotionMagicExpoVoltage motorNamePositionRequest = new MotionMagicExpoVoltage(0);
+
 public MotorSubsystem() {
   // Initialize motors
   motorNameLeader = new TalonFX(mapMotorSubsystem.LEADER_MOTOR_CAN);
@@ -180,8 +183,6 @@ public MotorSubsystem() {
 }
 
 // Your setter methods only command the LEADER motor
-MotionMagicExpoVoltage motorNamePositionRequest = new MotionMagicExpoVoltage(0);
-
 public void setMotorNameAngle(Angle targetAngle) {
   // Only send commands to the leader - followers will automatically follow
   motorNameLeader.setControl(motorNamePositionRequest.withPosition(targetAngle));
