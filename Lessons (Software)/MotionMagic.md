@@ -1,4 +1,4 @@
-## MotionMagic Lesson Guide
+# MotionMagic Lesson Guide
 
 !!! important
 
