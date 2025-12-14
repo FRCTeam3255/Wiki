@@ -50,8 +50,6 @@ Understanding how you command a motor is essential for using MotionMagic effecti
 
 ---
 
-## Output Control - Power Control (Not PID)
-
 ## Power Control - `.set(value)` - Percent Output
 
 This is the most basic way to run a motor. You give it a value between -1.0 and 1.0, and the motor runs at that percentage of full power. This does **not** use any feedback or closed-loop control.
@@ -73,8 +71,6 @@ motionInstance.setMotorNamePower(power);  // This would be called in the state
 - **Cons:** No position or power control, can overshoot or stall.
 
 ---
-
-## Output Control - Position PID
 
 ## Position PID - `.setControl(request)` — MotionMagicExpo
 
@@ -137,8 +133,6 @@ motorName.getConfigurator().apply(constMotion.MOTOR_NAME_CONFIG);
 ```
 
 ---
-
-## Output Control - Velocity PID
 
 ## Velocity PID - `.setControl(request)` — MotionMagicVelocity
 
