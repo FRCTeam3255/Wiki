@@ -11,7 +11,7 @@ This page displays motor specifications of common motors used in FRC robotics.
 | Mini CIM   | Brushed   | 2.16 lbs | 5,840   | 1.41 N·m     | 89 A          | 3 A          |
 | CIM        | Brushed   | 2.8 lbs  | 5,310   | 2.425 N·m    | 131 A         | 2.7 A        |
 
-!!! note
+!!! important
 
     Brushed motors are "dumb" motors and need motor controllers (TalonSRX) wired between them and the robot.
 
