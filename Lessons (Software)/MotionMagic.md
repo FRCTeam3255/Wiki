@@ -50,9 +50,7 @@ Understanding how you command a motor is essential for using MotionMagic effecti
 
 ---
 
-### Power Control (Not PID)
-
-#### `.set(value)` — Percent Output (Power)
+## Power Control - `.set(value)` - Percent Output
 
 This is the most basic way to run a motor. You give it a value between -1.0 and 1.0, and the motor runs at that percentage of full power. This does **not** use any feedback or closed-loop control.
 
@@ -74,9 +72,7 @@ motionInstance.setMotorNamePower(power);  // This would be called in the state
 
 ---
 
-### Position PID
-
-#### `.setControl(request)` — Advanced Control
+## Position PID - `.setControl(request)` — MotionMagicExpo
 
 This method lets you use features like MotionMagic, PID, or velocity control. You create a control request object (such as `MotionMagicExpoVoltage` or `MotionMagicVelocityVoltage`) that tells the motor controller exactly how to move, including target position or velocity, acceleration, and which PID slot to use.
 
@@ -98,7 +94,7 @@ motionInstance.seMotorNameAngle(targetAngle);  // This would be called in the st
 - **Pros:** Precise, smooth, uses feedback sensors, supports profiles.
 - **Cons:** Requires configuration and understanding of control modes.
 
-#### Configure Your Mechanism Settings for Position PID
+## Position PID - Configuring Mechanism Settings
 
 Before using MotionMagicExpo, configure your mechanism's TalonFX with the correct position-control settings. This includes PID values, sensor-to-mechanism ratio, and gravity compensation type.
 
@@ -138,9 +134,7 @@ motorName.getConfigurator().apply(constMotion.MOTOR_NAME_CONFIG);
 
 ---
 
-### Velocity PID
-
-#### `.setControl(request)` — Velocity Control (MotionMagicVelocity)
+## Velocity PID - `.setControl(request)` — MotionMagicVelocity
 
 Use this when you want to hit and maintain a target velocity. Set your targets and limits in WPILib RPM, then convert to the Talon's expected units under the hood. Keep everything in Slot0—no extra slot juggling needed.
 
@@ -162,7 +156,7 @@ rotorsInstance.setMotorNaVelocity(shooterTargetRpm);  // This would be called in
 - **Pros:** Precise, smooth, uses feedback sensors, supports profiles.
 - **Cons:** Requires configuration and understanding of control modes.
 
-#### Configure Your Mechanism Settings for Velocity PID
+## Velocity PID - Configure Mechanism Settings
 
 Before using MotionMagicVelocity, configure your mechanism's TalonFX with the correct velocity-control settings. This includes PID values, sensor-to-mechanism ratio, and any gravity compensation your mechanism needs. Keep everything in Slot0—no slot switching—and express targets/limits in WPILib `Units.RPM`, converting to the Talon's units.
 
