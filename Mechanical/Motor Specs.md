@@ -1,6 +1,6 @@
-# Motor RPM
+# Motor Specifications
 
-This page displays the maximum RPM (Revolutions Per Minute) of common motors used in FRC robotics.
+This page displays motor specifications of common motors used in FRC robotics.
 
 !!! note
 
@@ -19,7 +19,7 @@ This page displays the maximum RPM (Revolutions Per Minute) of common motors use
 
 !!! note
 
-    Brushed motors are "dumb" motors and need motor controllers specifically TalonFX wired between them and the robot.
+    Brushed motors are "dumb" motors and need motor controllers (TalonSRX) wired between them and the robot.
 
 !!! tip
 
