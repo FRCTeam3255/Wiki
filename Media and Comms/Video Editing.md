@@ -22,7 +22,7 @@ For video editing we use a professional grade software known as Final Cut Pro (F
   - Press `F` to mark clips as **Favorite**
   - Press `DELETE` to mark clips as **Rejected**
 - **Add keywords**: Press `Command + K` to add keywords to videos. This allows you to search for specific clips later, making it much easier to find the footage you need.
-- **Assign video roles**: Mark clips for specific purposes such as clips that need changes, storyboarding elements, or specific video segments. This helps organize your workflow and communicate with team members.
+- **Assign video roles**: Video roles in Final Cut Pro allow you to color code clips and take notes for organization. To assign a role, right-click on a clip and select "Assign Audio/Video Roles" from the menu. Use roles to mark clips that need changes, storyboarding elements, or specific video segments. This helps organize your workflow and communicate with team members through visual color coding.
 
 ## Storage Management
 
