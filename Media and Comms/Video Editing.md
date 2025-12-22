@@ -6,15 +6,15 @@ For video editing we use a professional grade software known as Final Cut Pro (F
 
 ## Media Team Best Practices
 
-- **Communication is Key**: People need to tell media something interesting is happening. Let the media team know about important events, competitions, demonstrations, or any activities worth documenting.
+- **Communication is Key**: People need to tell media something interesting is happening. If the robot is moving, someone should be recording. Let the media team know about important events, competitions, demonstrations, or any activities worth documenting.
 - **If it's not recorded, it didn't happen**: Make sure to capture important moments as they happen. You can't edit what wasn't filmed.
 
 ## Video Management Workflow
 
 ### Importing and Organizing
 
+- **Create separate folders**: Before transferring media, create separate folders in Finder for each batch of videos. This helps maintain organization from the start and makes it easier to track which footage has been reviewed.
 - **Import everything into Final Cut Pro**: Instead of looking at videos in Finder, import everything directly into Final Cut Pro and review clips there. This provides better tools for evaluating footage.
-- **Create separate folders**: Make separate folders for each batch of videos when transferring from camera to computer. This helps maintain organization and makes it easier to track which footage has been reviewed.
 
 ### Reviewing and Tagging Clips
 
@@ -26,8 +26,8 @@ For video editing we use a professional grade software known as Final Cut Pro (F
 
 ## Storage Management
 
-- **Delete generated media**: Regularly delete generated media (render files, optimized media, proxy media) to conserve disk space. You can regenerate these files if needed, but they can take up significant storage.
-- **Use external drives**: Store your video files on an external drive and keep working from that drive. This prevents your computer's internal storage from filling up and allows you to move projects between systems if needed.
+- **Delete generated media**: Only delete generated media (render files, optimized media, proxy media) once the project is exported. You can regenerate these files if needed, but they can take up significant storage while working on a project.
+- **Use external hard drives**: Store your video files on an external hard drive and keep working from that drive. This prevents your computer's internal storage from filling up and allows you to move projects between systems if needed. **DO NOT keep files on SD cards** - always transfer to hard drives for editing and storage.
 
 ## Final Cut Pro Sections
 
