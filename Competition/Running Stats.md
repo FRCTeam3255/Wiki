@@ -11,7 +11,8 @@
 
 ### Practice Matches
 - Enable practice mode
-- Manually assign stats schedule via [this sheet](../.downloads/rulesets/stats_practice_match_assignments.pdf){:download}
+- Manually assign stats schedule via
+- ![this sheet](../.images/Stats/match_assignments.jpeg)
 
 ### Qualification Matches
 - Turn off practice mode and have students refresh the stats app
