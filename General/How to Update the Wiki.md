@@ -111,7 +111,9 @@ Once you're happy with your changes, you need to upload them to GitHub:
 
 ## Method 3: Using GitHub Issues with Copilot (Easiest - No Setup Required!)
 
-This is the simplest method - describe what you want changed and GitHub Copilot will make the changes for you!
+This is the simplest method - describe what you want changed, assign the issue to GitHub Copilot, and it will make the changes for you!
+
+**Note:** This requires GitHub Copilot to be enabled for the repository. Check with a team lead if you're unsure whether this is available.
 
 ### When to Use This Method
 
@@ -136,7 +138,8 @@ This is the simplest method - describe what you want changed and GitHub Copilot 
      - Screenshots or examples (if helpful)
 
 3. **Assign to Copilot:**
-   - On the right sidebar, under "Assignees", type and select `@copilot`
+   - On the right sidebar, under "Assignees", click and type `copilot` to find the Copilot bot
+   - Select the Copilot assignee from the list
    - Add relevant labels if needed (e.g., `documentation`, `enhancement`)
 
 4. **Submit the Issue:**
@@ -145,9 +148,9 @@ This is the simplest method - describe what you want changed and GitHub Copilot 
 
 5. **Review the Changes:**
    - Copilot will create a Pull Request with the changes
-   - You'll receive a notification when it's ready
+   - You'll receive a notification when the PR is ready
    - Review the changes and provide feedback if needed
-   - Once approved, the changes will be merged and the wiki will update
+   - Once approved by a team lead, the changes will be merged and the wiki will update
 
 ### Example Issue
 
