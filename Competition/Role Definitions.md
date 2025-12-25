@@ -24,3 +24,4 @@
 
 - Stats
 - Stats Lead
+  - In charge of relaying announcements in chat
