@@ -30,5 +30,5 @@
 
 | Role | Description |
 | ---- | ----------- |
-| Stats Lead | Manages stats team, ensures data quality, sits with coaches during alliance selection, and relays announcements in chat |
+| Stats Lead | Manages stats team, ensures data quality, and relays announcements in chat |
 | Stats | Scouts and collects match data on robot performance |
