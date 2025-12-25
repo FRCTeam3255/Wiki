@@ -33,7 +33,7 @@ A teaching run of kickoff using a past FRC Game.
 | :------: | :------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 9:00 am  |  15 min  | Students arrive <br>discuss how holiday break was                                                                                                                                 |
 | 9:15 am  |  10 min  | Show Videos:<br>[SuperNURDs 10 Year Anniversary](https://www.youtube.com/watch?v=W35IwdE_Zh0)<br>[Robowranglers: Fail Again](https://www.youtube.com/watch?v=8yn2CbQUlTI)         |
-| 9:15 am  |  1.5 hr  | Discuss build season expectations and schedule                                                                                                                                    |
+| 9:25 am  |  1.5 hr  | Discuss build season expectations and schedule                                                                                                                                    |
 | 10:45 am |  30 min  | Watch Game Animation & Field Videos<br>Take notes                                                                                                                                 |
 | 11:15 am |  10 min  | Unbox KoP (Put old game pieces in tote and pass around)                                                                                                                           |
 | 11:25 am |  45 min  | Regroup/Game Manual Breakdown <br>Break into groups read aloud <br>document important items into group's folder                                                                   |

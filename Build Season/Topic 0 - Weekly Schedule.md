@@ -13,7 +13,7 @@
 
 #### Friday
 
-- [Mock Kick off](Topic%201%20-%20Mock%20Kickoff.md)
+- [Mock Kickoff](Topic%201%20-%20Mock%20Kickoff.md)
 
 #### Saturday
 
