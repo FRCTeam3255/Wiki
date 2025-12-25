@@ -5,6 +5,7 @@ Follow these steps to tune the Motion Magic PID for your robot:
 ## Prerequisites
 - Ensure you are connected to the robot via its Wi-Fi.
 - Open the `constants.py` file to adjust the PID constants.
+- Use a fresh battery to ensure consistent performance during tuning.
 
 ## Steps
 
