@@ -19,8 +19,8 @@ This occurs the Monday following kickoff
 | 9:30 am  |  30 min  | Re-watch game animation/field tours                                                          |
 | 10:00 am |  1.5 hr  | Run a “robot” doing cycles on field                                                          |
 | 11:30 am |  30 min  | Robot cycle analysis                                                                         |
-| 12:00 am |  30 min  | Add to feature importance                                                                    |
-| 12:30 am |  30 min  | Rank feature importance list                                                                 |
+| 12:00 pm |  30 min  | Add to feature importance                                                                    |
+| 12:30 pm |  30 min  | Rank feature importance list                                                                 |
 | 1:00 pm  |  30 min  | Lunch                                                                                        |
 | 1:30 pm  |  2.5 hr  | Finish Rank feature importance list                                                          |
 | 4:00 pm  |  15 min  | Break (Mentors create Architecture Groups)                                                   |
