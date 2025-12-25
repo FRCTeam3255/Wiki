@@ -1,4 +1,11 @@
-# Weekly Schedule
+# Topic 0: Weekly Schedule
+
+> **Related Topics:**
+> - [Topic 1: Mock Kickoff](Topic%201%20-%20Mock%20Kickoff.md)
+> - [Topic 2: Kick Off](Topic%202%20-%20Kick%20Off.md)
+> - [Topic 2.1: Scoring Analysis](Topic%202.1%20-%20Scoring%20Analysis.md)
+> - [Topic 2.2: Feature Importance List](Topic%202.2%20-%20Feature%20Importance%20List.md)
+> - [Topic 3: Robot Architecture](Topic%203%20-%20Robot%20Architecture.md)
 
 ## Build Season
 
@@ -6,11 +13,11 @@
 
 #### Friday
 
-- [Mock Kick off](Kickoff.md#mock-kickoff)
+- [Mock Kick off](Topic%201%20-%20Mock%20Kickoff.md)
 
 #### Saturday
 
-- [Kick Off](Kickoff.md#kickoff)
+- [Kick Off](Topic%202%20-%20Kick%20Off.md)
 
 ### Week 1
 
