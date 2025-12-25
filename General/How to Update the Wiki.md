@@ -4,9 +4,10 @@ This guide explains how to create and edit wiki pages. Every team member can con
 
 ## Quick Start
 
-There are two ways to update the wiki:
+There are three ways to update the wiki:
 1. **Web-based editing** (easiest for small changes)
 2. **VSCode editing** (best for larger changes or creating multiple pages)
+3. **GitHub Issues with Copilot** (create an issue and let AI make the changes)
 
 ---
 
@@ -105,6 +106,86 @@ Once you're happy with your changes, you need to upload them to GitHub:
    - Click "Create pull request"
 
 **Note:** Once your changes are merged into the `main` branch, the wiki website will automatically update within a few minutes!
+
+---
+
+## Method 3: Using GitHub Issues with Copilot (Easiest - No Setup Required!)
+
+This is the simplest method - describe what you want changed and GitHub Copilot will make the changes for you!
+
+### When to Use This Method
+
+- You're not comfortable editing files directly
+- You want to suggest changes without learning Git or Markdown
+- You want to create new pages but prefer to describe what you need
+- You need multiple changes across different files
+
+### How to Create a Wiki Update Issue
+
+1. **Go to the Issues Tab:**
+   - Navigate to [Wiki Issues](https://github.com/FRCTeam3255/Wiki/issues)
+   - Click "New issue"
+
+2. **Describe Your Request:**
+   - **Title:** Be specific (e.g., "Add guide for pneumatics" or "Update battery selection page")
+   - **Description:** Include as much detail as possible:
+     - What page(s) need to be changed
+     - What information needs to be added, updated, or removed
+     - Any specific formatting or structure you want
+     - Links to reference materials (if applicable)
+     - Screenshots or examples (if helpful)
+
+3. **Assign to Copilot:**
+   - On the right sidebar, under "Assignees", type and select `@copilot`
+   - Add relevant labels if needed (e.g., `documentation`, `enhancement`)
+
+4. **Submit the Issue:**
+   - Click "Submit new issue"
+   - Copilot will automatically start working on your request
+
+5. **Review the Changes:**
+   - Copilot will create a Pull Request with the changes
+   - You'll receive a notification when it's ready
+   - Review the changes and provide feedback if needed
+   - Once approved, the changes will be merged and the wiki will update
+
+### Example Issue
+
+**Good Example:**
+```
+Title: Add guide for selecting pneumatic cylinders
+
+Description:
+Please create a new guide in the Mechanical folder that explains:
+- How to choose the right pneumatic cylinder for different applications
+- Common cylinder sizes used in FRC
+- Stroke length considerations
+- Force calculations
+- Where to find cylinders in inventory
+
+Include links to vendor websites and add images if possible.
+```
+
+**Another Example:**
+```
+Title: Update Software Conventions page with new naming rules
+
+Description:
+On the Software/Conventions.md page, please add a new section about:
+- Autonomous command naming: must start with "Auto_"
+- Subsystem class naming: must end with "Subsystem"
+- Constants file organization: one file per subsystem
+
+Also update the example code to reflect these changes.
+```
+
+### Tips for Good Issue Requests
+
+- **Be Specific:** The more detail you provide, the better the results
+- **One Topic Per Issue:** Create separate issues for different topics
+- **Include Examples:** Show what you want with examples or links
+- **Provide Context:** Explain why the change is needed
+- **Check Existing Pages:** Link to existing pages that should be updated
 
 ---
 
