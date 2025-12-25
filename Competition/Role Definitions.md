@@ -14,8 +14,8 @@
 
 | Role | Description |
 | ---- | ----------- |
-| Pit Crew | Maintains and repairs the robot, manages tools and parts in the pit area |
 | Pit Lead | Coordinates pit activities, manages pit schedule, and oversees robot maintenance |
+| Pit Crew | Maintains and repairs the robot, manages tools and parts in the pit area |
 
 ## Media
 
@@ -30,5 +30,5 @@
 
 | Role | Description |
 | ---- | ----------- |
-| Stats | Scouts and collects match data on robot performance |
 | Stats Lead | Manages stats team, ensures data quality, sits with coaches during alliance selection, and relays announcements in chat |
+| Stats | Scouts and collects match data on robot performance |
