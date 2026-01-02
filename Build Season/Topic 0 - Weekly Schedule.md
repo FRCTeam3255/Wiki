@@ -23,11 +23,11 @@
 
 #### Monday
 
-- Robot Architecture Pt 1
+- [Robot Architecture Pt 1](Topic%203%20-%20Robot%20Architecture.md#monday)
 
 #### Tuesday
 
-- Robot Architecture Pt 2
+- [Robot Architecture Pt 2](Topic%203%20-%20Robot%20Architecture.md#tuesday)
 
 #### Friday 3:45pm - 9pm
 
