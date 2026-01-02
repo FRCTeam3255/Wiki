@@ -2,13 +2,6 @@
 
 This occurs the Monday following kickoff
 
-> **Related Topics:**
-> - [Topic 0: Weekly Schedule](Topic%200%20-%20Weekly%20Schedule.md)
-> - [Topic 1: Mock Kickoff](Topic%201%20-%20Mock%20Kickoff.md)
-> - [Topic 2: Kick Off](Topic%202%20-%20Kick%20Off.md)
-> - [Topic 2.1: Scoring Analysis](Topic%202.1%20-%20Scoring%20Analysis.md)
-> - [Topic 2.2: Feature Importance List](Topic%202.2%20-%20Feature%20Importance%20List.md)
-
 ## Agenda
 
 ### Monday
