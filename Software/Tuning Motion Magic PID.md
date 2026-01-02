@@ -3,13 +3,14 @@
 Follow these steps to tune the Motion Magic PID for your robot:
 
 ## Prerequisites
+- Use a fresh battery to ensure consistent performance during tuning.
 - Ensure you are connected to the robot via its Wi-Fi.
-- Open the `constants.py` file to adjust the PID constants.
+- Open the `ConstMotion.java` or `ConstRotors.java` file to adjust the PID constants.
 
 ## Steps
 
 1. **Set Initial PID Constants**  
-    Set all PID constants (`kP`, `kI`, `kD`, `kF`, etc.) to `0` in `constants.py`.
+    Set all PID constants (`kP`, `kI`, `kD`, `kF`, etc.) to `0` in `ConstMotion.java` or `ConstRotors.java`.
 
 2. **Tune `kS` (Static Gain)**  
     - Gradually increase the `kS` value.  

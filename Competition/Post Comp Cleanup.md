@@ -1,3 +1,7 @@
+# Post Comp Cleanup
+
+## Pit Packing
+
 1. Set some mallets and fleshcutters asid3
 1. Set aside step ladder
 1. set aside broom and dustpan
@@ -18,5 +22,6 @@
 12. media stuff stays with media car (tripod goes in trailer trunk)
 13. Sweep up pits
 
+## Software
 
-
+- Reprogram Radios
