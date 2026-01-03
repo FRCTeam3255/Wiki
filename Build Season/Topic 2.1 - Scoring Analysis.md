@@ -1,5 +1,9 @@
 # Topic 2.1: Scoring Analysis
 
+TODO: REFINE THIS PAGE AS IT WAS AUTO GENERATED
+
+<!--  <br>(**ranking points vs match points**)<br>(point calculations/combinations, look at density, looking at auto vs teleop)<br>(Do RP become match points?)<br>Consider our robot the only robot<br>one person read one person write<br>include processing time in durations/max scores -->
+
 Understanding the scoring method and point calculations to optimize robot strategy.
 
 ## Overview

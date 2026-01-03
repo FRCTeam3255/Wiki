@@ -1,5 +1,9 @@
 # Topic 2.2: Feature Importance List
 
+TODO: REFINE THIS PAGE AS IT WAS AUTO GENERATED. sections to make: Creation, Ranking
+
+<!-- <br>(features are ability that our robot has that drive the design) <br>(ex. score high, mid, low, all autonomous)    -->
+
 Defining and prioritizing robot features that will drive the design.
 
 ## Overview
@@ -7,6 +11,7 @@ Defining and prioritizing robot features that will drive the design.
 The Feature Importance List is a prioritized list of robot capabilities that drive design decisions. Features are abilities that our robot should have to be competitive, derived from the [Scoring Analysis](Topic%202.1%20-%20Scoring%20Analysis.md).
 
 **Examples of features:**
+
 - Score high
 - Score mid
 - Score low
@@ -14,21 +19,6 @@ The Feature Importance List is a prioritized list of robot capabilities that dri
 - Climb
 - Defend
 - Speed
-
-## Feature Creation Schedule
-
-### During Mock Kickoff
-
-**Scheduled Time**: 3:00 pm - 4:30 pm (1.5 hours)
-
-Initial feature list creation using the practice game, followed by additional refinement:
-- 4:45 pm - 5:30 pm (45 min): Feature importance list rankings practice
-
-### During Actual Kickoff
-
-**Scheduled Time**: 5:45 pm - 7:45 pm (2 hours)
-
-Creating the actual feature importance list for the real game.
 
 ## Ranking System
 
