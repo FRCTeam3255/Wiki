@@ -1,6 +1,5 @@
 # Topic 0.1: Mock Kickoff
 
-TODO: UPDATE WITH LINKS TO PAGES
 
 A teaching run of kickoff using a past FRC Game.
 
