@@ -1,7 +1,6 @@
 # Topic 0.1: Mock Kickoff
 
-
-A teaching run of kickoff using a past FRC Game.
+A teaching run of kickoff using a past FRC Game!
 
 ## Mock Prep
 
