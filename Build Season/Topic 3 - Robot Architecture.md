@@ -6,21 +6,19 @@ This occurs the Monday following kickoff
 
 ### Monday
 
-TODO: COMPLETE THIS TABLE
-
-| Holiday Time | Non-Holiday time | Duration |                                                                                              |
-| :----------: | ---------------- | :------: | -------------------------------------------------------------------------------------------- |
-|   9:00 am    |                  |  30 min  | Review weekend insights                                                                      |
-|   9:30 am    |                  |  30 min  | Re-watch game animation/field tours                                                          |
-|   10:00 am   |                  |  30 min  | Add to feature importance                                                                    |
-|   10:30 am   |                  |   2 hr   | Rank feature importance list                                                                 |
-|   12:30 pm   |                  |  30 min  | **Lunch**                                                                                    |
-|   1:00 pm    |                  |  15 min  | Break (Mentors create Architecture Groups)                                                   |
-|   1:15 pm    |                  | 1.75 hr  | General Robot Architecture Creation - Round 1                                                |
-|   3:00 pm    |                  |  30 min  | **Dinner**                                                                                   |
-|   3:30 pm    |                  |   2 hr   | General Round 1 Robot Architecture Presentation<br>Consolidation/Feature Importance Checkoff |
-|   5:30 pm    |                  |  30 min  | Clean up                                                                                     |
-|   6:00 pm    |                  |    -     | Meeting ends                                                                                 |
+|   Time   | Duration |                                                                                              |
+| :------: | :------: | -------------------------------------------------------------------------------------------- |
+| 9:00 am  |  30 min  | Review weekend insights                                                                      |
+| 9:30 am  |  30 min  | Re-watch game animation/field tours                                                          |
+| 10:00 am |  30 min  | Add to feature importance                                                                    |
+| 10:30 am |   2 hr   | Rank feature importance list                                                                 |
+| 12:30 pm |  30 min  | **Lunch**                                                                                    |
+| 1:00 pm  |  15 min  | Break (Mentors create Architecture Groups)                                                   |
+| 1:15 pm  | 1.75 hr  | General Robot Architecture Creation - Round 1                                                |
+| 3:00 pm  |  30 min  | **Dinner**                                                                                   |
+| 3:30 pm  |   2 hr   | General Round 1 Robot Architecture Presentation<br>Consolidation/Feature Importance Checkoff |
+| 5:30 pm  |  30 min  | Clean up                                                                                     |
+| 6:00 pm  |    -     | Meeting ends                                                                                 |
 
 ### Tuesday
 
