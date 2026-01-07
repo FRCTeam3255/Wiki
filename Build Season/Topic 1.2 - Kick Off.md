@@ -43,7 +43,7 @@ Period of time from Kickoff to Champs
 | 2:15 pm  |   2 hr   | [Scoring method Analysis](Topic%202.1%20-%20Scoring%20Analysis.md)                                                     |
 | 4:15 pm  |  30 min  | **Dinner**                                                                                                             |
 | 4:45 pm  |   2 hr   | [Feature importance List creation](Topic%202.2%20-%20Feature%20Importance%20List.md)                                   |
-| 6:45 pm  |   1 hr   | Run a “robot” doing cycles on field                                                                                    |
+| 6:45 pm  |   1 hr   | Rough Field marking and Run a “robot” doing cycles on field                                                                                    |
 | 7:45 pm  |  30 min  | Robot cycle analysis                                                                                                   |
 | 8:15 pm  |  45 min  | Game piece interaction prototyping and Video/part research                                                             |
 |   9 pm   |    -     | End Meeting<br> Tell everyone to look up similar games and mechanism research,<br> to come with ideas for next meeting |
