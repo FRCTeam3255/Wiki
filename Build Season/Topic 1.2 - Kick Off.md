@@ -37,8 +37,8 @@ Period of time from Kickoff to Champs
 | 10:45 am |  30 min  | Read Game Overview in Groups<br>(make sure technology is working)                                                      |
 | 11:15 am |  15 min  | Unboxing KoP                                                                                                           |
 | 11:30 am |  30 min  | **Lunch**                                                                                                              |
-| 12:00 pm |   1 hr   | [Game Manual Breakdown - Reading](Topic%201%20-%20Game%20Manual%20Breakdown.md#Reading)                                |
-| 1:00 pm  |   1 hr   | [Game Manual Breakdown - Presenting](Topic%201%20-%20Game%20Manual%20Breakdown.md#Presenting)                          |
+| 12:00 pm |   1 hr   | [Game Manual Breakdown - Reading](Topic%201.3%20-%20Game%20Manual%20Breakdown.md#Reading)                                |
+| 1:00 pm  |   1 hr   | [Game Manual Breakdown - Presenting](Topic%201.3%20-%20Game%20Manual%20Breakdown.md#Presenting)                          |
 | 2:00 pm  |  15 min  | **Break**                                                                                                              |
 | 2:15 pm  |   2 hr   | [Scoring method Analysis](Topic%202.1%20-%20Scoring%20Analysis.md)                                                     |
 | 4:15 pm  |  30 min  | **Dinner**                                                                                                             |

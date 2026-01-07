@@ -26,49 +26,69 @@
 
 ### What are point values?
 
-- Are points time based or quantity based
-- Are there limits/restrictions when scoring can occur
-- Are there limits/restrictions on how many points can be scored
-- Are there ranking points
+- Are points time based or quantity based?
+- Are there limits/restrictions when scoring can occur?
+- Are there limits/restrictions on how many points can be scored?
+- Are there ranking points?
 
 ### Robot Constraints
 
-- What are robot size constraints
-- What are robot weight limits
+- What are robot size constraints?
+- What are robot weight limits?
 
 ### Zones (boundaries)
 
-- Where are Protected zones
-  - What are their penalty points
-- Where are Scoring Zones
-- Where are Non-scoring Zones (illegal to score)
-- How many robots are allowed in each zone
-- Where do robots start match
-- Where do robots end match
+- Where are Protected Zones?
+  - What are their penalty points?
+- Where are Scoring Zones?
+- Where are Non-scoring Zones? (illegal to score)
+- How many robots are allowed in each zone?
+- Where do robots start match?
+- Where are robots during auto?
+- Where are robots during tele-op? (Full vs Half Field Cycles)
+- Where do robots end in the match?
 
 ### Scoring Elements (aka Game Pieces)
 
-- How are scoring elements introduced to the field
-  - Do they start on field
-- Where are scoring elements scored (field elements)
-  - Are they recycled back to the field or do they leave the field forever
-  - Are they field structures consistent match to match
 - How many scoring elements can the robot hold?
-- Are they alliance dependent
+- Are they alliance dependent?
+- Is the scoring element fragile?
+- Is the scoring element compressible?
+- How are scoring elements introduced to the field?
+  - Do they start on field?
+  - Are they recieved via a human player?
+  - How many does the human player have?
+  - Can the human play hold multiple at once?
+  - Are there multiple human player stations with scoring elements?
+- What are scoring elements scored into? (field elements)
+  - Are there multiple field elements to score into?
+  - Do these scoring locations give different point values
+  - Are they recycled back to the field or do they leave the field forever
 
 ### Arena
 
-- How many scoring locations per alliance
-- Is scoring location shared with opposing alliance
-- Are there quantity limits on how many scoring elements can be scored
-- is field flat
-- are there obstructions for scoring or driving (e.g. overhangs, driving under things)
-- What are the field elements
+- Does the arena change match to match? (Ex Scoring location or layout)
+- Is the arena mirrored, or rotated?
+- Can robots access both sides of the field?
+- Is field the flat or does it have any raised ground?
+- Are there obstructions for scoring or driving (e.g. overhangs, driving under things)
+- Where are the scoring locations?
+- How many scoring locations per alliance?
+- Is scoring location shared with opposing alliance?
+- Are there quantity limits on how many scoring elements can be scored in a field element/scoring location?
+- Is the field dynamic, does anything move or swing?
+- What are the field elements' names and quantities
   - Names
   - Key images
   - rough dimensions
   - Relative scale to robot (robot w/bumpers is 34x34 inches)
-- Do they have motion
+- Where are the human players?
+- How many human players are allowed on the Arena?
+- Where are the drivers relative to scoring, and collecting?
+- What locations can robots get scoring elements from?
+- Are their vision obscructions?
+- Where are the april tags?
+
 
 ### Extra notes
 
