@@ -21,7 +21,9 @@ A teaching run of kickoff using a past FRC Game!
 4. Layout team laptops in group locations
    1. Pre-download Game Manual
 
-## Saturday Mock Schedule
+## Full Day Mock Kickoff Schedule
+
+If kickoff occurs **during** winter break
 
 |   Time   | Duration |                                                                                                                                                                                   |
 | :------: | :------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,9 +41,11 @@ A teaching run of kickoff using a past FRC Game!
 | 4:45 pm  |  45 min  | Feature importance list rankings (Monday Practice)                                                                                                                                |
 | 5:30 pm  |  15 min  | Game piece interaction prototyping and Video/part research                                                                                                                        |
 | 5:45 pm  |   1 hr   | General Robot Architecture (Monday Practice)                                                                                                                                      |
-| 6:45 pm  |    -     | End Mock Kick off                                                                                                      ****                                                           |
+| 6:45 pm  |    -     | End Mock Kick off                                                                                                                                                                 |
 
-## Friday Mock Schedule
+## After School Mock Kickoff Schedule
+
+If kickoff occurs **after** winter break
 
 |  Time   | Duration |                                                                                                                                                                                                                              |
 | :-----: | :------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -55,3 +59,4 @@ A teaching run of kickoff using a past FRC Game!
 | 6:50 pm |   1 hr   | [Scoring method Analysis](Topic%202.1%20-%20Scoring%20Analysis.md) <br>(**ranking points vs match points**)<br>(point calculations/combinations, look at density, looking at auto vs teleop)<br>(Do RP become match points?) |
 | 7:50 pm |   1 hr   | [Feature importance List creation](Topic%202.2%20-%20Feature%20Importance%20List.md) <br>(features are ability that our robot has that drive the design) <br>(ex. score high, mid, low, all autonomous)                      |
 | 8:50 pm |  10 min  | Q&A and debrief  
+| 9:00 pm |  -  | End Mock Kick off  
