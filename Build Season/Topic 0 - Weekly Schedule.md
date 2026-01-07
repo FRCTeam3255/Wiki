@@ -4,21 +4,21 @@
 
 ### Week 0 - Kick Off
 
-#### Friday
+#### Friday (Winter Break, 9am to 6:45pm), or (3:45pm to 9pm)
 
-- [Mock Kickoff](Topic%201%20-%20Mock%20Kickoff.md)
+- [Mock Kickoff](Topic%201.1%20-%20Mock%20Kickoff.md)
 
-#### Saturday
+#### Saturday (8am to 9pm)
 
 - [Kick Off](Topic%202%20-%20Kick%20Off.md)
 
 ### Week 1
 
-#### Monday
+#### Monday (Winter Break, 9am to 9pm), or Tuesday (3:45pm to 9pm)
 
 - [Robot Architecture Pt 1](Topic%203%20-%20Robot%20Architecture.md#monday)
 
-#### Tuesday
+#### Tuesday (1st Day Back) or Wednesday (3:45 to 9pm)
 
 - [Robot Architecture Pt 2](Topic%203%20-%20Robot%20Architecture.md#tuesday)
 
@@ -40,6 +40,7 @@
 
 ### Week 2
 
+- *No School Monday (**with** Winter Break Delay)*
 - Recap Posted
 - Decide on frame size
 - Block CAD Done, give to software
@@ -47,7 +48,7 @@
 
 ### Week 3
 
-- No School **(Monday)**
+- *No School Monday (**WITHOUT** Winter Break Delay)*
 - Recap Posted
 - Full CAD Done
 - Full Software Logic Done
