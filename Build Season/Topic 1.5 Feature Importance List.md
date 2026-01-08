@@ -21,33 +21,35 @@ The Feature Importance List is a prioritized list of robot capabilities that dri
 10. Answer design consideration questions
 
 
-
 ## Feature Importance List Ranking
 
 - Features are ranked on a scale to analyze competitive preformance benefit. (Looking at match points and ranking points)
-- Having more high ranked features makes a more competitive robot. (You want all the 5s, and as many 4s, 3s, 2s, and 1s as possible, with each number decreasing how much competitive benefit it gives you)
+- Having more high ranked features makes a more competitive robot. (You want all the 5s, and as many 4s, 3s, 2s, and 1s as possible, with each number decreasing how much competitive benefit it gives you). Ex. When doing design, we would sacrfice a 4 to obtain a 5 feature.
 
 
  ## Ranking Legend
 - **5 Ranking**: 
-  - Most essential features needed to preform at a comp
-  - Must be completed to attend a regional
-  - 
+  - The most beneficial robot features (ex. High Match Points, High Ranking Point Ratio)
+  - We wouldn't want to go to a comp without all 5s satisfied
+
   
-- **4 Ranking**: Competitive Robot
+- **4 Ranking**:
+  - Very beneficial features 
   - Features needed to make robot very competitive
   - Target for first regional
   
-- **3 Ranking**: Optimizations
-  - Features that will benefit the robot on top of being competitive
+- **3 Ranking**: 
+  - Features that will benefit the robot on top of being competitive, Optimizations
   - Stretch goals for first regional
   
-- **2 Ranking**: Try to do it but not too hard (Optional)
-  - Additional features to mae robot better if time permits
+- **2 Ranking**:
+  - Additional features to make robot better if time permits
+  - Try to do it but not too hard
   - Low priority
   
-- **1 Ranking**: If it's free, do it (Optional)
-  - Features that make the rogot a bit better
+- **1 Ranking**: 
+  - If it's free, do it (Optional)
+  - Features that make the robot somewhat better
   - Only implement if extremely easy
   - No significant effort invested
   

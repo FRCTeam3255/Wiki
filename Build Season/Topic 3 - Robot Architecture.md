@@ -74,18 +74,6 @@ This occurs the Monday following kickoff
     1. Turrets, hoods, ability to do two motions at once, game piece orientation changing (flip cone), etc.
 6. What things can be combined/simplified -->
 
-## Feature ranking
-
-- assume solo robot
-- no difficulty
-- all features in isolation (one does not affect another) (most of the time)
-- rank 5 = Minimum Viable Robot (regional 1)
-- rank 4 = Competitive Robot (regional 1)
-- rank 3 = Optimizations (target regional 1)
-- rank 2 = try to do it but not too hard (optional)
-- rank 1 = if its free do it (optional)
-- rank 0 = not doing - wont even test
-
 ## Philosophy
 
 - Say, this scoring element is similar to a past game
