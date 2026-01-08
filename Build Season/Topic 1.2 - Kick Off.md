@@ -40,9 +40,9 @@ Period of time from Kickoff to Champs
 | 12:00 pm |   1 hr   | [Game Manual Breakdown - Reading](Topic%201.3%20-%20Game%20Manual%20Breakdown.md#Reading)                                |
 | 1:00 pm  |   1 hr   | [Game Manual Breakdown - Presenting](Topic%201.3%20-%20Game%20Manual%20Breakdown.md#Presenting)                          |
 | 2:00 pm  |  15 min  | **Break**                                                                                                              |
-| 2:15 pm  |   2 hr   | [Scoring method Analysis](Topic%201.4%20Scoring%20Method%20Analysis.md)                                                     |
+| 2:15 pm  |   2 hr   | [Scoring Method Analysis](Topic%201.4%20Scoring%20Method%20Analysis.md)                                                     |
 | 4:15 pm  |  30 min  | **Dinner**                                                                                                             |
-| 4:45 pm  |   2 hr   | [Feature importance List creation](Topic%202.2%20-%20Feature%20Importance%20List.md)                                   |
+| 4:45 pm  |   2 hr   | [Feature Importance List Creation](Topic%202.2%20-%20Feature%20Importance%20List.md)                                   |
 | 6:45 pm  |   1 hr   | Rough Field marking and Run a “robot” doing cycles on field                                                                                    |
 | 7:45 pm  |  30 min  | Robot cycle analysis                                                                                                   |
 | 8:15 pm  |  45 min  | Game piece interaction prototyping and Video/part research                                                             |

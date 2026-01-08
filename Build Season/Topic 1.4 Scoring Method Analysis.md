@@ -26,3 +26,4 @@ Scoring method analysis is a critical phase during both Mock Kickoff and actual 
 8. Fill out RP combination table, do RP become match points
 9. Find max RP combos/insights
 10. Record any insights as you find time
+
