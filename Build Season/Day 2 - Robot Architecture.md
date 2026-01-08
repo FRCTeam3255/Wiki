@@ -4,7 +4,9 @@ This occurs the Monday following kickoff
 
 ## Agenda
 
-### Monday (Winter Break, 9am to 9pm)
+### Part 1
+
+**Monday (Winter Break, 9am to 9pm)**
 
 |   Time   | Duration |                                                                                              |
 | :------: | :------: | -------------------------------------------------------------------------------------------- |
@@ -20,7 +22,9 @@ This occurs the Monday following kickoff
 | 5:30 pm  |  30 min  | Clean up                                                                                     |
 | 6:00 pm  |    -     | Meeting ends                                                                                 |
 
-### Tuesday (1st Day Back, 3:45 to 9pm)
+### Part 2
+
+**Tuesday (1st Day Back, 3:45 to 9pm)**
 
 |  Time   | Duration |                                                                                                                                                         |
 | :-----: | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
