@@ -89,7 +89,6 @@
 - Are their vision obscructions?
 - Where are the april tags?
 
-
 ### Extra notes
 
 - Any other important information not covered by the questions above
@@ -108,26 +107,26 @@
     Just read title of evergreen rules
 
 1. Break into groups
-   1. 3 groups, 2 mentors per group
-   2. Different manual sections
-   3. Give each group a copy of the research questions
+    1. 3 groups, 2 mentors per group
+    2. Different manual sections
+    3. Give each group a copy of the research questions
 2. Within groups
-   1. Designate scribe
-   2. Read each paragraph aloud
-   3. For each paragraph, discuss with group if any research questions were answered, or if you want to add any extra notes at bottom
-   4. Record answers to questions
-   5. Record any questions about the manual/rules that come up
+    1. Designate scribe
+    2. Read each paragraph aloud
+    3. For each paragraph, discuss with group if any research questions were answered, or if you want to add any extra notes at bottom
+    4. Record answers to questions
+    5. Record any questions about the manual/rules that come up
 
 ### Presenting
 
 1. Regroup as whole team
 2. 2 presenters for each group come up
 3. Mentors ask 1 research question at a time
-   1. Presenters state their answers to questions regardless of group
-   2. Create master list of answers to research questions
-   3. Repeat for next question
-   4. Any presenter can add additonal comments to a question, as well as provide their answer if already answered
-5. Review master list of analysis questions and fill gaps/come back to anything we skipped
-6. Each individual group presents extra notes/questions
-   1. Create master list of extra notes
-   2. Create master list of questions to ask FIRST Q&A
+    1. Presenters state their answers to questions regardless of group
+    2. Create master list of answers to research questions
+    3. Repeat for next question
+    4. Any presenter can add additonal comments to a question, as well as provide their answer if already answered
+4. Review master list of analysis questions and fill gaps/come back to anything we skipped
+5. Each individual group presents extra notes/questions
+    1. Create master list of extra notes
+    2. Create master list of questions to ask FIRST Q&A
