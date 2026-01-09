@@ -39,7 +39,7 @@
 ### Zones (boundaries)
 
 - Where are Protected Zones?
-  - What are their penalty points?
+   - What are their penalty points?
 - Where are Scoring Zones?
 - Where are Non-scoring Zones? (illegal to score)
 - How many robots are allowed in each zone?
@@ -55,15 +55,15 @@
 - Is the scoring element fragile?
 - Is the scoring element compressible?
 - How are scoring elements introduced to the field?
-  - Do they start on field?
-  - Are they recieved via a human player?
-  - How many does the human player have?
-  - Can the human play hold multiple at once?
-  - Are there multiple human player stations with scoring elements?
+   - Do they start on field?
+   - Are they recieved via a human player?
+   - How many does the human player have?
+   - Can the human play hold multiple at once?
+   - Are there multiple human player stations with scoring elements?
 - What are scoring elements scored into? (field elements)
-  - Are there multiple field elements to score into?
-  - Do these scoring locations give different point values
-  - Are they recycled back to the field or do they leave the field forever
+   - Are there multiple field elements to score into?
+   - Do these scoring locations give different point values
+   - Are they recycled back to the field or do they leave the field forever
 
 ### Arena
 
@@ -78,10 +78,10 @@
 - Are there quantity limits on how many scoring elements can be scored in a field element/scoring location?
 - Is the field dynamic, does anything move or swing?
 - What are the field elements' names and quantities
-  - Names
-  - Key images
-  - rough dimensions
-  - Relative scale to robot (robot w/bumpers is 34x34 inches)
+   - Names
+   - Key images
+   - rough dimensions
+   - Relative scale to robot (robot w/bumpers is 34x34 inches)
 - Where are the human players?
 - How many human players are allowed on the Arena?
 - Where are the drivers relative to scoring, and collecting?
