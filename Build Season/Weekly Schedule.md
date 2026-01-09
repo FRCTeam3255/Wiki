@@ -16,23 +16,24 @@
 
 #### Monday (Winter Break, 9am to 9pm), or Tuesday (3:45pm to 9pm)
 
-- [Robot Architecture Pt 1](Day%202%20-%20Robot%20Architecture.md#Part-1)
+- [Robot Architecture Pt 1](Day%202-4%20-%20Robot%20Architecture%20Phase.md)
 
 #### Tuesday (1st Day Back) or Wednesday (3:45 to 9pm)
 
-- [Robot Architecture Pt 2](Day%202%20-%20Robot%20Architecture.md#Part-2)
+- [Robot Architecture Pt 2](Day%202-4%20-%20Robot%20Architecture%20Phase.md)
 
 
 #### Friday 3:45pm - 9pm
+
+- [Robot Architecture Pt 3](Day%202-4%20-%20Robot%20Architecture%20Phase.md)
+
+#### Saturday 9am-9pm
 
 - Variable prototypes done, there may be multiple of the variable prototypes, and multiple revisions
   - Compression values, rough geometry
   - On slots, 8020, hole patterns etc.
   - Mounts to frame, for electronics
 - Each mechanism has a 1 prototype done
-
-#### Saturday 9am-9pm
-
 - Integration protobot (all designers together)
   - Use data from variable prototypes like compression, geometry etc.
   - Overall 2D sketch, created and cut out as a main plate
