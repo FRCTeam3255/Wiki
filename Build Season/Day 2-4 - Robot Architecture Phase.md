@@ -1,10 +1,12 @@
-# Topic 3: Robot Architecture
+# Day 2 thru 4: Robot Architecture Phase
 
 This occurs the Monday following kickoff
 
-## Agenda
+## Schedule
 
-### Monday
+### Part 1 (Winter Break)
+
+**Monday (9am to 9pm)**
 
 |   Time   | Duration |                                                                                              |
 | :------: | :------: | -------------------------------------------------------------------------------------------- |
@@ -20,7 +22,9 @@ This occurs the Monday following kickoff
 | 5:30 pm  |  30 min  | Clean up                                                                                     |
 | 6:00 pm  |    -     | Meeting ends                                                                                 |
 
-### Tuesday
+### Part 2 (Winter Break)
+
+**Tuesday (1st Day Back, 3:45 to 9pm)**
 
 |  Time   | Duration |                                                                                                                                                         |
 | :-----: | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -36,7 +40,58 @@ This occurs the Monday following kickoff
 | 6:45 pm |  15 min  | Break<br>Mentors Make Mechanism groups                                                                                                                  |
 | 7:00 pm |  30 min  | Work on base structures/variable prototypes in groups<br>Software creates base robot/structures code                                                    |
 | 7:30 pm |  15 min  | Clean up                                                                                                                                                |
-| 7:45 pm |    -     | Meeting ends                                                                                                                                            |
+| 7:45 pm |    -     | Meeting ends                                
+
+### Part 1 (Non-Winter Break)
+
+**Tuesday (3:45pm to 9pm)**
+
+|   Time   | Duration |                                                                                              |
+| :------: | :------: | -------------------------------------------------------------------------------------------- |
+| 3:45 am  |  15 min  | Regroup Weekend Insights|
+| 4:00 am  |  15 min  | Re-watch game animation/field tours|
+| 4:15 am |  30 min  | Review/Add to feature importance items|
+| 4:45 pm |   1.5 hr   | Feature Importance List ranking/answer design consideration questions|
+| 6:15 pm |  30 min  |**Dinner** (Mentors create Architecture Groups) |
+| 6:45 pm  | 1.5 hr  | **Round 1** - General Robot Architecture Creation|
+| 8:15 pm  |   15 min | Presentation Retrobot Example|
+| 8:30 pm  |  30 min  | Go back into groups and finalize presentations|
+| 9:00 pm  |    -     | Meeting Ends|
+
+### Part 2 (Non-Winter Break)
+
+**Wednesday (3:45 to 9pm)**
+
+|  Time   | Duration |                                                                                                                                                     |
+| :-----: | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 3:45 pm |  15 min  | Review Team Updates (Manual Updates)<br>Re-watch game animation                                                                                         |
+| 4:00 pm |  15 min  | Review feature importance list|
+| 4:15 pm |  30 min  | Group 1 Archetype Presentation, Feature Importance Satisfaction/Complexity Ratings|
+| 4:45 pm |  30 min  | Group 2 Archetype Presentation, Feature Importance Satisfaction/Complexity Ratings |
+| 5:15 pm |  30 min  | Group 3 Archetype Presentation, Feature Importance Satisfaction/Complexity Ratings |
+| 5:45 pm |  30 min  | Identify design driving mechanism for each archetype|
+| 6:15 pm |  15 min  | Narrow down to 2 Archetypes, Complexity vs Feature importance list vs similarity |
+| 6:30 pm |  30 min  | Dinner (Mentors make round 2 Groups)|
+| 7:00 pm |  15 min  | List all minor mechanisms from all archetypes/provide sample round 2 slides|
+| 7:15 pm |  1.5 hr  | Begin round 2 archetypes creation (make best full robot with design driving mechanisms)                     |
+| 8:45 pm |  15 min  | Clean up/Have Slides ready to present on friday|
+| 9:00 pm |    -     | Meeting ends|
+
+### Part 3 (Non-Winter Break)
+
+**Friday (3:45 to 9pm)**
+
+|  Time   | Duration |                                                                                                                                                     |
+| :-----: | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 3:45 pm |  15 min  | Review Team Updates (Manual Updates)<br>Re-watch game animation|
+| 4:00 pm |  15 min  | Review feature importance list|
+| 4:15 pm |  30 min  | Group 1 Archetype Presentation, Feature Importance Satisfaction/Complexity Ratings|
+| 4:45 pm |  30 min  | Group 2 Archetype Presentation, Feature Importance Satisfaction/Complexity Ratings |
+| 5:15 pm |  30 min  | Narrow down to 1 Archetype, Complexity vs Feature Importance List|
+| 5:45 pm |  45 min  | Minor Mechanism Analysis/Complexity Ratings, Choose which minor mechanism to start with|
+| 6:30 pm |  30 min | Dinner (Mentors make mechanism groups)|
+| 7:00 pm |  2 hr  | **Mechanical** splits into variable prototyping/protobot groups<br>**Software** lists out states, guess motor counts, define motor categories, assign motors to states, create issues by clustered categories, protobot skeleton code, assign buttons
+| 9:00 pm |    -     | Meeting ends|
 
 <!-- - 45 min per section research, 10 min per group presentation
 - 3 groups Generate robot architecture based on ideas presented
@@ -73,18 +128,6 @@ This occurs the Monday following kickoff
 5. Think optimizations/extras for each component (major competitive advantage/cycle time reduction)
     1. Turrets, hoods, ability to do two motions at once, game piece orientation changing (flip cone), etc.
 6. What things can be combined/simplified -->
-
-## Feature ranking
-
-- assume solo robot
-- no difficulty
-- all features in isolation (one does not affect another) (most of the time)
-- rank 5 = Minimum Viable Robot (regional 1)
-- rank 4 = Competitive Robot (regional 1)
-- rank 3 = Optimizations (target regional 1)
-- rank 2 = try to do it but not too hard (optional)
-- rank 1 = if its free do it (optional)
-- rank 0 = not doing - wont even test
 
 ## Philosophy
 
