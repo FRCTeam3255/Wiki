@@ -1,4 +1,4 @@
-# Topic 0.2: Kick Off
+# Day 1: Kick Off
 
 [Broadcast Link](https://www.firstinspires.org/robotics/frc/kickoff?utm_source=first-inspires&utm_medium=game-season&utm_campaign=frc-ko-021)
 

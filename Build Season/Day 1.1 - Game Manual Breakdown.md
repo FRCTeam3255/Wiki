@@ -1,4 +1,4 @@
-# Topic 1 Game Manual Breakdown
+# Day 1.1: Game Manual Breakdown
 
 [Game Manual Download](https://www.firstinspires.org/resource-library/frc/competition-manual-qa-system)
 

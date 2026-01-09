@@ -1,4 +1,4 @@
-# Scoring Method Analysis
+# Day 1.2: Scoring Method Analysis
 [2025 Reefscape Example](https://docs.google.com/spreadsheets/d/1P_xUweqlo1IpuWZOB4LWs2J_4pA4ogEmZYdTSWbrfQA/edit?gid=0#gid=0)
 
 ## Overview

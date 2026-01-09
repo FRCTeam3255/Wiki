@@ -1,4 +1,4 @@
-# Topic 0.1: Mock Kickoff
+# Day 0: Mock Kickoff
 
 A teaching run of kickoff using a past FRC Game!
 

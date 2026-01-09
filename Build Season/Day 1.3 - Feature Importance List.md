@@ -1,4 +1,4 @@
-# Feature Importance List
+# Day 1.3: Feature Importance List
 The Feature Importance List is a prioritized list of robot capabilities that drive design decisions. 
 
 [2025 Retrobot Example](https://docs.google.com/spreadsheets/d/1L6yl4PBxVenyQtbBaMPIxDMIrqewOWmwFbR4vLWvi_g/edit?gid=173125914#gid=173125914)

@@ -1,4 +1,4 @@
-# Topic 3: Robot Architecture Phase
+# Day 2 thru 4: Robot Architecture Phase
 
 This occurs the Monday following kickoff
 
