@@ -22,7 +22,7 @@
 ## Research questions
 
 !!! Important
-     When recording answers cite section/subsection/paragraph (e.g. 5.1 paragraph 2) where the information was found
+    When recording answers cite section/subsection/paragraph (e.g. 5.1 paragraph 2) where the information was found
 
 ### What are point values?
 
