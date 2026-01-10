@@ -19,6 +19,45 @@
 | 9   | Robot construction (~30pgs)<br>focus on starting config (9.1)                                                                                |          2           | Eli    |
 | 6   | Match Play (~10 pgs)                                                                                                                         |          3           | Tayler |
 
+## Manual Breakdown steps
+
+### Reading
+
+!!! tip
+    Just read title of evergreen rules
+
+1. Read to group [research questions](#research-questions) as examples of what they should be looking for/thinking about
+2. Break into groups
+    1. 3 groups, 2 mentors per group
+    2. Different manual sections
+    3. Each group has Google Slide or Google Docs for notes
+3. Within groups
+    1. Designate primary scribe
+    2. Read each paragraph aloud
+    3. Take free form notes on key takeaways
+       1. Copy/paste original rule
+       2. Copy/paste pictures and tables
+       3. Write interpretation of rule
+    4. Record any questions about the manual/rules that come up
+    5. After reading and taking notes refine into presentation
+       1. Rule, then takeaway/interpretation
+    6. If time permits, answer [research questions](#research-questions) as a group
+       1. Record answers in notes doc
+
+### Presenting
+
+1. Regroup as whole team
+2. 2 presenters for each group come up
+3. Mentors ask 1 [research question](#research-questions) at a time
+    1. Presenters state their answers to questions regardless of group
+    2. Create master list of answers to [research questions](#research-questions)
+    3. Repeat for next question
+    4. Any presenter can add additonal comments to a question, as well as provide their answer if already answered
+4. Review master list of analysis questions and fill gaps/come back to anything we skipped
+5. Each individual group presents extra notes/questions
+    1. Create master list of extra notes
+    2. Create master list of questions to ask FIRST Q&A
+
 ## Research questions
 
 !!! Important
@@ -26,7 +65,7 @@
 
 ### What are point values?
 
-- Are points time based or quantity based?
+- Are points control time based or per quantity based?
 - Are there limits/restrictions when scoring can occur?
 - Are there limits/restrictions on how many points can be scored?
 - Are there ranking points?
@@ -39,7 +78,7 @@
 ### Zones (boundaries)
 
 - Where are Protected Zones?
-   - What are their penalty points?
+  - What are their penalty points?
 - Where are Scoring Zones?
 - Where are Non-scoring Zones? (illegal to score)
 - How many robots are allowed in each zone?
@@ -50,20 +89,21 @@
 
 ### Scoring Elements (aka Game Pieces)
 
+- How many scoring elements can the robot preload?
 - How many scoring elements can the robot hold?
 - Are they alliance dependent?
 - Is the scoring element fragile?
 - Is the scoring element compressible?
 - How are scoring elements introduced to the field?
-   - Do they start on field?
-   - Are they recieved via a human player?
-   - How many does the human player have?
-   - Can the human play hold multiple at once?
-   - Are there multiple human player stations with scoring elements?
+  - Do they start on field?
+  - Are they recieved via a human player?
+  - How many does the human player have?
+  - Can the human play hold multiple at once?
+  - Are there multiple human player stations with scoring elements?
 - What are scoring elements scored into? (field elements)
-   - Are there multiple field elements to score into?
-   - Do these scoring locations give different point values
-   - Are they recycled back to the field or do they leave the field forever
+  - Are there multiple field elements to score into?
+  - Do these scoring locations give different point values
+  - Are they recycled back to the field or do they leave the field forever
 
 ### Arena
 
@@ -78,15 +118,15 @@
 - Are there quantity limits on how many scoring elements can be scored in a field element/scoring location?
 - Is the field dynamic, does anything move or swing?
 - What are the field elements' names and quantities
-   - Names
-   - Key images
-   - rough dimensions
-   - Relative scale to robot (robot w/bumpers is 34x34 inches)
+  - Names
+  - Key images
+  - rough dimensions
+  - Relative scale to robot (robot w/bumpers is 34x34 inches)
 - Where are the human players?
 - How many human players are allowed on the Arena?
 - Where are the drivers relative to scoring, and collecting?
 - What locations can robots get scoring elements from?
-- Are their vision obscructions?
+- Are their vision obstructions?
 - Where are the april tags?
 
 ### Extra notes
@@ -98,35 +138,3 @@
 - Any questions on rules that come up during reading
 - Any clarifications needed on how the rules are written
 - Any questions that need to be sent to FIRST Q&A
-
-## Manual Breakdown steps
-
-### Reading
-
-!!! tip
-    Just read title of evergreen rules
-
-1. Break into groups
-    1. 3 groups, 2 mentors per group
-    2. Different manual sections
-    3. Give each group a copy of the research questions
-2. Within groups
-    1. Designate scribe
-    2. Read each paragraph aloud
-    3. For each paragraph, discuss with group if any research questions were answered, or if you want to add any extra notes at bottom
-    4. Record answers to questions
-    5. Record any questions about the manual/rules that come up
-
-### Presenting
-
-1. Regroup as whole team
-2. 2 presenters for each group come up
-3. Mentors ask 1 research question at a time
-    1. Presenters state their answers to questions regardless of group
-    2. Create master list of answers to research questions
-    3. Repeat for next question
-    4. Any presenter can add additonal comments to a question, as well as provide their answer if already answered
-4. Review master list of analysis questions and fill gaps/come back to anything we skipped
-5. Each individual group presents extra notes/questions
-    1. Create master list of extra notes
-    2. Create master list of questions to ask FIRST Q&A

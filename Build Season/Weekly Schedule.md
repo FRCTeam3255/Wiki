@@ -1,4 +1,13 @@
-# Topic 0: Weekly Schedule
+# Weekly Schedule
+
+## 2026 Build Season General Schedule
+
+- Kickoff 8 am to 9 pm
+- **Tuesdays**, 3:45 pm - 7:45 pm
+- **Wednesdays**, 3:45 pm - 7:45 pm
+- **Fridays** 3:45 pm to 9 pm (dinner provided - parent volunteers welcome)
+- **Saturdays** 9 am to 9 pm (lunch and dinner provided - parent volunteers welcome)
+- *Holiday (non-school days) meetings 9 am to 9 pm (lunch and dinner provided - parent volunteers welcome)*
 
 ## Build Season
 
@@ -21,7 +30,6 @@
 #### Tuesday (1st Day Back) or Wednesday (3:45 to 9pm)
 
 - [Robot Architecture Pt 2](Day%202-4%20-%20Robot%20Architecture%20Phase.md)
-
 
 #### Friday 3:45pm - 9pm
 
