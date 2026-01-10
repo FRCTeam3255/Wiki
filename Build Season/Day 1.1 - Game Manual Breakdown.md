@@ -26,16 +26,23 @@
 !!! tip
     Just read title of evergreen rules
 
-1. Break into groups
+1. Read to group [research questions](#research-questions) as examples of what they should be looking for/thinking about
+2. Break into groups
     1. 3 groups, 2 mentors per group
     2. Different manual sections
-    3. Give each group a copy of the [research questions](#research-questions)
-2. Within groups
-    1. Designate scribe
+    3. Each group has Google Slide or Google Docs for notes
+3. Within groups
+    1. Designate primary scribe
     2. Read each paragraph aloud
-    3. For each paragraph, discuss with group if any [research questions](#research-questions) were answered, or if you want to add any extra notes at bottom
-    4. Record answers to questions
-    5. Record any questions about the manual/rules that come up
+    3. Take free form notes on key takeaways
+       1. Copy/paste original rule
+       2. Copy/paste pictures and tables
+       3. Write interpretation of rule
+    4. Record any questions about the manual/rules that come up
+    5. After reading and taking notes refine into presentation
+       1. Rule, then takeaway/interpretation
+    6. If time permits, answer [research questions](#research-questions) as a group
+       1. Record answers in notes doc
 
 ### Presenting
 
@@ -58,7 +65,7 @@
 
 ### What are point values?
 
-- Are points time based or quantity based?
+- Are points control time based or per quantity based?
 - Are there limits/restrictions when scoring can occur?
 - Are there limits/restrictions on how many points can be scored?
 - Are there ranking points?
@@ -82,6 +89,7 @@
 
 ### Scoring Elements (aka Game Pieces)
 
+- How many scoring elements can the robot preload?
 - How many scoring elements can the robot hold?
 - Are they alliance dependent?
 - Is the scoring element fragile?
@@ -118,7 +126,7 @@
 - How many human players are allowed on the Arena?
 - Where are the drivers relative to scoring, and collecting?
 - What locations can robots get scoring elements from?
-- Are their vision obscructions?
+- Are their vision obstructions?
 - Where are the april tags?
 
 ### Extra notes
