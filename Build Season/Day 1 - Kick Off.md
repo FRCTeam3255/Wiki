@@ -6,16 +6,6 @@
 
 Period of time from Kickoff to Champs
 
-### 2026 Build Season Schedule
-
-- Kickoff 8 am to 9 pm
-- **Tuesdays**, 3:45 pm - 7:45 pm
-- **Wednesdays**, 3:45 pm - 7:45 pm
-- **Fridays** 3:45 pm to 9 pm (dinner provided - parent volunteers welcome)
-- **Saturdays** 9 am to 9 pm (lunch and dinner provided - parent volunteers welcome)
-- *Holiday (non-school days) meetings 9 am to 9 pm (lunch and dinner provided - parent volunteers welcome)*
-
-
 ## Kickoff Prep
 
 1. Create Kickoff Google Drive Folder
