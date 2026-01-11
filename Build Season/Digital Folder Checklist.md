@@ -7,6 +7,7 @@
 - [`YEAR`_Robot_CAD](https://github.com/new?template_name=Template_Robot_CAD&template_owner=FRCTeam3255)
 - [`YEAR`_Field_CAD](https://github.com/new?template_name=Template_Robot_CAD&template_owner=FRCTeam3255)
 - [`YEAR`_Fabrication](https://github.com/new?template_name=Template_Fabrication&template_owner=FRCTeam3255)
+- [`YEAR`_Graphics](https://github.com/new?template_name=Template_Graphics&template_owner=FRCTeam3255)
 
 ### Google Drive
 
