@@ -15,12 +15,13 @@ Period of time from Kickoff to Champs
    1. Tell students to pre-download Game Manual
 4. Layout team laptops in group locations
    1. Pre-download Game Manual
+5. On day of kickoff mentors will pre assign groups before broadcast
 
 ## Schedule
 
 |   Time   | Duration |                                                                                                                        |
 | :------: | :------: | ---------------------------------------------------------------------------------------------------------------------- |
-| 8:00 am  |   1 hr   | Students arrive                                                                                                        |
+| 8:00 am  |   1 hr   | Students arrive<br>Mentors assign students to groups groups                                                            |
 | 9:00 am  |   1 hr   | Watch Kickoff broadcast                                                                                                |
 | 10:00 am |  30 min  | Watch Game Animation & Field Videos<br>Take notes                                                                      |
 | 10:30 am |  15 min  | **Break** (Mentors split up manual)                                                                                    |
@@ -30,10 +31,36 @@ Period of time from Kickoff to Champs
 | 12:00 pm |   1 hr   | [Game Manual Breakdown - Reading](Day%201.1%20-%20Game%20Manual%20Breakdown.md#Reading)                                |
 | 1:00 pm  |   1 hr   | [Game Manual Breakdown - Presenting](Day%201.1%20-%20Game%20Manual%20Breakdown.md#Presenting)                          |
 | 2:00 pm  |  15 min  | **Break**                                                                                                              |
-| 2:15 pm  |   2 hr   | [Scoring Method Analysis](Day%201.2%20-%20Scoring%20Method%20Analysis.md)                                                     |
+| 2:15 pm  |   2 hr   | [Scoring Method Analysis](Day%201.2%20-%20Scoring%20Method%20Analysis.md)                                              |
 | 4:15 pm  |  30 min  | **Dinner**                                                                                                             |
-| 4:45 pm  |   2 hr   | [Feature Importance List Creation](Day%201.3%20-%20Feature%20Importance%20List.md)                                   |
-| 6:45 pm  |   1 hr   | Rough Field marking and Run a “robot” doing cycles on field                                                                                    |
+| 4:45 pm  |   2 hr   | [Feature Importance List Creation](Day%201.3%20-%20Feature%20Importance%20List.md)                                     |
+| 6:45 pm  |   1 hr   | Rough Field marking and Run a “robot” doing cycles on field                                                            |
 | 7:45 pm  |  30 min  | Robot cycle analysis                                                                                                   |
 | 8:15 pm  |  45 min  | Game piece interaction prototyping and Video/part research                                                             |
 |   9 pm   |    -     | End Meeting<br> Tell everyone to look up similar games and mechanism research,<br> to come with ideas for next meeting |
+
+<!-- 2026 Actual
+|   Time   | Duration |                                                                                                                        |
+| :------: | :------: | ---------------------------------------------------------------------------------------------------------------------- |
+| 8:00 am  |   1 hr   | Students arrive<br>Mentors assign students to groups groups                                                            |
+| 9:00 am  |   1 hr   | Watch Kickoff broadcast                                                                                                |
+| 10:00 am |  30 min  | Watch Game Animation & Field Videos<br>Take notes                                                                      |
+| 10:30 am |  20 min  | Unboxing KoP<br>**Break** (Mentors split up manual)                                                                    |
+| 10:50 am |  40 min  | Read Game Overview in Groups/Begin reading section<br>(make sure technology is working)                                |
+| 11:30 am |  30 min  | **Lunch**                                                                                                              |
+| 12:00 pm | 1.75 hr  | [Game Manual Breakdown - Reading](Day%201.1%20-%20Game%20Manual%20Breakdown.md#Reading)                                |
+| 1:45 pm  |  45 min  | [Game Manual Breakdown - Presenting](Day%201.1%20-%20Game%20Manual%20Breakdown.md#Presenting)                          |
+| 2:30 pm  |  15 min  | **Break**                                                                                                              |
+| 2:45 pm  |  45 min  | Group Writes Research Questions                                                                                        |
+| 3:30 pm  |  45 min  | Start [Scoring Method Analysis](Day%201.2%20-%20Scoring%20Method%20Analysis.md)                                        |
+| 4:15 pm  |  30 min  | **Dinner**                                                                                                             |
+| 4:45 pm  |   1 hr   | Continue [Scoring Method Analysis](Day%201.2%20-%20Scoring%20Method%20Analysis.md)                                     |
+| 5:45 pm  | 1.75 hr  | [Feature Importance List Creation](Day%201.3%20-%20Feature%20Importance%20List.md)                                     |
+| 7:30 pm  |   1 hr   | Rough Field marking and Run a “robot” doing cycles on field                                                            |
+| 8:30 pm  |  30 min  | Robot cycle analysis                                                                                                   |
+|   9 pm   |    -     | End Meeting<br> Tell everyone to look up similar games and mechanism research,<br> to come with ideas for next meeting |
+ 
+ !!! IDEA 
+   FOR NEXT YEAR: Do robot cycle before scoring scoring analysis
+ 
+ -->
