@@ -56,10 +56,11 @@ How to research robot designs (suggested order)
 ## When in groups
 
 - Get groups intial ideas
-- Draw these on whiteboards/show videos
+- This process is discussion heavy, with tons of "napkin sketches"
+- Draw these on whiteboards/show videos of past robots
 - Think about why these would work for this game
 - Pull up feature importance list and try to see if those ideas satisfy all high ranked features
-- Keep making it better
+- Keep making the archetype better
 - Put all findings in slides, use slides as a presentation tool, to pitch your archetype
 
 ## General Robot architecture rankings

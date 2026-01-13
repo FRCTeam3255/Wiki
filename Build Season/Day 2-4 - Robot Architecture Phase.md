@@ -52,7 +52,7 @@ This occurs the Monday following kickoff
 | 4:00 am  |  15 min  | Re-watch game animation/field tours|
 | 4:15 am |  30 min  | Review/Add to feature importance items|
 | 4:45 pm |   1.5 hr   | Feature Importance List ranking/answer design consideration questions|
-| 6:15 pm |  30 min  |**Dinner** (Mentors create Architecture Groups) |
+| 6:15 pm |  30 min  |**Dinner** <br> Mentors create Architecture Groups <br> Prep areas, have whiteboard stacks and computers in |
 | 6:45 pm  |   15 min | Presentation Retrobot Example|
 | 7:00 pm  | 1.5 hr  | **Round 1** - General Robot Architecture Creation|
 | 8:30 pm  |  30 min  | Finalize presentations (ready to present first thing next day)|
@@ -128,89 +128,3 @@ This occurs the Monday following kickoff
 5. Think optimizations/extras for each component (major competitive advantage/cycle time reduction)
     1. Turrets, hoods, ability to do two motions at once, game piece orientation changing (flip cone), etc.
 6. What things can be combined/simplified -->
-
-## Philosophy
-
-- Say, this scoring element is similar to a past game
-- Say this climb is similar to this past game
-- Come up with a robot that does all of these
-- Each mechanism has video behind it, ex 2020 bot with, a 2019 climber
-- When they present the robots structure, “we are doing a 2020 style robot, with and under the bumper intake, elevator climber, and shooter in center with turret”
-
-## Fundamentals List
-
-- What’s quickest (intook to scored time)
-- What’s most reliable
-- What are failure modes
-  - Invalid geometry
-  - Collisions
-  - Out of frame
-- What is simple
-- What are failure points
-  - Motors
-  - Chains
-  - Pneumatics
-  - Sensors
-  - Durability
-- Size/packing/weight/volume (extension limit/bumper rule)
-- Does it meet feature importance list criteria
-- Susceptibility to defense
-
-## What is an architecture?
-
-- General 2D view
-- Providing example mechanism/whole archetype of past robot 
-- Bounding boxes
-- Types of motion (ex pivots/degrees of freedom)
-- Example: This is where the intake will be, this is where shooter will be. Intake is arm intake is elevator etc...
-- Where base structures are/which ones - things like arms, elevator, drivetrain
-<!-- - End effectors -->
-<!-- - Is it dual intake
-- Is there a transfer? -->
-
-## Research Recommendations
-
-How to research robot designs (suggested order)
-
-1. Find similar old games (FRC, FTC, VEX)
-2. Find successful robots from that game (TBA, champs)
-3. Match footage
-4. Watch robot reveals
-5. Behind the bumpers
-6. Look at Ri3D
-
-## General Robot architecture rankings
-
-- Present them, give descriptor name, 2-3 people present
-- Go in depth about each mechanism
-
-### Whole group discussion
-
-To decide on designs, look at feature importance list, and see which easily accomplish the highest features are
-    - add complexity (Quantified via fundamentals list), failure modes
-
-1. Which architectures are super similar? Which to combine?
-2. Ask about mechanism mergers/ideas, “ie this is a better version of what I found”
-3. Does it meet all requirements? (offseason only)
-4. How many 5 features, how many 4 features, how many 3 Features, 2 Features, 1 Features does it satisfy
-5. Add them up (Test)
-6. Add complexity rating to architecture, (test)
-    - Define complexity, Ex # of pivots/motion
-7. Compare features vs complexity ratings
-8. Reduce down to two architectures,
-9. Make new groups
-10. Tailor this architecture to this game even more
-    - Think additional functionality, pass throughs, etc to save cycle time
-    - complexity reductions, combine mechanisms
-    - Steal ideas combine mechanisms
-11. Present again
-12. Total up the complexity and feature totals
-13. Narrow down
-
-
-## Variable prototypes designs
-
-- Compression values, rough geometry
-- On slots, 8020, hole patterns etc.
-- Mounts to frame, for electronics
-- Made out of HDPE
