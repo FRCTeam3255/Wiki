@@ -28,14 +28,14 @@ The Feature Importance List is a prioritized list of robot capabilities that dri
 
 
  ## Ranking Legend
+
 - **5 Ranking**: 
   - The most beneficial robot features (ex. High Match Points, High Ranking Point Ratio)
   - We wouldn't want to go to a comp without all 5s satisfied
-
   
 - **4 Ranking**:
   - Very beneficial features 
-  - Features needed to make robot very competitive
+  - Features needed to make robot be very competitive
   - Target for first regional
   
 - **3 Ranking**: 
