@@ -53,7 +53,6 @@
     1. Students state their answers to questions regardless of group
     2. Fill out master list of answers to [research questions](#research-questions)
     3. Repeat for next question
-    4. Any presenter can add additonal comments to a question, as well as provide their answer if already answered
 4. Review master list of research questions and fill gaps/come back to anything we skipped
 5. Create master list of un-answered questions to ask FIRST Q&A or Chief Delphi
 
