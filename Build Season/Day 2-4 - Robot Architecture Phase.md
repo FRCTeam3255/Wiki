@@ -53,9 +53,9 @@ This occurs the Monday following kickoff
 | 4:15 am |  30 min  | Review/Add to feature importance items|
 | 4:45 pm |   1.5 hr   | Feature Importance List ranking/answer design consideration questions|
 | 6:15 pm |  30 min  |**Dinner** (Mentors create Architecture Groups) |
-| 6:45 pm  | 1.5 hr  | **Round 1** - General Robot Architecture Creation|
-| 8:15 pm  |   15 min | Presentation Retrobot Example|
-| 8:30 pm  |  30 min  | Go back into groups and finalize presentations|
+| 6:45 pm  |   15 min | Presentation Retrobot Example|
+| 7:00 pm  | 1.5 hr  | **Round 1** - General Robot Architecture Creation|
+| 8:30 pm  |  30 min  | Finalize presentations (ready to present first thing next day)|
 | 9:00 pm  |    -     | Meeting Ends|
 
 ### Part 2 (Non-Winter Break)
@@ -66,14 +66,14 @@ This occurs the Monday following kickoff
 | :-----: | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 3:45 pm |  15 min  | Review Team Updates (Manual Updates)<br>Re-watch game animation                                                                                         |
 | 4:00 pm |  15 min  | Review feature importance list|
-| 4:15 pm |  30 min  | Group 1 Archetype Presentation, Feature Importance Satisfaction/Complexity Ratings|
-| 4:45 pm |  30 min  | Group 2 Archetype Presentation, Feature Importance Satisfaction/Complexity Ratings |
-| 5:15 pm |  30 min  | Group 3 Archetype Presentation, Feature Importance Satisfaction/Complexity Ratings |
+| 4:15 pm |  30 min  | Group 1 Archetype Presentation, Feature Importance Satisfaction/Round 1 Complexity Factors|
+| 4:45 pm |  30 min  | Group 2 Archetype Presentation, Feature Importance Satisfaction/Round 1 Complexity Factors |
+| 5:15 pm |  30 min  | Group 3 Archetype Presentation, Feature Importance Satisfaction/Round 1 Complexity Factors |
 | 5:45 pm |  30 min  | Identify design driving mechanism for each archetype|
-| 6:15 pm |  15 min  | Narrow down to 2 Archetypes, Complexity vs Feature importance list vs similarity |
-| 6:30 pm |  30 min  | Dinner (Mentors make round 2 Groups)|
-| 7:00 pm |  15 min  | List all minor mechanisms from all archetypes/provide sample round 2 slides|
-| 7:15 pm |  1.5 hr  | Begin round 2 archetypes creation (make best full robot with design driving mechanisms)                     |
+| 6:15 pm |  15 min  | Narrow down to 2 Archetypes, Look at simularity, Compare Complexity vs Feature importance list |
+| 6:30 pm |  30 min  | Dinner (**Mentors make round 2 Groups**)|
+| 7:00 pm |  15 min  | List all out minor mechanisms from all archetypes|
+| 7:15 pm |  1.5 hr  | Begin round 2 archetypes creation (make best full robot with assigned design driving mechanism, and any combo of minor mechanism, with emphasis on packaging/simplicty)                     |
 | 8:45 pm |  15 min  | Clean up/Have Slides ready to present on friday|
 | 9:00 pm |    -     | Meeting ends|
 
@@ -85,10 +85,10 @@ This occurs the Monday following kickoff
 | :-----: | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 3:45 pm |  15 min  | Review Team Updates (Manual Updates)<br>Re-watch game animation|
 | 4:00 pm |  15 min  | Review feature importance list|
-| 4:15 pm |  30 min  | Group 1 Archetype Presentation, Feature Importance Satisfaction/Complexity Ratings|
-| 4:45 pm |  30 min  | Group 2 Archetype Presentation, Feature Importance Satisfaction/Complexity Ratings |
-| 5:15 pm |  30 min  | Narrow down to 1 Archetype, Complexity vs Feature Importance List|
-| 5:45 pm |  45 min  | Minor Mechanism Analysis/Complexity Ratings, Choose which minor mechanism to start with|
+| 4:15 pm |  30 min  | Group 1 Archetype Presentation, Feature Importance Satisfaction/Complexity Factors|
+| 4:45 pm |  30 min  | Group 2 Archetype Presentation, Feature Importance Satisfaction/Complexity Factors |
+| 5:15 pm |  30 min  | Narrow down to 1 Archetype, Evaluate Complexity vs Feature Importance List|
+| 5:45 pm |  45 min  | Minor Mechanism Analysis/Complexity Factors, Choose which minor mechanism to start with, you can rate minor mechansims from past archetypes if needed|
 | 6:30 pm |  30 min | Dinner (Mentors make mechanism groups)|
 | 7:00 pm |  2 hr  | **Mechanical** splits into variable prototyping/protobot groups<br>**Software** lists out states, guess motor counts, define motor categories, assign motors to states, create issues by clustered categories, protobot skeleton code, assign buttons
 | 9:00 pm |    -     | Meeting ends|
@@ -137,16 +137,47 @@ This occurs the Monday following kickoff
 - Each mechanism has video behind it, ex 2020 bot with, a 2019 climber
 - When they present the robots structure, “we are doing a 2020 style robot, with and under the bumper intake, elevator climber, and shooter in center with turret”
 
+## Fundamentals List
+
+- What’s quickest (intook to scored time)
+- What’s most reliable
+- What are failure modes
+  - Invalid geometry
+  - Collisions
+  - Out of frame
+- What is simple
+- What are failure points
+  - Motors
+  - Chains
+  - Pneumatics
+  - Sensors
+  - Durability
+- Size/packing/weight/volume (extension limit/bumper rule)
+- Does it meet feature importance list criteria
+- Susceptibility to defense
+
 ## What is an architecture?
 
 - General 2D view
+- Providing example mechanism/whole archetype of past robot 
 - Bounding boxes
 - Types of motion (ex pivots/degrees of freedom)
 - Example: This is where the intake will be, this is where shooter will be. Intake is arm intake is elevator etc...
-- Base structures - things like arms, elevator, drivetrain
+- Where base structures are/which ones - things like arms, elevator, drivetrain
 <!-- - End effectors -->
 <!-- - Is it dual intake
 - Is there a transfer? -->
+
+## Research Recommendations
+
+How to research robot designs (suggested order)
+
+1. Find similar old games (FRC, FTC, VEX)
+2. Find successful robots from that game (TBA, champs)
+3. Match footage
+4. Watch robot reveals
+5. Behind the bumpers
+6. Look at Ri3D
 
 ## General Robot architecture rankings
 
@@ -176,35 +207,6 @@ To decide on designs, look at feature importance list, and see which easily acco
 12. Total up the complexity and feature totals
 13. Narrow down
 
-## Fundamentals List
-
-- What’s quickest
-- What’s most reliable
-- What are failure modes
-  - Invalid geometry
-  - Collisions
-  - Out of frame
-- What is simple
-- What are failure points
-  - Motors
-  - Chains
-  - Pneumatics
-  - Sensors
-  - Durability
-- Size/packing/weight/volume (extension limit/bumper rule)
-- Does it meet feature importance list criteria
-- Susceptibility to defense
-
-## Research Recommendations
-
-How to research robot designs (suggested order)
-
-1. Find similar old games (FRC, FTC, VEX)
-2. Find successful robots from that game (TBA, champs)
-3. Match footage
-4. Watch robot reveals
-5. Behind the bumpers
-6. Look at Ri3D
 
 ## Variable prototypes designs
 
