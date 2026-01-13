@@ -26,7 +26,7 @@
 !!! tip
     Just read title of evergreen rules
 
-1. Read to group [research questions](#research-questions) as examples of what they should be looking for/thinking about
+1. Before breaking out, read to whole group [research questions](#research-questions) as examples of what they should be looking for/thinking about
 2. Break into groups
     1. 3 groups, 2 mentors per group
     2. Different manual sections
@@ -35,28 +35,27 @@
     1. Designate primary scribe
     2. Read each paragraph aloud
     3. Take free form notes on key takeaways
-       1. Copy/paste original rule
-       2. Copy/paste pictures and tables
+       1. Copy/paste original rule, into scratch notes or slides
+       2. Copy/paste pictures and tables into scratch note or slides
        3. Write interpretation of rule
     4. Record any questions about the manual/rules that come up
     5. After reading and taking notes refine into presentation
-       1. Rule, then takeaway/interpretation
+       1. For important items, write rule, then takeaway/interpretation (TLDR)
     6. If time permits, answer [research questions](#research-questions) as a group
        1. Record answers in notes doc
 
 ### Presenting
 
 1. Regroup as whole team
-2. 2 presenters for each group come up
-3. Mentors ask 1 [research question](#research-questions) at a time
-    1. Presenters state their answers to questions regardless of group
-    2. Create master list of answers to [research questions](#research-questions)
+2. 1 presenter for each group comes up
+3. Have student run through slides, and answer any questions from group
+4. Once presentations are done, begin running through research questions with whole team making a master list. Ask 1 [research question](#research-questions) at a time.
+    1. Students state their answers to questions regardless of group
+    2. Fill out master list of answers to [research questions](#research-questions)
     3. Repeat for next question
     4. Any presenter can add additonal comments to a question, as well as provide their answer if already answered
-4. Review master list of analysis questions and fill gaps/come back to anything we skipped
-5. Each individual group presents extra notes/questions
-    1. Create master list of extra notes
-    2. Create master list of questions to ask FIRST Q&A
+4. Review master list of research questions and fill gaps/come back to anything we skipped
+5. Create master list of un-answered questions to ask FIRST Q&A or Chief Delphi
 
 ## Research questions
 
@@ -65,7 +64,7 @@
 
 ### What are point values?
 
-- Are points control time based or per quantity based?
+- Are points given based on quantity scored, or time of ownership (ex. 2018), or both?
 - Are there limits/restrictions when scoring can occur?
 - Are there limits/restrictions on how many points can be scored?
 - Are there ranking points?
@@ -79,7 +78,7 @@
 
 - Where are Protected Zones?
   - What are their penalty points?
-- Where are Scoring Zones?
+- Where are Scoring Zones? (Field Zones you can legally score in)
 - Where are Non-scoring Zones? (illegal to score)
 - How many robots are allowed in each zone?
 - Where do robots start match?
@@ -90,7 +89,7 @@
 ### Scoring Elements (aka Game Pieces)
 
 - How many scoring elements can the robot preload?
-- How many scoring elements can the robot hold?
+- How many scoring elements can the robot legally hold?
 - Are they alliance dependent?
 - Is the scoring element fragile?
 - Is the scoring element compressible?
@@ -98,6 +97,7 @@
   - Do they start on field?
   - Are they recieved via a human player?
   - How many does the human player have?
+  - Can the human player receive more?
   - Can the human play hold multiple at once?
   - Are there multiple human player stations with scoring elements?
 - What are scoring elements scored into? (field elements)

@@ -14,7 +14,7 @@ Scoring method analysis is a critical phase during both Mock Kickoff and actual 
 - Scoring density analysis
 - Auto vs Teleop scoring comparison
 - Do Ranking Points (RP) become match points?
-- If we start running out of things to talk about, stop and move on
+- If we start running out of things to talk about, stop and move on. Games might just be that simple. (Ex. 2022, 2026)
 
 ## Steps
 

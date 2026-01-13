@@ -15,7 +15,7 @@ Period of time from Kickoff to Champs
    1. Tell students to pre-download Game Manual
 4. Layout team laptops in group locations
    1. Pre-download Game Manual
-5. On day of kickoff mentors will pre assign groups before broadcast
+5. On day of kickoff mentors will pre assign groups together before the broadcast starts, we announce these groups when we are ready to read the manual
 
 ## Schedule
 
