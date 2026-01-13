@@ -61,7 +61,8 @@ If kickoff occurs **after** winter break
 | 8:50 pm |  10 min  | Q&A and debrief                                                                                                                                                                                                                     |
 | 9:00 pm |    -     | End Mock Kick off                                                                                                                                                                                                                   |
 
-<!-- ACTUAL
+
+<!-- 2026 ACTUAL
 |  Time   | Duration |                                                                                                                                                                                                                                     |
 | :-----: | :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 3:50 pm |  10 min  | Show Videos:<br>[Robowranglers: Fail Again](https://www.youtube.com/watch?v=8yn2CbQUlTI)                                                                                                                                            |
