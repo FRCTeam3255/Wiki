@@ -3,10 +3,7 @@
 - Explain penalties
 - Explain extra flags
 - enter practice mode
-- Everyone one does practice match
-  - Choose what ever bot they want
-  - Choose whatever color they want
-  - Choose match 1
-- Repeat one more time
-- Exits practice mode
-- Keep doing stats
+- Everyone 5 practice matches
+  - Everyone does the same robot
+  - Choose your name
+  - Choose prac match # (what cycle we are on)
