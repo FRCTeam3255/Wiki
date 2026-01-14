@@ -1,37 +1,47 @@
 # Weekly Schedule
 
+## 2026 Build Season General Schedule
+
+- Kickoff 8 am to 9 pm
+- **Tuesdays**, 3:45 pm - 7:45 pm
+- **Wednesdays**, 3:45 pm - 7:45 pm
+- **Fridays** 3:45 pm to 9 pm (dinner provided - parent volunteers welcome)
+- **Saturdays** 9 am to 9 pm (lunch and dinner provided - parent volunteers welcome)
+- *Holiday (non-school days) meetings 9 am to 9 pm (lunch and dinner provided - parent volunteers welcome)*
+
 ## Build Season
 
 ### Week 0 - Kick Off
 
-#### Friday
+#### Friday (Winter Break, 9am to 6:45pm), or (3:45pm to 9pm)
 
-- [Mock Kick off](Kickoff.md#mock-kickoff)
+- [Mock Kickoff](Day%200%20-%20Mock%20Kickoff.md)
 
-#### Saturday
+#### Saturday (8am to 9pm)
 
-- [Kick Off](Kickoff.md#kickoff)
+- [Kick Off](Day%201%20-%20Kick%20Off.md)
 
 ### Week 1
 
-#### Monday
+#### Monday (Winter Break, 9am to 9pm), or Tuesday (3:45pm to 9pm)
 
-- Robot Architecture Pt 1
+- [Robot Architecture Pt 1](Day%202-4%20-%20Robot%20Architecture%20Phase.md)
 
-#### Tuesday
+#### Tuesday (1st Day Back) or Wednesday (3:45 to 9pm)
 
-- Robot Architecture Pt 2
+- [Robot Architecture Pt 2](Day%202-4%20-%20Robot%20Architecture%20Phase.md)
 
 #### Friday 3:45pm - 9pm
+
+- [Robot Architecture Pt 3](Day%202-4%20-%20Robot%20Architecture%20Phase.md)
+
+#### Saturday 9am-9pm
 
 - Variable prototypes done, there may be multiple of the variable prototypes, and multiple revisions
   - Compression values, rough geometry
   - On slots, 8020, hole patterns etc.
   - Mounts to frame, for electronics
 - Each mechanism has a 1 prototype done
-
-#### Saturday 9am-9pm
-
 - Integration protobot (all designers together)
   - Use data from variable prototypes like compression, geometry etc.
   - Overall 2D sketch, created and cut out as a main plate
@@ -40,6 +50,7 @@
 
 ### Week 2
 
+- *No School Monday (**with** Winter Break Delay)*
 - Recap Posted
 - Decide on frame size
 - Block CAD Done, give to software
@@ -47,7 +58,7 @@
 
 ### Week 3
 
-- No School **(Monday)**
+- *No School Monday (**WITHOUT** Winter Break Delay)*
 - Recap Posted
 - Full CAD Done
 - Full Software Logic Done
