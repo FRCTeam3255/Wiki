@@ -37,30 +37,7 @@ If you've already committed changes and want to get the version from main:
 
 ## Using Command Line (Git)
 
-### Method 1: Checkout File from Main Branch
-
-To replace your current file with the version from main:
-
-```bash
-git checkout main -- path/to/your/file.java
-```
-
-**Example:**
-```bash
-git checkout main -- src/main/java/frc/robot/RobotContainer.java
-```
-
-This will:
-- Get the version of the file from the main branch
-- Replace your current version with it
-- Stage the change for commit
-
-After running this command, you'll need to commit the change:
-```bash
-git commit -m "Revert RobotContainer.java to main branch version"
-```
-
-### Method 2: Discard Uncommitted Changes
+### Method 1: Discard Uncommitted Changes
 
 If you just want to undo local changes you haven't committed yet:
 
@@ -73,7 +50,32 @@ git checkout -- path/to/your/file.java
 git checkout -- src/main/java/frc/robot/Robot.java
 ```
 
-This will restore the file to the last committed version in your current branch.
+This will discard uncommitted changes and restore the file to match the last committed version in your current branch.
+
+### Method 2: Checkout File from Main Branch
+
+To replace your current file with the version from main:
+
+```bash
+git checkout main -- path/to/your/file.java
+```
+
+**Example:**
+```bash
+git checkout main -- src/main/java/frc/robot/RobotContainer.java
+```
+
+**Note:** The `--` (double dash) is important! It tells Git that what follows is a file path, not a branch name. Without it, `git checkout main` would switch your entire branch instead of just checking out a file.
+
+This will:
+- Get the version of the file from the main branch
+- Replace your current version with it
+- Stage the change for commit
+
+After running this command, you'll need to commit the change:
+```bash
+git commit -m "Revert RobotContainer.java to main branch version"
+```
 
 ### Method 3: Using Git Restore (Git 2.23+)
 
@@ -111,7 +113,7 @@ After reverting, verify the file is correct:
 
 ## Common Mistakes to Avoid
 
-- ❌ Don't use `git checkout main` (without the file path) - this will switch your entire branch!
+- ❌ Don't use `git checkout main` without the `--` and file path - this will switch your entire branch instead of reverting a file!
 - ❌ Don't revert files you need - always double-check which file you're reverting
 - ❌ Don't forget to commit after using `git checkout main -- file` - the change needs to be committed
 
