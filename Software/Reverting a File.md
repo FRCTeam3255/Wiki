@@ -23,10 +23,7 @@ git restore --source=main src/main/java/frc/robot/RobotContainer.java
 
 This will get the version of the file from the main branch and replace your current version with it.
 
-After running this command, you'll need to stage and commit the change:
-```
-git add path/to/your/file.java
-git commit -m "Revert file to main branch version"
+After running this command, you'll need to commit and push your changes
 ```
 
 ## Verifying the Revert
@@ -40,7 +37,7 @@ After reverting, verify the file is correct:
 ## Common Mistakes to Avoid
 
 - ❌ Don't revert files you need - always double-check which file you're reverting
-- ❌ Don't forget to stage and commit after using `git restore --source=main` - the change needs to be added and committed
+- ❌ Don't forget to commit and push after using `git restore --source=main` - the change needs to be added and committed
 
 ## Need Help?
 
