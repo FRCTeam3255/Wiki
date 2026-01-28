@@ -12,19 +12,19 @@ This guide will explain how to revert an already committed file back to the vers
 
 To replace your current file with the version from main:
 
-```bash
+```
 git restore --source=main path/to/your/file.java
 ```
 
 **Example:**
-```bash
+```
 git restore --source=main src/main/java/frc/robot/RobotContainer.java
 ```
 
 This will get the version of the file from the main branch and replace your current version with it.
 
 After running this command, you'll need to stage and commit the change:
-```bash
+```
 git add path/to/your/file.java
 git commit -m "Revert file to main branch version"
 ```
