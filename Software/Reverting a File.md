@@ -50,7 +50,7 @@ git checkout -- path/to/your/file.java
 git checkout -- src/main/java/frc/robot/Robot.java
 ```
 
-This will discard uncommitted changes and restore the file to match the last committed version in your current branch.
+This will discard uncommitted changes and restore the file to the last committed version in your current branch (HEAD).
 
 ### Method 2: Checkout File from Main Branch
 
@@ -86,6 +86,8 @@ To discard uncommitted changes:
 git restore path/to/your/file.java
 ```
 
+This works the same as `git checkout --` but with clearer syntax.
+
 To restore from main branch:
 ```bash
 git restore --source=main path/to/your/file.java
@@ -94,6 +96,12 @@ git restore --source=main path/to/your/file.java
 **Example:**
 ```bash
 git restore --source=main src/main/java/frc/robot/Constants.java
+```
+
+**Important:** Unlike `git checkout main -- file`, the `git restore --source=main` command does NOT automatically stage the changes. You'll need to stage and commit manually:
+```bash
+git add path/to/your/file.java
+git commit -m "Revert Constants.java to main branch version"
 ```
 
 ## Verifying the Revert
