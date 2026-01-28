@@ -26,7 +26,7 @@ This will get the version of the file from the main branch and replace your curr
 After running this command, you'll need to stage and commit the change:
 ```bash
 git add path/to/your/file.java
-git commit -m "Revert RobotContainer.java to main branch version"
+git commit -m "Revert file to main branch version"
 ```
 
 ## Verifying the Revert
