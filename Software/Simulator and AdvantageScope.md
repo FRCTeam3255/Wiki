@@ -83,8 +83,6 @@ It's important to understand the difference between these two tools:
 4. Choose the desktop GUI option when prompted
 5. Wait for the simulation to start - you should see the Robot Simulation GUI window
 
-> **Note**: Screenshot showing the Robot Simulator GUI window should be added here once captured
-
 #### 2. Open AdvantageScope
 1. Launch AdvantageScope on your computer
 2. The application will open to the main interface
@@ -168,15 +166,18 @@ Connecting to a real robot is similar to connecting to the simulator, but uses y
 
 ## NetworkTables Keys for AdvantageScope
 
-To use AdvantageScope effectively, your robot code needs to publish data to NetworkTables. Common keys to publish:
+To use AdvantageScope effectively, your robot code needs to publish data to NetworkTables. The specific key names depend on your robot code implementation, but common data types to publish include:
 
-- **Robot Pose**: `SmartDashboard/Field/Robot` - 3D position for field visualization
-- **Swerve States**: `AdvantageKit/Drive/ModuleStates` - Module positions and velocities
+- **Robot Pose**: Field position and orientation for 3D visualization (key path varies by implementation)
+  - Example: `SmartDashboard/Field/Robot` or custom pose keys
+- **Swerve States**: Module positions and velocities for swerve visualization
+  - Example for AdvantageKit: `AdvantageKit/Drive/ModuleStates`
+  - Example for custom implementations: Check your drivetrain subsystem's NetworkTables output
 - **Autonomous Path**: Trajectory data for path visualization
 - **Sensor Values**: Any sensor readings you want to monitor
 - **Motor Outputs**: Current, voltage, and velocity data
 
-Refer to your robot code's NetworkTables configuration for specific key names.
+**Note**: The exact NetworkTables key paths will vary based on your team's code structure and logging framework (e.g., AdvantageKit, custom telemetry). Refer to your robot code's NetworkTables configuration or logging setup for the specific key names used by your implementation.
 
 ---
 
