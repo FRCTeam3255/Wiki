@@ -17,9 +17,8 @@
 9. Select and drag all "-imported" contents into the original project folder and `replace all`
 10. Install new vendor libraries
 11. Revert `.gitignore`
-12. Revert `extension.json` if changes to it
-13. Selectively fix/revert changes
-    1. Partially revert `settings.json` (things in custom section)
+12. Revert `extension.json` if there are changes to it
+13. Partially revert `settings.json` (revert things in custom section)
 
 ## SuperCORE Projects ONLY
 
