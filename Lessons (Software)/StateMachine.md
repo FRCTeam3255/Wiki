@@ -152,7 +152,7 @@ State transitions typically happen in one of two ways:
 
 ```java
 // Example: Setting a target state via button press
-if (operatorController.getAButton()) {
+if (operatorController.getAButtonPressed()) {
     currentTargetState = States.INTAKE;
 }
 
@@ -360,12 +360,11 @@ Here's a complete example showing all four methods working together:
 ```java
 public class IntakeCommand extends Command {
     private final Intake subIntake;
-    private Timer timeout;
+    private final Timer timeout = new Timer();
     
     public IntakeCommand(Intake intake) {
         this.subIntake = intake;
         addRequirements(intake);
-        timeout = new Timer();
     }
     
     @Override
