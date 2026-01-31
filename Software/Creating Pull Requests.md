@@ -13,13 +13,17 @@ Every Pull Request **must** meet the following requirements before it can be rev
 - Only mark the PR as "Ready for review" after simulation testing is complete
 - Document any testing results or observations in the PR description
 
-### 2. Good Title
+### 2. Confirm no unused imports
+
+- Make sure none of your code has unused imports
+
+### 3. Good Title
 
 - PR title must match the linked Issue title
 - If addressing multiple issues, create a clear summary that encompasses all changes
 - Use descriptive, specific titles (e.g., "Add autonomous path following" not "Fix stuff")
 
-### 3. Link an Issue
+### 4. Link an Issue
 
 - Every PR must be linked to at least one Issue
 - Use GitHub's linking syntax in the PR description:
@@ -29,7 +33,7 @@ Every Pull Request **must** meet the following requirements before it can be rev
 - You can also link issues from the sidebar in the PR
 - If no issue exists yet, create one first to document the problem or feature
 
-### 4. Enable Auto-Merge
+### 5. Enable Auto-Merge
 
 - Every PR must be set to auto-merge once it's ready for review
 - This ensures the PR is automatically merged once all requirements are met and approvals are received
