@@ -29,6 +29,11 @@ Every Pull Request **must** meet the following requirements before it can be rev
 - You can also link issues from the sidebar in the PR
 - If no issue exists yet, create one first to document the problem or feature
 
+### 4. Enable Auto-Merge
+
+- Every PR must be set to auto-merge once it's ready for review
+- This ensures the PR is automatically merged once all requirements are met and approvals are received
+
 ## PR Workflow
 
 ### Creating a PR
@@ -40,6 +45,7 @@ Every Pull Request **must** meet the following requirements before it can be rev
 5. **Open a Pull Request** as a **Draft**
 6. **Continue testing** and make any necessary fixes
 7. **Mark as "Ready for review"** once simulation testing passes
+8. **Enable auto-merge** to allow automatic merging once approved
 
 ### During Review
 
