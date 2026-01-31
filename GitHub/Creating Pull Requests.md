@@ -69,11 +69,12 @@ Every Pull Request **must** meet the following requirements before it can be rev
 
 ### Before Creating a PR
 
-- [ ] Pull latest changes from main branch to avoid conflicts (see [Reverting a File](../Software/Reverting%20a%20File.md) if needed)
+- [ ] Pull latest changes from main branch to avoid conflicts
 - [ ] Test all changes in simulation
 - [ ] Run any automated tests if available
 - [ ] Review your own code first (self-review)
 - [ ] Check that no unintended files are included
+  - If you accidentally changed a file, see [Reverting a File](../Software/Reverting%20a%20File.md) to undo the changes
 
 ### Communication
 
