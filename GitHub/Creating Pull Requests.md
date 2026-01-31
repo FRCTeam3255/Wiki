@@ -26,16 +26,8 @@ Every Pull Request **must** meet the following requirements before it can be rev
   - `Fixes #123` - Automatically closes the issue when PR is merged
   - `Relates to #123` - Links to the issue without closing it
   - `Closes #123, #124` - Links and closes multiple issues
+- You can also link issues from the sidebar in the PR
 - If no issue exists yet, create one first to document the problem or feature
-
-### 4. Clear Description
-
-Include in your PR description:
-- Summary of changes made
-- What issue(s) this PR addresses
-- Testing performed (simulation results, test scenarios)
-- Any breaking changes or special considerations
-- Screenshots or videos if applicable (especially for UI changes)
 
 ## PR Workflow
 
@@ -71,34 +63,11 @@ Include in your PR description:
 
 ### Before Creating a PR
 
-- [ ] Pull latest changes from main branch to avoid conflicts
+- [ ] Pull latest changes from main branch to avoid conflicts (see [Reverting a File](../Software/Reverting%20a%20File.md) if needed)
 - [ ] Test all changes in simulation
 - [ ] Run any automated tests if available
 - [ ] Review your own code first (self-review)
 - [ ] Check that no unintended files are included
-
-### Writing Good PR Descriptions
-
-```markdown
-## Summary
-Brief description of what this PR does
-
-## Related Issues
-Fixes #123
-
-## Changes Made
-- Added new autonomous command
-- Updated subsystem constants
-- Fixed joystick deadband issue
-
-## Testing
-- Tested in simulation for 10+ matches
-- Verified all autonomous routines work correctly
-- Tested with different joystick inputs
-
-## Screenshots/Videos
-[Add relevant media here]
-```
 
 ### Communication
 
@@ -120,17 +89,10 @@ Fixes #123
 
 - ❌ Creating a PR before testing in simulation
 - ❌ Not linking to an issue
-- ❌ Vague or missing PR description
+- ❌ Vague or missing PR title
 - ❌ Including unrelated changes
 - ❌ Making changes directly on the main branch
 - ❌ Not responding to review comments
-
-## Getting Help
-
-If you're unsure about any part of the PR process:
-- Ask a team lead for guidance
-- Review existing merged PRs as examples
-- Check the [How to Update the Wiki](../General/How%20to%20Update%20the%20Wiki.md) guide for more details
 
 ---
 
