@@ -188,8 +188,8 @@ The `initialize()` method runs **once** when the command starts.
 
 **What to put in `initialize()`:**
 
+* **Start motors** - Set motor speeds or positions for this state
 * Reset/zero encoders or timers if needed
-* Set initial motor speeds or positions
 * Record starting sensor values
 * Log that the command has started
 * Set any flags or state variables
@@ -207,35 +207,41 @@ public void initialize() {
     
     // Set initial state
     hasDetectedGamePiece = false;
+    
+    // Start the motors for this state
+    subIntake.setSpeed(constIntake.INTAKE_SPEED);
 }
 ```
 
-!!! warning
-    Don't put continuous actions in `initialize()`. This method only runs once!
+!!! important "State Machine Pattern"
+    In a state machine, `initialize()` should set up motors for the new state. The previous state's `end()` does NOT stop motors - control transfers directly to the new state's `initialize()`.
 
 #### `execute()`
 
 The `execute()` method runs **continuously** (every 20ms) while the command is active.
 
-**What to put in `execute()`:**
+**What to put in `execute()` for state machines:**
 
-* Set motor speeds or positions
-* Read sensor values
-* Update control loops
-* Perform continuous actions
+* Monitor sensor values
+* Update control loops based on feedback
+* Adjust motor speeds if needed (fine-tuning)
+* Perform continuous calculations
+
+!!! note
+    In many state machine commands, `execute()` can be empty or minimal since motors are set up in `initialize()` and run until the state changes.
 
 **Example:**
 
 ```java
 @Override
 public void execute() {
-    // Run intake motors
-    subIntake.setSpeed(constIntake.INTAKE_SPEED);
-    
-    // Check for game piece detection
+    // Monitor for game piece detection
     if (subIntake.hasGamePiece()) {
         hasDetectedGamePiece = true;
     }
+    
+    // Motors are already running from initialize()
+    // Only adjust if needed based on feedback
 }
 ```
 
@@ -243,33 +249,40 @@ public void execute() {
 
 The `end()` method runs **once** when the command finishes (either normally or when interrupted).
 
-**What to put in `end()`:**
+!!! warning "State Machine Exception"
+    In a state machine, **DO NOT** use the `end()` method to stop motors. The next state's command will take control of the motors. Stopping motors in `end()` can cause unwanted behavior during state transitions.
 
-* Stop motors (set to zero or neutral)
-* Save final positions or states
-* Clean up resources
-* Log completion status
-* Reset any temporary flags
+**What to put in `end()` for state machines:**
+
+* Log completion status (optional)
+* Clean up non-motor resources if needed
+* Reset temporary flags (if necessary)
+
+**What NOT to put in `end()` for state machines:**
+
+* ❌ Motor stop commands
+* ❌ Setting motor speeds to zero
+* ❌ Changing motor states
 
 **Example:**
 
 ```java
 @Override
 public void end(boolean interrupted) {
-    // Stop the intake motors
-    subIntake.stop();
-    
-    // Log completion
+    // Log completion (optional)
     if (interrupted) {
         System.out.println("Intake command was interrupted");
     } else {
         System.out.println("Intake command completed successfully");
     }
+    
+    // DO NOT stop motors here in a state machine
+    // The next state's initialize() will take control
 }
 ```
 
-!!! important
-    Always stop motors in the `end()` method to prevent them from continuing to run!
+!!! note
+    For non-state machine commands (like standalone commands), you should stop motors in `end()`. But in a state machine, motor control is handled by state transitions.
 
 #### `isFinished()`
 
@@ -355,7 +368,7 @@ public boolean isFinished() {
 
 ### Command Lifecycle Example
 
-Here's a complete example showing all four methods working together:
+Here's a complete example showing all four methods working together in a state machine:
 
 ```java
 public class IntakeCommand extends Command {
@@ -369,28 +382,35 @@ public class IntakeCommand extends Command {
     
     @Override
     public void initialize() {
-        // Start fresh
+        // Start fresh - set up for this state
         subIntake.resetSensors();
         timeout.restart();
         System.out.println("Starting intake...");
-    }
-    
-    @Override
-    public void execute() {
-        // Continuously run intake motors
+        
+        // Start the motors for this state
         subIntake.setSpeed(constIntake.INTAKE_SPEED);
     }
     
     @Override
-    public void end(boolean interrupted) {
-        // Always stop motors when done
-        subIntake.stop();
+    public void execute() {
+        // Continuously monitor and maintain state
+        // Motor speed is already set in initialize()
         
+        // Could adjust based on feedback if needed
+        // subIntake.adjustSpeed(...);
+    }
+    
+    @Override
+    public void end(boolean interrupted) {
+        // Log completion (optional)
         if (interrupted) {
             System.out.println("Intake interrupted");
         } else {
             System.out.println("Game piece acquired!");
         }
+        
+        // DO NOT stop motors here
+        // The next state will take control
     }
     
     @Override
