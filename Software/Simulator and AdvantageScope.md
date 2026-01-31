@@ -5,13 +5,13 @@ This guide explains what robot simulation and AdvantageScope are, how they diffe
 ## Quick Reference
 
 **Starting Simulator:**
-1. VS Code → `Ctrl+Shift+P` → "WPILib: Simulate Robot Code"
-2. Open AdvantageScope → `Ctrl+Shift+P` → "WPILib: Start Tool" → "AdvantageScope"
+1. VS Code → `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) → "WPILib: Simulate Robot Code"
+2. Open AdvantageScope → `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) → "WPILib: Start Tool" → "AdvantageScope"
 3. In AdvantageScope, connect to NetworkTables using the address `localhost`
 
 **Connecting to Robot:**
 1. Power on robot and connect Driver Station
-2. Open AdvantageScope → `Ctrl+Shift+P` → "WPILib: Start Tool" → "AdvantageScope"
+2. Open AdvantageScope → `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) → "WPILib: Start Tool" → "AdvantageScope"
 3. In AdvantageScope, connect to NetworkTables using your team number (e.g., `3255`)
 
 **Common Issues:**
