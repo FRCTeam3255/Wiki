@@ -1,9 +1,13 @@
 # Robot Checklist
-1.	Create Subsystem Names based on what the robot can do
-2.	Create motor names
-3.	Map motors to subsystem names
-4.	Create States Based on Subsystems Interactions
-5.	Start creating code for motors and rotors
-6.	Wire the state machine
-7.	Create state machine in code
-8.	Create code logic
+1.	List all states of robot
+2.  Assume motor counts
+3.	Create motor names
+4.  Define motor categories (Freespin/Positional)
+5.	Map motors to robot states
+6.  Assign buttons
+7.  Create Github issues, clustered by categories
+8.	Start creating code for motors and rotors
+9.	Wire the state machine
+10. Protobot skeleton code
+11.	Create state machine in code
+12.	Create code logic
