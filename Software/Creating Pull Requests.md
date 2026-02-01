@@ -50,6 +50,7 @@ Every Pull Request **must** meet the following requirements before it can be rev
 6. **Continue testing** and make any necessary fixes
 7. **Mark as "Ready for review"** once simulation testing passes
 8. **Enable auto-merge** to allow automatic merging once approved
+   - Make sure the correct co-authors are set. remove incorrect ones  
 
 ### During Review
 
