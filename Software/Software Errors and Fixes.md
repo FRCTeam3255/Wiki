@@ -78,6 +78,7 @@ Use GitHub to identify what you changed and determine what might have broken:
 - Verify that all required files are saved
 - Make sure all brackets and parentheses are properly closed
 - Review any configuration files (build.gradle, vendor libraries) for changes
+- Look for null value errors (not setting variable values)
 
 ---
 
