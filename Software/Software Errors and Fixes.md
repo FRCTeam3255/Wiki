@@ -22,7 +22,7 @@ If you encounter an Epilogue error, you may need to clean your Java workspace in
 
 6. Try rebuilding your project after the workspace has been cleaned
 
-## Can't Find Rio
+## Can't Deploy to Rio (Rio not found)
 
 If you're unable to connect to the RoboRIO, follow these troubleshooting steps:
 
@@ -51,13 +51,13 @@ When encountering an unexpected error after making changes:
 
 ### Check What Changed
 
-Use Git to identify what you changed and determine what might have broken:
+Use GitHub to identify what you changed and determine what might have broken:
 
-1. **Check local changes:**
-   ```bash
-   git diff
-   ```
-   - Shows all uncommitted changes in your working directory
+1. **Check local changes using GitHub Desktop:**
+   - Open GitHub Desktop
+   - Look at the **Changes** tab on the left side
+   - Review all uncommitted changes in your working directory
+   - Files that have been modified will be listed with their changes shown on the right
 
 2. **Check GitHub PR files changed:**
    - Navigate to your Pull Request on GitHub
@@ -65,12 +65,11 @@ Use Git to identify what you changed and determine what might have broken:
    - Review each file that was modified
    - Look for new additions that might have introduced the error
 
-3. **Compare with working version:**
-   ```bash
-   git diff main
-   ```
-   - Shows differences between your branch and the main branch
-   - Helps identify exactly what's different from the last working version
+3. **Compare with working version using GitHub:**
+   - On GitHub, navigate to your repository
+   - Click on your branch name
+   - Click **Compare** to see differences between your branch and the main branch
+   - Review all changes to identify what's different from the last working version
 
 ### Debugging Tips
 
