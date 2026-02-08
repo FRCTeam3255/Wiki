@@ -7,8 +7,9 @@
 ### Color Code
 
 - 🔴 Thick Red: 10 AWG Power Wire for **Drivetrain Motors**
-- 🟢 Thin Green: CAN Wire for **Drivetrain Motors and CANcoders**
-- 🔴 Thin Red: 18 AWG Power Wire for **Drivetrain CANcoders**
+- 🟢 Thin Green: CAN Wire for **Drivetrain Motors and CANCoders**
+- 🔴 Thin Red: 18 AWG Power Wire for **Drivetrain CANCoders**
+- 🔵 Thick Cyan: 10 AWG Power Wire for non-drivetrain motors
 
 ## Steps
 
@@ -33,7 +34,7 @@
 2. Create White/Green Labels for each wire on both sides of a connector (`FROM DEVICE` and `TO DEVICE` marked with a dividing line. `FROM` is on top `TO` on bottom.)
 3. Pull off White/Green string and cut **CAN wire** to length (bias to being too long).
    1. Strip 10mm of insulation off each end (marked on cutters).
-   2. Add **22 AWG (white)** Ferrules to ends of power wires to make it easier to connect to devices and connectors.
+   2. Add **22 AWG (white)** Ferrules to ends of the CAN wires (CAN H and CAN L) to make it easier to connect to devices and connectors.
 4. Pull off White/Green string and cut **18 AWG Power wire** to length (bias to being too long).
    1. Strip 10mm of insulation off each end (marked on cutters).
    2. Add **18 AWG (red)** Ferrules to ends of power wires to make it easier to connect to devices and connectors.
