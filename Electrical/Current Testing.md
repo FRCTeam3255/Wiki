@@ -57,7 +57,7 @@ Current testing helps identify:
 ## What to Look For
 
 - **Unusually high current**: May indicate mechanical binding, friction, or incorrect gear ratios
-- **Inconsistent readings**: Could suggest loose connections or intermittent problems  
+- **Inconsistent readings**: Could suggest loose connections or intermittent problems
 - **Current spikes**: Brief spikes are normal, but sustained high current needs investigation
 - **Low current**: May indicate a problem with motor connections or power delivery
 
