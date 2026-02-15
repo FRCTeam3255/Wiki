@@ -11,7 +11,7 @@ Follow these steps to tune the Motion Magic PID for your robot:
 
 ### For Arm Mechanisms:
 - **Deploy should be a positive value** (e.g., moving the arm outward/upward should increase position).
-- **Use closed loop sign** in the motor configuration to ensure correct feedback polarity.
+- **Use the closed loop sign setting** in the motor configuration to invert feedback polarity if needed (ensures feedback matches motor direction).
 - **Verify the forward limit is in the correct direction** before tuning to prevent damage.
 
 ## Steps
