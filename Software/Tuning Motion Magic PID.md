@@ -6,6 +6,13 @@ Follow these steps to tune the Motion Magic PID for your robot:
 - Use a fresh battery to ensure consistent performance during tuning.
 - Ensure you are connected to the robot via its Wi-Fi.
 - Open the `ConstMotion.java` or `ConstRotors.java` file to adjust the PID constants.
+- **Verify the gear ratio is correct** (sensor to mechanism ratio in configuration).
+- **Verify the direction is correct** before beginning tuning.
+
+### For Arm Mechanisms:
+- **Deploy should be a positive value** (e.g., moving the arm outward/upward should increase position).
+- **Use closed loop sign** in the motor configuration to ensure correct feedback polarity.
+- **Verify the forward limit is in the correct direction** before tuning to prevent damage.
 
 ## Steps
 
