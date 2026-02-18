@@ -8,6 +8,7 @@ Follow these steps to tune the Motion Magic PID for your robot:
 - Open the `ConstMotion.java` or `ConstRotors.java` file to adjust the PID constants.
 - **Verify the gear ratio is correct** (sensor to mechanism ratio in configuration).
 - **Verify the direction is correct** before beginning tuning.
+- **Make sure soft limits are in Units Rotations** (not raw encoder units).
 
 ### For Arm Mechanisms:
 - **Deploy should be a positive value** (e.g., moving the arm outward/upward should increase position).
@@ -16,27 +17,39 @@ Follow these steps to tune the Motion Magic PID for your robot:
 
 ## Steps
 
-1. **Set Initial PID Constants**  
-    Set all PID constants (`kP`, `kI`, `kD`, `kF`, etc.) to `0` in `ConstMotion.java` or `ConstRotors.java`.
+1. **Set Gravity Type**  
+    Configure the gravity compensation type in `ConstMotion.java` or `ConstRotors.java` based on your mechanism:
+    - **Elevator_Static**: For vertical lifts (elevators, lifts)
+    - **Arm_Cosine**: For rotating arms (pivoting mechanisms)
+    
+    ```java
+    MOTOR_NAME_CONFIG.Slot0.GravityType = GravityTypeValue.Elevator_Static; // or Arm_Cosine
+    ```
 
-2. **Tune `kS` (Static Gain)**  
-    - Gradually increase the `kS` value.  
-    - Deploy the code after each adjustment.  
-    - Stop increasing `kS` once the mechanism begins to move slightly.  
-      > **Note:** Keep this value as low as possible while ensuring the mechanism moves.
+2. **Use Phoenix Tuner for Initial Tuning**  
+    - Open Phoenix Tuner and connect to your robot.
+    - Navigate to the motor controller you're tuning.
+    - Use Phoenix Tuner's built-in PID tuning interface to adjust values in real-time:
+      - Start with all PID constants set to `0`.
+      - Tune `kS` (Static Gain) first - increase until the mechanism begins to move slightly.
+      - Tune `kG` (Gravity Compensation) - increase until the mechanism holds position without drifting.
+      - Tune `kP` (Proportional Gain) - increase until the mechanism reaches setpoint without overshooting.
+    - Fine-tune the values in Phoenix Tuner until you achieve desired performance.
 
-3. **Tune `kG` (Gravity Compensation)**  
-    - Set a setpoint for the mechanism.  
-    - Gently raise the mechanism to the setpoint and release it while the robot is enabled.  
-    - If the mechanism does not hold its position, incrementally increase the `kG` value.  
-    - Deploy the code after each adjustment.  
-    - Stop increasing `kG` once the mechanism holds its position without drifting.
-
-4. **Tune `kP` (Proportional Gain)**  
-    - Gradually increase the `kP` value.  
-    - Deploy the code after each adjustment.  
-    - Stop increasing `kP` once the mechanism begins to overshoot the setpoint.  
-    - Dial back `kP` slightly to achieve the highest value that does not cause overshooting.
+3. **Transfer Values to Constants File**  
+    Once you have tuned the PID values in Phoenix Tuner:
+    - Copy the final tuned values from Phoenix Tuner.
+    - Update the corresponding constants in `ConstMotion.java` or `ConstRotors.java`:
+    
+    ```java
+    // Feedforward
+    MOTOR_NAME_CONFIG.Slot0.kS = 0.25;    // Value from Phoenix Tuner
+    MOTOR_NAME_CONFIG.Slot0.kG = 0.30;    // Value from Phoenix Tuner
+    // PID
+    MOTOR_NAME_CONFIG.Slot0.kP = 10.0;    // Value from Phoenix Tuner
+    ```
+    
+    - Deploy the code with the new constants to verify the mechanism still performs as expected.
 
 ## Additional Notes
 - If you encounter issues with feedforward, you may need to revisit and refine your feedforward calculations.
