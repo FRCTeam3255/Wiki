@@ -31,8 +31,10 @@ Follow these steps to tune the Motion Magic PID for your robot:
     - Navigate to the motor controller you're tuning.
     - Use Phoenix Tuner's built-in PID tuning interface to adjust values in real-time:
       - Start with all PID constants set to `0`.
-      - Tune `kS` (Static Gain) first - increase until the mechanism begins to move slightly.
-      - Tune `kG` (Gravity Compensation) - increase until the mechanism holds position without drifting.
+      - Tune `kS` (Static Gain) first - increase until the mechanism begins to move slightly.  
+        > **Note:** Keep this value as low as possible while ensuring the mechanism moves.
+      - Tune `kG` (Gravity Compensation) - increase until the mechanism holds position without drifting.  
+        > **Note:** If the gear ratio is high enough, `kG` might just be `0` as the mechanism can hold itself.
       - Tune `kP` (Proportional Gain) - increase until the mechanism reaches setpoint without overshooting.
     - Fine-tune the values in Phoenix Tuner until you achieve desired performance.
 
