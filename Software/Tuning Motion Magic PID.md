@@ -23,7 +23,7 @@ Follow these steps to tune the Motion Magic PID for your robot:
     - **Arm_Cosine**: For rotating arms (pivoting mechanisms)
     
     ```java
-    MOTOR_NAME_CONFIG.Slot0.GravityType = GravityTypeValue.Elevator_Static; // or Arm_Cosine
+MOTOR_NAME_CONFIG.Slot0.GravityType = GravityTypeValue.Elevator_Static; // or Arm_Cosine
     ```
 
 2. **Use Phoenix Tuner for Initial Tuning**  
@@ -44,11 +44,11 @@ Follow these steps to tune the Motion Magic PID for your robot:
     - Update the corresponding constants in `ConstMotion.java` or `ConstRotors.java`:
     
     ```java
-    // Feedforward
-    MOTOR_NAME_CONFIG.Slot0.kS = 0.25;    // Value from Phoenix Tuner
-    MOTOR_NAME_CONFIG.Slot0.kG = 0.30;    // Value from Phoenix Tuner
-    // PID
-    MOTOR_NAME_CONFIG.Slot0.kP = 10.0;    // Value from Phoenix Tuner
+// Feedforward
+MOTOR_NAME_CONFIG.Slot0.kS = 0.25;    // Value from Phoenix Tuner
+MOTOR_NAME_CONFIG.Slot0.kG = 0.30;    // Value from Phoenix Tuner
+// PID
+MOTOR_NAME_CONFIG.Slot0.kP = 10.0;    // Value from Phoenix Tuner
     ```
     
     - Deploy the code with the new constants to verify the mechanism still performs as expected.
