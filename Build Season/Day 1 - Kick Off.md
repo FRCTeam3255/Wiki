@@ -62,5 +62,6 @@ Period of time from Kickoff to Champs
  
  !!! IDEA 
    FOR NEXT YEAR: Do robot cycle before scoring scoring analysis
+   FOR NEXT YEARL MOVE GAME PIECE INTERACTION PROTOTYPING TO NEXT DAY FEATURE IMPORTANCE RANKING???
  
  -->
