@@ -1,32 +1,25 @@
 # Bumper Construction
 
-## Material
+## Building Steps
 
-To be ordered in off-season
+1. Prep All Materials
+2. Assemble Bumper Wood Frame
+3. Attach Foam
+4. TEST ON BOT FIRST
+5. Fabric 🤩
 
-> Minimum Material needed for 1 season
+## Bumper Ingredients
 
-- [Iron On Numbers](https://www.robopromo.com/ProductDetails.asp?ProductCode=RP%2D2014&CartID=1)
-  - populate our team numbers
-  - Order **8**
-- [Material](https://www.robopromo.com/ProductDetails.asp?ProductCode=RP-2016)
-  - Populate out team numbers
-  - Order **1**
-    - this is enough for 1 set (left and right) of blue and 1 set (left and right) of red
-
-## Swerve Construction
-
-Standard way of constructing bumpers for SN Swerve Drive
-
-### Wood
-
-### Pool Noodles
-
-### Fabric
-
-> Repeat steps for each color. Complete all steps for 🔵 color before doing 🔴 color
-
-1. Cut the fabric in half long ways (~100")
-2. Test fit the fabric on one of the wood bumpers
-3. Iron on one set of numbers in the center of the fabric
-4. ...
+| Item | Quantity |
+|---|---|
+| Baltic Birch Cabinet Grade Wood | 720 sq in |
+| Gorilla Tape Rolls | 3 |
+| White Foam | - |
+| Black Foam | - |
+| Pre-drilled L-Brackets | 8 |
+| T-Nuts | 16 |
+| Margie Mounts | 8 |
+| Fabric (for each color) | - |
+| Gaff Tape Red/Blue | - |
+| Staples | - |
+| Heat Transfer Vinyl | - |
