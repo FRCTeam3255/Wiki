@@ -53,5 +53,31 @@ Follow these steps to tune the Motion Magic PID for your robot:
     
     - Deploy the code with the new constants to verify the mechanism still performs as expected.
 
+## For Flywheel Mechanisms
+
+Flywheels use **velocity control** rather than position control. The key constants to tune are `kS` and `kV`.
+
+1. **Set kS**  
+   Tune `kS` (Static Gain) the same way as other mechanisms — increase it until the flywheel just begins to spin.  
+   > **Note:** Keep this value as low as possible while still overcoming static friction.
+
+2. **Set kV**  
+   Tune `kV` (Velocity Gain) so that, with only feedforward active (no PID), the flywheel reaches **slightly below** your lowest velocity setpoint.  
+   This ensures the closed-loop controller (kP) only needs to make small corrections upward, avoiding overshoot.
+   > **Tip:** Test at your lowest expected RPM setpoint and increase `kV` until the flywheel gets close but does not exceed it.
+
+3. **Transfer Values to Constants File**  
+   Once tuned, copy the values into your constants file:
+
+   ```java
+   // Feedforward
+   MOTOR_NAME_CONFIG.Slot0.kS = 0.25;    // Value from Phoenix Tuner
+   MOTOR_NAME_CONFIG.Slot0.kV = 0.12;    // Value from Phoenix Tuner (reach slightly below lowest setpoint)
+   // PID (fine-tune if needed)
+   MOTOR_NAME_CONFIG.Slot0.kP = 1.0;     // Value from Phoenix Tuner
+   ```
+
+   - Deploy the code with the new constants to verify the flywheel performs as expected at all setpoints.
+
 ## Additional Notes
 - If you encounter issues with feedforward, you may need to revisit and refine your feedforward calculations.
