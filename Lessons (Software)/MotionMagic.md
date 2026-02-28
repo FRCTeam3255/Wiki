@@ -132,6 +132,84 @@ MOTOR_NAME_CONFIG.Feedback.SensorToMechanismRatio = ((12.0 / 60.0) * (26.0 / 52.
 motorName.getConfigurator().apply(constMotion.MOTOR_NAME_CONFIG);
 ```
 
+#### Follower Motors (Leader-Follower Configuration)
+
+When you have multiple motors that need to move together (like two motors on one side of an elevator or multiple motors on a pivot), you designate one as the "leader" and the others as "followers." Follower motors simply copy the commands sent to the leader motor.
+
+**Important:** Create and configure follower control requests **once in the constructor**, not repeatedly in setter methods. This is more efficient and follows best practices.
+
+##### ✔ Correct Pattern: Configure Followers in Constructor
+
+```java
+// In your subsystem class
+
+// Leader motor
+private final TalonFX motorNameLeader;
+
+// Follower motors
+private final TalonFX motorNameFollower1;
+private final TalonFX motorNameFollower2;
+
+// Create follower control requests once
+private final Follower motorNameFollower1Request;
+private final Follower motorNameFollower2Request;
+
+// Create position control request once (for the leader motor)
+private final MotionMagicExpoVoltage motorNamePositionRequest = new MotionMagicExpoVoltage(0);
+
+public MotorSubsystem() {
+  // Initialize motors
+  motorNameLeader = new TalonFX(mapMotorSubsystem.LEADER_MOTOR_CAN);
+  motorNameFollower1 = new TalonFX(mapMotorSubsystem.FOLLOWER1_MOTOR_CAN);
+  motorNameFollower2 = new TalonFX(mapMotorSubsystem.FOLLOWER2_MOTOR_CAN);
+  
+  // Apply configurations to all motors
+  motorNameLeader.getConfigurator().apply(constMotorSubsystem.MOTOR_NAME_CONFIG);
+  motorNameFollower1.getConfigurator().apply(constMotorSubsystem.MOTOR_NAME_CONFIG);
+  motorNameFollower2.getConfigurator().apply(constMotorSubsystem.MOTOR_NAME_CONFIG);
+  
+  // Create follower control requests ONCE in constructor
+  // The second parameter (true/false) sets whether the follower opposes the leader's direction
+  motorNameFollower1Request = new Follower(motorNameLeader.getDeviceID(), true);  // Opposes leader
+  motorNameFollower2Request = new Follower(motorNameLeader.getDeviceID(), false); // Matches leader
+  
+  // Set follower motors to follow the leader ONCE
+  motorNameFollower1.setControl(motorNameFollower1Request);
+  motorNameFollower2.setControl(motorNameFollower2Request);
+}
+
+// Your setter methods only command the LEADER motor
+public void setMotorNameAngle(Angle targetAngle) {
+  // Only send commands to the leader - followers will automatically follow
+  motorNameLeader.setControl(motorNamePositionRequest.withPosition(targetAngle));
+}
+```
+
+##### ❌ Incorrect Pattern: Creating Followers in Setter Methods
+
+```java
+// DON'T DO THIS - Creates new Follower objects every time the method is called
+public void setMotorNameAngle(Angle targetAngle) {
+  motorNameLeader.setControl(motorNamePositionRequest.withPosition(targetAngle));
+  // ❌ BAD: Creating new Follower objects in setter method
+  motorNameFollower1.setControl(new Follower(motorNameLeader.getDeviceID(), true));
+  motorNameFollower2.setControl(new Follower(motorNameLeader.getDeviceID(), false));
+}
+```
+
+**Why this is wrong:**
+- Creates unnecessary objects repeatedly (inefficient)
+- Makes code harder to maintain
+- Goes against best practices for object reuse
+
+**Key Points:**
+- Configure follower motors **once** in the constructor
+- Only send commands to the **leader** motor in your setter methods
+- Follower motors automatically mirror the leader's movements
+- The boolean parameter in `Follower(deviceID, opposeMaster)` determines direction:
+  - `true` = follower opposes/inverts the leader's direction
+  - `false` = follower matches the leader's direction
+
 ---
 
 ## Velocity PID - `.setControl(request)` — MotionMagicVelocity
