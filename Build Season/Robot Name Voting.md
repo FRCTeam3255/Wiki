@@ -21,9 +21,13 @@ A good robot name should meet one or more of the following:
 ### Round 1 — Initial Vote
 
 - Each team member gets **2 votes**
-- The **top 3** names with the most votes move on to Round 2
+- The names with the most votes advance to Round 2
 
-### Round 2 — Final Vote
+### Round 2 — Narrowing Vote
+
+- Repeat Round 1 (each team member gets **2 votes**) until the list is narrowed down to **2 or 3 names**
+
+### Round 3 — Final Vote
 
 - Each team member gets **1 vote**
 - The name with the **most votes wins** and becomes the official robot name for the season
@@ -32,4 +36,3 @@ A good robot name should meet one or more of the following:
 
 - Votes are cast using **tally marks on the whiteboard** in the build space so all votes are visible to everyone in real time
 - In the event of a **tie** in Round 1, all tied names advance to Round 2
-- In the event of a **tie** in Round 2, the team holds a run-off vote with 1 vote per person between only the tied names
