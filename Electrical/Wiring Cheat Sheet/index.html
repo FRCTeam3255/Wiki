@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Tayler Uva" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Wiring Cheat Sheet - SN Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Wiring Cheat Sheet";
+        var mkdocs_page_input_path = "Electrical/Wiring Cheat Sheet.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../.images/SN White Text Logo.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../.." >SuperNURDs Internal Wiki</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Build Season</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%200%20-%20Mock%20Kickoff/" >Day 0: Mock Kickoff</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201%20-%20Kick%20Off/" >Day 1: Kick Off</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201.1%20-%20Game%20Manual%20Breakdown/" >Day 1.1: Game Manual Breakdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201.2%20-%20Scoring%20Method%20Analysis/" >Day 1.2: Scoring Method Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201.3%20-%20Feature%20Importance%20List/" >Day 1.3: Feature Importance List</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%202-4%20-%20Robot%20Architecture%20Phase/" >Day 2 thru 4: Robot Architecture Phase</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%202-4.1%20-%20Archetype%20Creation/" >Archetype Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Digital%20Folder%20Checklist/" >Digital Folder Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Team%20Photo/" >Team Photo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Weekly%20Schedule/" >Weekly Schedule</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Competition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Comp%20Day/" >Comp Day</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Comp%20Logistics/" >Comp Logistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Drive%20Tryouts/" >Drive Tryouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Impact%20Judges%27%20Questions/" >Impact Judges' Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Post%20Comp%20Cleanup/" >Post Comp Cleanup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Pre%20Comp%20Prep/" >Pre Comp Prep</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Regional%20Reflection/" >Regional Reflection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Role%20Definitions/" >Competition Roles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Running%20Stats/" >Reference for Running Stats at Competition</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Electrical</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Breaker%20Wiring/" >Breaker Wiring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Component%20Mounting/" >Component Mounting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Pre-Boot%20Checklist/" >Pre/First-Boot Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ring%20Terminal%20Crimping/" >Crimping Instructions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Selecting%20a%20Battery/" >Selecting a Battery</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#" >Wiring Cheat Sheet</a> <ul class="current" >
+    <li class="toctree-l2"><a class="reference internal" href="#device-connection-details">Device Connection Details</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pdh-details">PDH Details</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#swerve-diagram">Swerve Diagram</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tips">Tips</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#footnotes">Footnotes</a>
+    </li>
+  </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Wiring%20LED/" >Wiring LEDs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Fabrication</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/Assembly%20Standard/" >Assembly Standard</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/Bumpers/" >Bumper Construction</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Computer%20Programs/" >Computer Programs Used</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/How%20to%20Update%20the%20Wiki/" >How to Update the Wiki</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Robot%20Categories/" >Robot Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Standard%203D%20Prints/" >Standard 3D Prints</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Standard%20Purchases/" >Standard Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Team%20Expectations/" >Team Expectations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/Downloading%20Projects/" >Downloading GitHub Projects</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lessons (Software)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lessons%20%28Software%29/MotionMagic/" >MotionMagic Lesson Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lessons%20%28Software%29/StateMachine/" >State Machine Lesson</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Mechanical</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Mechanical/Bolt%20to%20Tool%20Lookup/" >Bolt to Tool Lookup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Mechanical/Motor%20Specs/" >Motor Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Media and Comms</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Graphic%20Design/" >Graphic Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Video%20Editing/" >Video Editing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Website/" >Website</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Configuring%20the%20Radio/" >Configuring the Radio</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Conventions/" >Naming Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Creating%20Pull%20Requests/" >Creating Pull Requests (PRs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Creating%20new%20Robot%20Project/" >Creating new Robot Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Flashing%20RIO%202/" >Flashing RIO 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/GitHub%20Standards/" >GitHub Standards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Reverting%20a%20File/" >Reverting a File to Main Branch Version</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Setting%20Up%20Driverstation/" >Setting Up Driverstation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Software%20Errors%20and%20Fixes/" >Software Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Swoffsets/" >Swoffsets (Swerve Offsets)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/TalonFX%20Blink%20Codes/" >TalonFX Blink Codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Tuning%20Auto%20PID/" >Tuning Auto PID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Tuning%20Motion%20Magic%20PID/" >Tuning Motion Magic PID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/UpdateCAD/" >Step-by-Step Guide to Update CAD for Simulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Updating%20Limelight%20Firmware/" >Updating Limelight Firmware</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Updating%20WPILib%20Project%20Version/" >Updating WPILib Project Version</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Vendor%20Libraries/" >Vendor Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/WPILib%20Install/" >WPILib Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Stats</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/App%20Setup/" >App Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/Training/" >Training</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/War%20Room/" >War Room</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Test Folder</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Test%20Folder/Test%20File/" >This is a test page</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">SN Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Electrical</li>
+      <li class="breadcrumb-item active">Wiring Cheat Sheet</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/FRCTeam3255/Wiki/edit/main/Electrical/Wiring Cheat Sheet.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="wiring-cheat-sheet">Wiring Cheat Sheet</h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This document serves as SuperNURDs wiring standards to match or exceed FRC standards.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Based on the <a href="https://firstfrc.blob.core.windows.net/frc2026/Manual/2026GameManual.pdf">2026 Game Manual</a></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>ALL</strong> connection points (wire on both sides of a connector) must have labeled zipties indicating <code>FROM DEVICE</code> and <code>TO DEVICE</code> marked with a dividing line. <code>FROM</code> is on top <code>TO</code> on bottom.</p>
+</div>
+<h2 id="device-connection-details">Device Connection Details</h2>
+<h3 id="standard-components">Standard Components</h3>
+<h4 id="power-pdh">Power (PDH)</h4>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Wire Gauge</th>
+<th>Port</th>
+<th>Voltage/Amps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.andymark.com/products/mk-es17-12-12v-sla-battery-set-of-2?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMkJhdHRlcnklMjIlMkMlMjJ1dGY4JTIyJTNBJTIyJUUyJTlDJTkzJTIyJTdE">Battery</a></td>
+<td>4 AWG <sup id="fnref:6m"><a class="footnote-ref" href="#fn:6m">1</a></sup></td>
+<td>Battery Input</td>
+<td>12V</td>
+</tr>
+<tr>
+<td><a href="https://wcproducts.com/products/kraken">Kraken Motors</a></td>
+<td>10 AWG</td>
+<td>Breaker Port (40A 🟠)</td>
+<td>12V / 40A</td>
+</tr>
+<tr>
+<td><a href="https://store.ctr-electronics.com/falcon-500-powered-by-talon-fx/">Falcon Motors</a></td>
+<td>10 AWG <sup id="fnref:12a"><a class="footnote-ref" href="#fn:12a">8</a></sup></td>
+<td>Breaker Port (40A 🟠)</td>
+<td>12V / 40A</td>
+</tr>
+<tr>
+<td><a href="https://www.ni.com/docs/en-US/bundle/roborio-frc-specs/page/specs.html">roboRIO</a></td>
+<td>18 AWG <sup id="fnref:22m"><a class="footnote-ref" href="#fn:22m">4</a></sup></td>
+<td>Fuse Port <strong>20</strong> (10A 🔴)</td>
+<td>7V-16V / \~4A</td>
+</tr>
+<tr>
+<td><a href="https://frc-radio.vivid-hosting.net">VH-109 Radio</a></td>
+<td>18 AWG <sup id="fnref2:22m"><a class="footnote-ref" href="#fn:22m">4</a></sup> <a href="https://wcproducts.com/products/WCP-2142">POE injector</a></td>
+<td>Fuse Port <strong>21</strong> (10A 🔴) and <strong><em>Radio</em></strong> RIO Port</td>
+<td>4.5V-19V / 0.5A</td>
+</tr>
+<tr>
+<td><a href="https://frc-radio.vivid-hosting.net">VH-109 Radio - Backup Power</a></td>
+<td>18 AWG</td>
+<td>Breaker Port (20A 🟡)</td>
+<td>4.5V-19V / 0.5A</td>
+</tr>
+<tr>
+<td><a href="https://store.ctr-electronics.com/cancoder/">CANcoder</a></td>
+<td>18 AWG <sup id="fnref:22s"><a class="footnote-ref" href="#fn:22s">5</a></sup></td>
+<td>Fuse Port <strong>22 (spliced)</strong><sup id="fnref:splice"><a class="footnote-ref" href="#fn:splice">6</a></sup> (10A 🔴)</td>
+<td>6V-16V / 0.06A</td>
+</tr>
+<tr>
+<td><a href="https://store.ctr-electronics.com/pigeon-2/">Pigeon 2.0</a></td>
+<td>18 AWG <sup id="fnref:22a"><a class="footnote-ref" href="#fn:22a">3</a></sup></td>
+<td>Fuse Port <strong>22 (spliced)</strong><sup id="fnref2:splice"><a class="footnote-ref" href="#fn:splice">6</a></sup> (10A 🔴)</td>
+<td>6V–28V / 0.05A</td>
+</tr>
+<tr>
+<td><a href="https://store.ctr-electronics.com/candle/">CANdle</a></td>
+<td>18 AWG</td>
+<td>Fuse Port <strong>23</strong> (10A 🔴)</td>
+<td>6V-28V / 6A</td>
+</tr>
+<tr>
+<td><a href="https://limelightvision.io/collections/products/">Limelight</a></td>
+<td>18 AWG</td>
+<td>Breaker Port (20A 🟡)</td>
+<td>12V</td>
+</tr>
+</tbody>
+</table>
+<h4 id="signal">Signal</h4>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>CAN Wires are "Daisy Chained" meaning each device is connected to the next one (think holding hands in one big circle)</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>All drivetrain devices (motors, CANcoders, and Pigeon) should be on the <strong>CANivore</strong> CAN chain. All other motors/devices should be on the <strong>roboRIO</strong> CAN chain.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Wire</th>
+<th>Connects to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://store.ctr-electronics.com/canivore/">CANivore</a></td>
+<td>USB C to A</td>
+<td>RIO USB</td>
+</tr>
+<tr>
+<td><a href="https://store.ctr-electronics.com/pigeon-2/">Pigeon 2.0</a></td>
+<td>Built in 22 AWG 🟢🟡</td>
+<td>CANivore 🟢🟡</td>
+</tr>
+<tr>
+<td><a href="https://store.ctr-electronics.com/cancoder/">CANcoder</a></td>
+<td>18 AWG - 4 Conductor<sup id="fnref:4cond"><a class="footnote-ref" href="#fn:4cond">7</a></sup></td>
+<td>Pigeon Builtin Wire 🟢🟡</td>
+</tr>
+<tr>
+<td><a href="https://www.ni.com/docs/en-US/bundle/roborio-frc-specs/page/specs.html">roboRIO</a></td>
+<td>Ethernet (CAT 5e or better)</td>
+<td>Radio RIO Port</td>
+</tr>
+<tr>
+<td><a href="https://limelightvision.io/collections/products/">Limelight</a></td>
+<td>Ethernet (CAT 5e or better)</td>
+<td>Radio AUX1/2 Port</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nonstandard-components-no-longer-used">Nonstandard Components (No Longer Used)</h3>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Wire Gauge</th>
+<th>PDH Port</th>
+<th>Voltage/Amps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.amazon.com/dp/B07YZBLCY5?ref_=cm_sw_r_mwn_dp_RTA53JTPWSH5JCAQQY3N&amp;language=en-US&amp;th=1">Buckboost</a></td>
+<td>18 AWG <sup id="fnref:16a"><a class="footnote-ref" href="#fn:16a">2</a></sup></td>
+<td>Fuse Port (10A 🔴)</td>
+<td>8V-40V / 3A</td>
+</tr>
+<tr>
+<td><a href="https://www.digikey.com/en/products/detail/brainboxes/SW-005/10707220?utm_adgroup=&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=PMax%20Shopping_Product_Low%20ROAS%20Categories&amp;utm_term=&amp;utm_content=&amp;utm_id=go_cmp-20243063506_adg-_ad-__dev-c_ext-_prd-10707220_sig-CjwKCAiAgeeqBhBAEiwAoDDhn4cIbYoBl8Z6SP9xnkMEmNVM-WrD_xpfsFmYmj6y0Cb7H9kOBvuzMhoCeBUQAvD_BwE&amp;gad_source=1&amp;gclid=CjwKCAiAgeeqBhBAEiwAoDDhn4cIbYoBl8Z6SP9xnkMEmNVM-WrD_xpfsFmYmj6y0Cb7H9kOBvuzMhoCeBUQAvD_BwE">Brainbox</a></td>
+<td>18 AWG</td>
+<td>Breaker Port (20A 🟡)</td>
+<td>5V-30V / 0.1A</td>
+</tr>
+<tr>
+<td>❌ <strong><em>ILLEGAL</em></strong> - <a href="https://www.revrobotics.com/rev-11-1856/">RPM</a></td>
+<td>18 AWG <sup id="fnref3:22m"><a class="footnote-ref" href="#fn:22m">4</a></sup></td>
+<td>Fuse Port (10A 🔴)</td>
+<td>5V-18V / 1A</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pdh-details">PDH Details</h2>
+<table>
+<thead>
+<tr>
+<th>PDH Port</th>
+<th>Quantity</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuse Ports</td>
+<td>3</td>
+<td>Control System</td>
+</tr>
+<tr>
+<td>Fuse Ports (Switchable)</td>
+<td>1</td>
+<td>Code controlled On/Off</td>
+</tr>
+<tr>
+<td>Breaker Ports</td>
+<td>20</td>
+<td>Motors</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gauge-to-breaker-standard">Gauge to Breaker Standard</h3>
+<table>
+<thead>
+<tr>
+<th>Wire Gauge</th>
+<th>Breaker Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 AWG</td>
+<td><a href="https://www.revrobotics.com/rev-11-1863/">40A 🟠 Breaker</a></td>
+</tr>
+<tr>
+<td>12 AWG</td>
+<td><a href="https://www.revrobotics.com/rev-11-1863/">40A 🟠 Breaker</a></td>
+</tr>
+<tr>
+<td>18 AWG</td>
+<td><a href="https://www.revrobotics.com/rev-11-1861/">20A 🟡 Breaker</a></td>
+</tr>
+<tr>
+<td>22 AWG</td>
+<td>5A Breaker or <a href="https://www.andymark.com/products/10-amp-mini-red-fuse?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMmZ1c2UlMjIlMkMlMjJ1dGY4JTIyJTNBJTIyJUUyJTlDJTkzJTIyJTdE">10A 🔴 Fuse</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="swerve-diagram">Swerve Diagram</h2>
+<p><img alt="Swerve Drivetrain Wiring Guide" src="../../.images/Electrical/29x29DrivetrainWiringGuide.svg" /></p>
+<h2 id="tips">Tips</h2>
+<ol>
+<li>When putting multiple wires into one connector (e.g. Kraken CAN Wire) the size becomes Original AWG - 3 (e.g. two 18 AWG - 3 = 15 AWG)</li>
+</ol>
+<h2 id="footnotes">Footnotes</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:6m">
+<p>6 AWG minimum&#160;<a class="footnote-backref" href="#fnref:6m" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:16a">
+<p>16 AWG actual&#160;<a class="footnote-backref" href="#fnref:16a" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:22a">
+<p>22 AWG actual&#160;<a class="footnote-backref" href="#fnref:22a" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:22m">
+<p>22 AWG minimum&#160;<a class="footnote-backref" href="#fnref:22m" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:22m" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:22m" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:22s">
+<p>22 AWG Multi-spliced into 18 AWG&#160;<a class="footnote-backref" href="#fnref:22s" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:splice">
+<p>Components should be spliced together using a Y WAGO.&#160;<a class="footnote-backref" href="#fnref:splice" title="Jump back to footnote 6 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:splice" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4cond">
+<p>18 AWG - 4 conductor wire which has 🔴⚫️⚪️🟢. For CAN use ⚪️=🟡.&#160;<a class="footnote-backref" href="#fnref:4cond" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:12a">
+<p>12 AWG actual&#160;<a class="footnote-backref" href="#fnref:12a" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Selecting%20a%20Battery/" class="btn btn-neutral float-left" title="Selecting a Battery"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Wiring%20LED/" class="btn btn-neutral float-right" title="Wiring LEDs">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/FRCTeam3255/Wiki" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Selecting%20a%20Battery/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Wiring%20LED/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Tayler Uva" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Day 2 thru 4: Robot Architecture Phase - SN Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Day 2 thru 4: Robot Architecture Phase";
+        var mkdocs_page_input_path = "Build Season/Day 2-4 - Robot Architecture Phase.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../.images/SN White Text Logo.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../.." >SuperNURDs Internal Wiki</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Build Season</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Day%200%20-%20Mock%20Kickoff/" >Day 0: Mock Kickoff</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Day%201%20-%20Kick%20Off/" >Day 1: Kick Off</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Day%201.1%20-%20Game%20Manual%20Breakdown/" >Day 1.1: Game Manual Breakdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Day%201.2%20-%20Scoring%20Method%20Analysis/" >Day 1.2: Scoring Method Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Day%201.3%20-%20Feature%20Importance%20List/" >Day 1.3: Feature Importance List</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#" >Day 2 thru 4: Robot Architecture Phase</a> <ul class="current" >
+    <li class="toctree-l2"><a class="reference internal" href="#schedule">Schedule</a>
+    </li>
+  </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Day%202-4.1%20-%20Archetype%20Creation/" >Archetype Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Digital%20Folder%20Checklist/" >Digital Folder Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Team%20Photo/" >Team Photo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Weekly%20Schedule/" >Weekly Schedule</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Competition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Comp%20Day/" >Comp Day</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Comp%20Logistics/" >Comp Logistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Drive%20Tryouts/" >Drive Tryouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Impact%20Judges%27%20Questions/" >Impact Judges' Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Post%20Comp%20Cleanup/" >Post Comp Cleanup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Pre%20Comp%20Prep/" >Pre Comp Prep</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Regional%20Reflection/" >Regional Reflection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Role%20Definitions/" >Competition Roles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Running%20Stats/" >Reference for Running Stats at Competition</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Electrical</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Breaker%20Wiring/" >Breaker Wiring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Component%20Mounting/" >Component Mounting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Pre-Boot%20Checklist/" >Pre/First-Boot Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Ring%20Terminal%20Crimping/" >Crimping Instructions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Selecting%20a%20Battery/" >Selecting a Battery</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Wiring%20Cheat%20Sheet/" >Wiring Cheat Sheet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Wiring%20LED/" >Wiring LEDs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Fabrication</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/Assembly%20Standard/" >Assembly Standard</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/Bumpers/" >Bumper Construction</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Computer%20Programs/" >Computer Programs Used</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/How%20to%20Update%20the%20Wiki/" >How to Update the Wiki</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Robot%20Categories/" >Robot Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Standard%203D%20Prints/" >Standard 3D Prints</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Standard%20Purchases/" >Standard Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Team%20Expectations/" >Team Expectations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/Downloading%20Projects/" >Downloading GitHub Projects</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lessons (Software)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lessons%20%28Software%29/MotionMagic/" >MotionMagic Lesson Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lessons%20%28Software%29/StateMachine/" >State Machine Lesson</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Mechanical</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Mechanical/Bolt%20to%20Tool%20Lookup/" >Bolt to Tool Lookup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Mechanical/Motor%20Specs/" >Motor Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Media and Comms</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Graphic%20Design/" >Graphic Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Video%20Editing/" >Video Editing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Website/" >Website</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Configuring%20the%20Radio/" >Configuring the Radio</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Conventions/" >Naming Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Creating%20Pull%20Requests/" >Creating Pull Requests (PRs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Creating%20new%20Robot%20Project/" >Creating new Robot Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Flashing%20RIO%202/" >Flashing RIO 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/GitHub%20Standards/" >GitHub Standards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Reverting%20a%20File/" >Reverting a File to Main Branch Version</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Setting%20Up%20Driverstation/" >Setting Up Driverstation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Software%20Errors%20and%20Fixes/" >Software Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Swoffsets/" >Swoffsets (Swerve Offsets)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/TalonFX%20Blink%20Codes/" >TalonFX Blink Codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Tuning%20Auto%20PID/" >Tuning Auto PID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Tuning%20Motion%20Magic%20PID/" >Tuning Motion Magic PID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/UpdateCAD/" >Step-by-Step Guide to Update CAD for Simulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Updating%20Limelight%20Firmware/" >Updating Limelight Firmware</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Updating%20WPILib%20Project%20Version/" >Updating WPILib Project Version</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Vendor%20Libraries/" >Vendor Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/WPILib%20Install/" >WPILib Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Stats</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/App%20Setup/" >App Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/Training/" >Training</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/War%20Room/" >War Room</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Test Folder</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Test%20Folder/Test%20File/" >This is a test page</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">SN Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Build Season</li>
+      <li class="breadcrumb-item active">Day 2 thru 4: Robot Architecture Phase</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/FRCTeam3255/Wiki/edit/main/Build Season/Day 2-4 - Robot Architecture Phase.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="day-2-thru-4-robot-architecture-phase">Day 2 thru 4: Robot Architecture Phase</h1>
+<p>This occurs the Monday following kickoff</p>
+<h2 id="schedule">Schedule</h2>
+<h3 id="part-1-winter-break">Part 1 (Winter Break)</h3>
+<p><strong>Monday (9am to 9pm)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Time</th>
+<th style="text-align: center;">Duration</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">9:00 am</td>
+<td style="text-align: center;">30 min</td>
+<td>Review weekend insights</td>
+</tr>
+<tr>
+<td style="text-align: center;">9:30 am</td>
+<td style="text-align: center;">30 min</td>
+<td>Re-watch game animation/field tours</td>
+</tr>
+<tr>
+<td style="text-align: center;">10:00 am</td>
+<td style="text-align: center;">30 min</td>
+<td>Add to feature importance</td>
+</tr>
+<tr>
+<td style="text-align: center;">10:30 am</td>
+<td style="text-align: center;">2 hr</td>
+<td>Rank feature importance list</td>
+</tr>
+<tr>
+<td style="text-align: center;">12:30 pm</td>
+<td style="text-align: center;">30 min</td>
+<td><strong>Lunch</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:00 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Break (Mentors create Architecture Groups)</td>
+</tr>
+<tr>
+<td style="text-align: center;">1:15 pm</td>
+<td style="text-align: center;">1.75 hr</td>
+<td>General Robot Architecture Creation - Round 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">3:00 pm</td>
+<td style="text-align: center;">30 min</td>
+<td><strong>Dinner</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">3:30 pm</td>
+<td style="text-align: center;">2 hr</td>
+<td>General Round 1 Robot Architecture Presentation<br>Consolidation/Feature Importance Checkoff</td>
+</tr>
+<tr>
+<td style="text-align: center;">5:30 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Clean up</td>
+</tr>
+<tr>
+<td style="text-align: center;">6:00 pm</td>
+<td style="text-align: center;">-</td>
+<td>Meeting ends</td>
+</tr>
+</tbody>
+</table>
+<h3 id="part-2-winter-break">Part 2 (Winter Break)</h3>
+<p><strong>Tuesday (1st Day Back, 3:45 to 9pm)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Time</th>
+<th style="text-align: center;">Duration</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2:30 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Review Team Updates (Manual Updates)<br>Re-watch game animation</td>
+</tr>
+<tr>
+<td style="text-align: center;">2:45 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Review feature importance list</td>
+</tr>
+<tr>
+<td style="text-align: center;">3:00 pm</td>
+<td style="text-align: center;">50 min</td>
+<td>Re-present concept ideas</td>
+</tr>
+<tr>
+<td style="text-align: center;">3:50 pm</td>
+<td style="text-align: center;">1 hr</td>
+<td>Break into two groups</td>
+</tr>
+<tr>
+<td style="text-align: center;">4:50 pm</td>
+<td style="text-align: center;">40 min</td>
+<td>Present ideas<br>15 min per group<br>Last 5 min,cover feature importance list</td>
+</tr>
+<tr>
+<td style="text-align: center;">5:30 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Break</td>
+</tr>
+<tr>
+<td style="text-align: center;">5:45 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Find similarities and differences<br>Similarities are locked in</td>
+</tr>
+<tr>
+<td style="text-align: center;">6:00 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Comparative analysis spreadsheet of differences (features vs complexity)<br>Define ACTIONS of contention<br>Break down by mutually exclusive mechanisms</td>
+</tr>
+<tr>
+<td style="text-align: center;">6:30 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Design Decided, Split Architecture into Mechanisms</td>
+</tr>
+<tr>
+<td style="text-align: center;">6:45 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Break<br>Mentors Make Mechanism groups</td>
+</tr>
+<tr>
+<td style="text-align: center;">7:00 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Work on base structures/variable prototypes in groups<br>Software creates base robot/structures code</td>
+</tr>
+<tr>
+<td style="text-align: center;">7:30 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Clean up</td>
+</tr>
+<tr>
+<td style="text-align: center;">7:45 pm</td>
+<td style="text-align: center;">-</td>
+<td>Meeting ends</td>
+</tr>
+</tbody>
+</table>
+<h3 id="part-1-non-winter-break">Part 1 (Non-Winter Break)</h3>
+<p><strong>Tuesday (3:45pm to 9pm)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Time</th>
+<th style="text-align: center;">Duration</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">3:45 am</td>
+<td style="text-align: center;">15 min</td>
+<td>Regroup Weekend Insights</td>
+</tr>
+<tr>
+<td style="text-align: center;">4:00 am</td>
+<td style="text-align: center;">15 min</td>
+<td>Re-watch game animation/field tours</td>
+</tr>
+<tr>
+<td style="text-align: center;">4:15 am</td>
+<td style="text-align: center;">30 min</td>
+<td>Review/Add to feature importance items</td>
+</tr>
+<tr>
+<td style="text-align: center;">4:45 pm</td>
+<td style="text-align: center;">1.5 hr</td>
+<td>Feature Importance List ranking/answer design consideration questions</td>
+</tr>
+<tr>
+<td style="text-align: center;">6:15 pm</td>
+<td style="text-align: center;">30 min</td>
+<td><strong>Dinner</strong> <br> Mentors create Architecture Groups <br> Prep areas, have whiteboard stacks and computers in</td>
+</tr>
+<tr>
+<td style="text-align: center;">6:45 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Presentation Retrobot Example</td>
+</tr>
+<tr>
+<td style="text-align: center;">7:00 pm</td>
+<td style="text-align: center;">1.5 hr</td>
+<td><strong>Round 1</strong> - General Robot Architecture Creation</td>
+</tr>
+<tr>
+<td style="text-align: center;">8:30 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Finalize presentations (ready to present first thing next day)</td>
+</tr>
+<tr>
+<td style="text-align: center;">9:00 pm</td>
+<td style="text-align: center;">-</td>
+<td>Meeting Ends</td>
+</tr>
+</tbody>
+</table>
+<h3 id="part-2-non-winter-break">Part 2 (Non-Winter Break)</h3>
+<p><strong>Wednesday (3:45 to 9pm)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Time</th>
+<th style="text-align: center;">Duration</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">3:45 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Review Team Updates (Manual Updates)<br>Re-watch game animation</td>
+</tr>
+<tr>
+<td style="text-align: center;">4:00 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Review feature importance list</td>
+</tr>
+<tr>
+<td style="text-align: center;">4:15 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Group 1 Archetype Presentation, Feature Importance Satisfaction/Round 1 Complexity Factors</td>
+</tr>
+<tr>
+<td style="text-align: center;">4:45 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Group 2 Archetype Presentation, Feature Importance Satisfaction/Round 1 Complexity Factors</td>
+</tr>
+<tr>
+<td style="text-align: center;">5:15 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Group 3 Archetype Presentation, Feature Importance Satisfaction/Round 1 Complexity Factors</td>
+</tr>
+<tr>
+<td style="text-align: center;">5:45 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Identify design driving mechanism for each archetype</td>
+</tr>
+<tr>
+<td style="text-align: center;">6:15 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Narrow down to 2 Archetypes, Look at simularity, Compare Complexity vs Feature importance list</td>
+</tr>
+<tr>
+<td style="text-align: center;">6:30 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Dinner (<strong>Mentors make round 2 Groups</strong>)</td>
+</tr>
+<tr>
+<td style="text-align: center;">7:00 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>List all out minor mechanisms from all archetypes</td>
+</tr>
+<tr>
+<td style="text-align: center;">7:15 pm</td>
+<td style="text-align: center;">1.5 hr</td>
+<td>Begin round 2 archetypes creation (make best full robot with assigned design driving mechanism, and any combo of minor mechanism, with emphasis on packaging/simplicty)</td>
+</tr>
+<tr>
+<td style="text-align: center;">8:45 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Clean up/Have Slides ready to present on friday</td>
+</tr>
+<tr>
+<td style="text-align: center;">9:00 pm</td>
+<td style="text-align: center;">-</td>
+<td>Meeting ends</td>
+</tr>
+</tbody>
+</table>
+<h3 id="part-3-non-winter-break">Part 3 (Non-Winter Break)</h3>
+<p><strong>Friday (3:45 to 9pm)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Time</th>
+<th style="text-align: center;">Duration</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">3:45 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Review Team Updates (Manual Updates)<br>Re-watch game animation</td>
+</tr>
+<tr>
+<td style="text-align: center;">4:00 pm</td>
+<td style="text-align: center;">15 min</td>
+<td>Review feature importance list</td>
+</tr>
+<tr>
+<td style="text-align: center;">4:15 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Group 1 Archetype Presentation, Feature Importance Satisfaction/Complexity Factors</td>
+</tr>
+<tr>
+<td style="text-align: center;">4:45 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Group 2 Archetype Presentation, Feature Importance Satisfaction/Complexity Factors</td>
+</tr>
+<tr>
+<td style="text-align: center;">5:15 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Narrow down to 1 Archetype, Evaluate Complexity vs Feature Importance List</td>
+</tr>
+<tr>
+<td style="text-align: center;">5:45 pm</td>
+<td style="text-align: center;">45 min</td>
+<td>Minor Mechanism Analysis/Complexity Factors, Choose which minor mechanism to start with, you can rate minor mechansims from past archetypes if needed</td>
+</tr>
+<tr>
+<td style="text-align: center;">6:30 pm</td>
+<td style="text-align: center;">30 min</td>
+<td>Dinner (Mentors make mechanism groups)</td>
+</tr>
+<tr>
+<td style="text-align: center;">7:00 pm</td>
+<td style="text-align: center;">2 hr</td>
+<td><strong>Mechanical</strong> splits into variable prototyping/protobot groups<br><strong>Software</strong> lists out states, guess motor counts, define motor categories, assign motors to states, create issues by clustered categories, protobot skeleton code, assign buttons</td>
+</tr>
+<tr>
+<td style="text-align: center;">9:00 pm</td>
+<td style="text-align: center;">-</td>
+<td>Meeting ends</td>
+</tr>
+</tbody>
+</table>
+<!-- - 45 min per section research, 10 min per group presentation
+- 3 groups Generate robot architecture based on ideas presented
+- Present architectures
+- Decide which concepts to prototype from the ideas presented (refer to [fundamentals list](#fundamentals-list)) - TARGET FOR MONDAY
+- Create prototypes
+  - If prototype doesn't work for category, pick from previous ideas (I.e. collector A didn't work, try collector B)
+- Decide final design -->
+
+<!-- ## Design Discussion
+
+- Break up into 3 groups for each section for research
+- Old robots/designs and videos (see [research recommendations](#research-recommendations))
+- Present each sections (1 design per group per section)
+  - example: 3 groups research collector, 3 groups present collector, move on to next section
+- Prototype
+  - 3 prototypes per system
+
+**Research, Present, Prototype** -->
+
+<!-- !!! important
+    1 single mechanism can cover multiple categories  
+    Each step in process think about how you can combine with previous categories -->
+
+<!-- ### Order
+
+1. Collector (repeat per game piece)
+2. Releaser (repeat per scoring location)
+3. Transfer
+    1. (things that move game piece location)
+    2. e.g. elevator, arm, wrist, belts, wheels
+    3. Anything that move game piece from original collected position
+4. Climber
+5. Think optimizations/extras for each component (major competitive advantage/cycle time reduction)
+    1. Turrets, hoods, ability to do two motions at once, game piece orientation changing (flip cone), etc.
+6. What things can be combined/simplified -->
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Day%201.3%20-%20Feature%20Importance%20List/" class="btn btn-neutral float-left" title="Day 1.3: Feature Importance List"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Day%202-4.1%20-%20Archetype%20Creation/" class="btn btn-neutral float-right" title="Archetype Creation">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/FRCTeam3255/Wiki" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Day%201.3%20-%20Feature%20Importance%20List/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Day%202-4.1%20-%20Archetype%20Creation/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

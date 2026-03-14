@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Tayler Uva" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Tuning Motion Magic PID - SN Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Tuning Motion Magic PID";
+        var mkdocs_page_input_path = "Software/Tuning Motion Magic PID.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../.images/SN White Text Logo.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../.." >SuperNURDs Internal Wiki</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Build Season</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%200%20-%20Mock%20Kickoff/" >Day 0: Mock Kickoff</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201%20-%20Kick%20Off/" >Day 1: Kick Off</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201.1%20-%20Game%20Manual%20Breakdown/" >Day 1.1: Game Manual Breakdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201.2%20-%20Scoring%20Method%20Analysis/" >Day 1.2: Scoring Method Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201.3%20-%20Feature%20Importance%20List/" >Day 1.3: Feature Importance List</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%202-4%20-%20Robot%20Architecture%20Phase/" >Day 2 thru 4: Robot Architecture Phase</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%202-4.1%20-%20Archetype%20Creation/" >Archetype Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Digital%20Folder%20Checklist/" >Digital Folder Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Team%20Photo/" >Team Photo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Weekly%20Schedule/" >Weekly Schedule</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Competition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Comp%20Day/" >Comp Day</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Comp%20Logistics/" >Comp Logistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Drive%20Tryouts/" >Drive Tryouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Impact%20Judges%27%20Questions/" >Impact Judges' Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Post%20Comp%20Cleanup/" >Post Comp Cleanup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Pre%20Comp%20Prep/" >Pre Comp Prep</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Regional%20Reflection/" >Regional Reflection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Role%20Definitions/" >Competition Roles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Running%20Stats/" >Reference for Running Stats at Competition</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Electrical</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Breaker%20Wiring/" >Breaker Wiring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Component%20Mounting/" >Component Mounting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Pre-Boot%20Checklist/" >Pre/First-Boot Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Ring%20Terminal%20Crimping/" >Crimping Instructions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Selecting%20a%20Battery/" >Selecting a Battery</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Wiring%20Cheat%20Sheet/" >Wiring Cheat Sheet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Wiring%20LED/" >Wiring LEDs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Fabrication</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/Assembly%20Standard/" >Assembly Standard</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/Bumpers/" >Bumper Construction</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Computer%20Programs/" >Computer Programs Used</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/How%20to%20Update%20the%20Wiki/" >How to Update the Wiki</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Robot%20Categories/" >Robot Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Standard%203D%20Prints/" >Standard 3D Prints</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Standard%20Purchases/" >Standard Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Team%20Expectations/" >Team Expectations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/Downloading%20Projects/" >Downloading GitHub Projects</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lessons (Software)</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lessons%20%28Software%29/MotionMagic/" >MotionMagic Lesson Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lessons%20%28Software%29/StateMachine/" >State Machine Lesson</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Mechanical</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Mechanical/Bolt%20to%20Tool%20Lookup/" >Bolt to Tool Lookup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Mechanical/Motor%20Specs/" >Motor Specifications</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Media and Comms</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Graphic%20Design/" >Graphic Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Video%20Editing/" >Video Editing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Website/" >Website</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Configuring%20the%20Radio/" >Configuring the Radio</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Conventions/" >Naming Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Creating%20Pull%20Requests/" >Creating Pull Requests (PRs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Creating%20new%20Robot%20Project/" >Creating new Robot Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Flashing%20RIO%202/" >Flashing RIO 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../GitHub%20Standards/" >GitHub Standards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Reverting%20a%20File/" >Reverting a File to Main Branch Version</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Setting%20Up%20Driverstation/" >Setting Up Driverstation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Software%20Errors%20and%20Fixes/" >Software Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Swoffsets/" >Swoffsets (Swerve Offsets)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TalonFX%20Blink%20Codes/" >TalonFX Blink Codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tuning%20Auto%20PID/" >Tuning Auto PID</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#" >Tuning Motion Magic PID</a> <ul class="current" >
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#for-flywheel-mechanisms">For Flywheel Mechanisms</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#additional-notes">Additional Notes</a>
+    </li>
+  </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UpdateCAD/" >Step-by-Step Guide to Update CAD for Simulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Updating%20Limelight%20Firmware/" >Updating Limelight Firmware</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Updating%20WPILib%20Project%20Version/" >Updating WPILib Project Version</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Vendor%20Libraries/" >Vendor Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../WPILib%20Install/" >WPILib Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Stats</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/App%20Setup/" >App Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/Training/" >Training</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/War%20Room/" >War Room</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Test Folder</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Test%20Folder/Test%20File/" >This is a test page</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">SN Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Software</li>
+      <li class="breadcrumb-item active">Tuning Motion Magic PID</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/FRCTeam3255/Wiki/edit/main/Software/Tuning Motion Magic PID.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="tuning-motion-magic-pid">Tuning Motion Magic PID</h1>
+<p>Follow these steps to tune the Motion Magic PID for your robot:</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Use a fresh battery to ensure consistent performance during tuning.</li>
+<li>Ensure you are connected to the robot via its Wi-Fi.</li>
+<li>Open the <code>ConstMotion.java</code> or <code>ConstRotors.java</code> file to adjust the PID constants.</li>
+<li><strong>Verify the gear ratio is correct</strong> (sensor to mechanism ratio in configuration).</li>
+<li><strong>Verify the direction is correct</strong> before beginning tuning.</li>
+<li><strong>Make sure soft limits are in Units Rotations</strong> (not raw encoder units).</li>
+</ul>
+<h3 id="for-arm-mechanisms">For Arm Mechanisms:</h3>
+<ul>
+<li><strong>Deploy should be a positive value</strong> (e.g., moving the arm outward/upward should increase position).</li>
+<li><strong>Use the closed loop sign setting</strong> in the motor configuration to invert feedback polarity if needed (ensures feedback matches motor direction).</li>
+<li><strong>Verify the forward limit is in the correct direction</strong> before tuning to prevent damage.</li>
+</ul>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>
+<p><strong>Set Gravity Type</strong><br />
+    Configure the gravity compensation type in <code>ConstMotion.java</code> or <code>ConstRotors.java</code> based on your mechanism:</p>
+<ul>
+<li><strong>Elevator_Static</strong>: For vertical lifts (elevators, lifts)</li>
+<li><strong>Arm_Cosine</strong>: For rotating arms (pivoting mechanisms)</li>
+</ul>
+<pre class="highlight"><code class="language-java">MOTOR_NAME_CONFIG.Slot0.GravityType = GravityTypeValue.Elevator_Static; // or Arm_Cosine</code></pre>
+</li>
+<li>
+<p><strong>Use Phoenix Tuner for Initial Tuning</strong>  </p>
+<ul>
+<li>Open Phoenix Tuner and connect to your robot.</li>
+<li>Navigate to the motor controller you're tuning.</li>
+<li>Use Phoenix Tuner's built-in PID tuning interface to adjust values in real-time:</li>
+<li>Start with all PID constants set to <code>0</code>.</li>
+<li>Tune <code>kS</code> (Static Gain) first - increase until the mechanism begins to move slightly.<br />
+    &gt; <strong>Note:</strong> Keep this value as low as possible while ensuring the mechanism moves.</li>
+<li>Tune <code>kG</code> (Gravity Compensation) - increase until the mechanism holds position without drifting.<br />
+    &gt; <strong>Note:</strong> If the gear ratio is high enough, <code>kG</code> might just be <code>0</code> as the mechanism can hold itself.</li>
+<li>Tune <code>kP</code> (Proportional Gain) - increase until the mechanism reaches setpoint without overshooting.</li>
+<li>Fine-tune the values in Phoenix Tuner until you achieve desired performance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Transfer Values to Constants File</strong><br />
+    Once you have tuned the PID values in Phoenix Tuner:</p>
+<ul>
+<li>Copy the final tuned values from Phoenix Tuner.</li>
+<li>Update the corresponding constants in <code>ConstMotion.java</code> or <code>ConstRotors.java</code>:</li>
+</ul>
+<pre class="highlight"><code class="language-java">// Feedforward
+MOTOR_NAME_CONFIG.Slot0.kS = 0.25;    // Value from Phoenix Tuner
+MOTOR_NAME_CONFIG.Slot0.kG = 0.30;    // Value from Phoenix Tuner
+// PID
+MOTOR_NAME_CONFIG.Slot0.kP = 10.0;    // Value from Phoenix Tuner</code></pre>
+<ul>
+<li>Deploy the code with the new constants to verify the mechanism still performs as expected.</li>
+</ul>
+</li>
+</ol>
+<h2 id="for-flywheel-mechanisms">For Flywheel Mechanisms</h2>
+<p>Flywheels use <strong>velocity control</strong> rather than position control. The key constants to tune are <code>kS</code> and <code>kV</code>.</p>
+<ol>
+<li>
+<p><strong>Set kS</strong><br />
+   Tune <code>kS</code> (Static Gain) the same way as other mechanisms — increase it until the flywheel just begins to spin.  </p>
+<blockquote>
+<p><strong>Note:</strong> Keep this value as low as possible while still overcoming static friction.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Set kV</strong><br />
+   Tune <code>kV</code> (Velocity Gain) so that, with only feedforward active (no PID), the flywheel reaches <strong>slightly below</strong> your lowest velocity setpoint.<br />
+   This ensures the closed-loop controller (kP) only needs to make small corrections upward, avoiding overshoot.</p>
+<blockquote>
+<p><strong>Tip:</strong> Test at your lowest expected RPM setpoint and increase <code>kV</code> until the flywheel gets close but does not exceed it.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Transfer Values to Constants File</strong><br />
+   Once tuned, copy the values into your constants file:</p>
+</li>
+</ol>
+<pre class="highlight"><code class="language-java">// Feedforward
+MOTOR_NAME_CONFIG.Slot0.kS = 0.25;    // Value from Phoenix Tuner
+MOTOR_NAME_CONFIG.Slot0.kV = 0.12;    // Value from Phoenix Tuner (reach slightly below lowest setpoint)
+// PID (fine-tune if needed)
+MOTOR_NAME_CONFIG.Slot0.kP = 1.0;     // Value from Phoenix Tuner</code></pre>
+<ul>
+<li>Deploy the code with the new constants to verify the flywheel performs as expected at all setpoints.</li>
+</ul>
+<h2 id="additional-notes">Additional Notes</h2>
+<ul>
+<li>If you encounter issues with feedforward, you may need to revisit and refine your feedforward calculations.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Tuning%20Auto%20PID/" class="btn btn-neutral float-left" title="Tuning Auto PID"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../UpdateCAD/" class="btn btn-neutral float-right" title="Step-by-Step Guide to Update CAD for Simulation">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/FRCTeam3255/Wiki" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Tuning%20Auto%20PID/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../UpdateCAD/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
