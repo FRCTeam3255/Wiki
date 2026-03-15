@@ -2,6 +2,7 @@
 
 ## Resources you must gather
 - A straight-edge, slightly longer than the distance between modules (A 1 inch tube works fine for this)
+    - Don't be creative, use a tube with four faces
 - 2 Swoffset Bricks (3d printed, found in the Electrical Cabinet's "Other Tools" Drawer)
 - A Laptop with the following Software installed:
     - Glass
@@ -29,22 +30,21 @@ Whichever side you choose, you need to keep it consistent across *both robots (c
 
 ---
 ## Getting the Swoffsets
-1. Power on the robot
-2. Deploy your current code to the robot if you haven't already
-3. Identify the *front right and back right* swerve modules
-4. Rotate *both* Bevels to face the robot's **right**
-    - Bevels are the spiky lookin gear things on the side of the wheel. They're on the opposite side of where you're going to put the swoffset block
+1. Set steer motors to `Coast Mode` in Pheonix Tuner
+2. Power on the robot
+3. Deploy your current code to the robot if you haven't already
+4. Identify the *front right and back right* swerve modules
+5. Rotate all bevels to face the center of the robot [UPDATE DIAGRAM]
     - ![Diagram](../.images/Software/Swoffsets/swoffset_diagram.png)
-5. Insert the Swoffset blocks into those modules, pressing it in until it matches the image below. Then, press your straightedge into the flat part of the blocks to ensure that the modules are straight.
-    - ![Swoffset Blocks](../.images/Software/Swoffsets/IMG_8986.jpg)
-    - ![Straightedge](../.images/Software/Swoffsets/IMG_8987.jpg)
-6. Connect to the robot, then open Glass
-7. Navigate to the dropdown that shows the Absolute (Raw) Encoder values for your modules
+6. In Phoenix Tuner, click into each absolute encoder 
+
+7. Copy Magnet offset value and put it in the code
+8. Navigate to the dropdown that shows the Absolute (Raw) Encoder values for your modules
     - Front Left = 0, Front Right = 1, Back Left = 2, Back Right = 3
     - ![Glass](../.images/Software/Swoffsets/glass_eu4L6ovWEM.png)
-8. Copy the Absolute Encoder Raw value for that module and paste it into the offset constant in your code
-9. Once you've done both modules, repeat steps 3-8 with the *front left and back left* modules
-10. Take the blocks out before you begin driving the swerve
+9. Copy the Absolute Encoder Raw value for that module and paste it into the offset constant in your code
+10. Once you've done both modules, repeat steps 3-8 with the *front left and back left* modules
+11. Take the blocks out before you begin driving the swerve
 
 ---
 ## Verifying your Swoffsets
