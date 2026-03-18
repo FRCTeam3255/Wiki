@@ -37,8 +37,10 @@ Whichever side you choose, you need to keep it consistent across *both robots (c
 5. Rotate all bevels to face the center of the robot [UPDATE DIAGRAM]
     - ![Diagram](../.images/Software/Swoffsets/swoffset_diagram.png)
 6. In Phoenix Tuner, click into each absolute encoder 
-
+    - ![Phoenix Tuner Encoder](../.images/Software/Swoffsets/GettingSwoffsetStep6.png)
 7. Copy Magnet offset value and put it in the code
+    - ![Encoder Magnet Offset](../.images/Software/Swoffsets/GettingSwoffsetStep7a.png)
+    - ![Encoder Magnet Offset](../.images/Software/Swoffsets/GettingSwoffsetStep7b.png)    
 8. Navigate to the dropdown that shows the Absolute (Raw) Encoder values for your modules
     - Front Left = 0, Front Right = 1, Back Left = 2, Back Right = 3
     - ![Glass](../.images/Software/Swoffsets/glass_eu4L6ovWEM.png)
