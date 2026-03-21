@@ -1,4 +1,4 @@
-# Gear Ratios and Unit Conversions
+# Gear Ratios
 
 ## What Is a Gear Ratio?
 
