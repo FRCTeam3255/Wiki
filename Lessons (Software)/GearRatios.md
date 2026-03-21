@@ -41,12 +41,30 @@ For mechanisms that move linearly (elevator, drivetrain), multiply the sprocket 
 MOTOR_CONFIG.Feedback.SensorToMechanismRatio = 1.0 / ((10.0 / 50.0) * (2.0 * Math.PI));
 ```
 
-Use the WPILib Units library when working with measured values:
+---
+
+## How Mechanical Gives You Gear Info
+
+Mechanical will give you the tooth counts for each gear stage. For example:
+
+> "Stage 1 is a 12 tooth driving a 60 tooth. Stage 2 is a 26 tooth driving a 52 tooth."
+
+Plug those numbers directly into the formula:
 
 ```java
-// Sprocket diameter as a typed measurement
-Distance sprocketDiameter = Units.Inches.of(2);
-double circumference = sprocketDiameter.in(Units.Inches) * Math.PI;
+// Stage 1: 12 tooth driving, 60 tooth driven
+// Stage 2: 26 tooth driving, 52 tooth driven
+MOTOR_CONFIG.Feedback.SensorToMechanismRatio = 1.0 / ((12.0 / 60.0) * (26.0 / 52.0));
+```
+
+For a linear mechanism, mechanical will also give you the sprocket or pulley pitch diameter:
+
+> "Stage 1 is a 10 tooth driving a 50 tooth. The sprocket pitch diameter is 1.751 inches."
+
+```java
+// Stage 1: 10 tooth driving, 50 tooth driven
+// Sprocket pitch diameter: 1.751 inches
+MOTOR_CONFIG.Feedback.SensorToMechanismRatio = 1.0 / ((10.0 / 50.0) * (1.751 * Math.PI));
 ```
 
 ---
