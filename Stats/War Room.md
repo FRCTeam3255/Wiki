@@ -6,21 +6,20 @@ At the end of qualification matches, teams are ranked. The top 8 ranked teams be
 
 ### The Selection Process
 
-1. **Round 1 (Picks 1–8):** Alliance captains (ranked 1–8) each pick one team, in rank order (1st pick first, 8th pick last). Any team can be picked, including other top-8 teams.
+1. **Round 1 (Picks 1–8):** Alliance captains (ranked 1–8) each pick one team, in rank order (1st pick first, 8th pick last). Any team can be picked, including other alliance captains.
 2. **Round 2 (Picks 9–16):** Each alliance captain picks a second partner, in reverse rank order (8th pick first, 1st pick last).
-3. **Backup robot (Round 3):** A third round occurs to select backup robots, again in rank order, in case a robot cannot compete in playoffs.
 
 ### Accept or Decline
 
 - Any team picked can **accept** or **decline** the invitation.
 - If a team declines, the captain must pick another team.
-- If a top-8 team is picked and they **decline**, they lose their captain status and cannot pick or be picked again.
-- If a top-8 team **accepts** an invitation to join another alliance, they give up their captain status. The next-highest ranked team that has not yet been picked or declined becomes the new 8th alliance captain (**seed compression**).
+- If an alliance captain is picked and they **decline**, they cannot be picked by someone else. However, they can still form their own alliance.
+- If an alliance captain **accepts** an invitation to join another alliance, they give up their captain status. The next-highest ranked team that has not yet been picked or declined becomes the new 8th alliance captain (**seed compression**).
 
 ### Important Notes
 
 - The **#1 ranked team** always picks first.
-- Teams ranked 9 and below can only be picked; they cannot initiate selections.
+- Teams ranked 9 and below can only be picked; they cannot initiate selections (unless there is compression).
 - Once you accept an alliance, you are committed — you compete with that alliance through the entire playoff bracket.
 
 ## Why/how we do war room
