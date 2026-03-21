@@ -37,7 +37,7 @@ At the end of qualification matches, teams are ranked. The top 8 ranked teams be
 
 ### What we do well (Strengths)
 
-Use the stats app to identify our **top-performing metrics** — these are the areas where we score consistently above average. Examples may include:
+Identify our **top-performing metrics** using the metric names and terms from the stats app — these are the areas where we score consistently above average. Examples may include:
 
 - High autonomous point contributions
 - Consistent teleop scoring in key game elements
@@ -48,7 +48,7 @@ Use the stats app to identify our **top-performing metrics** — these are the a
 
 ### What we do not do well (Weaknesses)
 
-Use the stats app to identify our **lowest-performing metrics** — these are the areas where our scores are below average or inconsistent. Examples may include:
+Identify our **lowest-performing metrics** using the metric names and terms from the stats app — these are the areas where our scores are below average or inconsistent. Examples may include:
 
 - Low scoring in a specific game element
 - Inconsistent autonomous routines
