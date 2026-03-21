@@ -1,6 +1,6 @@
-# Mechanism Tooth Info
+# Mechanism Tooth Count
 
-## How Mechanical Gives You Tooth Info
+## How Mechanical Gives You Tooth Count
 
 Mechanical will give you the tooth counts for each stage. For example:
 
@@ -8,7 +8,7 @@ Mechanical will give you the tooth counts for each stage. For example:
 
 ---
 
-## Writing the Tooth Info in Code
+## Writing the Tooth Count in Code
 
 ### Single Stage
 
