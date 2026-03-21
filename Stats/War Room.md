@@ -13,7 +13,7 @@ At the end of qualification matches, teams are ranked. The top 8 ranked teams be
 
 - Any team picked can **accept** or **decline** the invitation.
 - If a team declines, the captain must pick another team.
-- If an alliance captain is picked and they **decline**, they cannot be picked by someone else. However, they can still form their own alliance.
+- If a team **declines** they cannot be picked by another team. (Alliance captains can still pick other teams to form their own alliance).
 - If an alliance captain **accepts** an invitation to join another alliance, they give up their captain status. The next-highest ranked team that has not yet been picked or declined becomes the new 8th alliance captain (**seed compression**).
 
 ### Important Notes
