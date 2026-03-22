@@ -10,7 +10,7 @@
 
 !!! important
 
-    **ALL** connection points (wire on both sides of a connector) must have labeled zipties indicating `FROM DEVICE` and `TO DEVICE` marked with a dividing line. `FROM` is on top `TO` on bottom. Labels must be written on **both sides** of each ziptie so they are readable from any direction.
+    **ALL** connection points (wire on both sides of a connector) must have labeled zip ties indicating `FROM DEVICE` and `TO DEVICE` marked with a dividing line. `FROM` is on top `TO` on bottom. Labels must be written on **both sides** of each zip tie so they are readable from any direction.
 
 ## Device Connection Details
 
