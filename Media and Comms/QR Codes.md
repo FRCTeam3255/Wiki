@@ -16,8 +16,8 @@ QR codes are used to give people quick access to our online resources at events 
 1. Log in to [Wix.com](https://www.wix.com) (see [Website > Logging In](./Website.md#logging-in)).
 2. From the site dashboard, open the sidebar and navigate to **Marketing & SEO** → **SEO Tools** → **URL Redirect Manager**.
 3. Click **+ New Redirect**.
-4. In the **Old URL** field, enter the short path you want to appear in the QR code (e.g., `/robot2025`).
-5. In the **New URL** field, enter the full destination URL you want to redirect to (e.g., `https://www.youtube.com/watch?v=example`).
+4. In the **Old URL** field, enter the short path you want to appear in the QR code (e.g., `/code`).
+5. In the **New URL** field, enter the full destination URL you want to redirect to (e.g., `https://github.com/FRCTeam3255`).
 6. Click **Save**.
 
 !!! Tip
@@ -27,7 +27,7 @@ QR codes are used to give people quick access to our online resources at events 
 
 1. Go to [the-qrcode-generator.com](https://www.the-qrcode-generator.com).
 2. Select the **URL** tab.
-3. Enter the full Wix redirect URL (e.g., `https://www.supernurds.com/robot2025`).
+3. Enter the full Wix redirect URL (e.g., `http://supernurds.com/code`).
 4. The QR code preview will update automatically.
 5. Click **Download** to save the QR code image.
 
