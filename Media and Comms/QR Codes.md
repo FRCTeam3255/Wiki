@@ -6,6 +6,7 @@ QR codes are used to give people quick access to our online resources at events 
 
 1. Create a redirect on the Wix website that points to the desired destination URL.
 2. Generate a QR code that points to the Wix redirect URL.
+3. Save the QR code image to the team's GitHub graphics repository.
 
 ## Step 1: Create a Wix URL Redirect
 
@@ -32,3 +33,11 @@ QR codes are used to give people quick access to our online resources at events 
 
 !!! Note
     If the destination URL needs to change in the future, update the redirect in the Wix URL Redirect Manager (Step 1). The QR code itself does not need to be regenerated.
+
+## Step 3: Save the QR Code to GitHub
+
+Save the downloaded QR code image to the team's GitHub graphics repository so it can be found and reused later.
+
+1. If the QR code is specific to the current season, add it to the **yearly graphics repository** for that season (see [Current and Previous Season Graphics](https://github.com/search?q=topic%3Agraphics+org%3AFRCTeam3255&type=repositories&s=updated&o=desc)).
+2. If the QR code is for a resource that will be used across multiple seasons (e.g., a link to the team website), add it to the **standard graphics repository** ([GraphicsYearly](https://github.com/FRCTeam3255/GraphicsYearly)).
+3. Commit the file with a descriptive name (e.g., `qr-robot2025.png`) so it is easy to identify.
