@@ -14,6 +14,7 @@ Follow these steps to tune the Limelight camera exposure and sensor gain setting
 
 2. **Open the Limelight Tuner**
     - Click on a Limelight's IP address in the Hardware Client to open the tuner in your browser
+    - Alternatively, if the Limelight is connected via USB, navigate directly to [http://172.28.0.1:5801/](http://172.28.0.1:5801/) in your browser
 
 3. **Set Initial Values**
     - Set **Exposure** to `0`
