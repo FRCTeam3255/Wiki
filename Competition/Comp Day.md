@@ -39,6 +39,7 @@
 ### 4. End of Competition
 - Reprogram the radio back to normal settings.
 - [See Radio Reset Instructions](../Software/Configuring%20the%20Radio.md)
+- Make robot fixes (as if we are going to another match)
 
 ### 5. Load out
 
