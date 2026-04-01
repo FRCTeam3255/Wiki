@@ -39,3 +39,7 @@
 ### 4. End of Competition
 - Reprogram the radio back to normal settings.
 - [See Radio Reset Instructions](../Software/Configuring%20the%20Radio.md)
+
+### 5. Load out
+- We pack the pit **after finals** are complete.
+- [See Post Comp Cleanup](Post%20Comp%20Cleanup.md)
