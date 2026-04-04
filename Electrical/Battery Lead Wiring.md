@@ -5,8 +5,8 @@
 1. 5/16 socket
 2. socket wrench
 3. torque wrench
-4. [Grasshopper Nuts](https://www.thethriftybot.com/products/grasshopper-nut) (10-32)
-5. battery leads
+4. [grasshopper nuts](https://www.thethriftybot.com/products/grasshopper-nut) (10-32)
+5. 4 AWG battery leads
 
 ## Assembly steps
 
