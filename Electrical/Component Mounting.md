@@ -6,7 +6,7 @@ See [Bolt to Tool Lookup](../Mechanical/Bolt%20to%20Tool%20Lookup.md) for tools 
 
 | Device                           | Bolt/Nut Size                                                                                     | Bolt Length |
 | -------------------------------- | ------------------------------------------------------------------------------------------------- | ----------- |
-| Battery Lugs                     | [Grasshopper Nut](https://www.thethriftybot.com/products/grasshopper-nut) (Integrated 10-32 Bolt) | See [Battery Lead Wiring](Battery%20Lead%20Wiring.md) |
+| Battery Lugs                     | [Grasshopper Nut](https://www.thethriftybot.com/products/grasshopper-nut) (Integrated 10-32 Bolt) | N/A         |
 | Kraken **Motors**                |                                                                                                   |             |
 | Kraken **Cover**                 | 4-40 Bolts                                                                                        | 3/4" length |
 | Kraken ***Power* Ring Terminal** |                                                                                                   |             |
