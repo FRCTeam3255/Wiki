@@ -10,10 +10,11 @@
 
 ## Assembly steps
 
-1. Place the ring terminal of the battery lead onto the battery lug
+1. Place the ring terminal of the battery lead onto the inner side of the battery terminal
 2. Thread a Grasshopper Nut (10-32) onto the lug over the ring terminal
 3. SET TORQUE WRENCH TO 70 INCH POUNDS (7.91 N·m)
 4. Put the 5/16 socket on the torque wrench
 5. Tighten the Grasshopper Nut until the torque wrench clicks
-6. Apply Scotch 2228 mastic tape to any exposed metal
-7. Perform a continuity test
+6. Perform a continuity test
+7. Apply Scotch 2228 mastic tape to any exposed metal
+8. Test with battery beak
