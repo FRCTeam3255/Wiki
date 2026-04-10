@@ -27,6 +27,8 @@
 
 After completing radio configuration, take the robot directly to inspection.
 
+> **Note:** If the inspection line is too long, do Field Calibration (Section 4) first and come back. **Coach makes this call.**
+
 1. Weigh the robot on the official inspection scale.
 2. **Take a photo of the weight reading and send it in Slack.**
 3. Complete the full inspection checklist with the inspector.
