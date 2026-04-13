@@ -47,11 +47,15 @@ We pack the pit **after finals** are complete.
 
 #### Pit Packing
 
+![Pit tote layout reference](https://github.com/user-attachments/assets/e1f02c5b-d909-4120-9c89-3089bde5a6b5)
+
 1. Set some mallets and flush cutters aside
 1. Set aside step ladder
 1. Set aside broom and dustpan
-1. Layout all totes in numbered order
+1. Lay out all totes in ascending numbered order
 2. Put tubs in totes according to their number
+   - One person sets items in totes
+   - One person says tote number
    - Close totes once complete
 3. Set aside boxes without a tote label until later
 4. Get gray dolly and stack all completed totes (2x3 totes)
