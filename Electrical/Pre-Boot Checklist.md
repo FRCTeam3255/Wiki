@@ -20,7 +20,7 @@
 
 1. Configure Radio
 2. Deploy Code
-3. Set CAN IDs
+3. [Set CAN IDs](../Software/Setting%20CAN%20IDs.md)
 4. Update CAN firmware using Phoenix Tuner
 5. Clear stick faults on PDH using Rev Hardware Client
     1. Connect to robot using USB-C port on the PDH
