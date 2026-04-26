@@ -8,16 +8,16 @@ After each match, post updates in Slack using the formats below. Paste standalon
 Post in Slack once the robot is fully functional after the match:
 
 ```
-Full Functional - 🎮✅
+Quals Match # [#] Full Functional - 🎮✅
 ```
 
 ### Pit Checklist Done
 Post in Slack once the pit checklist is complete. Attach a picture of the battery (showing the battery label/charge level) to the Slack message:
 
 ```
-Pit Checklist - 🏁✅
+Quals Match # [#] Pit Checklist - 🏁✅
 Battery [Label]
-Full Functional - 🎮✅
+Quals Match # [#] Full Functional - 🎮✅
 
 What Changed On Robot:
 
