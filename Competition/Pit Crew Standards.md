@@ -35,3 +35,12 @@ The drive team should tell pit mentors about any breaks and issues after each ma
 | Key | Action |
 | --- | ------ |
 | F1  | Force a Joystick refresh |
+
+## 4. Champs Test Fields
+
+At Championship events, there are two types of test fields available. Bring the following number of good batteries to each:
+
+| Test Field  | Batteries to Bring          |
+| ----------- | --------------------------- |
+| Auto        | 3 (one for each test)       |
+| Match       | 2 (one for each test)       |
