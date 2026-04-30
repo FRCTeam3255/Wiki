@@ -37,6 +37,21 @@
     - Set all sleep/screen-off timers to **Never**
 
 
+## Clearing Logs
+
+Delete all logs before going to competition to free up storage space and avoid confusion during the event.
+
+### Driver Station Logs
+
+1. On the driver station laptop, navigate to `C:\Users\Public\Documents\FRC\Log Files`
+2. Delete all files in that folder.
+
+### roboRIO Data Logs
+
+1. Connect to the robot (robot must be on).
+2. Open the [WPILib Data Log Tool](https://docs.wpilib.org/en/stable/docs/software/telemetry/datalog-download.html) in the WPILib VS Code extension or via the web dashboard.
+3. Delete all `.wpilog` files stored on the roboRIO or the USB drive attached to it.
+
 ## Event packing
 
 See [Universal Pack List](https://docs.google.com/spreadsheets/d/1OLDXrAsIJp9OF6TsXpPJK3FehrNwZnzNa4Dif_LCrPo/edit?usp=sharing)
