@@ -5,8 +5,8 @@ Run this reflection in a dedicated Slack channel or thread.
 ## Team Goals
 
 1. Go over lifetime goals.
-2. Go over next-season overarching goals.
-3. Go over driving goals (sub-goals that support overarching goals).
+2. Go over next season overarching goals.
+3. Go over driving goals (specific sub-goals that move the team toward overarching goals).
 4. Go into detail on broad ideas or issues that affect those driving goals.
 5. Go over only the 3 largest pain points to stay focused.
 
