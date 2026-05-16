@@ -1,6 +1,6 @@
 # Post Season Reflection
 
-Do this in Slack.
+Run this reflection in a dedicated Slack channel or thread.
 
 ## Team Goals
 
