@@ -16,6 +16,8 @@
 8. Enable seeing hidden files
 9. Select and drag all "-imported" contents into the original project folder and `replace all`
 10. Install new vendor libraries
+    1. Click `WPILib Vendor Libraries` ![WPILib Vendor Libraries](https://github.com/user-attachments/assets/963d4730-ab83-49af-ba06-be6422e2bf59)
+    2. Click `Update All` ![Update All](https://github.com/user-attachments/assets/c1b36e2c-9f44-4ff3-916f-d2c16f10aedf)
 11. Revert `.gitignore`
 12. Revert `extension.json` if there are changes to it
 13. Partially revert `settings.json` (revert things in custom section)
