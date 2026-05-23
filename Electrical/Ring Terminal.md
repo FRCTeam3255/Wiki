@@ -1,4 +1,4 @@
-# Ring Terminal
+# Ring Terminals
 
 ## Wire Gauge / Device to Stud Size
 
