@@ -9,7 +9,6 @@
 | Breaker             | 1/4"                    |
 | Battery             | #10                     |
 
-Source: [Standard Purchases](../General/Standard%20Purchases.md#electrical)
 
 ## Crimping Instructions
 
