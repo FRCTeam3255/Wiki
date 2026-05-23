@@ -10,7 +10,7 @@
 | Battery             | #10                     |
 
 
-## Crimping Instructions
+## Kraken (10 AWG, 22 AWG) Crimping Instructions
 
 These terminals have a seam in the center as part of their manufacturing process. This makes it important to ensure proper orientation when crimping.
 
