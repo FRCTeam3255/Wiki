@@ -47,8 +47,6 @@ We pack the pit **after finals** are complete.
 
 #### Pit Packing
 
-![Pit tote layout reference](https://github.com/user-attachments/assets/e1f02c5b-d909-4120-9c89-3089bde5a6b5)
-
 1. Set some mallets and flush cutters aside
 1. Set aside step ladder
 1. Set aside broom and dustpan
