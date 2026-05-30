@@ -9,7 +9,7 @@ GitHub Copilot in Slack lets you work with the GitHub app directly from Slack. Y
 Before you can use Copilot in Slack, make sure you have:
 
 - A GitHub account
-- Access to GitHub Copilot through a paid plan
+- Access to GitHub Copilot through a paid plan, either from your own license or through organization-managed access
 - A Slack account in the workspace where you want to use it
 - The GitHub app for Slack installed in that workspace
 
@@ -35,7 +35,7 @@ Once the app is installed:
 2. Send a message such as `login` or `/github signin`
 3. Follow the authorization prompts in Slack and GitHub
 
-GitHub's documentation notes that the first Copilot interaction may also prompt you to connect your account automatically.
+GitHub's documentation notes that your first attempt to use Copilot may automatically prompt you to connect your account.
 
 ### 3. Set the repository Copilot should use
 
@@ -137,7 +137,7 @@ Copilot can use the Slack thread as context, then propose changes and open a pul
 - If mentions or actions stop working, try `/github signout` and then `/github signin`
 - If Copilot targets the wrong repository, update the default repository in the app's settings
 - If Copilot cannot create changes, confirm that you have the required repository permissions
-- If your workspace shows a different mention format, use the GitHub app mention that Slack provides; GitHub's docs currently show both `@GitHub` examples and references to `@GitHub Copilot`
+- If you are unsure which mention format to use, type `@` in Slack and select the GitHub app from the autocomplete list; if mentions still fail, open a direct message with the GitHub app and continue there instead
 
 ## Official documentation
 
