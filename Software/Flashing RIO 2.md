@@ -1,5 +1,9 @@
 # Flashing RIO 2
 
+!!! important
+
+    If you are reusing a roboRIO (for a new robot build or when swapping RIOs), always re-flash the SD card before deploying code.
+
 Follow these steps to flash the RIO 2 with a new image:
 
 1. Download [Balena Etcher](https://etcher.balena.io/)
