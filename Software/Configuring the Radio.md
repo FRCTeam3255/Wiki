@@ -13,7 +13,7 @@ If you are using an OpenMesh radio (White Radio) please follow the <a href="http
     - Enter our robot's name for the SSID Suffix
     - Enter our Wifi password for both WPA keys: Usually, we use **SuperNURDs**
     - For the robot radio, set mode to **Robot Radio Mode**
-    - For the field radio, use the same settings but choose **Access Point Mode** and make sure the **SSID Suffix** matches the robot radio
+    - For the field radio, enter the same team number, **SSID Suffix**, and WPA keys, but choose **Access Point Mode**
 
 ![image](../.images/Software/Configuring_the_Radio/Screenshot%202024-11-09%20132551.png)
 
