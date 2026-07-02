@@ -6,12 +6,14 @@ If you are using an OpenMesh radio (White Radio) please follow the <a href="http
 
 1. Connect to directly the robot's radio via ethernet.
 
-2. Navigate to the robot's IP address: **10.TE.AM.1**, where **TE.AM** is its team number. Usually, our IP would be **10.32.55.1** if our team number hasn't been changed for an offseason event. If that doesn't work, the default radio IP address is **192.168.69.1** but after a firmware update, it can also default the team number to 1, so also try **10.0.1.1** if the previous IP didn't work.
+2. Navigate to the robot's IP address: **http://10.TE.AM.1**, where **TE.AM** is its team number. Usually, our IP would be **http://10.32.55.1** if our team number hasn't been changed for an offseason event. If that doesn't work, the default radio IP address is **http://192.168.69.1** but after a firmware update, it can also default the team number to 1, so also try **http://10.0.1.1** if the previous IP didn't work.
 
-3.
+3. Configure the radio settings:
     - Enter 3255 for our team number
     - Enter our robot's name for the SSID Suffix
     - Enter our Wifi password for both WPA keys: Usually, we use **SuperNURDs**
+    - For the robot radio, set mode to **Robot Radio Mode**
+    - For the field radio, enter the same team number, **SSID Suffix**, and WPA keys, but choose **Access Point Mode**
 
 ![image](../.images/Software/Configuring_the_Radio/Screenshot%202024-11-09%20132551.png)
 
