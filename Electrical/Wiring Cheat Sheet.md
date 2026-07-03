@@ -12,6 +12,15 @@
 
     **ALL** connection points (wire on both sides of a connector) must have labeled zip ties indicating `FROM DEVICE` and `TO DEVICE` marked with a dividing line. `FROM` is on top `TO` on bottom. Labels must be written on **both sides** of each zip tie so they are readable from any direction.
 
+## Wiring Order
+
+Use wire in this order from largest to smallest gauge:
+
+1. **4 AWG** - Battery leads
+2. **10 AWG** - High-current motor power
+3. **18 AWG** - Control system and low-current power
+4. **22 AWG** - Signal and device pigtails
+
 ## Device Connection Details
 
 ### Standard Components
@@ -81,6 +90,7 @@
 ## Tips
 
 1. When putting multiple wires into one connector (e.g. Kraken CAN Wire) the size becomes Original AWG - 3 (e.g. two 18 AWG - 3 = 15 AWG)
+2. Label the battery box sides **North**, **South**, **East**, and **West** so component and wire locations can be referenced consistently.
 
 ## Footnotes
 
