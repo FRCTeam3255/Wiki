@@ -146,8 +146,8 @@ When you have multiple motors that need to move together (like two motors on one
 import com.ctre.phoenix6.signals.MotorAlignmentValue;
 
 // Lift cluster
-private final TalonFX liftMainLeader;
-private final TalonFX liftFollowFollower;
+private final TalonFX liftLeader;
+private final TalonFX liftFollower;
 
 // Pivot cluster
 private final TalonFX pivotLeftLeader;
@@ -162,34 +162,34 @@ private final MotionMagicExpoVoltage liftPositionRequest = new MotionMagicExpoVo
 
 public MotorSubsystem() {
   // Initialize motors
-  liftMainLeader = new TalonFX(mapMotorSubsystem.LIFT_MAIN_CAN);
-  liftFollowFollower = new TalonFX(mapMotorSubsystem.LIFT_FOLLOW_CAN);
+  liftLeader = new TalonFX(mapMotorSubsystem.LIFT_MAIN_CAN);
+  liftFollower = new TalonFX(mapMotorSubsystem.LIFT_FOLLOW_CAN);
 
   pivotLeftLeader = new TalonFX(mapMotorSubsystem.PIVOT_LEFT_CAN);
   pivotRightFollower = new TalonFX(mapMotorSubsystem.PIVOT_RIGHT_CAN);
 
   // Apply configurations to all motors
-  liftMainLeader.getConfigurator().apply(constMotorSubsystem.LIFT_MAIN_CONFIG);
-  liftFollowFollower.getConfigurator().apply(constMotorSubsystem.LIFT_FOLLOW_CONFIG);
+  liftLeader.getConfigurator().apply(constMotorSubsystem.LIFT_MAIN_CONFIG);
+  liftFollower.getConfigurator().apply(constMotorSubsystem.LIFT_FOLLOW_CONFIG);
 
   pivotLeftLeader.getConfigurator().apply(constMotorSubsystem.PIVOT_LEFT_CONFIG);
   pivotRightFollower.getConfigurator().apply(constMotorSubsystem.PIVOT_RIGHT_CONFIG);
 
   // Create follower control requests ONCE in constructor
   liftFollowerAlignedRequest = new Follower(
-      liftMainLeader.getDeviceID(), MotorAlignmentValue.Aligned);
+      liftLeader.getDeviceID(), MotorAlignmentValue.Aligned);
   pivotFollowerOpposedRequest = new Follower(
       pivotLeftLeader.getDeviceID(), MotorAlignmentValue.Opposed);
 
   // Set follower motors to follow the leader ONCE
-  liftFollowFollower.setControl(liftFollowerAlignedRequest);
+  liftFollower.setControl(liftFollowerAlignedRequest);
   pivotRightFollower.setControl(pivotFollowerOpposedRequest);
 }
 
 // Your setter methods only command the LEADER motor
 public void setLiftHeight(Angle targetAngle) {
   // Only send commands to the leader - followers will automatically follow
-  liftMainLeader.setControl(liftPositionRequest.withPosition(targetAngle));
+  liftLeader.setControl(liftPositionRequest.withPosition(targetAngle));
 }
 ```
 
@@ -198,10 +198,10 @@ public void setLiftHeight(Angle targetAngle) {
 ```java
 // DON'T DO THIS - Creates new Follower objects every time the method is called
 public void setLiftHeight(Angle targetAngle) {
-  liftMainLeader.setControl(liftPositionRequest.withPosition(targetAngle));
+  liftLeader.setControl(liftPositionRequest.withPosition(targetAngle));
   // ❌ BAD: Creating new Follower objects in setter method
-  liftFollowFollower.setControl(new Follower(
-      liftMainLeader.getDeviceID(), MotorAlignmentValue.Aligned));
+  liftFollower.setControl(new Follower(
+      liftLeader.getDeviceID(), MotorAlignmentValue.Aligned));
 }
 ```
 
