@@ -49,7 +49,7 @@ This occurs the Monday following kickoff
 |  Time   | Duration |                                                                                                                               |
 | :-----: | :------: | ----------------------------------------------------------------------------------------------------------------------------- |
 | 3:45 am |  15 min  | Review Weekend Insights/Team Updates (Manual Updates)                                                                         |
-| 4:00 am |  15 min  | Re-watch game animation/field tours/our robot cycles                                                                          |
+| 4:00 am |  15 min  | Re-watch game animation/field tours/our robot cycles video                                                                          |
 | 4:15 am |  30 min  | Review/Add to feature importance items                                                                                        |
 | 4:45 pm |  1.5 hr  | Feature Importance List ranking/answer design consideration questions                                                         |
 | 6:15 pm |  30 min  | **Dinner** <br> Mentors create Architecture Groups <br> Prep areas, have whiteboard stacks and computers in                   |
