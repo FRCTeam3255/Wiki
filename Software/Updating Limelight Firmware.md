@@ -1,5 +1,13 @@
 # Updating Limelight Firmware
 
+# NEW STEPS
+
+Follow website instructions:
+
+https://docs.limelightvision.io/docs/docs-limelight/getting-started/limelight-4#4-updating-limelightos
+
+# OLD STEPS (incase new steps don't work)
+
 ## Prerequisites
 - Laptop with Balena Etcher installed
 - USB Type C Cable

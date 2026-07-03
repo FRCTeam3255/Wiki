@@ -2,7 +2,25 @@
 
 ## How does alliance selection work?
 
-- If you are top 8 rank teams (or moved up via seed compression) you can accept or decline
+At the end of qualification matches, teams are ranked. The top 8 ranked teams become **alliance captains** and take turns picking alliance partners to form 8 alliances of 3 teams each.
+
+### The Selection Process
+
+1. **Round 1 (Picks 1–8):** Alliance captains (ranked 1–8) each pick one team, in rank order (1st pick first, 8th pick last). Any team can be picked, including other alliance captains.
+2. **Round 2 (Picks 9–16):** Each alliance captain picks a second partner, in reverse rank order (8th pick first, 1st pick last).
+
+### Accept or Decline
+
+- Any team picked can **accept** or **decline** the invitation.
+- If a team declines, the captain must pick another team.
+- If a team **declines** they cannot be picked by another team. (Alliance captains can still pick other teams to form their own alliance).
+- If an alliance captain **accepts** an invitation to join another alliance, they give up their captain status. The next-highest ranked team that has not yet been picked or declined becomes the new 8th alliance captain (**seed compression**).
+
+### Important Notes
+
+- The **#1 ranked team** always picks first.
+- Teams ranked 9 and below can only be picked; they cannot initiate selections (unless there is compression).
+- Once you accept an alliance, you are committed — you compete with that alliance through the entire playoff bracket.
 
 ## Why/how we do war room
 
@@ -17,9 +35,31 @@
 
 ## Discussion
 
-1. What we do best
-1. What we do not so well
-      1. What would strengthen our alliance if we had it?
+### What we do well (Strengths)
+
+Identify our **top-performing metrics** using the metric names and terms from the stats app — these are the areas where we score consistently above average. Examples may include:
+
+- High autonomous point contributions
+- Consistent teleop scoring in key game elements
+- Strong endgame/climb performance
+- Low penalty rate
+
+> **Note:** Specific metrics will be updated here as stat tracking features are added to the app.
+
+### What we do not do well (Weaknesses)
+
+Identify our **lowest-performing metrics** using the metric names and terms from the stats app — these are the areas where our scores are below average or inconsistent. Examples may include:
+
+- Low scoring in a specific game element
+- Inconsistent autonomous routines
+- Weak or missing endgame capability
+
+> **Note:** Specific metrics will be updated here as stat tracking features are added to the app.
+
+### What would strengthen our alliance?
+
+Based on our strengths and weaknesses above, determine what capabilities we want a partner to cover:
+
 1. What do we want to check for?
       1. These are the things we want to make **sure** they do.
       2. If they do other stuff, neat, but we don't care if they do or don't
@@ -29,4 +69,4 @@
 - We choose what categories we want to make sure our alliance has, the app will rank each team by sum of average matches.
 - The app tells us who to choose
 - Only thing that matters in playoffs is points
-- "Do we want out partner's ability to do this be part of their ranking?"
+- "Do we want our partner's ability to do this be part of their ranking?"
