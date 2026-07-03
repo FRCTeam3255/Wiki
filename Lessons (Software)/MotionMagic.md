@@ -136,52 +136,60 @@ motorName.getConfigurator().apply(constMotion.MOTOR_NAME_CONFIG);
 
 When you have multiple motors that need to move together (like two motors on one side of an elevator or multiple motors on a pivot), you designate one as the "leader" and the others as "followers." Follower motors simply copy the commands sent to the leader motor.
 
-**Important:** Create and configure follower control requests **once in the constructor**, not repeatedly in setter methods. This is more efficient and follows best practices.
+**Important:** Create and configure follower control requests **once in the constructor**, not repeatedly in setter methods. This is more efficient and follows best practices. For naming consistency, pick one motor in each cluster as the `...Leader`, name the others `...Follower`, and name the reusable `Follower` objects `...FollowerAlignedRequest` or `...FollowerOpposedRequest`.
 
 ##### ✔ Correct Pattern: Configure Followers in Constructor
 
 ```java
 // In your subsystem class
 
-// Leader motor
-private final TalonFX motorNameLeader;
+import com.ctre.phoenix6.signals.MotorAlignmentValue;
 
-// Follower motors
-private final TalonFX motorNameFollower1;
-private final TalonFX motorNameFollower2;
+// Lift cluster
+private final TalonFX liftMainLeader;
+private final TalonFX liftFollowFollower;
 
-// Create follower control requests once
-private final Follower motorNameFollower1Request;
-private final Follower motorNameFollower2Request;
+// Pivot cluster
+private final TalonFX pivotLeftLeader;
+private final TalonFX pivotRightFollower;
+
+private final Follower liftFollowerAlignedRequest;
+
+private final Follower pivotFollowerOpposedRequest;
 
 // Create position control request once (for the leader motor)
-private final MotionMagicExpoVoltage motorNamePositionRequest = new MotionMagicExpoVoltage(0);
+private final MotionMagicExpoVoltage liftPositionRequest = new MotionMagicExpoVoltage(0);
 
 public MotorSubsystem() {
   // Initialize motors
-  motorNameLeader = new TalonFX(mapMotorSubsystem.LEADER_MOTOR_CAN);
-  motorNameFollower1 = new TalonFX(mapMotorSubsystem.FOLLOWER1_MOTOR_CAN);
-  motorNameFollower2 = new TalonFX(mapMotorSubsystem.FOLLOWER2_MOTOR_CAN);
-  
+  liftMainLeader = new TalonFX(mapMotorSubsystem.LIFT_MAIN_CAN);
+  liftFollowFollower = new TalonFX(mapMotorSubsystem.LIFT_FOLLOW_CAN);
+
+  pivotLeftLeader = new TalonFX(mapMotorSubsystem.PIVOT_LEFT_CAN);
+  pivotRightFollower = new TalonFX(mapMotorSubsystem.PIVOT_RIGHT_CAN);
+
   // Apply configurations to all motors
-  motorNameLeader.getConfigurator().apply(constMotorSubsystem.MOTOR_NAME_CONFIG);
-  motorNameFollower1.getConfigurator().apply(constMotorSubsystem.MOTOR_NAME_CONFIG);
-  motorNameFollower2.getConfigurator().apply(constMotorSubsystem.MOTOR_NAME_CONFIG);
-  
+  liftMainLeader.getConfigurator().apply(constMotorSubsystem.LIFT_MAIN_CONFIG);
+  liftFollowFollower.getConfigurator().apply(constMotorSubsystem.LIFT_FOLLOW_CONFIG);
+
+  pivotLeftLeader.getConfigurator().apply(constMotorSubsystem.PIVOT_LEFT_CONFIG);
+  pivotRightFollower.getConfigurator().apply(constMotorSubsystem.PIVOT_RIGHT_CONFIG);
+
   // Create follower control requests ONCE in constructor
-  // The second parameter (true/false) sets whether the follower opposes the leader's direction
-  motorNameFollower1Request = new Follower(motorNameLeader.getDeviceID(), true);  // Opposes leader
-  motorNameFollower2Request = new Follower(motorNameLeader.getDeviceID(), false); // Matches leader
-  
+  liftFollowerAlignedRequest = new Follower(
+      liftMainLeader.getDeviceID(), MotorAlignmentValue.Aligned);
+  pivotFollowerOpposedRequest = new Follower(
+      pivotLeftLeader.getDeviceID(), MotorAlignmentValue.Opposed);
+
   // Set follower motors to follow the leader ONCE
-  motorNameFollower1.setControl(motorNameFollower1Request);
-  motorNameFollower2.setControl(motorNameFollower2Request);
+  liftFollowFollower.setControl(liftFollowerAlignedRequest);
+  pivotRightFollower.setControl(pivotFollowerOpposedRequest);
 }
 
 // Your setter methods only command the LEADER motor
-public void setMotorNameAngle(Angle targetAngle) {
+public void setLiftHeight(Angle targetAngle) {
   // Only send commands to the leader - followers will automatically follow
-  motorNameLeader.setControl(motorNamePositionRequest.withPosition(targetAngle));
+  liftMainLeader.setControl(liftPositionRequest.withPosition(targetAngle));
 }
 ```
 
@@ -189,11 +197,11 @@ public void setMotorNameAngle(Angle targetAngle) {
 
 ```java
 // DON'T DO THIS - Creates new Follower objects every time the method is called
-public void setMotorNameAngle(Angle targetAngle) {
-  motorNameLeader.setControl(motorNamePositionRequest.withPosition(targetAngle));
+public void setLiftHeight(Angle targetAngle) {
+  liftMainLeader.setControl(liftPositionRequest.withPosition(targetAngle));
   // ❌ BAD: Creating new Follower objects in setter method
-  motorNameFollower1.setControl(new Follower(motorNameLeader.getDeviceID(), true));
-  motorNameFollower2.setControl(new Follower(motorNameLeader.getDeviceID(), false));
+  liftFollowFollower.setControl(new Follower(
+      liftMainLeader.getDeviceID(), MotorAlignmentValue.Aligned));
 }
 ```
 
@@ -201,14 +209,16 @@ public void setMotorNameAngle(Angle targetAngle) {
 - Creates unnecessary objects repeatedly (inefficient)
 - Makes code harder to maintain
 - Goes against best practices for object reuse
+- Often leads to inconsistent leader/follower naming between clusters
 
 **Key Points:**
 - Configure follower motors **once** in the constructor
 - Only send commands to the **leader** motor in your setter methods
 - Follower motors automatically mirror the leader's movements
-- The boolean parameter in `Follower(deviceID, opposeMaster)` determines direction:
-  - `true` = follower opposes/inverts the leader's direction
-  - `false` = follower matches the leader's direction
+- Keep a blank line between motor clusters so each cluster is easy to read
+- Name reusable follower requests `...FollowerAlignedRequest` or `...FollowerOpposedRequest`
+- `MotorAlignmentValue.Aligned` = follower matches the leader's direction
+- `MotorAlignmentValue.Opposed` = follower opposes/inverts the leader's direction
 
 ---
 
