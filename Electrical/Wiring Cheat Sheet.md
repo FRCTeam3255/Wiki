@@ -16,6 +16,8 @@
 
 Use wire in this order from largest to smallest gauge:
 
+Starting with the thickest, least flexible wire helps reserve space for high-current runs first and keeps smaller control wiring easier to route around them.
+
 1. **4 AWG** - Battery leads
 2. **10 AWG** - High-current motor power
 3. **18 AWG** - Control system and low-current power
