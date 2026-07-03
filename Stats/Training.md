@@ -3,7 +3,7 @@
 - Explain penalties
 - Explain extra flags
 - enter practice mode
-- Everyone 5 practice matches
+- Everyone does 5 practice matches
   - Everyone does the same robot
   - Choose your name
   - Choose prac match # (what cycle we are on)
