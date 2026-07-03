@@ -8,30 +8,46 @@ After each match, post updates in Slack using the formats below. Paste standalon
 Post in Slack once the robot is fully functional after the match:
 
 ```
-Quals Match # [#] Full Functional - 🎮✅
+Quals # [#] Full Functional - 🎮✅
 ```
 
 ### Pit Checklist Done
 Post in Slack once the pit checklist is complete. Attach a picture of the battery (showing the battery label/charge level) to the Slack message:
 
 ```
-Quals Match # [#] Pit Checklist - 🏁✅
-Battery [Label]
-Quals Match # [#] Full Functional - 🎮✅
+Quals # [#] Pit Checklist - 🏁✅
+Battery [Letter] - [% charge, . resitance]
+Quals # [#] Full Functional - 🎮✅
 
 What Changed On Robot:
 
 Potential Issues:
 ```
 
-## 2. Drive Team Communication
+## 2. After Match
+
+When returning to the pit after a match, follow this priority order:
+
+1. **Change bumpers FIRST** — We can go to a match with a broken robot, but we cannot go without the correct bumpers.
+2. Complete remaining repairs and robot checks.
+
+## 3. Drive Team Communication
 
 The drive team should tell pit mentors about any breaks and issues after each match.
 
 - Post breaks and issues in Slack so nothing is forgotten.
 
-## 3. Drive Team Tips
+## 4. Drive Team Tips
 
 | Key | Action |
 | --- | ------ |
 | F1  | Force a Joystick refresh |
+
+## 5. Champs Test Fields
+
+At Championship events, there are two types of test fields available. Bring the following number of good batteries to each:
+
+| Test Field  | Batteries to Bring          |
+| ----------- | --------------------------- |
+| Auto        | 3 (one for each test)       |
+| Match       | 2 (one for each test)       |
