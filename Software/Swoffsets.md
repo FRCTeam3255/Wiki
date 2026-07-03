@@ -2,15 +2,11 @@
 
 ## Resources you must gather
 - A straight-edge, slightly longer than the distance between modules (A 1 inch tube works fine for this)
-- 2 Swoffset Bricks (3d printed, found in the Electrical Cabinet's "Other Tools" Drawer)
 - A Laptop with the following Software installed:
-    - Glass
     - Code for your robot
     - FRC Driver Station
-    - AdvantageScope
     - Phoenix Tuner
 - A Controller
-- Gaff Tape & A Sharpie
 
 ---
 ## Set the Front of the Robot (If not already done)
@@ -32,29 +28,30 @@ Whichever side you choose, you need to keep it consistent across *both robots (c
 1. Power on the robot
 2. Deploy your current code to the robot if you haven't already
 3. Identify the *front right and back right* swerve modules
-4. Rotate *both* Bevels to face the robot's **right**
-    - Bevels are the spiky lookin gear things on the side of the wheel. They're on the opposite side of where you're going to put the swoffset block
-    - ![Diagram](../.images/Software/Swoffsets/swoffset_diagram.png)
-5. Insert the Swoffset blocks into those modules, pressing it in until it matches the image below. Then, press your straightedge into the flat part of the blocks to ensure that the modules are straight.
-    - ![Swoffset Blocks](../.images/Software/Swoffsets/IMG_8986.jpg)
-    - ![Straightedge](../.images/Software/Swoffsets/IMG_8987.jpg)
-6. Connect to the robot, then open Glass
-7. Navigate to the dropdown that shows the Absolute (Raw) Encoder values for your modules
-    - Front Left = 0, Front Right = 1, Back Left = 2, Back Right = 3
-    - ![Glass](../.images/Software/Swoffsets/glass_eu4L6ovWEM.png)
-8. Copy the Absolute Encoder Raw value for that module and paste it into the offset constant in your code
-9. Once you've done both modules, repeat steps 3-8 with the *front left and back left* modules
-10. Take the blocks out before you begin driving the swerve
+4. Rotate *all* Bevels to face the robot's **middle**
+    - Bevels are the spiky lookin gear things on the side of the wheel.
+    - ![Diagram](../.images/Software/Swoffsets/IMG_5302.jpg)
+5.  press your straightedge into the top part of the wheels to ensure that the modules are straight.
+    - ![Swoffset Blocks](../.images/Software/Swoffsets/IMG_5303.jpg)
+6. Connect to the robot, then open phoenix tuner
+7. Navigate to the coorisponding encoder for the motor you are tuning
+8. Press zero the encoder(the little smash bros ball looking icon at the upper left)
 
+![Phoenix](../.images/Software/Swoffsets/ZeroEncoder.png)
+
+9. then press refresh then copy the magenet offsets
+
+![Phoenix](../.images/Software/Swoffsets/phoenixTunerView.png)
+10. paste the value into the code in const drivetrain offsets(not the practice bot offsets)
+![alt text](../.images/Software/Swoffsets/CodeOffsets.png)
+11.Repeat for the rest of the motors
 ---
+
+
 ## Verifying your Swoffsets
 1. Redeploy code to the robot, now with the correct offsets
-2. Open AdvantageScope and navigate to the `Swerve` tab
-3. Drag over the `Desired States` and `Actual States` to `Sources` on the bottom of the window 
-4. Open Driverstation, connect a controller, reset your pose to be relative to you, then begin driving
-5. If pressing up on the joystick makes the robot drive forwards, you've done swoffsets correctly! 🎉
-6. Verify that the `Desired States` mostly match the `Actual States` using the AdvantageScope UI. Revel in how cool they look. Then go get some fruit snacks because you've earned it 😎
-![AdvantageScope](../.images/Software/Swoffsets/AdvantageScope_(WPILib)_HAoyjhRLd6.png)
+2. Open Driverstation, connect a controller, reset your pose to be relative to you, then begin driving while it is on it's side to see if the wheels go the right way
+3. if looks good then put in on the ground and drive it a bit, and if nothing goes wrong, you've done swoffsets correctly! 🎉
 
 ## Common Failures:
 - **Wheel(s) go in "random" directions.**

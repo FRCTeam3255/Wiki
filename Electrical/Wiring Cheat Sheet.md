@@ -10,7 +10,7 @@
 
 !!! important
 
-    **ALL** connection points (wire on both sides of a connector) must have labeled zipties indicating `FROM DEVICE` and `TO DEVICE` marked with a dividing line. `FROM` is on top `TO` on bottom.
+    **ALL** connection points (wire on both sides of a connector) must have labeled zip ties indicating `FROM DEVICE` and `TO DEVICE` marked with a dividing line. `FROM` is on top `TO` on bottom. Labels must be written on **both sides** of each zip tie so they are readable from any direction.
 
 ## Device Connection Details
 
@@ -69,9 +69,9 @@
 
 | Wire Gauge | Breaker Size                                                                                                                                                                                                                                                                      |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 10 AWG     | [40A 🟠 Breaker](https://www.revrobotics.com/rev-11-1863/)                                                                                                                                                                                                                       |
-| 12 AWG     | [40A 🟠 Breaker](https://www.revrobotics.com/rev-11-1863/)                                                                                                                                                                                                                       |
-| 18 AWG     | [20A 🟡 Breaker](https://www.revrobotics.com/rev-11-1861/)                                                                                                                                                                                                                       |
+| 10 AWG     | [40A 🟠 Breaker](https://www.revrobotics.com/auto-resetting-breakers/)                                                                                                                                                                                                                       |
+| 12 AWG     | [40A 🟠 Breaker](https://www.revrobotics.com/auto-resetting-breakers/)                                                                                                                                                                                                                       |
+| 18 AWG     | [20A 🟡 Breaker](https://www.revrobotics.com/auto-resetting-breakers/)                                                                                                                                                                                                                       |
 | 22 AWG     | 5A Breaker or [10A 🔴 Fuse](https://www.andymark.com/products/10-amp-mini-red-fuse?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMmZ1c2UlMjIlMkMlMjJ1dGY4JTIyJTNBJTIyJUUyJTlDJTkzJTIyJTdE) |
 
 ## Swerve Diagram

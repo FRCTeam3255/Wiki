@@ -1,4 +1,16 @@
-# Crimping Instructions
+# Ring Terminals
+
+## Wire Gauge / Device to Stud Size
+
+| Wire Gauge / Device | Ring Terminal Stud Size |
+| ------------------- | ----------------------- |
+| 22 AWG (Kraken CAN) | #4                      |
+| 10 AWG (Kraken Power) | #6                    |
+| Breaker             | 1/4"                    |
+| Battery             | #10                     |
+
+
+## Kraken (10 AWG, 22 AWG) Crimping Instructions
 
 These terminals have a seam in the center as part of their manufacturing process. This makes it important to ensure proper orientation when crimping.
 
