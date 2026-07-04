@@ -51,6 +51,3 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 .unotes/*
-
-# MkDocs build output
-site/
