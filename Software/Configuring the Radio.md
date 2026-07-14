@@ -1,8 +1,8 @@
 # Configuring the Radio
 
-If you are using an OpenMesh radio (White Radio) please follow the <a href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/openmesh.html#using-the-openmesh-om5p-radio">FRC Guide</a>.
+## VividHosting (New - Black)
 
-<img src="https://docs.wpilib.org/en/stable/_images/openmesh-radio.png">
+<img src="https://github.com/user-attachments/assets/85f24bad-50f7-4886-a943-8c965cca2e05" alt="VividHosting Radio">
 
 1. Connect to directly the robot's radio via ethernet.
 
@@ -19,6 +19,14 @@ If you are using an OpenMesh radio (White Radio) please follow the <a href="http
 
 4. Configure!!
 
+!!! important
+    REQUIREMENT: PRINT AND ADD LABEL
+
+    ```
+    NAME: <SSID used>
+    PASS: <password used (should be SuperNURDs)>
+    ```
+
 ## Installing Firmware
 
 1. Go to [FRC Vivid Hosting](https://frc-radio.vivid-hosting.net/miscellaneous/firmware-releases) to look for the latest firmware update.
@@ -33,4 +41,10 @@ If you are using an OpenMesh radio (White Radio) please follow the <a href="http
 
 5. Click upload and wait 2-3 minutes while the radio is updating and rebooting. Do not turn off power during this process.
 
-6. Once new firmware is installed, previous Wifi settings will not be saved and you will have to configure the radio again. 
+6. Once new firmware is installed, previous Wifi settings will not be saved and you will have to configure the radio again.
+
+## OpenMesh (Old - White)
+
+If you are using an OpenMesh radio (White Radio) please follow the <a href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-3/openmesh.html#using-the-openmesh-om5p-radio">FRC Guide</a>.
+
+<img src="https://docs.wpilib.org/en/stable/_images/openmesh-radio.png">
