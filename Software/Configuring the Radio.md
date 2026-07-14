@@ -6,7 +6,18 @@
 
 1. Connect to directly the robot's radio via ethernet.
 
-2. Navigate to the robot's IP address: **http://10.TE.AM.1**, where **TE.AM** is its team number. Usually, our IP would be **http://10.32.55.1** if our team number hasn't been changed for an offseason event. If that doesn't work, the default radio IP address is **http://192.168.69.1** but after a firmware update, it can also default the team number to 1, so also try **http://10.0.1.1** if the previous IP didn't work.
+2. Navigate to the radio's configuration page. Try these IPs in order until one loads:
+
+    | Order | IP | Reason |
+    |-------|----|--------|
+    | 1 | `http://10.32.55.1` | Team IP — replace **32.55** with your team number digits (`http://10.TE.AM.1`) |
+    | 2 | `http://192.168.69.1` | Factory default radio IP |
+    | 3 | `http://10.0.1.1` | Default after a firmware update (radio resets team number to 1) |
+
+    !!! important
+        You must be **disconnected from school or enterprise internet** before connecting to the radio — the radio's network will not be reachable otherwise.
+
+        Use **`http://`**, not `https://`. The radio does not support HTTPS and the page will fail to load if you use a secure connection.
 
 3. Configure the radio settings:
     - Enter 3255 for our team number
