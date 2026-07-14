@@ -10,12 +10,12 @@
 
     | Order | IP | Reason |
     |-------|----|--------|
-    | 1 | `http://10.32.55.1` | Team IP (`http://10.TE.AM.1`) — a 4-digit team number splits into two 2-digit segments: **32** (first two) and **55** (last two), giving `10.32.55.1`. Replace with your team's number. |
+    | 1 | `http://10.32.55.1` | Team IP (`http://10.TE.AM.1`) — pad your team number to 4 digits with leading zeros if needed, then split into two 2-digit segments. For example: **3255** → `10.32.55.1`; **255** → pad to **0255** → `10.02.55.1`. |
     | 2 | `http://192.168.69.1` | Factory default radio IP |
     | 3 | `http://10.0.1.1` | Default after a firmware update (radio resets team number to 1) |
 
     !!! important
-        You must be **disconnected from school or enterprise internet** before connecting to the radio. Enterprise networks often block direct device connections and the radio's private IP range (`10.x.x.x`) may conflict with school network addressing, making it unreachable.
+        Make sure your computer is **connected only via Ethernet to the radio** and **not connected to any school or enterprise Wi-Fi**. Enterprise networks often block direct device connections and the radio's private IP range (`10.x.x.x`) may conflict with school network addressing, making it unreachable.
 
     !!! important
         Use **`http://`**, not `https://`. The radio does not support HTTPS and the page will fail to load if you use a secure connection.
