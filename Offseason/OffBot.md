@@ -12,7 +12,7 @@
 - Break
 - Create list of subsystems the current year's robot needs (e.g. Shooter, Intake, etc.)
     - List popular design for each subsystem (e.g Pivot Intake, Linear Intake, etc.)
-- Round 1 Research robots
+- Round 1 Archetype Creation
     - Break into round 1 groups and create frakenbot (must have 1 design for each subsystem)
         - Goal of frakenbot is to prove the that designs work together in a real robot
         - Make 3D mock cad
@@ -33,7 +33,7 @@
     - Keep repearing until it does
 - Department Split
     - Software
-        - Follow wiki, Day 2-4
+        - Software lists out states, guess motor counts, define motor categories, assign motors to states, create issues by clustered categories, protobot skeleton code, assign buttons
     - Mechanical
         - Skip protobot for offseason
         - *2D robot sketches
@@ -52,3 +52,4 @@
 
 - Duplicate `Kickoff Feature Important List` tab in `Feature Importance List` sheet
     - Clear Existing Archetypes  
+- Duplicate new Archetype slide template for each group `Group <#> - Round 1 Archetype`
