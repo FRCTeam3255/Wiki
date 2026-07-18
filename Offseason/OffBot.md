@@ -1,5 +1,11 @@
 # OffBot
 
+## Kickoff
+
+### Schedule
+
+- re-watch game animation
+
 ## Digital Folder Checklist
 
 ### GitHub
@@ -10,3 +16,4 @@
 ### Google Drive
 
 - Duplicate `Kickoff Feature Important List` tab in `Feature Importance List` sheet
+    - Clear Existing Archetypes  
