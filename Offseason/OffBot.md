@@ -46,6 +46,7 @@
 ### GitHub
 
 - [`YEAR`_Offbot_CAD](https://github.com/new?template_name=Template_Robot_CAD&template_owner=FRCTeam3255)
+    - After creation, go to settings and check `Include Git LFS objects in archives`
 - [`YEAR`_Offbot_Code](https://github.com/new?template_name=Standard_Swerve_Code&template_owner=FRCTeam3255)
 
 ### Google Drive
