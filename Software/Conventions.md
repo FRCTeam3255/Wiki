@@ -3,6 +3,28 @@
 - Methods should be lowerCamelCase
 - Local & Instance Variables should be lowerCamelCase
 
+## Follower Motor Naming Conventions
+
+- Each motor cluster should have exactly one `...Leader`; every other motor in that cluster should be a `...Follower`.
+- Reusable `Follower` control objects should include `Follower` in the name and end in either `AlignedRequest` or `OpposedRequest`.
+- Do not include `East`, `West`, `North`, or `South` in `Follower` request names. The motor variables already describe which hardware is following.
+- Leave a blank line between motor clusters so each cluster is easier to scan in the subsystem.
+
+Example:
+
+```java
+final TalonFX intakeRollersWestLeader = new TalonFX(rotorIDs.INTAKE_ROLLERS_WEST_CAN);
+final TalonFX intakeRollersEastFollower = new TalonFX(rotorIDs.INTAKE_ROLLERS_EAST_CAN);
+
+final TalonFX transferRollersWestLeader = new TalonFX(rotorIDs.TRANSFER_ROLLERS_WEST_CAN);
+final TalonFX transferRollersEastFollower = new TalonFX(rotorIDs.TRANSFER_ROLLERS_EAST_CAN);
+
+final Follower intakeRollersFollowerOpposedRequest =
+    new Follower(intakeRollersWestLeader.getDeviceID(), MotorAlignmentValue.Opposed);
+final Follower transferRollersFollowerAlignedRequest =
+    new Follower(transferRollersWestLeader.getDeviceID(), MotorAlignmentValue.Aligned);
+```
+
 ## RobotContainer Naming Conventions
 
 Controllers should be named `con` followed by the controller type.
