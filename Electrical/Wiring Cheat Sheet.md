@@ -72,9 +72,9 @@ Use these standards when wiring battery leads to a [CTRE PDP 2.0](https://ctre.d
 | Item               | Standard                                          |
 | ------------------ | ------------------------------------------------- |
 | Input Wire Size    | 4 AWG or 6 AWG                                    |
-| Ring Terminal Size | M6 x 1 (10 mm) compatible ring terminals          |
+| Ring Terminal Size | M6 (6 mm hole) ring terminals                     |
 | Washer             | Split lock washer under each input stud bolt head |
-| Torque             | Do not exceed 2.5 N·m on the input stud bolts     |
+| Torque             | Tighten snugly and do not exceed 2.5 N·m          |
 
 ### Gauge to Breaker Standard
 
