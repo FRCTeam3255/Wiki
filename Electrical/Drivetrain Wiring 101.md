@@ -63,8 +63,8 @@ Labels indicate which device the wire goes **FROM** and which device it goes **T
 
 ## PDH Breakers
 
-- **Top slots (10 or 12 AWG):** Use orange REV 40-amp breakers (🟠).
-- **Smaller fuse slots (18 AWG):** Use small red 10-amp breakers (🔴).
+- **Top slots (10 or 12 AWG):** Use 40-amp breakers (🟠).
+- **Smaller fuse slots (18 AWG):** Use small 10-amp fuses (🔴).
 
 ## Main Power Wires
 
