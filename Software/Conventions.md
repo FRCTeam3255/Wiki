@@ -3,6 +3,44 @@
 - Methods should be lowerCamelCase
 - Local & Instance Variables should be lowerCamelCase
 
+---
+# Project Structure
+
+The standard project layout under `src/main/java/frc/robot/` is:
+
+```
+frc/robot/
+├── DeviceIDs.java          ← all hardware port/ID mappings
+├── Main.java
+├── Robot.java
+├── RobotContainer.java
+│
+├── commands/               ← general-purpose commands
+│   ├── states/             ← one command class per RobotState
+│   │   ├── Intaking.java
+│   │   ├── Shooting.java
+│   │   ├── None.java
+│   │   └── preps/          ← prep-specific state commands
+│   │       ├── BasePrep.java
+│   │       ├── PrepAnywhere.java
+│   │       └── PrepTrench.java
+│
+├── constants/              ← one Const*.java file per subsystem
+│   ├── ConstDrivetrain.java
+│   ├── ConstRotors.java
+│   ├── ConstMotion.java
+│   └── ConstSystem.java
+│
+└── subsystems/             ← one class per subsystem
+    ├── Drivetrain.java
+    ├── Rotors.java
+    ├── Motion.java
+    ├── StateMachine.java
+    └── DriverStateMachine.java
+```
+
+---
+
 ## Follower Motor Naming Conventions
 
 - Each motor cluster should have exactly one `...Leader`; every other motor in that cluster should be a `...Follower`.
@@ -56,42 +94,62 @@ enum RobotState {
 
 Controllers should be named `con` followed by the controller type.
 ```java
-private final SN_XboxController conDriver = new SN_XboxController(mapControllers.DRIVER_USB);
+private final SN_XboxController conDriver = new SN_XboxController(controllerIDs.DRIVER_USB);
 ```
-Subsystems should be named `sub` followed by the subsystem name.
+
+Subsystems should be declared as a `public static` instance named with an `Instance` suffix, followed by a `private final` logged reference pointing to the same object.
 ```java
-private static final Drivetrain subDrivetrain = new Drivetrain();
+public static Drivetrain drivetrainInstance = new Drivetrain();
+private final Drivetrain loggedDrivetrainInstance = drivetrainInstance;
+public static Rotors rotorsInstance = new Rotors();
+private final Rotors loggedRotorsInstance = rotorsInstance;
 ```
-A test controller should always be added, using the same controller bindings as the regular operator controller, but bypassing the State Machine. 
 
-Driver and operator bindings should be declared using separate methods. 
+Driver and operator bindings should be declared using separate methods with no parameters.
 ```java
-configureDriverBindings(conDriver);
-configureOperatorBindings(conOperator);
+configDriverBindings();
+configOperatorBindings();
 ```
 
-## RobotMap Naming Conventions
+State-transition `Command` fields in `RobotContainer` should be **SCREAMING_SNAKE_CASE** and prefixed with `TRY_`. Non-state commands (e.g. drive modes) are also SCREAMING_SNAKE_CASE with a descriptive name.
+```java
+Command TRY_INTAKING = Commands.deferredProxy(
+    () -> stateMachineInstance.tryState(RobotState.INTAKING));
+Command TRY_SHOOTING = Commands.deferredProxy(
+    () -> stateMachineInstance.tryState(RobotState.SHOOTING));
+Command TRY_NONE = Commands.deferredProxy(
+    () -> stateMachineInstance.tryState(RobotState.NONE));
 
-- The RobotMap class should contain subclasses for **every** subsystem. 
+Command MANUAL = new DeferredCommand(
+    driverStateMachineInstance.tryState(DriverState.MANUAL, ...), Set.of(...));
+```
+
+## DeviceIDs Naming Conventions
+
+- All device IDs live in a single top-level `DeviceIDs.java` file. It should contain a nested inner class for **every** subsystem. Inner class names use **lowerCamelCase** with an `IDs` suffix.
 
 Example:
 
 ```java
-public class RobotMap {
-    public static final class mapDrivetrain {
+public class DeviceIDs {
+    public static class drivetrainIDs {
+    }
+    public static class rotorIDs {
+    }
+    public static class motionIDs {
     }
 }
 ```
 
-- All ports should be **SCREAMING_SNAKE_CASE**.
-- Each port name should follow this naming scheme: `DEVICETYPE_LOCATION_CONNECTIONTYPE`. Common connection types include: `CAN, DIO, USB`
+- All IDs should be **SCREAMING_SNAKE_CASE**.
+- Each ID name should follow this naming scheme: `DEVICETYPE_LOCATION_CONNECTIONTYPE`. Common connection types include: `CAN, DIO, USB`
 - CAN IDs specifically should follow the convention: `MECHANISM_POSITION_CAN` (e.g. `INTAKE_ROLLERS_WEST_CAN`)
 - Variable names should avoid specifying which subsystem they belong to, as that information is redundant when they're referenced.
 
 Example: ❌
 
 ```java
-public static final class mapIntake {
+public static class rotorIDs {
     public static final int INTAKE_ROLLERS_WEST_CAN = 5;
 }
 ```
@@ -99,53 +157,70 @@ public static final class mapIntake {
 Example: ✔
 
 ```java
-public static final class mapIntake {
+public static class rotorIDs {
     public static final int ROLLERS_WEST_CAN = 5;
 }
 ```
 
 ## Constants Naming Conventions
 
-- The Constants class should contain subclasses for each subsystem.
+- Each subsystem should have its own dedicated constants file in the `constants/` package, named with the `Const` prefix followed by the subsystem name.
 
 Example:
 
+```
+constants/
+├── ConstDrivetrain.java
+├── ConstRotors.java
+├── ConstMotion.java
+└── ConstSystem.java
+```
+
+Each file is a standalone `public class`:
+
 ```java
-public final class Constants {
-    public static final class constControllers {
-        public static final double DRIVER_LEFT_STICK_X_DEADBAND = 0.05;
-  }
+public class ConstRotors {
+    public static final TalonFXConfiguration INTAKE_ROLLERS_CONFIGURATION = new TalonFXConfiguration();
+    public static final double INTAKE_ROLLERS_SPEED = 1.0;
+}
+```
+
+If a file needs sub-groupings (e.g. for controllers), a nested inner class using **lowerCamelCase** is acceptable:
+
+```java
+public final class ConstSystem {
+    public static class constControllers {
+        public static final double DRIVER_LEFT_STICK_DEADBAND = 0.05;
+    }
 }
 ```
 
 - All Constants should be **SCREAMING_SNAKE_CASE**
 - Each constant name should follow this naming scheme: `PURPOSE_DESCRIPTION`, where the purpose is what the variable is used for (ex. `OUTTAKE`, `DETECT`, `CONFIG`) while the description includes the minimum amount of details to remove ambiguity (ex. `PERCENT_OUTPUT`, `ANGULAR_VELOCITY`, `DISTANCE`, `TOLERANCE`)
 - Do **not** use `SPEED` as a description — use `PERCENT_OUTPUT` for motor power (-1 to 1) or `ANGULAR_VELOCITY` for rotational speed (e.g. RPM)
-- **Every** motor **must** have a new TalonFX configuration that is set to the motor. The actual configuration should be done in Constants.
+- **Every** motor **must** have a `TalonFXConfiguration` constant. Name it with the motor's descriptive name followed by `_CONFIGURATION`. Configure it in a `static` initializer block.
 ```java
- public static TalonFXConfiguration ELEVATOR_CONFIG = new TalonFXConfiguration();
-    static {
-      ELEVATOR_CONFIG.MotorOutput.NeutralMode = NeutralModeValue.Brake;
-      ELEVATOR_CONFIG.MotorOutput.Inverted = InvertedValue.Clockwise_Positive;
-      ... more configurations
-    }
+public static final TalonFXConfiguration FLYWHEEL_EAST_CONFIGURATION = new TalonFXConfiguration();
+static {
+    FLYWHEEL_EAST_CONFIGURATION.MotorOutput.NeutralMode = NeutralModeValue.Coast;
+    FLYWHEEL_EAST_CONFIGURATION.MotorOutput.Inverted = InvertedValue.Clockwise_Positive;
+    // ... more configurations
+}
 ```
 - Variable names should avoid specifying which subsystem they belong to, as that information is redundant when they're referenced.
 
 Example: ❌
 
 ```java
-public static final class constWrist {
-    public static final double WRIST_CURRENT_LIMIT_FLOOR = 1; 
-}
+// ConstWrist.java
+public static final double WRIST_CURRENT_LIMIT_FLOOR = 1; 
 ```
 
 Example: ✔
 
 ```java
-public static final class constWrist {
-    public static final double CURRENT_LIMIT_FLOOR = 1; 
-}
+// ConstWrist.java
+public static final double CURRENT_LIMIT_FLOOR = 1; 
 ```
 ---
 # Units
