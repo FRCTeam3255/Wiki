@@ -29,6 +29,8 @@ Once electronics are mounted, use 3 different strings to plan wire routes **befo
 
     Once all strings are laid, **get approval from a mentor** before proceeding to run real wires.
 
+![String method — wire routes planned with colored string](../.images/Electrical/DrivetrainWiring101/01-string-planning.png)
+
 ## Wire Routing
 
 After mentor approval, run the real wires following the same order as the strings above (thickest wires first, then thinnest):
@@ -61,6 +63,8 @@ Labels indicate which device the wire goes **FROM** and which device it goes **T
 - PDH end label: `PDH/NWD`
 - NWD end label: `NWD/PDH`
 
+![Real wires routed on the drivetrain with zip tie labels](../.images/Electrical/DrivetrainWiring101/02-real-wires.png)
+
 ## PDH Breakers
 
 - **Top slots (10 or 12 AWG):** Use 40-amp breakers (🟠).
@@ -74,6 +78,9 @@ Main power wires connect the battery to the robot's power system using 4 AWG red
 
 1. Source 4 AWG red and black wire. Choose either positive (red) or negative (black) to start.
 2. Strip the wire to the **silver sharpie line** on the wire stripper.
+
+    ![Wire stripper](../.images/Electrical/DrivetrainWiring101/03-wire-stripper.png)
+
 3. Place a **swaged SB50 Battery contact** on the stripped end and crimp.
 
 #### Swaging the SB50 Battery Contact
@@ -82,12 +89,27 @@ Main power wires connect the battery to the robot's power system using 4 AWG red
 2. Once secured in the guide, take it to the **arbor press**.
 3. Press starting from **small tool to big**, then end by pressing with the **concave end**.
 
+![Swage press tools (small, medium, and concave)](../.images/Electrical/DrivetrainWiring101/04-swage-tools.png)
+
+![Battery Swage Tool in the arbor press](../.images/Electrical/DrivetrainWiring101/05-arbor-press.png)
+
 #### Crimping the Swaged Contact
 
 - Use the **hydraulic crimper** with the **2 AWG crimp attachments** (even though the wire is 4 AWG).
+
+    ![Hydraulic crimper with 2 AWG attachments on 4 AWG wire](../.images/Electrical/DrivetrainWiring101/06-hydraulic-crimper.png)
+
 - After crimping, fins will stick out the sides — **turn the crimp 90° and crimp again** to flatten the fins.
+
+    ![Crimped wire with fins — rotate 90° and crimp again to flatten](../.images/Electrical/DrivetrainWiring101/07-crimped-wire.png)
+
 - Once all sides are flat, insert the contact into the **red SB50 AndyMark Battery Housing**.
+
+    ![Flattened fins after second crimp](../.images/Electrical/DrivetrainWiring101/08-fins-flattening.png)
+
   - Make sure the curved hook side of the swage hooks over the metal prongs inside the Battery Housing.
+
+    ![SB50 AndyMark Battery Housing with swaged contact inserted](../.images/Electrical/DrivetrainWiring101/09-battery-housing.png)
 
 4. Repeat for the other colored wire (red or black) and **get approval from a mentor**.
 
