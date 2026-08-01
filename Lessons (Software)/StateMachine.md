@@ -113,7 +113,7 @@ This diagram shows a real-world application used by Team 3255.
   * **Intaking:** Transitions to "Store Transfer" when sensor feedback confirms it is finished.
   * **Store Transfer:** Can branch into various "Prep" states (Speaker, Shuffle, Amp) based on inputs.
   * **Shooting:** Triggered when the "Same Shoot BTN" is pressed.
-  * **Climb:** Triggered by the driver hitting "up on Climbers".
+  * **Climbing:** Triggered by the driver hitting "up on Climbers".
 
 ---
 
