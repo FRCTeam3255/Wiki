@@ -10,4 +10,3 @@
 * **Autonomous Screenshot Generation:** When creating or modifying a wiki page, utilize your background browser tools to capture a screenshot of the rendered output.
 * **Embed Only (Do Not Commit):** Upload the captured screenshot directly to GitHub's asset storage and embed the Markdown image link (`![](url)`) only into the PR description or comment. 
 * **Repository Hygiene:** Strictly avoid committing, adding, or tracking the screenshot image file anywhere within the git repository itself.
-* **Manual Fallback:** If you encounter technical limits capturing or uploading the image, explicitly leave a note in the PR comment asking the human author to upload the required screenshot manually.
