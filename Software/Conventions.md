@@ -90,6 +90,59 @@ enum RobotState {
 }
 ```
 
+## State Command Conventions
+
+In any state command's `initialize()` method, **call `setRobotState` first**, before issuing any hardware commands. This ensures the state machine reflects the current state from the very beginning of the command's lifecycle.
+
+Example: ❌
+
+```java
+public void initialize() {
+    RobotContainer.positionalInstance.setTurretAngle(commandTurretAngle);
+    RobotContainer.positionalInstance.setHoodPivotAngle(commandHoodAngle);
+    RobotContainer.freeSpinInstance.setFlywheelVelocity(commandFlywheelVelocity);
+    RobotContainer.stateMachineInstance.setRobotState(commandState);
+}
+```
+
+Example: ✔
+
+```java
+public void initialize() {
+    RobotContainer.stateMachineInstance.setRobotState(commandState);
+    RobotContainer.positionalInstance.setTurretAngle(commandTurretAngle);
+    RobotContainer.positionalInstance.setHoodPivotAngle(commandHoodAngle);
+    RobotContainer.freeSpinInstance.setFlywheelVelocity(commandFlywheelVelocity);
+}
+```
+
+## Creating Extendable BaseStates
+
+When creating a `Base*` command that other state commands extend, follow these naming conventions for variables:
+
+- **Instance variables** (the values the command will use) must be prefixed with `command`
+- **Constructor parameters** (the values passed in from the caller) must be prefixed with `input`
+
+This makes it immediately clear at a glance which variables belong to the command's state vs. which are external inputs being assigned during construction.
+
+```java
+public class BasePreps extends Command {
+    Angle commandTurretAngle;
+    Angle commandHoodAngle;
+    AngularVelocity commandFlywheelVelocity;
+    RobotState commandState;
+
+    public BasePreps(Angle inputTurretAngle, Angle inputHoodAngle,
+            AngularVelocity inputFlywheelVelocity, RobotState inputState) {
+        commandTurretAngle = inputTurretAngle;
+        commandHoodAngle = inputHoodAngle;
+        commandFlywheelVelocity = inputFlywheelVelocity;
+        commandState = inputState;
+        addRequirements(RobotContainer.stateMachineInstance);
+    }
+}
+```
+
 ## RobotContainer Naming Conventions
 
 Controllers should be named `con` followed by the controller type.
