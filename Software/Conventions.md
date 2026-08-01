@@ -176,16 +176,38 @@ constants/
 └── ConstSystem.java
 ```
 
-Each file is a standalone `public class`:
+Each file is a standalone `public class` with `public static final` fields. Use WPILib `Units` typed measures (e.g. `Angle`, `AngularVelocity`, `Time`) for all physical quantities instead of raw `double`s. Every `TalonFXConfiguration` must be declared at the top of the class and configured in a `static` initializer block:
 
 ```java
 public class ConstRotors {
-    public static final TalonFXConfiguration INTAKE_ROLLERS_CONFIGURATION = new TalonFXConfiguration();
-    public static final double INTAKE_ROLLERS_SPEED = 1.0;
+    public static final AngularVelocity FLYWHEEL_CORNER_SPEED = RPM.of(4250);
+    public static final TalonFXConfiguration FLYWHEEL_WEST_CONFIGURATION = new TalonFXConfiguration();
+    public static final TalonFXConfiguration FLYWHEEL_EAST_CONFIGURATION = new TalonFXConfiguration();
+
+    static {
+        FLYWHEEL_WEST_CONFIGURATION.MotorOutput.NeutralMode = NeutralModeValue.Coast;
+        FLYWHEEL_WEST_CONFIGURATION.MotorOutput.Inverted = InvertedValue.CounterClockwise_Positive;
+        FLYWHEEL_EAST_CONFIGURATION.MotorOutput.NeutralMode = NeutralModeValue.Coast;
+        FLYWHEEL_EAST_CONFIGURATION.MotorOutput.Inverted = InvertedValue.Clockwise_Positive;
+        // ... more configurations
+    }
 }
 ```
 
-If a file needs sub-groupings (e.g. for controllers), a nested inner class using **lowerCamelCase** is acceptable:
+Nested inner classes use **SCREAMING_SNAKE_CASE** to group logical sub-sections such as hardware variants or tuning sets:
+
+```java
+public class ConstDrivetrain {
+    public static class PRACTICE_BOT {
+        public static final Angle FRONT_LEFT_ENCODER_OFFSET = Rotations.of(-0.19);
+    }
+    public static class AUTO_ALIGN {
+        public static final PIDController CONTROLLER = new PIDController(3, 0, 0);
+    }
+}
+```
+
+`ConstSystem` uses the `constControllers` inner class (lowerCamelCase) specifically for controller deadband settings:
 
 ```java
 public final class ConstSystem {
@@ -195,18 +217,11 @@ public final class ConstSystem {
 }
 ```
 
-- All Constants should be **SCREAMING_SNAKE_CASE**
-- Each constant name should follow this naming scheme: `PURPOSE_DESCRIPTION`, where the purpose is what the variable is used for (ex. `OUTTAKE`, `DETECT`, `CONFIG`) while the description includes the minimum amount of details to remove ambiguity (ex. `PERCENT_OUTPUT`, `ANGULAR_VELOCITY`, `DISTANCE`, `TOLERANCE`)
-- Do **not** use `SPEED` as a description — use `PERCENT_OUTPUT` for motor power (-1 to 1) or `ANGULAR_VELOCITY` for rotational speed (e.g. RPM)
+- All constant fields should be **SCREAMING_SNAKE_CASE**
+- Each constant name should follow this naming scheme: `PURPOSE_DESCRIPTION`, where the purpose is what the variable is used for (e.g. `OUTTAKE`, `DETECT`) while the description includes the minimum amount of details to remove ambiguity (e.g. `TOLERANCE`, `DISTANCE`, `SPEED`)
+- Use WPILib `Units` typed measures for all physical quantities — since the type communicates the unit, descriptive suffixes like `SPEED` and `ANGLE` are valid in names
+- For raw `double` motor power values (-1 to 1), use `PERCENT_OUTPUT` as the description suffix
 - **Every** motor **must** have a `TalonFXConfiguration` constant. Name it with the motor's descriptive name followed by `_CONFIGURATION`. Configure it in a `static` initializer block.
-```java
-public static final TalonFXConfiguration FLYWHEEL_EAST_CONFIGURATION = new TalonFXConfiguration();
-static {
-    FLYWHEEL_EAST_CONFIGURATION.MotorOutput.NeutralMode = NeutralModeValue.Coast;
-    FLYWHEEL_EAST_CONFIGURATION.MotorOutput.Inverted = InvertedValue.Clockwise_Positive;
-    // ... more configurations
-}
-```
 - Variable names should avoid specifying which subsystem they belong to, as that information is redundant when they're referenced.
 
 Example: ❌
