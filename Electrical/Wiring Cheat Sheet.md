@@ -65,17 +65,6 @@
 | Fuse Ports (Switchable) | 1        | Code controlled On/Off |
 | Breaker Ports           | 20       | Motors                 |
 
-### PDP 2.0 Main Input (If Used)
-
-Use these standards when wiring battery leads to a [CTRE PDP 2.0](https://ctre.download/files/user-manual/PDP%202.0%20User's%20Guide.pdf).
-
-| Item               | Standard                                          |
-| ------------------ | ------------------------------------------------- |
-| Input Wire Size    | 4 AWG or 6 AWG                                    |
-| Ring Terminal Size | M6 (6 mm hole) ring terminals                     |
-| Washer             | Split lock washer under each input stud bolt head |
-| Torque             | Tighten snugly and do not exceed 2.5 N·m          |
-
 ### Gauge to Breaker Standard
 
 | Wire Gauge | Breaker Size                                                                                                                                                                                                                                                                      |
