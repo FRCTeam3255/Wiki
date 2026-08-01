@@ -76,7 +76,7 @@
 
 ## Swerve Diagram
 
-![Swerve Drivetrain Wiring Guide](../.images/Electrical/29x29DrivetrainWiringGuide.svg)
+See [Drivetrain Wiring 101](Drivetrain%20Wiring%20101.md) for the full swerve drivetrain wiring diagram and step-by-step wiring instructions.
 
 ## Tips
 
