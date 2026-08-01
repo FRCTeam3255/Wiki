@@ -25,6 +25,30 @@ final Follower transferRollersFollowerAlignedRequest =
     new Follower(transferRollersWestLeader.getDeviceID(), MotorAlignmentValue.Aligned);
 ```
 
+## State Naming Conventions
+
+- State names should use verbs in **gerund form** (-ing), representing an ongoing action or condition.
+
+Example: ❌
+
+```java
+enum IntakeState {
+  INTAKE,
+  SHOOT,
+  CLIMB
+}
+```
+
+Example: ✔
+
+```java
+enum IntakeState {
+  INTAKING,
+  SHOOTING,
+  CLIMBING
+}
+```
+
 ## RobotContainer Naming Conventions
 
 Controllers should be named `con` followed by the controller type.
@@ -58,21 +82,22 @@ public class RobotMap {
 
 - All ports should be **SCREAMING_SNAKE_CASE**.
 - Each port name should follow this naming scheme: `DEVICETYPE_LOCATION_CONNECTIONTYPE`. Common connection types include: `CAN, DIO, USB`
+- CAN IDs specifically should follow the convention: `MECHANISM_POSITION_CAN` (e.g. `INTAKE_ROLLERS_WEST_CAN`)
 - Variable names should avoid specifying which subsystem they belong to, as that information is redundant when they're referenced.
 
 Example: ❌
 
 ```java
-public static final class mapWrist {
-    public static final int WRIST_MOTOR_CAN = 50;
+public static final class mapIntake {
+    public static final int INTAKE_ROLLERS_WEST_CAN = 5;
 }
 ```
 
 Example: ✔
 
 ```java
-public static final class mapWrist {
-    public static final int MOTOR_CAN = 50;
+public static final class mapIntake {
+    public static final int ROLLERS_WEST_CAN = 5;
 }
 ```
 
@@ -91,7 +116,8 @@ public final class Constants {
 ```
 
 - All Constants should be **SCREAMING_SNAKE_CASE**
-- Each constant name should follow this naming scheme: `PURPOSE_DESCRIPTION`, where the purpose is what the variable is used for (ex. `OUTTAKE`, `DETECT`, `CONIFG`) while the description includes the minimum amount of details to remove ambiguity (ex. `SPEED`, `DISTANCE`, `TOLERANCE`)
+- Each constant name should follow this naming scheme: `PURPOSE_DESCRIPTION`, where the purpose is what the variable is used for (ex. `OUTTAKE`, `DETECT`, `CONFIG`) while the description includes the minimum amount of details to remove ambiguity (ex. `PERCENT_OUTPUT`, `ANGULAR_VELOCITY`, `DISTANCE`, `TOLERANCE`)
+- Do **not** use `SPEED` as a description — use `PERCENT_OUTPUT` for motor power (-1 to 1) or `ANGULAR_VELOCITY` for rotational speed (e.g. RPM)
 - **Every** motor **must** have a new TalonFX configuration that is set to the motor. The actual configuration should be done in Constants.
 ```java
  public static TalonFXConfiguration ELEVATOR_CONFIG = new TalonFXConfiguration();
