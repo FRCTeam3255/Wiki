@@ -212,14 +212,14 @@ static {
 Example: ❌
 
 ```java
-// ConstWrist.java
-public static final double WRIST_CURRENT_LIMIT_FLOOR = 1; 
+// ConstRotors.java
+public static final double ROLLERS_CURRENT_LIMIT_FLOOR = 1; 
 ```
 
 Example: ✔
 
 ```java
-// ConstWrist.java
+// ConstRotors.java
 public static final double CURRENT_LIMIT_FLOOR = 1; 
 ```
 ---
