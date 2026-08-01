@@ -27,12 +27,14 @@ final Follower transferRollersFollowerAlignedRequest =
 
 ## State Naming Conventions
 
+- There is **one** shared `RobotState` enum for the entire robot — do not create separate enums per mechanism.
 - State names should use verbs in **gerund form** (-ing), representing an ongoing action or condition.
 
 Example: ❌
 
 ```java
-enum IntakeState {
+enum RobotState {
+  NONE,
   INTAKE,
   SHOOT,
   CLIMB
@@ -42,7 +44,8 @@ enum IntakeState {
 Example: ✔
 
 ```java
-enum IntakeState {
+enum RobotState {
+  NONE,
   INTAKING,
   SHOOTING,
   CLIMBING
