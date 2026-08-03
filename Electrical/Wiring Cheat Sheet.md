@@ -74,10 +74,6 @@
 | 18 AWG     | [20A 🟡 Breaker](https://www.revrobotics.com/auto-resetting-breakers/)                                                                                                                                                                                                                       |
 | 22 AWG     | 5A Breaker or [10A 🔴 Fuse](https://www.andymark.com/products/10-amp-mini-red-fuse?via=Z2lkOi8vYW5keW1hcmsvV29ya2FyZWE6Ok5hdmlnYXRpb246OlNlYXJjaFJlc3VsdHMvJTdCJTIyYnV0dG9uJTIyJTNBJTIyc2VhcmNoJTIyJTJDJTIycSUyMiUzQSUyMmZ1c2UlMjIlMkMlMjJ1dGY4JTIyJTNBJTIyJUUyJTlDJTkzJTIyJTdE) |
 
-## Swerve Diagram
-
-![Swerve Drivetrain Wiring Guide](../.images/Electrical/29x29DrivetrainWiringGuide.svg)
-
 ## Tips
 
 1. When putting multiple wires into one connector (e.g. Kraken CAN Wire) the size becomes Original AWG - 3 (e.g. two 18 AWG - 3 = 15 AWG)
