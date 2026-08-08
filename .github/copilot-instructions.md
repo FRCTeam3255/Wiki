@@ -54,7 +54,7 @@ These apply to all code examples written in wiki pages:
 - **Command fields:** `SCREAMING_SNAKE_CASE` with `TRY_` prefix for state-transition commands
 - **BaseState commands:** class fields prefixed `command`, constructor parameters prefixed `input`
 - **State initialization:** call `setRobotState(...)` first in `initialize()`, before setting subsystem targets
-- **Binding methods:** `configDriverBindings()` (no `ure`, no parameter)
+- **Binding methods:** `configDriverBindings()` (no parameters)
 
 See `Software/Conventions.md` for full details with examples.
 
