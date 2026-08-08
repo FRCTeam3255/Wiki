@@ -31,7 +31,7 @@ If you measured from a different CAD origin, convert to front-relative values fi
     If a value looks flipped in simulation, verify sign (`+` vs `-`) before changing anything else.
 
 ## In AdvantageScope
-1. Log mechanism component poses as `Pose3d[]`, then add each mechanism component point as a cone in your 3D view from that logged path.
+1. Log mechanism component poses as `Pose3d[]`, then add that logged path once in your 3D view so AdvantageScope renders all component cones automatically.
 2. Compare cone locations to your expected mechanism pivot points.
 3. If cones are incorrect, check:
     - measurement correctness,
@@ -43,4 +43,4 @@ If you measured from a different CAD origin, convert to front-relative values fi
     - If the cone is mirrored up/down, flip the sign of `z`.
     - If the cone moves in a completely wrong direction, verify the axis order is still `x`, then `y`, then `z`.
 
-If the cone locations are wrong, the mechanism will not move correctly in simulation. Do not continue until cone placement looks correct.
+If the cone locations are wrong, the mechanism will not move correctly in simulation. Do not continue until cone placement looks correct, then test the mechanism motion in simulation.
