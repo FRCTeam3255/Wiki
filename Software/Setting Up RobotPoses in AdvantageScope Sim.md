@@ -42,5 +42,6 @@ If you measured from a different CAD origin, convert to front-relative values fi
     - If the cone is mirrored left/right, flip the sign of `y`.
     - If the cone is mirrored up/down, flip the sign of `z`.
     - If the cone moves in a completely wrong direction, verify the axis order is still `x`, then `y`, then `z`.
+5. After cone placement is correct, test mechanism motion in simulation.
 
-If the cone locations are wrong, the mechanism will not move correctly in simulation. Do not continue until cone placement looks correct, then test the mechanism motion in simulation.
+If the cone locations are wrong, the mechanism will not move correctly in simulation. Do not continue until cone placement looks correct.
