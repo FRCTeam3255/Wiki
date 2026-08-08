@@ -23,7 +23,7 @@ If you measured from a different CAD origin, convert to front-relative values fi
 
 ## Rule of Thumb for Building Mechanism Poses
 - Use `Pose3d.kZero` when placing a mechanism pose relative to the robot origin.
-- For connected mechanisms (for example, a hood on a turret or an intake on an elevator), replace `Pose3d.kZero` with the mechanism model `Pose3d` it is connected to.
+- For connected mechanisms (for example, a hood on a turret or an intake on an elevator), replace `Pose3d.kZero` with the parent mechanism's current `Pose3d` (for example, the turret `Pose3d` for a hood, or the elevator `Pose3d` for an intake).
 - Use `.transformBy(...)` for slides and translation-based motion (for example, elevators or sliding intakes).
 - Use `.rotateAround(...)` for pivots and rotation-based motion (for example, turrets, hoods, or pivot intakes).
 
@@ -31,7 +31,7 @@ If you measured from a different CAD origin, convert to front-relative values fi
     If a value looks flipped in simulation, verify sign (`+` vs `-`) before changing anything else.
 
 ## In AdvantageScope
-1. Add each pivot point as a cone in your 3D view.
+1. Log mechanism component poses as `Pose3d[]`, then add each mechanism component point as a cone in your 3D view from that logged path.
 2. Compare cone locations to your expected mechanism pivot points.
 3. If cones are incorrect, check:
     - measurement correctness,
