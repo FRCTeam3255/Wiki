@@ -21,6 +21,12 @@ If you measured from a different CAD origin, convert to front-relative values fi
 
 ![WPILib Robot Coordinate System](../.images/Software/RobotPoses/robot-3d.svg)
 
+## Rule of Thumb for Building Mechanism Poses
+- Use `Pose3d.kZero` when placing a mechanism pose relative to the robot origin.
+- For connected mechanisms (for example, a hood on a turret or an intake on an elevator), replace `Pose3d.kZero` with the mechanism model `Pose3d` it is connected to.
+- Use `.transformBy(...)` for slides and translation-based motion (for example, elevators or sliding intakes).
+- Use `.rotateAround(...)` for pivots and rotation-based motion (for example, turrets, hoods, or pivot intakes).
+
 !!! warning
     If a value looks flipped in simulation, verify sign (`+` vs `-`) before changing anything else.
 
