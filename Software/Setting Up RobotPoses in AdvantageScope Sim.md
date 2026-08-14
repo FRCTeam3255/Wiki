@@ -5,11 +5,6 @@ Use this guide to make your subsystem `RobotPose` components move correctly in A
 ## In SolidWorks
 Measure each component pivot point relative to the SolidWorks origin and record those values.
 
-If your SolidWorks origin is **not** at the robot front-center, also measure the origin offset from the robot front-center so you can convert values before entering them in code.
-
-!!! tip
-    Be consistent about what you call the robot front before taking any measurements.
-
 ## In Code
 Record each pivot measurement relative to the **front of the robot** in this order:
 
@@ -31,18 +26,18 @@ If you measured from a different CAD origin, convert to front-relative values fi
     If a value looks flipped in simulation, verify sign (`+` vs `-`) before changing anything else.
 
 ## In AdvantageScope
-1. Log mechanism component poses as `Pose3d[]`, then add that logged path once in your 3D view so AdvantageScope renders all component cones automatically.  
-        <img width="565" height="67" alt="image" src="https://github.com/user-attachments/assets/d1c0f05e-bf17-4a51-b56d-bef21006a803" />
-3. Compare cone locations to your expected mechanism pivot points.
-4. If cones are incorrect, check:
+1. Grab the *PivotPoint objects from RobotPoses/ section in advantage scope and add to poses.
+2. Right click the object and set to axis (or cone if you can't see it well).
+3. Compare axis/cones locations to your expected mechanism pivot points.
+4. If axis/cones are incorrect, check:
     - measurement correctness,
     - coordinate order (`x`, `y`, `z`),
     - sign (positive vs negative).
 5. Correct one axis at a time:
-    - If the cone is mirrored front/back, flip the sign of `x`.
-    - If the cone is mirrored left/right, flip the sign of `y`.
-    - If the cone is mirrored up/down, flip the sign of `z`.
-    - If the cone moves in a completely wrong direction, verify the axis order is still `x`, then `y`, then `z`.
+    - If the cone/axis is mirrored front/back, flip the sign of `x`.
+    - If the cone/axis is mirrored left/right, flip the sign of `y`.
+    - If the cone/axis is mirrored up/down, flip the sign of `z`.
+    - If the cone/axis moves in a completely wrong direction, verify the axis order is still `x`, then `y`, then `z`.
 6. After cone placement is correct, test mechanism motion in simulation.
 
 If the cone locations are wrong, the mechanism will not move correctly in simulation. Do not continue until cone placement looks correct.
