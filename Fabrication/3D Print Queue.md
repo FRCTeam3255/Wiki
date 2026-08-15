@@ -1,13 +1,13 @@
 # 3D Print Queue
 
-Use these steps to prepare an STL for printing with the correct Bambu Studio profile.
+Use these steps to prepare an STL for printing with the correct Bambu Studio Robotics process profile for the printer, nozzle, and material you are using.
 
 ## Prepare the File
 
 1. Open the `Fabrication` folder.
 2. Go to the `3D print queue`.
 3. Right-click the desired STL and open it with **Bambu Studio**.
-4. In the **Process** drop-down, confirm that the correct Robotics profile is selected.
+4. In the **Process** drop-down, confirm that the Robotics profile matches the printer, nozzle, and material already loaded on the machine.
 
 ## Slice the Plate
 
@@ -19,6 +19,6 @@ Use these steps to prepare an STL for printing with the correct Bambu Studio pro
 ## Export to the Printer
 
 1. Get the SD card and plug it into the computer.
-2. Export the plate to the SD card.
+2. Click **Export Plate Sliced File**, then save the plate to the SD card.
 3. Eject the SD card when prompted.
-4. Select **Print** on the printer.
+4. On the printer screen, open the SD card files, select the file you exported, and start the print.
