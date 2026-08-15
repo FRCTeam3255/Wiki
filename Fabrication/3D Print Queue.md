@@ -7,7 +7,7 @@ Use these steps to prepare an STL for printing with the correct Bambu Studio Rob
 1. Open the `Fabrication` folder.
 2. Go to the `3D print queue`.
 3. Right-click the desired STL and open it with **Bambu Studio**.
-4. In the **Process** drop-down, confirm that the Robotics profile matches the printer, nozzle, and material already loaded on the machine.
+4. In the **Process** drop-down, confirm that the correct Robotics profile is selected for the desired filament (typically PLA CF).
 
 ## Slice the Plate
 
