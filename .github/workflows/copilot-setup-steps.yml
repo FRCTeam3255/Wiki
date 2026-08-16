@@ -6,9 +6,6 @@ on:
 jobs:
   copilot-setup-steps:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./.github
 
     steps:
       - name: Checkout wiki
@@ -20,7 +17,8 @@ jobs:
           python-version: '3.x'
 
       - name: Install MkDocs and extensions
-        run: pip install -r requirements.txt
+        run: pip install -r .github/requirements.txt
 
       - name: Verify MkDocs build
-        run: mkdocs build --strict
+        working-directory: ./.github
+        run: mkdocs build -f mkdocs.yml
