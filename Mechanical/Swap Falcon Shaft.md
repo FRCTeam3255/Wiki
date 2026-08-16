@@ -2,8 +2,13 @@
 
 ## Tools and Parts Needed
 
+### Tools
+
 - T10 bit
 - T8 bit
+
+### Parts
+
 - New rubber O-ring (for slip ring replacement)
 - New bearing
 - M2 bolts
