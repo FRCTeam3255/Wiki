@@ -20,4 +20,5 @@ jobs:
         run: pip install -r .github/requirements.txt
 
       - name: Verify MkDocs build
-        run: mkdocs build -f .github/mkdocs.yml
+        working-directory: ./.github
+        run: mkdocs build -f mkdocs.yml
