@@ -40,8 +40,8 @@ MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (60.0 / 12.0) * (52.0 / 26.0);
 
 Pick what you want the mechanism's positive direction to be first, then trace back toward the motor.
 
-- **Gears touching each other** reverse direction every time they mesh.
-- **Chain or belt stages** keep the same direction unless the belt is crossed.
+- **Each gear mesh between two touching gears** reverses the direction relative to the gear driving it.
+- **Chain or belt stages** keep the same direction and do not count toward inversion unless the belt is crossed.
 - If you count an **odd** number of gear meshes between the mechanism and motor, the motor spins the **opposite** direction of positive mechanism motion.
 - If you count an **even** number of gear meshes, the motor spins the **same** direction as positive mechanism motion.
 
@@ -51,14 +51,14 @@ When you finish tracing the stages, set motor inversion so a positive command mo
 
 ## Rotational to Linear Conversion
 
-> Mechanism sprocket: 50t driven by a 10t sprocket. The sprocket pitch diameter is 1.751 inches.
+> Mechanism sprocket: 50t driven by a 10t sprocket. The **50t sprocket's pitch diameter** is 1.751 inches.
 
-For mechanisms that move linearly (elevator), multiply the sprocket or wheel diameter by **π** to get the distance traveled per rotation (circumference):
+For mechanisms that move linearly (elevator), multiply the sprocket or wheel diameter by **π** to get the distance traveled per rotation (circumference). Use the **diameter**, not the radius. Then divide the gear ratio by that circumference to convert from rotations to inches of travel:
 
 ```java
-// Sprocket diameter: 2 inches
+// 50 tooth sprocket pitch diameter: 1.751 inches
 // Mechanism sprocket: 50 tooth, driven by a 10 tooth sprocket
-MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (50.0 / 10.0) / (2.0 * Math.PI);
+MOTOR_CONFIG.Feedback.SensorToMechanismRatio = (50.0 / 10.0) / (1.751 * Math.PI);
 ```
 
 ---
