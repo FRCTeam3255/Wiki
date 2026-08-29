@@ -118,12 +118,12 @@ MOTOR_NAME_CONFIG.Slot0.GravityType = GravityTypeValue.Elevator_Static;
 // Use Elevator_Static for vertical lifts, Arm_Cosine for rotating arms
 ```
 
-- **SensorToMechanismRatio** ensures setpoints and feedback are in real-world units (like inches or degrees). This is what we call "Gear Ratio". We just ask mechanical for this value. Each number represents a gear.
+- **SensorToMechanismRatio** ensures setpoints and feedback are in real-world units (like inches or degrees). Start at the mechanism and work back toward the motor. Each stage is mechanism teeth divided by the teeth on the gear driving it.
 
 ```java
 // --- Sensor Conversion ---
-MOTOR_NAME_CONFIG.Feedback.SensorToMechanismRatio = ((12.0 / 60.0) * (26.0 / 52.0));
-// MOTOR_NAME_CONFIG.Feedback.SensorToMechanismRatio = ((GEAR_1 / GEAR_2) * (GEAR_3 / GEAR_4));
+MOTOR_NAME_CONFIG.Feedback.SensorToMechanismRatio = ((60.0 / 12.0) * (52.0 / 26.0));
+// MOTOR_NAME_CONFIG.Feedback.SensorToMechanismRatio = ((MECHANISM_GEAR_1 / DRIVER_GEAR_1) * (MECHANISM_GEAR_2 / DRIVER_GEAR_2));
 // Converts motor rotations to mechanism units (e.g., inches of elevator travel)
 ```
 
