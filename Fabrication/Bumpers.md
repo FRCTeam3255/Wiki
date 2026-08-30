@@ -94,11 +94,14 @@
 
 - Put the bumper fabric on over the foam.
 
-> Repeat for each color (🔵 blue and 🔴 red). Complete all steps for one color before starting the other.
+!!! tip "Color Order"
+    Repeat for each color (🔵 blue and 🔴 red). Complete all steps for one color before starting the other.
 
 1. Cut the fabric in half lengthwise (~100").
 2. Test fit the fabric on one of the wood bumpers.
 3. Iron on one set of numbers in the center of the fabric.
+4. Stretch the fabric tightly over the foam and wood, fold it around to the back of the wood, and staple or tack it down every few inches to keep it taut.
+5. Trim any excess fabric at the corners for a clean finish.
 
 ### 9. Attach Dory Plates
 
