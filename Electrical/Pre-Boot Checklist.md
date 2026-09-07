@@ -21,8 +21,9 @@
 1. Configure Radio
 2. Deploy Code
 3. Set CAN IDs
-4. Update CAN firmware using Phoenix Tuner
-5. Clear stick faults on PDH using Rev Hardware Client
+   - Restart Robot Code (to apply the code motor configs to the correct motors)
+5. Update CAN firmware using Phoenix Tuner
+6. Clear stick faults on PDH using Rev Hardware Client
     1. Connect to robot using USB-C port on the PDH
-6. Move motors to confirm that they are inverted correctly, adjust if needed
-7. Make sure motors are not going to fight eachother
+7. Move motors to confirm that they are inverted correctly, adjust if needed
+8. Make sure motors are not going to fight eachother

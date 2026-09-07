@@ -1,4 +1,4 @@
-# Step-by-Step Guide to Update CAD for Simulation
+# Export CAD to AdvantageScope Simulation
 
 ## 1. Export Moving Components
 - Identify all components that can move (e.g., drivetrain, elevator base stage, elevator 2nd stage, elevator carriage).

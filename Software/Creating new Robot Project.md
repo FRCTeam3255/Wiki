@@ -14,3 +14,10 @@
    1. Select New Rulesets -> Import a ruleset
    2. ![alt text](../.images/Software/Creating_new_Robot_Project/image3.png)
    3. Download [protect_main.json](https://raw.githubusercontent.com/FRCTeam3255/Wiki/main/.downloads/rulesets/protect_main.json){:download}
+
+8. Collaborators and teams
+   1. Click Add Teams
+   2. Add `Everyone` Team as `Read`
+   3. Add `Software Team` as `Write`
+   4. Remove yourself
+   <img width="950" height="579" alt="image" src="https://github.com/user-attachments/assets/b8845aa6-7448-47e5-8dcc-aafce0b61c30" />

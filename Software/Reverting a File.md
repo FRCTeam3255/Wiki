@@ -10,6 +10,17 @@ This guide will explain how to revert an already committed file back to the vers
 
 ## Using Command Line (Git)
 
+### Opening the VSCode Terminal
+
+Before running git commands, you need to open a terminal in VSCode:
+
+1. Open the terminal using one of these methods:
+   - **Keyboard shortcut:** Press `` Ctrl+` `` (Windows/Linux) or `` Cmd+` `` (Mac)
+   - **Menu:** Go to **View** → **Terminal**
+2. Make sure you're in your robot project's directory. The terminal prompt should show the project folder path.
+
+### Reverting the File
+
 To replace your current file with the version from main:
 
 ```
@@ -23,8 +34,7 @@ git restore --source=main src/main/java/frc/robot/RobotContainer.java
 
 This will get the version of the file from the main branch and replace your current version with it.
 
-After running this command, you'll need to commit and push your changes
-```
+After running this command, you'll need to commit and push your changes.
 
 ## Verifying the Revert
 

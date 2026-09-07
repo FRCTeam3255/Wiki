@@ -22,11 +22,11 @@
 12. Revert `extension.json` if there are changes to it
 13. Partially revert `settings.json` (revert things in custom section)
 
-## SuperCORE Projects ONLY
+## SuperCORE Repo ONLY
 
 !!! warning
 
-    These additional steps are **only** for projects that use SuperCORE
+    These additional steps are **only** for the SuperCORE repo
 
 1. Revert `settings.gradle`
 2. In `build.gradle` copy the new `id "edu.wpi.first.GradleRIO" version "xxxx.x.x"`
