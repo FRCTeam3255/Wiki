@@ -65,13 +65,13 @@ public void configAutonomous() {
       new Command1(),
       runPath("auto3path1").asProxy(),  // Example of running a path
       new Command2(),
-      runPath("auto3path2").asProxy(),  // Example of running a path
+      runPath("auto3path2").asProxy()   // Example of running a path
   );
 
   autoChooser.setDefaultOption("Do Nothing", Commands.none()); // Always have a safe default
-  autoChooser.setDefaultOption("Auto Routine 1", nameOfAuto1);
+  autoChooser.addOption("Auto Routine 1", nameOfAuto1);
   autoChooser.addOption("Auto Routine 2", nameOfAuto2);
-
+  autoChooser.addOption("Auto Routine 3", nameOfAuto3);
   SmartDashboard.putData("AutoChooser", autoChooser);
 
   Map<Command, String> autoStartingPoses = Map.ofEntries(
@@ -112,7 +112,6 @@ Command myAuto = runPath("startPoseName_endPoseName");
 - Creates a command that follows it
 - Uses `.asProxy()` for proper command scheduling
 - Sets the driver state to CHOREO mode
--
 
 **That's it!** The template handles all trajectory following internally. You just need to create paths and use `runPath()` to run them.
 
