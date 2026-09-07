@@ -31,6 +31,7 @@ A good robot name should meet one or more of the following:
 
 - Each team member gets **1 vote**
 - The name with the **most votes wins** and becomes the official robot name for the season
+- If there is a tie, repeat the final vote among the tied names until a winner is selected
 
 ## Voting System
 
