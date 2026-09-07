@@ -20,7 +20,7 @@
 
 1. Configure Radio
 2. Deploy Code
-3. [Set CAN IDs](../Software/Setting%20CAN%20IDs.md)
+3. Set CAN IDs
    - Restart Robot Code (to apply the code motor configs to the correct motors)
 5. Update CAN firmware using Phoenix Tuner
 6. Clear stick faults on PDH using Rev Hardware Client
