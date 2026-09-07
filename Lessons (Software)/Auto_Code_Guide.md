@@ -1,5 +1,8 @@
 # Autonomous Code Lesson
 
+!!! important
+  If there are merge conflicts in Choreo*.java‎, just discard changes and regenerate all paths in Choreo
+
 ## What Is Autonomous Code?
 
 In FRC, "autonomous" (or "auto") refers to the period at the start of a match when your robot must operate **without driver input**. The robot follows pre-programmed instructions to score points—like driving to a location, picking up a game piece, or balancing.
@@ -41,7 +44,7 @@ Example commands:
 
 ---
 
-## Step 4. Configure Autos in a Method
+## Step 3. Configure Autos in a Method
 
 Update `configAutonomous()` method to build your auto routines and add them to the chooser. This keeps your constructor clean and matches the RobotContainer.java pattern.
 
@@ -118,7 +121,7 @@ Command myAuto = runPath("startPoseName_endPoseName");
 
 ---
 
-## Step 5. Deploy Trajectory Files
+## Step 4. Deploy Trajectory Files
 
 Choreo saves trajectories as `.traj` files and a project file as `.chor`. These must be deployed to your robot:
 
