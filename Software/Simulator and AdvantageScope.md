@@ -16,7 +16,7 @@ This guide explains what robot simulation and AdvantageScope are, how they diffe
 
 **Common Issues:**
 - Connection fails → Check Driver Station is connected first
-- No 3D model → Verify CAD models are exported and config.json is set up
+- No 3D model → Verify CAD models are exported and `config.json` is set up
 - No data → Verify NetworkTables keys are being published by your code
 
 ## What is Robot Simulation (Sim)?
@@ -66,7 +66,7 @@ It's important to understand the difference between these two tools:
 | **Connection** | Runs your robot code locally | Connects to robot or simulator via NetworkTables |
 | **When to Use** | Before hardware is ready or for safe testing | When debugging and analyzing robot behavior |
 
-**Simple Analogy**: 
+**Simple Analogy**:
 - **Simulator** is like running your code in a "practice mode" - it executes your robot program without needing real hardware
 - **AdvantageScope** is like a "dashboard" - it shows you what your robot (real or simulated) is doing and displays telemetry data
 
@@ -145,7 +145,7 @@ Connecting to a real robot is similar to connecting to the simulator, but uses y
 - **Can't connect**: Verify FRC Driver Station is connected first
 - **Connection drops**: Check WiFi signal strength and network stability
 - **Wrong data**: Make sure you deployed the latest code to the robot
-- **No 3D model**: Ensure your robot code is publishing pose data to NetworkTables and that your CAD models are properly configured (see [UpdateCAD.md](UpdateCAD.md))
+- **No 3D model**: Ensure your robot code is publishing pose data to NetworkTables and that your CAD models are properly configured (see [Update CAD for Simulation](UpdateCAD.md))
 
 ## NetworkTables Keys for AdvantageScope
 
