@@ -61,7 +61,6 @@ It's important to understand the difference between these two tools:
 | Feature | Robot Simulator (Sim) | AdvantageScope |
 |---------|----------------------|----------------|
 | **Purpose** | Runs robot code without hardware | Visualizes and analyzes robot data |
-| **Built Into** | WPILib / VS Code | Standalone application |
 | **Primary Use** | Testing code execution and logic | Viewing telemetry and debugging |
 | **Visualization** | Raw NetworkTables Data | Advanced 3D robot visualization |
 | **Connection** | Runs your robot code locally | Connects to robot or simulator via NetworkTables |
@@ -74,10 +73,6 @@ It's important to understand the difference between these two tools:
 **You can use them together!** Run your code in the simulator and use AdvantageScope to visualize what the simulated robot is doing.
 
 ## How to Connect Simulator in AdvantageScope
-
-### Prerequisites
-- WPILib installed on your computer
-- A robot code project
 
 ### Steps to Connect
 
