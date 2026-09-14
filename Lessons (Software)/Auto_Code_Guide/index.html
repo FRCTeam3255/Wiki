@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Tayler Uva" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Autonomous Code Lesson - SN Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Autonomous Code Lesson";
+        var mkdocs_page_input_path = "Lessons (Software)/Auto_Code_Guide.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../.images/SN White Text Logo.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../.." >SuperNURDs Internal Wiki</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Build Season</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%200%20-%20Mock%20Kickoff/" >Day 0: Mock Kickoff</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201%20-%20Kick%20Off/" >Day 1: Kick Off</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201.1%20-%20Game%20Manual%20Breakdown/" >Day 1.1: Game Manual Breakdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201.2%20-%20Scoring%20Method%20Analysis/" >Day 1.2: Scoring Method Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%201.3%20-%20Feature%20Importance%20List/" >Day 1.3: Feature Importance List</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%202-4%20-%20Robot%20Architecture%20Phase/" >Day 2 thru 4: Robot Architecture Phase</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Day%202-4.1%20-%20Archetype%20Creation/" >Archetype Creation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Digital%20Folder%20Checklist/" >Digital Folder Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/How%20to%20Test%20a%20Prototype/" >How to Test a Prototype</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Team%20Photo/" >Team Photo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Build%20Season/Weekly%20Schedule/" >Weekly Schedule</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Competition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Comp%20Day/" >Comp Day</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Comp%20Logistics/" >Comp Logistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Drive%20Tryouts/" >Drive Tryouts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Impact%20Judges%27%20Questions/" >Impact Judges' Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Photos/" >Competition Photos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Pit%20Crew%20Standards/" >Pit Crew Standards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Pre%20Comp%20Prep/" >Pre Comp Prep</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Regional%20Reflection/" >Regional Reflection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Role%20Definitions/" >Competition Roles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Competition/Running%20Stats/" >Reference for Running Stats at Competition</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Electrical</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Battery%20Lead%20Wiring/" >Battery Lead Wiring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Breaker%20Wiring/" >Breaker Wiring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Component%20Mounting/" >Component Mounting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Current%20Testing/" >Current Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Diagnosing%20Shorts/" >Diagnosing Shorts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Pre-Boot%20Checklist/" >Pre/First-Boot Checklist</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Ring%20Terminals/" >Ring Terminals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Selecting%20a%20Battery/" >Selecting a Battery</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Wiring%20Cheat%20Sheet/" >Wiring Cheat Sheet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Electrical/Wiring%20LED/" >Wiring LEDs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Fabrication</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/3D%20Print%20Queue/" >3D Print Queue</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/Assembly%20Standard/" >Assembly Standard</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Fabrication/Bumpers/" >Bumper Construction</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Computer%20Programs/" >Computer Programs Used</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/How%20to%20Update%20the%20Wiki/" >How to Update the Wiki</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Robot%20Categories/" >Robot Categories</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Robot%20Name%20Voting/" >Robot Name Voting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Standard%203D%20Prints/" >Standard 3D Prints</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Standard%20Purchases/" >Standard Purchases</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../General/Team%20Expectations/" >Team Expectations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">GitHub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../GitHub/Downloading%20Projects/" >Downloading GitHub Projects</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lessons (Software)</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#" >Autonomous Code Lesson</a> <ul class="current" >
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-autonomous-code">What Is Autonomous Code?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#how-does-auto-code-work">How Does Auto Code Work?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-1-define-your-auto-goals">Step 1. Define Your Auto Goals</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-2-break-down-actions-into-commands">Step 2. Break Down Actions Into Commands</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-3-configure-autos-in-a-method">Step 3. Configure Autos in a Method</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-are-paths">What are Paths?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-4-deploy-trajectory-files">Step 4. Deploy Trajectory Files</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tips-for-reliable-auto-code">Tips for Reliable Auto Code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#more-resources">More Resources</a>
+    </li>
+  </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MechanismToothCount/" >Mechanism Tooth Count</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MotionMagic/" >MotionMagic Lesson Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../StateMachine/" >State Machine Lesson</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Mechanical</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Mechanical/Bolt%20to%20Tool%20Lookup/" >Bolt to Tool Lookup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Mechanical/Motor%20Specs/" >Motor Specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Mechanical/Swap%20Falcon%20Shaft/" >Swap Falcon Shaft</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Media and Comms</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Graphic%20Design/" >Graphic Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/QR%20Codes/" >QR Codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Video%20Editing/" >Video Editing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Media%20and%20Comms/Website/" >Website</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Offseason</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Offseason/OffBot/" >OffBot</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Offseason/PingPongBot/" >PingPongBot</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Offseason/RetroBot/" >RetroBot</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Offseason/Schedule/" >Offseason Schedule</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Offseason/Veteran%20Projects/" >Veteran Projects</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Configuring%20the%20Radio/" >Configuring the Radio</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Conventions/" >Naming Conventions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Creating%20Pull%20Requests/" >Creating Pull Requests (PRs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Creating%20new%20Robot%20Project/" >Creating new Robot Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Flashing%20RIO/" >Flashing roboRIO</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/GitHub%20Standards/" >GitHub Standards</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Reverting%20a%20File/" >Reverting a File to Main Branch Version</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Setting%20Up%20Driverstation/" >Setting Up Driverstation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Setting%20Up%20RobotPoses%20in%20AdvantageScope%20Sim/" >Setting Up RobotPoses for AdvantageScope Simulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Simulator%20and%20AdvantageScope/" >Robot Simulator and AdvantageScope</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Software%20Errors%20and%20Fixes/" >Software Errors and Fixes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Swoffsets/" >Swoffsets (Swerve Offsets)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/TalonFX%20Blink%20Codes/" >TalonFX Blink Codes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Tuning%20Auto%20PID/" >Tuning Auto PID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Tuning%20Limelight/" >Tuning Limelight</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Tuning%20Motion%20Magic%20PID/" >Tuning Motion Magic PID</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/UpdateCAD/" >Export CAD to AdvantageScope Simulation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Updating%20Limelight%20Firmware/" >Updating Limelight Firmware</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Updating%20WPILib%20Project%20Version/" >Updating WPILib Project Version</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/Vendor%20Libraries/" >Vendor Libraries</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Software/WPILib%20Install/" >WPILib Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Stats</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/App%20Setup/" >App Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/Training/" >Training</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Stats/War%20Room/" >War Room</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Test Folder</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Test%20Folder/Test%20File/" >This is a test page</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">z Admin</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../z_Admin/Updating%20Team%20Registration%20Form/" >Updating Team Registration Form</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">SN Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Lessons (Software)</li>
+      <li class="breadcrumb-item active">Autonomous Code Lesson</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/FRCTeam3255/Wiki/edit/main/Lessons (Software)/Auto_Code_Guide.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="autonomous-code-lesson">Autonomous Code Lesson</h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+</div>
+<p>If there are merge conflicts in Choreo*.java‎, just discard changes and regenerate all paths in Choreo</p>
+<h2 id="what-is-autonomous-code">What Is Autonomous Code?</h2>
+<p>In FRC, "autonomous" (or "auto") refers to the period at the start of a match when your robot must operate <strong>without driver input</strong>. The robot follows pre-programmed instructions to score points—like driving to a location, picking up a game piece, or balancing.</p>
+<hr />
+<h2 id="how-does-auto-code-work">How Does Auto Code Work?</h2>
+<p>Auto code is a sequence of commands or actions that the robot executes automatically. These can be as simple as "drive forward for 2 seconds" or as complex as "follow a path, pick up a cube, and shoot it."</p>
+<hr />
+<h2 id="step-1-define-your-auto-goals">Step 1. Define Your Auto Goals</h2>
+<p>Decide what you want your robot to do during auto and where you want it to start.</p>
+<p><strong><em>Whiteboard them out!</em></strong></p>
+<p>Write these steps out in plain English first!</p>
+<p>Examples:</p>
+<ul>
+<li>Drive off the starting line</li>
+<li>Score a game piece</li>
+<li>Balance on the charge station</li>
+<li>Run a multi-step sequence</li>
+</ul>
+<hr />
+<h2 id="step-2-break-down-actions-into-commands">Step 2. Break Down Actions Into Commands</h2>
+<p>Each action (drive, turn, shoot, etc.) should be a <strong>command/state</strong> or function in your codebase.</p>
+<p>Example commands:</p>
+<ul>
+<li><code>PrepShooting()</code></li>
+<li><code>Shooting()</code></li>
+<li><code>Intaking()</code></li>
+</ul>
+<hr />
+<h2 id="step-3-configure-autos-in-a-method">Step 3. Configure Autos in a Method</h2>
+<p>Update <code>configAutonomous()</code> method to build your auto routines and add them to the chooser. This keeps your constructor clean and matches the RobotContainer.java pattern.</p>
+<pre class="highlight"><code class="language-java">public void configAutonomous() {
+  Command nameOfAuto1 = Commands.sequence(
+      new Command1(),
+      new Command2()
+  );
+
+  Command nameOfAuto2 = Commands.sequence(
+      new Command1(),
+      runPath("auto2path1").asProxy(),  // Example of running a path
+      new Command2()
+  );
+
+  Command nameOfAuto3 = Commands.sequence(
+      new Command1(),
+      runPath("auto3path1").asProxy(),  // Example of running a path
+      new Command2(),
+      runPath("auto3path2").asProxy()   // Example of running a path
+  );
+
+  autoChooser.setDefaultOption("Do Nothing", Commands.none()); // Always have a safe default
+  autoChooser.addOption("Auto Routine 1", nameOfAuto1);
+  autoChooser.addOption("Auto Routine 2", nameOfAuto2);
+  autoChooser.addOption("Auto Routine 3", nameOfAuto3);
+  SmartDashboard.putData("AutoChooser", autoChooser);
+
+  Map&lt;Command, String&gt; autoStartingPoses = Map.ofEntries(
+    // Always write the first path as the starting pose
+    Map.entry(nameOfAuto2, "auto2path1"),  // Starting pose for auto 1
+    Map.entry(nameOfAuto3, "auto3path1"),  // Starting pose for auto 2
+  );
+
+  // Listen for auto selection and reset odometry (this is in template already)
+  autoChooser.onChange(selectedAuto -&gt; {
+    String startingPose = autoStartingPoses.get(selectedAuto);
+
+    if (startingPose != null) {
+      autoFactory.resetOdometry(startingPose)
+          .ignoringDisable(true)  // Run even when disabled
+          .schedule();
+    }
+  });
+}</code></pre>
+<hr />
+<h2 id="what-are-paths">What are Paths?</h2>
+<p>Paths are pre-planned routes that your robot can follow during autonomous. Instead of manually coding every movement, you design a path visually using a tool like <strong>Choreo</strong>, and your robot executes it precisely.</p>
+<p>Our template includes a <code>runPath()</code> helper method that makes it easy to run trajectories:</p>
+<pre class="highlight"><code class="language-java">// Simple - just provide the trajectory name
+Command myAuto = runPath("startPoseName_endPoseName");</code></pre>
+<p><strong>What runPath() does:</strong></p>
+<ul>
+<li>Loads the trajectory file by name (e.g., <code>"startPoseName_endPoseName"</code> loads <code>startPoseName_endPoseName.traj</code>)</li>
+<li>Creates a command that follows it</li>
+<li>Uses <code>.asProxy()</code> for proper command scheduling</li>
+<li>Sets the driver state to CHOREO mode</li>
+</ul>
+<p><strong>That's it!</strong> The template handles all trajectory following internally. You just need to create paths and use <code>runPath()</code> to run them.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Replace <code>"startPoseName_endPoseName"</code> with your actual trajectory names. e.g., <code>"initTop_reefJI"</code>, <code>"reefJI_CoralStation"</code>, etc.</p>
+</div>
+<hr />
+<h2 id="step-4-deploy-trajectory-files">Step 4. Deploy Trajectory Files</h2>
+<p>Choreo saves trajectories as <code>.traj</code> files and a project file as <code>.chor</code>. These must be deployed to your robot:</p>
+<p><strong>Step 1: Create the Choreo Folder</strong></p>
+<p>If it doesn't already exist, create the deploy directory for Choreo:</p>
+<pre class="highlight"><code class="language-bash">mkdir -p src/main/deploy/choreo</code></pre>
+<p><strong>Step 2: Understand the Directory Structure</strong></p>
+<p>Your deployment folder should look like this:</p>
+<pre class="highlight"><code>src/main/deploy/choreo/
+  ├── all_paths.chor    # Project file (edit this in Choreo app)
+  ├── top_ji.traj
+  ├── ji_cs.traj
+  ├── cs_ab.traj
+  └── ...</code></pre>
+<p><strong>Step 3: Add to Choreo Project Settings</strong></p>
+<p>In the Choreo desktop app:</p>
+<ol>
+<li>Go to <strong>File &gt; Project Settings</strong></li>
+<li>Set the <strong>Project Output Directory</strong> to your <code>src/main/deploy/choreo/</code> folder</li>
+<li>Save your project file (<code>.chor</code>) to this location as well</li>
+</ol>
+<p><strong>Step 4: Generate and Deploy</strong></p>
+<p>When you generate trajectories in the Choreo desktop app, they automatically save to the folder you configured. When you deploy your robot code (via <code>./gradlew deploy</code>), these files are copied to the RoboRIO.</p>
+<hr />
+<h3 id="creating-paths-in-choreo">Creating Paths in Choreo</h3>
+<h4 id="download-and-launch-choreo">Download and Launch Choreo</h4>
+<ol>
+<li>Download from <a href="https://choreo.autos">https://choreo.autos</a></li>
+<li>Install and launch the desktop application</li>
+<li>Create a new project or open your existing <code>.chor</code> file</li>
+</ol>
+<h4 id="path-design-workflow">Path Design Workflow</h4>
+<ol>
+<li><strong>Create Waypoints</strong> — Click on the field to add waypoints that define your path</li>
+<li><strong>Set Waypoint Types:</strong></li>
+<li><strong>Pose Waypoint</strong> — Specifies exact position AND heading (direction facing/angle)</li>
+<li>
+<p><strong>Translation Waypoint</strong> — Specifies position only, Choreo optimizes heading
+  <img alt="Waypoint configuration panel" src="https://choreo.autos/media/waypoint_config_panel.png" /></p>
+</li>
+<li>
+<p><strong>Add Constraints:</strong></p>
+</li>
+<li><strong>Velocity Limit</strong> — Slow down in precision areas (e.g., near game pieces)</li>
+<li><strong>Keep-Out Region</strong> — Define areas the robot must avoid</li>
+<li><strong>Keep-In Region</strong> — Define areas the robot must stay within</li>
+<li><strong>Point-At Constraint</strong> — Make robot face a specific point (e.g., vision target)</li>
+<li><strong>Stop Point</strong> — Robot comes to complete stop at waypoint</li>
+</ol>
+<p>See:
+  <img alt="Constraint navbar" src="https://choreo.autos/media/constraint_navbar.png" />
+  <img alt="Scope display" src="https://choreo.autos/media/constraint-scope-line.png" />
+  <img alt="Constraint configuration panel" src="https://choreo.autos/media/constraint_config_panel.png" /></p>
+<ol>
+<li><strong>Generate Trajectory:</strong></li>
+<li>Click "Generate" button</li>
+<li>Choreo calculates the time-optimal path</li>
+<li>Watch the playback animation to verify behavior</li>
+</ol>
+<hr />
+<h4 id="reference-images-choreo-docs">Reference Images (Choreo Docs)</h4>
+<p>The official Choreo documentation includes helpful visuals. These are embedded from choreo.autos:</p>
+<p><img alt="Waypoint types" src="https://choreo.autos/media/waypoint-types.png" />
+<img alt="Waypoints navbar" src="https://choreo.autos/media/waypoints%2Bnavbar.png" />
+<img alt="Waypoint configuration panel" src="https://choreo.autos/media/waypoint_config_panel.png" />
+<img alt="Constraint navbar" src="https://choreo.autos/media/constraint_navbar.png" />
+<img alt="Constraint scope display" src="https://choreo.autos/media/constraint-scope-line.png" />
+<img alt="Constraint configuration panel" src="https://choreo.autos/media/constraint_config_panel.png" />
+<img alt="Keep-out circle example" src="https://choreo.autos/media/keep_out_circle.png" />
+<img alt="Event markers and command bindings" src="https://choreo.autos/media/event-markers.png" />
+<img alt="Samples view layer" src="https://choreo.autos/media/samples-layer-wpts.png" />
+<img alt="Generating path (GIF)" src="https://choreo.autos/media/generating_path.gif" />
+<img alt="Readme screenshot of example setup" src="https://choreo.autos/media/readmeScreenshot.png" /></p>
+<h3 id="best-practice-using-variables-for-reusability">Best Practice: Using Variables for Reusability</h3>
+<p><strong>One of the most powerful Choreo features is pose variables.</strong> These let you define named locations that can be reused across multiple paths.</p>
+<h4 id="creating-pose-variables">Creating Pose Variables</h4>
+<ol>
+<li>In Choreo, go to <strong>Document Settings &gt; Variables</strong></li>
+<li>Add a pose variable (e.g., "cs" for "Coral Station")</li>
+<li>Set the X, Y, and rotation values</li>
+<li>Give it a clear name that your team understands</li>
+</ol>
+<p><strong>Example from Your Team's Setup:</strong></p>
+<pre class="highlight"><code class="language-json">"poses": {
+  "cs": { "x": "1.72 m", "y": "5.55 m", "heading": "0 deg" },
+  "ab": { "x": "2.73 m", "y": "6.34 m", "heading": "60 deg" },
+  "ef": { "x": "5.35 m", "y": "6.26 m", "heading": "0 deg" },
+  "lk": { "x": "1.72 m", "y": "4.15 m", "heading": "0 deg" },
+  "net": { "x": "0.79 m", "y": "5.55 m", "heading": "0 deg" }
+}</code></pre>
+<h4 id="using-variables-in-paths">Using Variables in Paths</h4>
+<p>When creating waypoints, reference your variables:</p>
+<ul>
+<li>Set waypoint X to <code>cs.x</code> (uses the Coral Station X coordinate)</li>
+<li>Set waypoint Y to <code>cs.y</code></li>
+<li>Set heading to <code>cs.heading</code></li>
+</ul>
+<p>You can even use <strong>expressions</strong> for offsets:</p>
+<ul>
+<li><code>cs.x + 0.5 m</code> — 0.5 meters in front of Coral Station</li>
+<li><code>ab.y - 0.2 m</code> — Slightly lower than waypoint AB</li>
+</ul>
+<h4 id="benefits-of-using-variables">Benefits of Using Variables</h4>
+<p>✅ <strong>Reusability</strong> — Multiple paths can share the same waypoints<br />
+✅ <strong>Consistency</strong> — All paths use exact same field positions<br />
+✅ <strong>Easy Updates</strong> — Change one variable, update all paths that use it<br />
+✅ <strong>Semantic Naming</strong> — "cs" is more meaningful than "1.72, 5.55"<br />
+✅ <strong>Team Communication</strong> — Everyone understands "go to cs then to ab"</p>
+<p><strong>Your Team's Naming Convention:</strong></p>
+<ul>
+<li><code>cs</code> = Coral Station (scoring location)</li>
+<li><code>ab</code>, <code>cd</code>, <code>ef</code>, <code>gh</code> = Field waypoints (alphabetical)</li>
+<li><code>ji</code>, <code>lk</code> = Additional waypoints</li>
+<li><code>net</code> = Starting position near net</li>
+<li><code>proc</code> = Processor side location</li>
+</ul>
+<p>This makes paths like <code>ji_cs</code> immediately understandable: "go from JI waypoint to Coral Station."</p>
+<hr />
+<h3 id="implementing-auto-routines-with-choreo">Implementing Auto Routines with Choreo</h3>
+<h4 id="trajectory-naming-convention">Trajectory Naming Convention</h4>
+<p>Use descriptive names that show the path's start and end points:</p>
+<ul>
+<li><code>top_ji</code> — From top starting position to JI waypoint</li>
+<li><code>ji_cs</code> — From JI waypoint to Coral Station</li>
+<li><code>cs_lk</code> — From Coral Station to LK waypoint</li>
+<li><code>lk_cs</code> — Return from LK waypoint to Coral Station</li>
+</ul>
+<p>This makes it easy to chain paths together in auto routines.</p>
+<hr />
+<h4 id="combining-paths-with-robot-actions">Combining Paths with Robot Actions</h4>
+<p>Use <code>Commands.sequence()</code> to combine path following with other commands:</p>
+<pre class="highlight"><code class="language-java">public void configAutonomous() {
+  // Score preloaded game piece, drive to station, intake another
+  Command scoreAndIntake = Commands.sequence(
+      // 1. Drive to scoring position
+      runPath("net_reef"),
+
+      // 2. Score the game piece
+      new ScoreCommand(elevator, wrist).withTimeout(1.5),
+
+      // 3. Drive to intake station
+      runPath("reef_station"),
+
+      // 4. Intake while approaching
+      new IntakeCommand(intake).withTimeout(2.0)
+  );
+
+  autoChooser.setDefaultOption("Score and Intake", scoreAndIntake);
+}</code></pre>
+<hr />
+<h4 id="your-teams-pattern-reusable-auto-segments">Your Team's Pattern: Reusable Auto Segments</h4>
+<p>Your code has an excellent pattern for reusable auto segments:</p>
+<pre class="highlight"><code class="language-java">// Helper method that scores then collects
+Command ScoreAndCollect(String startPath, String endPath, 
+                       Command reefAutoDrive, 
+                       Command prepCommand) {
+  return Commands.sequence(
+      Commands.runOnce(() -&gt; setRobotState(HAS_CORAL)),
+      runPath(startPath),              // Drive to scoring position
+      reefAutoDrive.alongWith(         // Approach reef while preparing
+          Commands.waitSeconds(0.3).andThen(prepCommand)
+      ).withTimeout(2),
+      new ScoreCoralCommand().withTimeout(0.6),  // Score
+      runPath(endPath),                // Drive to collection point
+      new IntakeCoralCommand().withTimeout(10)   // Collect next game piece
+  );
+}
+
+// Use it to build complex autos
+Command fourCoralAuto = Commands.sequence(
+    ScoreAndCollect("top_ji", "ji_cs", REEF_DRIVE_RIGHT, PREP_LEVEL_4),
+    ScoreAndCollect("cs_lk", "lk_cs", REEF_DRIVE_RIGHT, PREP_LEVEL_4),
+    ScoreAndCollect("cs_lk", "lk_cs", REEF_DRIVE_LEFT, PREP_LEVEL_4),
+    ScoreAndCollect("cs_ab", "ab_cs", REEF_DRIVE_LEFT, PREP_LEVEL_4)
+);</code></pre>
+<p><strong>Why This Pattern Works:</strong></p>
+<ul>
+<li>Reusable logic reduces code duplication</li>
+<li>Easy to test individual segments</li>
+<li>Can mix and match paths for different autos</li>
+<li>Clear sequence of actions</li>
+</ul>
+<hr />
+<h4 id="running-commands-alongside-paths">Running Commands Alongside Paths</h4>
+<p>Use <code>.alongWith()</code> or <code>.deadlineWith()</code> to run commands in parallel:</p>
+<pre class="highlight"><code class="language-java">// Intake WHILE driving
+Command driveAndIntake = runPath("station_reef")
+    .alongWith(new IntakeCommand(intake));
+
+// Drive UNTIL intake finishes (path may end early)
+Command driveUntilIntake = runPath("station_reef")
+    .deadlineWith(new IntakeCommand(intake));
+
+// Prep mechanisms while approaching
+Command approachAndPrep = runPath("field_scoring")
+    .alongWith(
+        new ElevatorToPositionCommand(elevator, SCORING_HEIGHT),
+        new WristToAngleCommand(wrist, SCORING_ANGLE)
+    );</code></pre>
+<p>This maximizes cycle time by doing multiple things simultaneously.</p>
+<hr />
+<h4 id="resetting-odometry-to-starting-pose">Resetting Odometry to Starting Pose</h4>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>ALWAYS DRAW BLUE AUTOS IN CHOREO!!!</p>
+</div>
+<p><strong><em>*</em></strong><strong><em> GOOOOOOOD SECTION HERE </em></strong><strong><em>*</em></strong>
+Reset your robot's odometry when an auto is selected. Create a mapping of <code>Command</code> objects to their starting poses:</p>
+<pre class="highlight"><code class="language-java">// In RobotContainer, create a map of Command objects to starting poses
+
+
+// In configAutonomous(), build your autos and add the onChange listener
+public void configAutonomous() {
+  // Build your auto commands
+  fourCoralNonProcAuto = Commands.sequence(
+      ScoreAndCollect("top_ji", "ji_cs", REEF_DRIVE_RIGHT, PREP_LEVEL_4),
+      // ... more commands
+  );
+
+  // Add to chooser
+  autoChooser.setDefaultOption("4 Coral - Non-Processor Side", fourCoralNonProcAuto);
+  autoChooser.addOption("4 Coral - Processor Side", fourCoralProcAuto);
+  autoChooser.addOption("1 Coral - Mid", oneCoralMidAuto);
+  autoChooser.addOption("3 Algae - Mid", threeAlgaeMidAuto);
+
+  SmartDashboard.putData("AutoChooser", autoChooser);
+
+  Map&lt;Command, String&gt; autoStartingPoses = Map.ofEntries(
+    Map.entry(auto1CommandName, "firstRunPathAuto1"),
+    Map.entry(auto2CommandName, "firstRunPathAuto2"),
+  );
+
+  // Listen for auto selection and reset odometry
+  autoChooser.onChange(selectedAuto -&gt; {
+    String startingPose = autoStartingPoses.get(selectedAuto);
+
+    if (startingPose != null) {
+      autoFactory.resetOdometry(startingPose)
+          .ignoringDisable(true)  // Run even when disabled
+          .schedule();
+    }
+  });
+}</code></pre>
+<p><strong>How It Works:</strong></p>
+<ul>
+<li>Map each <code>Command</code> object (your auto routine) to its starting pose name</li>
+<li>When an auto is selected via the chooser, <code>onChange</code> is triggered</li>
+<li>Look up the selected command in the map to find its starting pose</li>
+<li>Reset odometry before the match starts</li>
+</ul>
+<p><strong>Your Team's Pattern:</strong>
+Since your autos are defined as <code>Command</code> fields in <code>RobotContainer</code>, this mapping is type-safe and matches your actual code structure.</p>
+<hr />
+<h3 id="testing-and-safety">Testing and Safety</h3>
+<h4 id="start-in-simulation">Start in Simulation</h4>
+<p>Before running on a real robot:</p>
+<ol>
+<li>Test paths in WPILib simulation</li>
+<li>Use <strong>Glass</strong> or <strong>AdvantageScope</strong> to visualize the path</li>
+<li>Verify odometry tracks the path correctly</li>
+<li>Check for any unexpected behavior</li>
+</ol>
+<h4 id="conservative-first-then-optimize">Conservative First, Then Optimize</h4>
+<p>When first testing a new path:</p>
+<ol>
+<li>Add <strong>velocity constraints</strong> to slow down the entire path</li>
+<li>Test on blocks or with the robot secured</li>
+<li>Gradually increase speed as confidence grows</li>
+<li>Add more aggressive constraints only after basic path works</li>
+</ol>
+<p>Example constraint progression:</p>
+<ul>
+<li><strong>First test:</strong> 1 m/s max velocity</li>
+<li><strong>After successful test:</strong> 2 m/s max velocity</li>
+<li><strong>Competition ready:</strong> 4+ m/s with optimized constraints</li>
+</ul>
+<h4 id="verify-alliance-flipping">Verify Alliance Flipping</h4>
+<p><strong>Critical:</strong> Test your autos on BOTH alliances!</p>
+<pre class="highlight"><code class="language-java">// In configAutonomous(), verify alliance flipping works
+Command testFlipping = Commands.sequence(
+    Commands.runOnce(() -&gt; {
+      System.out.println("Alliance: " + DriverStation.getAlliance());
+      System.out.println("Starting pose: " + drivetrain.getPose());
+    }),
+    runPath("top_ji")
+);</code></pre>
+<p>If alliance flipping is enabled in <code>AutoFactory</code>, the path should mirror for red alliance automatically.</p>
+<h4 id="incremental-complexity">Incremental Complexity</h4>
+<p><strong>Your team's approach is excellent:</strong> You have 4+ autonomous routines that work reliably because you built them incrementally:</p>
+<ol>
+<li><strong>Start Simple:</strong> <code>net_off_startingline</code> — Just drive off the line</li>
+<li><strong>Add Scoring:</strong> <code>1_coral_mid</code> — Score one game piece</li>
+<li><strong>Add Collection:</strong> Paths between scoring and intake stations</li>
+<li><strong>Complex Sequences:</strong> <code>4_coral_nonProcSide</code> — Multiple score cycles</li>
+</ol>
+<p>Each level builds on the previous one. Don't try to build a 5-piece auto on day one!</p>
+<h4 id="safety-checklist">Safety Checklist</h4>
+<p>Before enabling autonomous:</p>
+<ul>
+<li>[ ] Physical barriers around robot (for first tests)</li>
+<li>[ ] Driver station ready to disable immediately</li>
+<li>[ ] Team members clear of robot path</li>
+<li>[ ] Verify correct auto is selected</li>
+<li>[ ] Announce "ENABLING AUTONOMOUS" to team</li>
+<li>[ ] Watch for unexpected behavior (jerking, wrong direction)</li>
+</ul>
+<hr />
+<h3 id="advanced-topics">Advanced Topics</h3>
+<h4 id="event-markers-optional">Event Markers (Optional)</h4>
+<p>Choreo supports <strong>event markers</strong> that trigger commands at specific times. If desired, you can bind event names in <code>AutoFactory</code> and add matching markers in the Choreo GUI so commands fire at precise moments during a path.</p>
+<hr />
+<h3 id="choreo-resources">Choreo Resources</h3>
+<ul>
+<li><strong>Official Website:</strong> <a href="https://choreo.autos">https://choreo.autos</a></li>
+<li><strong>ChoreoLib Documentation:</strong> <a href="https://choreo.autos/choreolib/">https://choreo.autos/choreolib/</a></li>
+<li><strong>Getting Started Guide:</strong> <a href="https://choreo.autos/choreolib/getting-started/">https://choreo.autos/choreolib/getting-started/</a></li>
+<li><strong>Path Editing Guide:</strong> <a href="https://choreo.autos/usage/editing-paths/">https://choreo.autos/usage/editing-paths/</a></li>
+</ul>
+<hr />
+<h2 id="tips-for-reliable-auto-code">Tips for Reliable Auto Code</h2>
+<ul>
+<li><strong>Reset sensors</strong> (encoders, gyro) at the start of auto.</li>
+<li><strong>Use feedback</strong> (PID, MotionMagic, etc.) for precise movement.</li>
+<li><strong>Keep it simple</strong>—a reliable simple auto is better than a broken complex one.</li>
+<li><strong>Test on the real field</strong>—carpet and obstacles affect performance.</li>
+<li><strong>Add failsafes</strong> (timeouts, checks) to prevent getting stuck.</li>
+</ul>
+<hr />
+<h2 id="more-resources">More Resources</h2>
+<ul>
+<li><a href="https://docs.wpilib.org/en/stable/docs/software/commandbased/index.html">WPILib Command-Based Programming</a></li>
+<li><a href="https://github.com/wpilibsuite/allwpilib/tree/main/wpilibjExamples/src/main/java/edu/wpi/first/wpilibj/examples">FRC Auto Examples</a></li>
+<li><a href="https://github.com/Mechanical-Advantage/AdvantageKit-docs">AdvantageKit Auto Guide</a></li>
+</ul>
+<hr />
+<p>This guide is for beginners. Start simple, build up, and experiment!</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../GitHub/Downloading%20Projects/" class="btn btn-neutral float-left" title="Downloading GitHub Projects"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../MechanismToothCount/" class="btn btn-neutral float-right" title="Mechanism Tooth Count">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/FRCTeam3255/Wiki" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../GitHub/Downloading%20Projects/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../MechanismToothCount/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
