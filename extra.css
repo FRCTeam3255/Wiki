@@ -1,0 +1,25 @@
+Custom presentation styling for Read the Docs theme body.presentation-mode .wy-nav-side {
+    display: none !important;
+}
+
+body.presentation-mode .wy-nav-content-wrap {
+    margin-left: 0 !important;
+    background: #fafafa;
+}
+
+body.presentation-mode .wy-nav-content {
+    max-width: 1100px !important;
+    font-size: 1.3em !important;
+    margin: 0 auto !important;
+    padding: 2em 3em !important;
+}
+
+body.presentation-mode footer,
+body.presentation-mode div[role="navigation"] {
+    opacity: 0.3;
+    transition: opacity 0.2s ease;
+}
+
+body.presentation-mode div[role="navigation"]:hover {
+    opacity: 1;
+}

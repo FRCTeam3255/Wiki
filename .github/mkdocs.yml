@@ -17,3 +17,9 @@ markdown_extensions:
   - attr_list
 exclude_docs: |
   !.images
+
+extra_css:
+  - extra.css
+
+extra_javascript:
+  - extra.js
