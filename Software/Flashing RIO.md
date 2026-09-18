@@ -23,7 +23,8 @@ If issues occur, [see official docs for more information](https://docs.wpilib.or
 ## roboRIO 1
 1. Connect roboRIO USB Device port to the PC.
     - This requires a USB Type A male (standard PC end) to Type B male cable (square with 2 cut corners),
-    - most commonly found as a printer USB cable
+       - most commonly found as a printer USB cable
+    -  OR an ethernet cable connecting the the roboRIO to the PC
 1. Right click **roboRIO imaging tool** and **run as admin** from desktop shortcut
     - also located at `C:\Program Files (x86)\National Instruments\LabVIEW 2023\project\roboRIO Tool`
 1. Make sure the roboRIO is selected in the top left pane
