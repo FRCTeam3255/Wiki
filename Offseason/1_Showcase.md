@@ -1,13 +1,13 @@
 # 2026 Plan
 
 - Room ready before meeting.
-- Arrows pointing people to room @Brody Karr.
+- Arrows pointing people to room
   - Front of room.
   - Junior lawn.
-- Have a display robot outside @chris @Jhon.
+- Have a display robot outside
 - Pre layout room.
-- Say sign in sheets @Eli Uva (Co-Head Coach) .
-- Donuts laid out @Kevin Ngo.
+- Say sign in sheets
+- Donuts laid out.
 - Do presentation.
 - Presentation ends at 4:30pm.
 - Number off groups.
@@ -89,7 +89,7 @@ Plan
   - Only a cut no measure.
 - Lathe Demo (4 Mins) (20 total).
   - We need a cross section tapped and untapped hex shaft.
-  - bolt lathe to table @ChrisDaBingus .
+  - bolt lathe to table.
 
 What we should have done
 
