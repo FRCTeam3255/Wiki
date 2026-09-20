@@ -31,7 +31,7 @@ This is the text from the test-plan diagram, ordered from left to right and top 
     - Log in Spreadsheet
 13. Full Functional
 14. Tune Limelight
-15. Tune Interpolation Tables
+15. [Tune Interpolation Tables](<Tuning Interpolation Tables.md>)
 16. Tune Presets (use interpolation table results)
 17. Play Match
     - No Auto
