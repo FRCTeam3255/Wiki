@@ -2,13 +2,11 @@
 
 ## Programming Order
 
-![alt text](../.drawio_diagrams/program_order.drawio.svg)
+![programming_diagram](../.drawio_diagrams/program_order.drawio.svg)
 
 ---
 
 ## Test Plan
-
-This is the text from the test-plan diagram, ordered from left to right and top to bottom.
 
 ### Before Robot Exists
 
@@ -23,7 +21,7 @@ This is the text from the test-plan diagram, ordered from left to right and top 
 3. Power On Robot
 4. Deploy Code to Robot
 5. Set CAN IDs, Motor Names, Firmware
-6. Do Swofsets
+6. Do Swoffsets
 7. Verify Tooth Count Mechanism Accuracy by manual movement
 8. Check mechanical backlash (slop)
 9. Get Soft limits for motors

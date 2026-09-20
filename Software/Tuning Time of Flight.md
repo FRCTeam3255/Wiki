@@ -2,7 +2,7 @@
 
 ## Prep
 
-1. Have stop watch
+1. Have stopwatch
 2. Camera
 
 ## Steps
