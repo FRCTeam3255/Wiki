@@ -1,6 +1,7 @@
 # PingPongBot
 
 ## Software
-1. StateMachine
+
+1. [StateMachine](<../Lessons (Software)/StateMachine.md>)
 
 ## Mechanical
