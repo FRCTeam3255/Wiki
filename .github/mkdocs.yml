@@ -17,3 +17,7 @@ markdown_extensions:
   - attr_list
 exclude_docs: |
   !.images
+  !.drawio_diagrams
+plugins:
+  - search
+  - drawio
