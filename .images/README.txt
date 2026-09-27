@@ -1,0 +1,1 @@
+This folder is only used to store photos for other pages.
