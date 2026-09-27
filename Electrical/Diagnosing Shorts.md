@@ -31,6 +31,7 @@ Once a short is confirmed, use the following process to identify which device or
 
 1. Keep the multimeter probes in place (one in the PDH, one touching the frame)
 2. Unplug the power wires for one device at a time from the PDH
+    1. Try the 18 AWG first
 3. After each disconnection, check whether the multimeter now reads **OL**
 4. When the reading returns to **OL**, the last device you unplugged is the source of the short
 5. Inspect that device and its wiring for:
