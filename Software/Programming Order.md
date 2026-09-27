@@ -8,11 +8,23 @@
 
 ## Test Plan
 
-### Before Robot Exists
+### Before Robot Exists (can be done in parallel)
 
 1. Final State Machine Test in Sim (Full functional in Sim)
 2. Check CAD for Tooth Counts
 3. Obtain Limelight Locations
+4. Bring driver station outside
+    a. Open VSCode
+    b. Open robot project
+    c. Open AdvantageScope
+    d. In Github, pull from main and switch to branch you want to test (usually main)
+5. Get controllers
+6. Get extension cable
+7. Configure field radio to the robot's radio
+   a. Almost same as robot radio config*
+   b. Make it a field radio
+8. Bring game pieces outside
+9. Remove tarp from the field
 
 ### After Robot Exists
 
