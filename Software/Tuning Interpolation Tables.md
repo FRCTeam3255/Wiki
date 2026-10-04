@@ -1,5 +1,7 @@
 # Tuning Interpolation Tables
 
+**FILM EVERY SHOT**
+
 ## High Level Rule of Thumb
 
 - increments of 10 inch
