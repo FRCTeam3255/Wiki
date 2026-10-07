@@ -31,7 +31,7 @@
 2. Continuity Test
 3. Power On Robot
 4. Deploy Code to Robot
-5. Set CAN IDs, Motor Names, Firmware
+5. Set device names first, then CAN IDs and firmware; redeploy code after changing CAN IDs or firmware
 6. Do Swoffsets
 7. Verify Tooth Count Mechanism Accuracy by manual movement
 8. Check mechanical backlash (slop)
