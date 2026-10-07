@@ -21,7 +21,10 @@ Whichever side you choose, you need to keep it consistent across *both robots (c
 3. Also label the **robot's** left & right. This saves lots of headaches later. 
 > If you're looking at the underside, this may not match *your* left and right, since they're relative to where the robot's left is when it's on the ground. This depends on how the robot is tipped over. Reference the [WPILib Robot coordinate system](https://docs.limelightvision.io/docs/docs-limelight/getting-started/FRC/networking#set-ip-address); The robot's left is positive on the y axis. 
 4. Put small labels near each module to indicate if they're `Front Left (0), Front Right (1), Back Left (2), or Back Right (3)`. 
-5. Using Phoenix Tuner, set the CAN id's & names of all Motors & CANCoders to match their physical location. Make sure their ids match the ones in your codebase's `RobotMap.java`.
+5. In Phoenix Tuner, set the names of all motors and CANCoders before changing any CAN IDs:
+   - Never trust a device's existing name. Use **Blink** to identify each device, then set its name by copying and pasting the exact name from the robot code. Do not type names by hand.
+   - After naming every device, set its CAN ID to match the robot code and its physical location.
+   - Redeploy the code after setting CAN IDs or updating firmware.
 
 ---
 ## Getting the Swoffsets
