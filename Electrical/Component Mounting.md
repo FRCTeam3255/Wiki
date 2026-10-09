@@ -4,6 +4,10 @@ See [Bolt to Tool Lookup](../Mechanical/Bolt%20to%20Tool%20Lookup.md) for tools 
 
 ## Standard Components
 
+!!! note
+
+    When mounting the **CANivore**, leave enough room to access the USB port and route the CAN wiring cleanly before final tightening.
+
 | Device                           | Bolt/Nut Size                                                                                     | Bolt Length |
 | -------------------------------- | ------------------------------------------------------------------------------------------------- | ----------- |
 | Battery Lugs                     | [Grasshopper Nut](https://www.thethriftybot.com/products/grasshopper-nut) (Integrated 10-32 Bolt) | N/A         |
