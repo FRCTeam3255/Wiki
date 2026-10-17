@@ -22,3 +22,8 @@ Complete these steps the day before tryouts:
 5. While that tryout is happening, the next rookie starts their CopyBot practice match.
 6. After the real tryout match, Tayler, Eli, Kevin, and the current driver discuss how it went.
 7. Repeat steps 2–6 for each rookie, making sure each rookie has their CopyBot teaching cycle before their practice match.
+
+## Field reset and media training
+
+- Everyone not currently driving, coaching, observing, or filming helps reset the field between matches.
+- Film the matches as media training. Name each video `<student>_<try_out or practice>_<bumper_color>`, using `try_out` for an official run and `practice` for a practice run.
