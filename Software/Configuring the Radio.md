@@ -25,7 +25,9 @@
     - Enter our robot's name for the SSID Suffix
     - Enter our Wifi password for both WPA keys: Usually, we use **SuperNURDs**
     - For the robot radio, set mode to **Robot Radio Mode**
-    - For the field radio, enter the same team number, **SSID Suffix**, and WPA keys, but choose **Access Point Mode**
+
+    !!! important "Field radio setup"
+        For a field radio, use the same team number, **SSID Suffix**, and WPA keys as the robot radio, but choose **Access Point Mode**. Do not choose **Robot Radio Mode**.
 
 ![image](../.images/Software/Configuring_the_Radio/Screenshot%202024-11-09%20132551.png)
 
