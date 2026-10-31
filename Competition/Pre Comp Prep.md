@@ -2,6 +2,10 @@
 
 ## Configuring second robot before off-season comp
 
+### Prep
+
+- Add white tape to the bumpers to match the offseason robot numbers.
+
 ### Configuring
 
 !!! important
@@ -12,8 +16,10 @@
 
 1. Set limelights to new team number via web page
     - static IP to new team 
-2. set Rio to new team number using roboRIO team number setting tool
-3. config radio to new team number via web page
+2. Set Rio to the new team number using the roboRIO team number setting tool (NOTE: This must be done over Ethernet for the setter to work.)
+
+3. Configure the radio to the new team number using the [radio configuration guide](../Software/Configuring%20the%20Radio.md).
+    - Check for radio firmware updates while configuring it.
 
 
 ### Validation
