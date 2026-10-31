@@ -37,9 +37,8 @@
 2. Limelights can use USB: [http://172.28.0.1:5801](http://172.28.0.1:5801)
 
 ### 4. End of Competition
-- Reprogram the radio back to normal settings.
-- [See Radio Reset Instructions](../Software/Configuring%20the%20Radio.md)
 - Make robot fixes (as if we are going to another match)
+- Complete the [Post-Competition Checklist](Post%20Comp%20Checklist.md) while packing the pit, before packing the robot's electronics.
 
 ### 5. Load out
 
