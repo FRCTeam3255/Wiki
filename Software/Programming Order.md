@@ -31,30 +31,31 @@
 2. Continuity Test
 3. Power On Robot
 4. Deploy Code to Robot
-5. Set CAN IDs, Motor Names, Firmware
-6. Do Swoffsets
-7. Verify Tooth Count Mechanism Accuracy by manual movement
-8. Check mechanical backlash (slop)
-9. Get Soft limits for motors
-10. Test for motor directions
-11. PID Constants Tuning (Motion Magic)
-12. Test FreeSpin motors Current Draw and get baseline via Phoenix
+5. Set CAN IDs and motor names; check CAN device firmware and update it if needed
+6. Redeploy code if CAN IDs or firmware were changed
+7. Do Swoffsets
+8. Verify Tooth Count Mechanism Accuracy by manual movement
+9. Check mechanical backlash (slop)
+10. Get Soft limits for motors
+11. Test for motor directions
+12. PID Constants Tuning (Motion Magic)
+13. Test FreeSpin motors Current Draw and get baseline via Phoenix
     - Log in Spreadsheet
-13. Full Functional
-14. Tune Limelight
-15. [Tune Interpolation Tables](<Tuning Interpolation Tables.md>)
-16. Tune Presets (use interpolation table results)
-17. Play Match
+14. Full Functional
+15. Tune Limelight
+16. [Tune Interpolation Tables](<Tuning Interpolation Tables.md>)
+17. Tune Presets (use interpolation table results)
+18. Play Match
     - No Auto
     - Only Automated Aim
     - Record and Discuss
-18. Discuss with driveteam and ask what they need
-19. Play Match
+19. Discuss with driveteam and ask what they need
+20. Play Match
      - No Auto
      - Only Manual Aim
      - Record and Discuss
-20. Test and Tune Auto
-21. Durability Testing
+21. Test and Tune Auto
+22. Durability Testing
     - Lots of Matches w/ Auto
     - Film Every Match
-22. Win
+23. Win
